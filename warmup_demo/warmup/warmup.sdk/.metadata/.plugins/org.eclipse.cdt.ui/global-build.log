@@ -1,0 +1,380 @@
+16:29:38 **** Build of project warmup_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/Fib_LFSR_v1_0/src"
+make -C microblaze_0/libsrc/Fib_LFSR_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/Fib_LFSR_v1_0/src"
+make -C microblaze_0/libsrc/Fib_LFSR_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling Fib_LFSR..."
+"Running Make libs in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+16:30:21 **** Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: warmup.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../warmup_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "warmup.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: warmup.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size warmup.elf  |tee "warmup.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2832	    288	   3120	   6240	   1860	warmup.elf
+'Finished building: warmup.elf.size'
+' '
+16:32:26 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:5:51: error: 'XPAR_Fib_LFSR_0_S00_AXI_BASEADDR' undeclared here (not in a function)
+ volatile unsigned int *myip_ptr = (unsigned int*) XPAR_Fib_LFSR_0_S00_AXI_BASEADDR;
+                                                   ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:9:2: warning: implicit declaration of function 'Fib_LFSR_mWriteReg' [-Wimplicit-function-declaration]
+  Fib_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+  ^
+../src/helloworld.c:17:3: warning: implicit declaration of function 'Fib_LFSR_mReadReg' [-Wimplicit-function-declaration]
+   Fib_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+   ^
+../src/helloworld.c:17:21: error: 'XPAR_MYIP_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+   Fib_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+                     ^
+../src/helloworld.c:17:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:20:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+16:34:32 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:3:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:9:21: error: 'XPAR_Fib_LFSR_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:9:21: note: each undeclared identifier is reported only once for each function it appears in
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:17:21: error: 'XPAR_MYIP_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+   FIB_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:56:15: note: in definition of macro 'FIB_LFSR_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^
+../src/helloworld.c:20:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+16:35:04 **** Incremental Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:3:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:9:21: error: 'XPAR_Fib_LFSR_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:9:21: note: each undeclared identifier is reported only once for each function it appears in
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:17:21: error: 'XPAR_MYIP_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+   FIB_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:56:15: note: in definition of macro 'FIB_LFSR_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^
+../src/helloworld.c:20:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+16:42:13 **** Incremental Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:3:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:9:21: error: 'XPAR_Fib_LFSR_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:9:21: note: each undeclared identifier is reported only once for each function it appears in
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:17:21: error: 'XPAR_MYIP_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+   FIB_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:56:15: note: in definition of macro 'FIB_LFSR_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^
+../src/helloworld.c:20:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+16:42:50 **** Incremental Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:3:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:9:21: error: 'XPAR_Fib_LFSR_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:9:21: note: each undeclared identifier is reported only once for each function it appears in
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:17:21: error: 'XPAR_MYIP_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+   FIB_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:56:15: note: in definition of macro 'FIB_LFSR_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^
+../src/helloworld.c:20:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+16:43:09 **** Incremental Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:3:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:9:21: error: 'XPAR_Fib_LFSR_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:9:21: note: each undeclared identifier is reported only once for each function it appears in
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:17:21: error: 'XPAR_MYIP_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+   FIB_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:56:15: note: in definition of macro 'FIB_LFSR_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^
+../src/helloworld.c:20:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+16:43:49 **** Incremental Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:3:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:9:21: error: 'XPAR_Fib_LFSR_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:9:21: note: each undeclared identifier is reported only once for each function it appears in
+  FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x00000004);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:36:15: note: in definition of macro 'FIB_LFSR_mWriteReg'
+    Xil_Out32((BaseAddress) + (RegOffset), (u32)(Data))
+               ^
+../src/helloworld.c:17:21: error: 'XPAR_MYIP_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+   FIB_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:56:15: note: in definition of macro 'FIB_LFSR_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^
+../src/helloworld.c:20:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+16:44:54 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:3:0:
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:19:21: error: 'XPAR_MYIP_0_S00_AXI_BASEADDR' undeclared (first use in this function)
+   FIB_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:56:15: note: in definition of macro 'FIB_LFSR_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^
+../src/helloworld.c:19:21: note: each undeclared identifier is reported only once for each function it appears in
+   FIB_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+                     ^
+../../warmup_bsp/microblaze_0/include/Fib_LFSR.h:56:15: note: in definition of macro 'FIB_LFSR_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^
+../src/helloworld.c:22:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+16:45:18 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:22:1: error: expected declaration or statement at end of input
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+16:45:59 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: warmup.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../warmup_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "warmup.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: warmup.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size warmup.elf  |tee "warmup.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2872	    288	   3120	   6280	   1888	warmup.elf
+'Finished building: warmup.elf.size'
+' '
+16:46:20 **** Incremental Build of configuration Debug for project warmup ****
+make all 
+make: Nothing to be done for `all'.
+16:54:26 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: warmup.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../warmup_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "warmup.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: warmup.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size warmup.elf  |tee "warmup.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2872	    288	   3120	   6280	   1888	warmup.elf
+'Finished building: warmup.elf.size'
+' '
+16:55:28 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: warmup.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../warmup_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "warmup.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: warmup.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size warmup.elf  |tee "warmup.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2872	    288	   3120	   6280	   1888	warmup.elf
+'Finished building: warmup.elf.size'
+' '
+16:55:34 **** Incremental Build of configuration Debug for project warmup ****
+make all 
+make: Nothing to be done for `all'.
+16:56:02 **** Incremental Build of configuration Debug for project warmup ****
+make all 
+make: Nothing to be done for `all'.
+16:57:36 **** Incremental Build of configuration Debug for project warmup ****
+make all 
+make: Nothing to be done for `all'.
+16:58:15 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:15:2: warning: implicit declaration of function 'PRINT' [-Wimplicit-function-declaration]
+  PRINT("Hello World");
+  ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: warmup.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../warmup_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "warmup.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\warmup_demo\warmup\warmup.sdk\warmup\Debug/../src/helloworld.c:15: undefined reference to `PRINT'
+collect2.exe: error: ld returned 1 exit status
+make: *** [warmup.elf] Error 1
+16:59:30 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: warmup.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../warmup_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "warmup.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: warmup.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_microblaze_0_local_memory_dlmb_bram_if_cntlr'
+c:/xilinx/sdk/2016.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_microblaze_0_local_memory_dlmb_bram_if_cntlr' overflowed by 1520 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [warmup.elf] Error 1

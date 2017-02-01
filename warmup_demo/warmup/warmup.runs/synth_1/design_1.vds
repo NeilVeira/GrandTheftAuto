@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Jan 31 15:55:11 2017
+# Process ID: 8984
+# Current directory: E:/ECE532/warmup/warmup.runs/synth_1
+# Command line: vivado.exe -log design_1.vds -mode batch -messageDb vivado.pb -notrace -source design_1.tcl
+# Log file: E:/ECE532/warmup/warmup.runs/synth_1/design_1.vds
+# Journal file: E:/ECE532/warmup/warmup.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE532/IPs/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2016.2/data/ip'.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 289.379 ; gain = 65.684
+Command: synth_design -top design_1 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11952 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:38 . Memory (MB): peak = 376.863 ; gain = 169.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1' [E:/ECE532/warmup/warmup.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_Fib_LFSR_0_0' [e:/ECE532/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_Fib_LFSR_0_0/synth/design_1_Fib_LFSR_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'Fib_LFSR_v1_0' [e:/ECE532/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/user/fib_lfsr_v1_0/hdl/Fib_LFSR_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+ERROR: [Synth 8-439] module 'Fib_LFSR_v1_0_S00_AXI' not found [e:/ECE532/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/user/fib_lfsr_v1_0/hdl/Fib_LFSR_v1_0.v:51]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+ERROR: [Synth 8-285] failed synthesizing module 'Fib_LFSR_v1_0' [e:/ECE532/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/user/fib_lfsr_v1_0/hdl/Fib_LFSR_v1_0.v:4]
+ERROR: [Synth 8-285] failed synthesizing module 'design_1_Fib_LFSR_0_0' [e:/ECE532/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_Fib_LFSR_0_0/synth/design_1_Fib_LFSR_0_0.v:56]
+ERROR: [Synth 8-285] failed synthesizing module 'design_1' [E:/ECE532/warmup/warmup.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:48 . Memory (MB): peak = 520.965 ; gain = 313.727
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+8 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 31 15:56:01 2017...

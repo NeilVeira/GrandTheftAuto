@@ -1,0 +1,21 @@
+sv xil_defaultlib "E:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" --include "../../../ipstatic/clk_wiz_v5_3"
+sv xil_defaultlib "E:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" --include "../../../ipstatic/clk_wiz_v5_3"
+sv xil_defaultlib "E:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" --include "../../../ipstatic/clk_wiz_v5_3"
+sv xil_defaultlib "E:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" --include "../../../ipstatic/clk_wiz_v5_3"
+sv xil_defaultlib "E:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" --include "../../../ipstatic/clk_wiz_v5_3"
+sv xil_defaultlib "E:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" --include "../../../ipstatic/clk_wiz_v5_3"
+sv xil_defaultlib "E:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" --include "../../../ipstatic/clk_wiz_v5_3"
+sv xil_defaultlib "E:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" --include "../../../ipstatic/clk_wiz_v5_3"
+verilog blk_mem_gen_v8_3_3 "../../../ipstatic/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" --include "../../../ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib "../../../bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" --include "../../../ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib "../../../bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" --include "../../../ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib "../../../bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v" --include "../../../ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib "../../../bd/design_1/ipshared/user/fib_lfsr_v1_0/hdl/Fibonacci_LFSR.v" --include "../../../ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib "../../../bd/design_1/ipshared/user/fib_lfsr_v1_0/hdl/Fib_LFSR_v1_0_S00_AXI.v" --include "../../../ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib "../../../bd/design_1/ipshared/user/fib_lfsr_v1_0/hdl/Fib_LFSR_v1_0.v" --include "../../../ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib "../../../bd/design_1/ip/design_1_Fib_LFSR_0_0/sim/design_1_Fib_LFSR_0_0.v" --include "../../../ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib "../../../bd/design_1/hdl/design_1.v" --include "../../../ipstatic/clk_wiz_v5_3"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

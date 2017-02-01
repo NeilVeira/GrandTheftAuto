@@ -1,0 +1,40 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port uart_rtl -pg 1 -y 300 -defaultsOSRD
+preplace port reset_rtl -pg 1 -y 210 -defaultsOSRD
+preplace port clock_rtl -pg 1 -y 250 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 3:-130 -defaultsOSRD -bot
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 3 -y 90 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 1 -y -20 -defaultsOSRD
+preplace inst Fib_LFSR_0 -pg 1 -lvl 2 -y 340 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 4 -y 310 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -y 60 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 3 -y 370 -defaultsOSRD
+preplace netloc microblaze_0_Clk 1 0 4 10 310 510 150 920 280 1260
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 1 3 540 230 NJ 230 1260
+preplace netloc microblaze_0_M_AXI_DP 1 1 2 NJ -30 NJ
+preplace netloc microblaze_0_ilmb_1 1 1 2 NJ 170 880
+preplace netloc Fib_LFSR_0_led 1 2 1 NJ
+preplace netloc rst_clk_wiz_1_100M_interconnect_aresetn 1 2 1 910
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 1 890
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 3 1 1280
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 1 3 550 270 910 270 1270
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 0 3 20 300 NJ 240 870
+preplace netloc clk_wiz_1_locked 1 1 1 520
+preplace netloc axi_uartlite_0_UART 1 4 1 N
+preplace netloc microblaze_0_dlmb_1 1 1 2 NJ 160 900
+preplace netloc clock_rtl_1 1 0 1 NJ
+preplace netloc microblaze_0_debug 1 0 2 20 -80 NJ
+preplace netloc mdm_1_debug_sys_rst 1 1 1 520
+preplace netloc reset_rtl_1 1 0 2 0 180 490
+levelinfo -pg 1 -20 240 710 1110 1380 1500 -top -90 -bot 570
+",
+}
+{
+   da_axi4_cnt: "2",
+   da_board_cnt: "8",
+   da_mb_cnt: "1",
+}

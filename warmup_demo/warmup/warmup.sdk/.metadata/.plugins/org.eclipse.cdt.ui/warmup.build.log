@@ -1,0 +1,17 @@
+16:59:30 **** Auto Build of configuration Debug for project warmup ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../warmup_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: warmup.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../warmup_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "warmup.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2016.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: warmup.elf section `.heap' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_microblaze_0_local_memory_dlmb_bram_if_cntlr'
+c:/xilinx/sdk/2016.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/5.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_microblaze_0_local_memory_dlmb_bram_if_cntlr' overflowed by 1520 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [warmup.elf] Error 1
+
+16:59:33 Build Finished (took 2s.595ms)
+

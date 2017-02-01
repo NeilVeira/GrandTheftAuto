@@ -1,0 +1,102 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 14728
+
+Current time: 	2/1/17 10:16:53 AM EST
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	E:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Mixi
+User home directory: C:/Users/Mixi
+User working directory: E:/ECE532/warmup
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI Base root directory: E:/Xilinx/Vivado
+RDI Data directory: E:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: E:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/Mixi/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/Mixi/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	201 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 444 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 27 MB (+26222kb) [00:00:06]
+// [Engine Memory]: 390 MB (+257628kb) [00:00:06]
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: E:\ECE532\warmup\warmup.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/ECE532/warmup/warmup.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 463 MB (+55974kb) [00:00:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 463 MB. GUI used memory: 27 MB. Current time: 2/1/17 10:16:55 AM EST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 36 MB (+8004kb) [00:00:14]
+// [Engine Memory]: 520 MB (+35702kb) [00:00:14]
+// [GUI Memory]: 47 MB (+9219kb) [00:00:15]
+// [Engine Memory]: 549 MB (+2366kb) [00:00:15]
+// [GUI Memory]: 50 MB (+999kb) [00:00:16]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project E:/ECE532/warmup/warmup.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE532/IPs/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 54 MB (+1159kb) [00:00:17]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 576 MB (+338kb) [00:00:18]
+// Project name: warmup; location: E:/ECE532/warmup; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 836.008 ; gain = 198.031 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// PAPropertyPanels.initPanels (design_1.bd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1 (design_1.bd)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// bL:g (cv:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {E:/ECE532/warmup/warmup.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:microblaze:9.6 - microblaze_0 Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1 Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_1 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M Adding cell -- user:user:Fib_LFSR:1.0 - Fib_LFSR_0 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 660 MB (+57803kb) [00:00:35]
+// [GUI Memory]: 63 MB (+6327kb) [00:00:36]
+// PAPropertyPanels.initPanels (design_1.bd) elapsed time: 0.2s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10 Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10 Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr Adding cell -- xilinx.com:ip:blk_mem_gen:8.3 - lmb_bram Successfully read diagram <design_1> from BD file <E:/ECE532/warmup/warmup.srcs/sources_1/bd/design_1/design_1.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 34 MB. Current time: 2/1/17 10:17:21 AM EST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 903.336 ; gain = 66.789 
+// Elapsed time: 13 seconds
+dismissDialog("Open Block Design"); // bL:g (cv:JFrame)
