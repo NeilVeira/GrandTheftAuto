@@ -12,8 +12,9 @@ int main()
 	
 	// Low Level Driver
 	for (int i =0; i<=100; i++)
-		for (int j=0; j<=1000000;j++)
-			Fib_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
+		for (int j=0; j<=1000000;j++){
+			j++;
+		Fib_LFSR_mReadReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0xC);
 
 	return 0;
 }
