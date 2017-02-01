@@ -1,6 +1,6 @@
 #include "xparameters.h"
 #include "xil_io.h"
-#include "myip.h"
+#include "Fib_LFSR.h"
 
 volatile unsigned int *myip_ptr = (unsigned int*) XPAR_Fib_LFSR_0_S00_AXI_BASEADDR;
 
