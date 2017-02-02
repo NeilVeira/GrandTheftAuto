@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user:user:Fib_LFSR:1.0
-// IP Revision: 13
+// IP Revision: 15
 
 (* X_CORE_INFO = "Fib_LFSR_v1_0,Vivado 2016.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_Fib_LFSR_0_0,Fib_LFSR_v1_0,{}" *)

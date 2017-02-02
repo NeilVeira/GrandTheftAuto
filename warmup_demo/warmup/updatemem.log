@@ -2,12 +2,12 @@
 # updatemem v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # 
-# Start of session at: Wed Feb 01 16:56:19 2017
-# Process ID: 2956
-# Current directory: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup
+# Start of session at: Thu Feb 02 00:13:44 2017
+# Process ID: 11532
+# Current directory: c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup
 # Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2016.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data C:/Xilinx/SDK/2016.2/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper_hw_platform_0/download.bit -force
-# Log file: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/updatemem.log
-# Journal file: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup\updatemem.jou
+# Log file: c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/updatemem.log
+# Journal file: c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup\updatemem.jou
 #-----------------------------------------------------------
 source C:/Xilinx/SDK/2016.2/scripts/updatemem/main.tcl -notrace
 Loading bitfile C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
@@ -15,5 +15,5 @@ Loading data files...
 Updating memory content...
 Creating bitstream...
 Writing bitstream C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper_hw_platform_0/download.bit...
-update_mem: Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 496.059 ; gain = 446.355
-INFO: [Common 17-206] Exiting updatemem at Wed Feb 01 16:57:19 2017...
+update_mem: Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 496.559 ; gain = 446.195
+INFO: [Common 17-206] Exiting updatemem at Thu Feb 02 00:14:43 2017...

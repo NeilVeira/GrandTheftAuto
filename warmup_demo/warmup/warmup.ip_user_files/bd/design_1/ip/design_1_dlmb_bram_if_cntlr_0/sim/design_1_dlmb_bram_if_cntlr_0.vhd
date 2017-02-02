@@ -213,7 +213,7 @@ BEGIN
   U0 : lmb_bram_if_cntlr
     GENERIC MAP (
       C_FAMILY => "artix7",
-      C_HIGHADDR => X"0000000000001FFF",
+      C_HIGHADDR => X"0000000000007FFF",
       C_BASEADDR => X"0000000000000000",
       C_NUM_LMB => 1,
       C_MASK => X"0000000000200000",

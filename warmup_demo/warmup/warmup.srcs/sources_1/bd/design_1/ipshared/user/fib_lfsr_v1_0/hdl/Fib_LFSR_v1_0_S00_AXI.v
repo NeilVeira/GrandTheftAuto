@@ -82,8 +82,9 @@
 	);
 	//LFSR declarations
 	wire [15:0] LFSR;
-	wire [15:0] LFSRclk;
-    wire [15:0] init;
+	wire LFSRclk;
+  wire [15:0] init;
+  wire LEDenable, enable;
 
 	// AXI4LITE signals
 	reg [C_S_AXI_ADDR_WIDTH-1 : 0] 	axi_awaddr;
@@ -217,11 +218,11 @@
 	begin
 	  if ( S_AXI_ARESETN == 1'b0 )
 	    begin
-	      slv_reg0 <= 0;
+	      /*slv_reg0 <= 0;
 	      slv_reg1 <= 0;
 	      slv_reg2 <= 0;
 	      slv_reg3 <= 0;
-	      slv_reg4 <= 0;
+	      slv_reg4 <= 0;*/
 	    end 
 	  else begin
 	    if (slv_reg_wren)
@@ -364,13 +365,13 @@
 	        3'h0   : reg_data_out <= slv_reg0;
 	        3'h1   : reg_data_out <= slv_reg1;
 	        3'h2   : reg_data_out <= slv_reg2;
-	        3'h3   : 
-	           begin
+	        3'h3   : reg_data_out <= slv_reg3;
+	           /*begin 
 	           
 	               slv_reg3 <= LFSR;
-	               reg_data_out <= LFSR;
+	               reg_data_out <= slv_reg3;
 	                   
-	           end
+	           end*/
 	        3'h4   : reg_data_out <= slv_reg4;
 	        default : reg_data_out <= 0;
 	      endcase
@@ -398,24 +399,24 @@
 	// Add user logic here
 	assign init = slv_reg4[15:0];
 	assign LEDenable = slv_reg0[2];
-	assign enable = slv_reg0[0];
-	assign LFSRclk = ((slv_reg2 == 0) && slv_reg0[1]) || (~slv_reg0[1] && axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] == 3'h3 && slv_reg_rden);
+	//assign enable = slv_reg0[0];
+	//assign LFSRclk = ((slv_reg2 == 0) && slv_reg0[1]) || (~slv_reg0[1] && axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] == 3'h3 && slv_reg_rden);
+  assign enable = slv_reg0[0] && (((slv_reg2 == 0) && slv_reg0[1]) || (~slv_reg0[1] && axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] == 3'h3 && slv_reg_rden));
 	
-    Fibonacci_LFSR LFSR_module(LFSR, LFSRclk, S_AXI_ARESETN || ~enable, init,led, LEDenable,enable);
+    Fibonacci_LFSR LFSR_module(LFSR, S_AXI_ACLK, S_AXI_ARESETN || ~enable, init,led, LEDenable,enable);
 
     always@(posedge S_AXI_ACLK)
     begin
-    
-    if(slv_reg0[1])
-    begin
-        if(slv_reg2==0)
-            slv_reg2 = slv_reg1;
-        else
-            slv_reg2 = slv_reg2-1;
-    end
-    else
-        slv_reg2 <= slv_reg2;
-    
+      slv_reg3 <= LFSR;
+      if(slv_reg0[1])
+      begin
+          if(slv_reg2==0)
+              slv_reg2 <= slv_reg1;
+          else
+              slv_reg2 <= slv_reg2-1;
+      end
+      //else
+      //   slv_reg2 <= slv_reg2;
     end
     
 

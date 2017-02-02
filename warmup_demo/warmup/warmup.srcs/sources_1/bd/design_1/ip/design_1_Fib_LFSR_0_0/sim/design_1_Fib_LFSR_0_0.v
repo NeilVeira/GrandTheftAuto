@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user:user:Fib_LFSR:1.0
-// IP Revision: 13
+// IP Revision: 15
 
 `timescale 1ns/1ps
 
