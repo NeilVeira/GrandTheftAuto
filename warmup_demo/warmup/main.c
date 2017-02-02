@@ -14,23 +14,32 @@ int main()
 {
 	FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x4);
 	FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0x10, 0xF0F0);
-	FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0x04, SLOW);
-	FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x7);
+	FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0x04, MEDIUM);
 
 	xil_printf("Starting\n");
 
 	//xil_printf("%x\n",FIB_LFSR_mReadReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0x04));
 	//xil_printf("%x\n",FIB_LFSR_mReadReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0x00));
 
+	//test interval counter
 	/*for (int i=0; i<1000; i++){
 		//for (int j=0; j<10000; j++) ;
 		xil_printf("%x\n",FIB_LFSR_mReadReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0x08));
 	}*/
 
-	// Low Level Driver
-	for (int i =0; i<=20; i++){
+	//test auto-update mode
+	FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x7);
+	for (int i =0; i<=100; i++){
 		for (int j=0; j<=1000000;j++){
-			j++;
+		}
+		xil_printf("%x\n",FIB_LFSR_mReadReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0xC));
+	}
+
+	//test update-when-read mode
+	xil_printf("Starting update-when-read mode test\n");
+	FIB_LFSR_mWriteReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0, 0x5);
+	for (int i =0; i<=100; i++){
+		for (int j=0; j<=100000000;j++){
 		}
 		xil_printf("%x\n",FIB_LFSR_mReadReg(XPAR_Fib_LFSR_0_S00_AXI_BASEADDR, 0xC));
 	}
