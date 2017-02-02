@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER Fib_LFSR
+	OPTION supported_peripherals = (Fib_LFSR);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = Fib_LFSR;
+END DRIVER

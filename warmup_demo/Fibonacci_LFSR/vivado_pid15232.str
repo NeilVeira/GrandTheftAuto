@@ -1,0 +1,102 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 15232
+
+Current time: 	1/31/17 11:25:47 AM EST
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	E:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Mixi
+User home directory: C:/Users/Mixi
+User working directory: E:/ECE532/Fibonacci_LFSR
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI Base root directory: E:/Xilinx/Vivado
+RDI Data directory: E:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: E:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/Mixi/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/Mixi/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	167 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 407 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 31 MB (+30471kb) [00:00:12]
+// [Engine Memory]: 394 MB (+261368kb) [00:00:12]
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: E:\ECE532\Fibonacci_LFSR\Fibonacci_LFSR.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/ECE532/Fibonacci_LFSR/Fibonacci_LFSR.xpr 
+// [GUI Memory]: 40 MB (+6903kb) [00:00:15]
+// [Engine Memory]: 431 MB (+18731kb) [00:00:15]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 441 MB. GUI used memory: 26 MB. Current time: 1/31/17 11:25:49 AM EST
+// Tcl Message: open_project E:/ECE532/Fibonacci_LFSR/Fibonacci_LFSR.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 453 MB (+614kb) [00:00:20]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 493 MB (+17802kb) [00:00:27]
+// [GUI Memory]: 47 MB (+5572kb) [00:00:30]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2016.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 517 MB. GUI used memory: 31 MB. Current time: 1/31/17 11:26:05 AM EST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 49 MB (+204kb) [00:00:33]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 54 MB (+2009kb) [00:00:33]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: Fibonacci_LFSR; location: E:/ECE532/Fibonacci_LFSR; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 727.973 ; gain = 124.871 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 520 MB (+1840kb) [00:00:35]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 57 MB (+748kb) [00:01:22]
+// [GUI Memory]: 60 MB (+232kb) [00:11:04]
+// [GUI Memory]: 64 MB (+79kb) [00:18:59]
+// [GUI Memory]: 68 MB (+1349kb) [00:23:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 521 MB. GUI used memory: 32 MB. Current time: 1/31/17 11:56:10 AM EST
+// PAPropertyPanels.initPanels (Fibonacci_LFSR.v) elapsed time: 0.3s
+// Elapsed time: 1953 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Fibonacci_LFSR (Fibonacci_LFSR.v)]", 1, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Fibonacci_LFSR (Fibonacci_LFSR.v)]", 1, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 72 MB (+705kb) [00:33:08]
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// [GUI Memory]: 77 MB (+1637kb) [00:40:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 521 MB. GUI used memory: 31 MB. Current time: 1/31/17 12:26:10 PM EST
+// [GUI Memory]: 81 MB (+131kb) [01:27:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 521 MB. GUI used memory: 31 MB. Current time: 1/31/17 12:56:10 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 521 MB. GUI used memory: 30 MB. Current time: 1/31/17 1:26:10 PM EST
+// [GUI Memory]: 86 MB (+313kb) [02:10:26]

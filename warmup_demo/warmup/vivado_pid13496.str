@@ -1,0 +1,543 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 13496
+
+Current time: 	2/2/17 2:15:15 PM EST
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Neil
+User home directory: C:/Users/Neil
+User working directory: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/Neil/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/Neil/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	164 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 391 MB
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 42 MB (+41102kb) [00:00:48]
+// [Engine Memory]: 372 MB (+239086kb) [00:00:48]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\warmup_demo\warmup\warmup.xpr. Version: Vivado v2016.2 
+// HMemoryUtils.trashcanNow. Engine heap size: 392 MB. GUI used memory: 26 MB. Current time: 2/2/17 2:15:16 PM EST
+// [Engine Memory]: 394 MB (+3231kb) [00:00:54]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 426 MB. GUI used memory: 25 MB. Current time: 2/2/17 2:16:10 PM EST
+// [Engine Memory]: 426 MB (+12676kb) [00:01:49]
+// [Engine Memory]: 450 MB (+2664kb) [00:01:54]
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 485 MB. GUI used memory: 25 MB. Current time: 2/2/17 2:16:30 PM EST
+// [Engine Memory]: 485 MB (+13672kb) [00:02:09]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 49 MB (+5261kb) [00:02:20]
+// [Engine Memory]: 539 MB (+30616kb) [00:02:20]
+// [GUI Memory]: 55 MB (+4057kb) [00:02:33]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/IPs/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 575 MB. GUI used memory: 39 MB. Current time: 2/2/17 2:17:02 PM EST
+// [Engine Memory]: 575 MB (+9806kb) [00:02:40]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+986kb) [00:02:43]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: warmup; location: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:01:28 ; elapsed = 00:01:55 . Memory (MB): peak = 792.934 ; gain = 198.246 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 63 MB (+1309kb) [00:03:00]
+// Elapsed time: 147 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// ai:x (cv:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ai:x)
+dismissDialog("Launch SDK"); // ai:x (cv:JFrame)
+// bL:g (cv:JFrame):  Launch SDK : addNotify
+// Tcl Message: launch_sdk -workspace C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk -hwspec C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk -hwspec C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+dismissDialog("Launch SDK"); // bL:g (cv:JFrame)
+// [GUI Memory]: 66 MB (+154kb) [00:05:56]
+// [GUI Memory]: 70 MB (+727kb) [00:06:11]
+// Elapsed time: 274 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, cv:JFrame): FALSE
+// [GUI Memory]: 74 MB (+367kb) [00:10:13]
+// [GUI Memory]: 78 MB (+508kb) [00:12:05]
+// [GUI Memory]: 83 MB (+1011kb) [00:15:35]
+// Elapsed time: 405 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// af:x (cv:JFrame): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // h:JCheckBox (JPanel:JComponent, af:x): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:x)
+// 'n' command handler elapsed time: 6 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Export Hardware"); // af:x (cv:JFrame)
+// bL:g (cv:JFrame):  Export Hardware : addNotify
+// Tcl Message: file copy -force C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.runs/impl_1/design_1_wrapper.sysdef C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper.hdf  
+dismissDialog("Export Hardware"); // bL:g (cv:JFrame)
+// [GUI Memory]: 88 MB (+751kb) [00:24:04]
+// Elapsed time: 459 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// af:x (cv:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:x)
+// 'n' command handler elapsed time: 4 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Export Hardware"); // af:x (cv:JFrame)
+// bL:g (cv:JFrame):  Export Hardware : addNotify
+// Tcl Message: file copy -force C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.runs/impl_1/design_1_wrapper.sysdef C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper.hdf  
+dismissDialog("Export Hardware"); // bL:g (cv:JFrame)
+// Elapsed time: 24 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// af:x (cv:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:x)
+dismissDialog("Export Hardware"); // af:x (cv:JFrame)
+// Tcl Message: file mkdir C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk 
+// Tcl Message: file copy -force C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.runs/impl_1/design_1_wrapper.sysdef C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper.hdf  
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// ai:x (cv:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ai:x)
+dismissDialog("Launch SDK"); // ai:x (cv:JFrame)
+// bL:g (cv:JFrame):  Launch SDK : addNotify
+// Tcl Message: launch_sdk -workspace C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk -hwspec C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk -hwspec C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 93 MB (+746kb) [00:25:45]
+dismissDialog("Launch SDK"); // bL:g (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 587 MB. GUI used memory: 40 MB. Current time: 2/2/17 2:47:11 PM EST
+// Elapsed time: 1416 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 14); // x:Y (w:G, cv:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 14); // x:Y (w:G, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 17, false); // x:Y (w:G, cv:JFrame)
+// G:be (cv:JFrame): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // G:be (cv:JFrame)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: design_1_wrapper 
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 38 MB. Current time: 2/2/17 3:10:30 PM EST
+// [Engine Memory]: 685 MB (+84578kb) [00:56:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 39 MB. Current time: 2/2/17 3:10:41 PM EST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 712 MB. GUI used memory: 37 MB. Current time: 2/2/17 3:10:56 PM EST
+// [Engine Memory]: 722 MB (+3142kb) [00:56:37]
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 727 MB. GUI used memory: 39 MB. Current time: 2/2/17 3:11:29 PM EST
+// Xgd.load filename: C:/Xilinx/Vivado/2016.2/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_floorplan.xgd elapsed time: 17.7s
+// Xgd.load filename: C:/Xilinx/Vivado/2016.2/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 20.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 53.6s
+// TclEventType: DESIGN_NEW
+// Package: addNotify
+// Device: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:06:23 ; elapsed = 00:51:05 . Memory (MB): peak = 870.719 ; gain = 663.418 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Fib_LFSR_v1_0_S00_AXI' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/user/fib_lfsr_v1_0/hdl/Fib_LFSR_v1_0_S00_AXI.v:4] 
+// Tcl Message: 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer  	Parameter ADDR_LSB bound to: 2 - type: integer  	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer  
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer  	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer  	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_BAUDRATE bound to: 9600 - type: integer  	Parameter C_DATA_BITS bound to: 8 - type: integer  	Parameter C_USE_PARITY bound to: 0 - type: integer  	Parameter C_ODD_PARITY bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'axi_uartlite' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_uartlite_v2_0/hdl/src/vhdl/axi_uartlite.vhd:150' bound to instance 'U0' of component 'axi_uartlite' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:155] INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_uartlite_v2_0/hdl/src/vhdl/axi_uartlite.vhd:220] 
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer  	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer  	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_BAUDRATE bound to: 9600 - type: integer  	Parameter C_DATA_BITS bound to: 8 - type: integer  	Parameter C_USE_PARITY bound to: 0 - type: integer  	Parameter C_ODD_PARITY bound to: 0 - type: integer  
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer  	Parameter C_BAUDRATE bound to: 9600 - type: integer  	Parameter C_DATA_BITS bound to: 8 - type: integer  	Parameter C_USE_PARITY bound to: 0 - type: integer  	Parameter C_ODD_PARITY bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'baudrate' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_uartlite_v2_0/hdl/src/vhdl/baudrate.vhd:124] 
+// Tcl Message: 	Parameter C_RATIO bound to: 651 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'baudrate' (5#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_uartlite_v2_0/hdl/src/vhdl/baudrate.vhd:124] INFO: [Synth 8-3919] null assignment ignored [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_uartlite_v2_0/hdl/src/vhdl/uartlite_core.vhd:428] INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_uartlite_v2_0/hdl/src/vhdl/uartlite_rx.vhd:161] 
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_DATA_BITS bound to: 8 - type: integer  	Parameter C_USE_PARITY bound to: 0 - type: integer  	Parameter C_ODD_PARITY bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:106] 
+// Tcl Message: 	Parameter C_CDC_TYPE bound to: 1 - type: integer  	Parameter C_RESET_STATE bound to: 0 - type: integer  	Parameter C_SINGLE_BIT bound to: 1 - type: integer  	Parameter C_FLOP_INPUT bound to: 0 - type: integer  	Parameter C_VECTOR_WIDTH bound to: 32 - type: integer  	Parameter C_MTBF_STAGES bound to: 4 - type: integer  	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:514] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:545] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:554] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:564] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:574] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: 	Parameter C_DEPTH bound to: 16 - type: integer  	Parameter C_DWIDTH bound to: 1 - type: integer  	Parameter C_INIT_VALUE bound to: 1'b0  	Parameter C_FAMILY bound to: artix7 - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'dynshreg_i_f' (7#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_uartlite_v2_0/hdl/src/vhdl/dynshreg_i_f.vhd:168] INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_f.vhd:161] 
+// Tcl Message: 	Parameter C_DWIDTH bound to: 8 - type: integer  	Parameter C_DEPTH bound to: 16 - type: integer  	Parameter C_FAMILY bound to: artix7 - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_rbu_f.vhd:192] 
+// Tcl Message: 	Parameter C_DWIDTH bound to: 8 - type: integer  	Parameter C_DEPTH bound to: 16 - type: integer  	Parameter C_FAMILY bound to: artix7 - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd:143] 
+// Tcl Message: 	Parameter C_SIZE bound to: 5 - type: integer  	Parameter C_FAMILY bound to: artix7 - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (8#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd:143] INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/dynshreg_f.vhd:153] 
+// Tcl Message: 	Parameter C_DEPTH bound to: 16 - type: integer  	Parameter C_DWIDTH bound to: 8 - type: integer  	Parameter C_FAMILY bound to: artix7 - type: string  
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_DATA_BITS bound to: 8 - type: integer  	Parameter C_USE_PARITY bound to: 0 - type: integer  	Parameter C_ODD_PARITY bound to: 0 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'dynshreg_i_f__parameterized0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_uartlite_v2_0/hdl/src/vhdl/dynshreg_i_f.vhd:168] 
+// Tcl Message: 	Parameter C_DEPTH bound to: 16 - type: integer  	Parameter C_DWIDTH bound to: 1 - type: integer  	Parameter C_INIT_VALUE bound to: 16'b1000000000000000  	Parameter C_FAMILY bound to: artix7 - type: string  
+// Tcl Message: 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer  	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000001111  	Parameter C_USE_WSTRB bound to: 0 - type: integer  	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer  	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111  	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100  	Parameter C_FAMILY bound to: artix7 - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/slave_attachment.vhd:239] 
+// Tcl Message: 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111  	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100  	Parameter C_IPIF_ABUS_WIDTH bound to: 4 - type: integer  	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer  	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer  	Parameter C_USE_WSTRB bound to: 0 - type: integer  	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer  	Parameter C_FAMILY bound to: artix7 - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/address_decoder.vhd:190] 
+// Tcl Message: 	Parameter C_BUS_AWIDTH bound to: 4 - type: integer  	Parameter C_S_AXI_MIN_SIZE bound to: 15 - type: integer  	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111  	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd:161] 
+// Tcl Message: 	Parameter C_AB bound to: 2 - type: integer  	Parameter C_AW bound to: 2 - type: integer  	Parameter C_BAR bound to: 2'b00  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'pselect_f' (15#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd:161] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd:161] 
+// Tcl Message: 	Parameter C_AB bound to: 2 - type: integer  	Parameter C_AW bound to: 2 - type: integer  	Parameter C_BAR bound to: 2'b01  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (15#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd:161] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd:161] 
+// Tcl Message: 	Parameter C_AB bound to: 2 - type: integer  	Parameter C_AW bound to: 2 - type: integer  	Parameter C_BAR bound to: 2'b10  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (15#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd:161] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd:161] 
+// Tcl Message: 	Parameter C_AB bound to: 2 - type: integer  	Parameter C_AW bound to: 2 - type: integer  	Parameter C_BAR bound to: 2'b11  	Parameter C_FAMILY bound to: nofamily - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:70] INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0_clk_wiz' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:68] INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145] 
+// Tcl Message: 	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string  	Parameter IBUF_LOW_PWR bound to: TRUE - type: string  	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string  	Parameter IOSTANDARD bound to: DEFAULT - type: string  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'IBUF' (21#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14145] INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:20396] 
+// Tcl Message: INFO: [Synth 8-3491] module 'MDM' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/mdm.vhd:104' bound to instance 'U0' of component 'MDM' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:1094] INFO: [Synth 8-638] synthesizing module 'MDM' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/mdm.vhd:1198] 
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* buffer_type = "none" *) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/mdm.vhd:2046] 
+// Tcl Message: 	Parameter DISABLE_JTAG bound to: FALSE - type: string  	Parameter JTAG_CHAIN bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'BSCANE2_I' to cell 'BSCANE2' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/mdm.vhd:2113] INFO: [Synth 8-113] binding component instance 'BUFG_DRCK' to cell 'BUFG' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/mdm.vhd:2237] 
+// Tcl Message: INFO: [Synth 8-3491] module 'MDM_Core' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/mdm_core.vhd:95' bound to instance 'MDM_Core_I1' of component 'MDM_Core' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/mdm.vhd:2251] INFO: [Synth 8-638] synthesizing module 'MDM_Core' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/mdm_core.vhd:784] 
+// Tcl Message: INFO: [Synth 8-3491] module 'JTAG_CONTROL' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:94' bound to instance 'JTAG_CONTROL_I' of component 'JTAG_CONTROL' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/mdm_core.vhd:2945] INFO: [Synth 8-638] synthesizing module 'JTAG_CONTROL' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:351] 
+// Tcl Message: 	Parameter C_MB_DBG_PORTS bound to: 1 - type: integer  	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer  	Parameter C_DBG_REG_ACCESS bound to: 0 - type: integer  	Parameter C_DBG_MEM_ACCESS bound to: 0 - type: integer  	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer  	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_USE_CROSS_TRIGGER bound to: 0 - type: integer  	Parameter C_USE_UART bound to: 0 - type: integer  	Parameter C_UART_WIDTH bound to: 8 - type: integer  	Parameter C_TRACE_OUTPUT bound to: 0 - type: integer  	Parameter C_EN_WIDTH bound to: 1 - type: integer  
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'FDC_I' to cell 'FDC_1' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:595] INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:612] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000000000010  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'LUT_Delay' to cell 'LUT4' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:616] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000000000010  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'LUT_Delay' to cell 'LUT4' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:616] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000000000010  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'LUT_Delay' to cell 'LUT4' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:616] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000000000010  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'LUT_Delay' to cell 'LUT4' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:616] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000000000010  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'LUT_Delay' to cell 'LUT4' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:616] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'SYNC_FDRE' to cell 'FDRE_1' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:681] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000101100111  	Parameter IS_CLK_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'SRL16E_1' to cell 'SRL16E' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:712] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0100001010000111  	Parameter IS_CLK_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'SRL16E_2' to cell 'SRL16E' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:726] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0100010001000011  	Parameter IS_CLK_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'SRL16E_ID_1' to cell 'SRL16E' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/mdm_v3_2/hdl/vhdl/jtag_control.vhd:789] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0101100001001101  	Parameter IS_CLK_INVERTED bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/microblaze_v9_6/hdl/microblaze_v9_6_vh_rfs.vhd:151684' bound to instance 'U0' of component 'MicroBlaze' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:769] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_0' (81#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:115] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_crossbar_sasd' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar_sasd.v:79] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_addr_decoder' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v:69] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v:61] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_VALUE bound to: 30'b010001001010000000000000000000  	Parameter C_DATA_WIDTH bound to: 30 - type: integer  	Parameter C_BITS_PER_LUT bound to: 6 - type: integer  	Parameter C_NUM_LUT bound to: 5 - type: integer  	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v:62] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_VALUE bound to: 30'b010000000110000000000000000000  	Parameter C_DATA_WIDTH bound to: 30 - type: integer  	Parameter C_BITS_PER_LUT bound to: 6 - type: integer  	Parameter C_NUM_LUT bound to: 5 - type: integer  	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer  
+// Tcl Message: 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer  	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer  	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer  	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer  	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer  	Parameter C_RESP bound to: 3 - type: integer  	Parameter P_WRITE_IDLE bound to: 2'b00  	Parameter P_WRITE_DATA bound to: 2'b01  	Parameter P_WRITE_RESP bound to: 2'b10  	Parameter P_READ_IDLE bound to: 1'b0  	Parameter P_READ_DATA bound to: 1'b1  	Parameter P_AXI4 bound to: 0 - type: integer  	Parameter P_AXI3 bound to: 1 - type: integer  	Parameter P_AXILITE bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_decerr_slave' (88#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v:64] INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_addr_arbiter_sasd' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter_sasd.v:65] 
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_NUM_S bound to: 1 - type: integer  	Parameter C_NUM_S_LOG bound to: 1 - type: integer  	Parameter C_AMESG_WIDTH bound to: 64 - type: integer  	Parameter C_GRANT_ENC bound to: 1 - type: integer  	Parameter C_ARB_PRIORITY bound to: 0 - type: integer  	Parameter P_PRIO_MASK bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_addr_arbiter_sasd' (89#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter_sasd.v:65] INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_splitter' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v:72] 
+// Tcl Message: 	Parameter C_NUM_M bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_splitter' (90#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v:72] INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_10_splitter__parameterized0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v:72] 
+// Tcl Message: 	Parameter C_NUM_M bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_10_splitter__parameterized0' (90#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v:72] INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_RATIO bound to: 3 - type: integer  	Parameter C_SEL_WIDTH bound to: 2 - type: integer  	Parameter C_DATA_WIDTH bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (91#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63] INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_RATIO bound to: 1 - type: integer  	Parameter C_SEL_WIDTH bound to: 1 - type: integer  	Parameter C_DATA_WIDTH bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (91#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63] INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_RATIO bound to: 1 - type: integer  	Parameter C_SEL_WIDTH bound to: 1 - type: integer  	Parameter C_DATA_WIDTH bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (91#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63] INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_RATIO bound to: 3 - type: integer  	Parameter C_SEL_WIDTH bound to: 2 - type: integer  	Parameter C_DATA_WIDTH bound to: 36 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (91#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63] INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85] 
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_DATA_WIDTH bound to: 36 - type: integer  	Parameter C_REG_CONFIG bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_9_axic_register_slice' (92#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:85] INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v:63] 
+// Tcl Message: 	Parameter C_FAMILY bound to: rtl - type: string  	Parameter C_RATIO bound to: 3 - type: integer  	Parameter C_SEL_WIDTH bound to: 2 - type: integer  	Parameter C_DATA_WIDTH bound to: 3 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (96#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/hdl/design_1.v:336] INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/hdl/design_1.v:1092] INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd:84] 
+// Tcl Message: INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:88' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_cntlr.vhd:433] INFO: [Synth 8-638] synthesizing module 'lmb_mux' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:170] 
+// Tcl Message: INFO: [Synth 8-3491] module 'pselect_mask' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_bram_if_cntlr_v4_0/hdl/vhdl/pselect_mask.vhd:87' bound to instance 'pselect_mask_lmb' of component 'pselect_mask' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:222] INFO: [Synth 8-638] synthesizing module 'pselect_mask' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_bram_if_cntlr_v4_0/hdl/vhdl/pselect_mask.vhd:102] 
+// Tcl Message: 	Parameter C_AW bound to: 32 - type: integer  	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000  	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000001000000000000000000000  
+// Tcl Message: 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer  	Parameter C_LMB_DWIDTH bound to: 32 - type: integer  	Parameter C_LMB_AWIDTH bound to: 32 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:92' bound to instance 'U0' of component 'lmb_v10' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:160] INFO: [Synth 8-638] synthesizing module 'lmb_v10' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:140] 
+// Tcl Message: 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer  	Parameter C_LMB_DWIDTH bound to: 32 - type: integer  	Parameter C_LMB_AWIDTH bound to: 32 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'FDS' declared at 'C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:4088' bound to instance 'POR_FF_I' of component 'FDS' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:169] INFO: [Synth 8-638] synthesizing module 'FDS' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:4088] 
+// Tcl Message: 	Parameter INIT bound to: 1'b1  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'FDS' (101#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:4088] INFO: [Synth 8-256] done synthesizing module 'lmb_v10' (102#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:140] INFO: [Synth 8-256] done synthesizing module 'design_1_dlmb_v10_0' (103#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd:89] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd:84] 
+// Tcl Message: INFO: [Synth 8-3491] module 'lmb_mux' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:88' bound to instance 'lmb_mux_I' of component 'lmb_mux' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_cntlr.vhd:433] INFO: [Synth 8-638] synthesizing module 'lmb_mux__parameterized1' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd:170] 
+// Tcl Message: 	Parameter C_AW bound to: 32 - type: integer  	Parameter C_BAR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000  	Parameter C_MASK bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000  
+// Tcl Message: 	Parameter C_LMB_NUM_SLAVES bound to: 1 - type: integer  	Parameter C_LMB_DWIDTH bound to: 32 - type: integer  	Parameter C_LMB_AWIDTH bound to: 32 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'lmb_v10' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd:92' bound to instance 'U0' of component 'lmb_v10' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:160] INFO: [Synth 8-256] done synthesizing module 'design_1_ilmb_v10_0' (105#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd:89] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:78] 
+// Tcl Message: INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_3' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3.vhd:71' bound to instance 'U0' of component 'blk_mem_gen_v8_3_3' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:248] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (116#1) [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:78] INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (117#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/hdl/design_1.v:1092] INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:71] 
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer  	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1'b0  	Parameter C_AUX_RESET_HIGH bound to: 1'b0  	Parameter C_NUM_BUS_RST bound to: 1 - type: integer  	Parameter C_NUM_PERP_RST bound to: 1 - type: integer  	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer  	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd:140' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:116] INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd:199] 
+// Tcl Message: 	Parameter C_FAMILY bound to: artix7 - type: string  	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer  	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1'b0  	Parameter C_AUX_RESET_HIGH bound to: 1'b0  	Parameter C_NUM_BUS_RST bound to: 1 - type: integer  	Parameter C_NUM_PERP_RST bound to: 1 - type: integer  	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer  	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd:138] 
+// Tcl Message: 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer  	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer  	Parameter C_EXT_RESET_HIGH bound to: 1'b0  	Parameter C_AUX_RESET_HIGH bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43294' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd:190] INFO: [Synth 8-638] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43294] 
+// Tcl Message: 	Parameter INIT bound to: 16'b0000000000000000  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'SRL16' (118#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:43294] INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:106] 
+// Tcl Message: 	Parameter C_CDC_TYPE bound to: 1 - type: integer  	Parameter C_RESET_STATE bound to: 0 - type: integer  	Parameter C_SINGLE_BIT bound to: 1 - type: integer  	Parameter C_FLOP_INPUT bound to: 0 - type: integer  	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer  	Parameter C_MTBF_STAGES bound to: 4 - type: integer  	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:514] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:545] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:554] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:564] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:574] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: 	Parameter C_CDC_TYPE bound to: 1 - type: integer  	Parameter C_RESET_STATE bound to: 0 - type: integer  	Parameter C_SINGLE_BIT bound to: 1 - type: integer  	Parameter C_FLOP_INPUT bound to: 0 - type: integer  	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer  	Parameter C_MTBF_STAGES bound to: 4 - type: integer  	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:514] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:545] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:554] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:564] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd:574] 
+// Tcl Message: 	Parameter INIT bound to: 1'b0  
+// Tcl Message: 	Parameter C_SIZE bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'design_1' (124#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/hdl/design_1.v:13] INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (125#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12] 
+// Tcl Message: INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:10:34 ; elapsed = 00:55:42 . Memory (MB): peak = 1188.223 ; gain = 980.922 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:10:38 ; elapsed = 00:55:47 . Memory (MB): peak = 1188.223 ; gain = 980.922 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 537 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0' Finished Parsing XDC File [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: write_xdc: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1311.094 ; gain = 0.000 
+// Tcl Message: Parsing XDC File [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/hdl/const.xdc] Finished Parsing XDC File [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.srcs/sources_1/bd/design_1/hdl/const.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 352 instances were transformed.   (MUXCY,XORCY) => CARRY4: 57 instances   FDC_1 => FDCE (inverted pins: C): 1 instances   FDE => FDRE: 32 instances   FDR => FDRE: 144 instances   FDRE_1 => FDRE (inverted pins: C): 1 instances   FDS => FDSE: 3 instances   LUT6_2 => LUT6_2 (LUT5, LUT6): 96 instances   MULT_AND => LUT2: 1 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances   SRL16 => SRL16E: 1 instances  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:12:31 ; elapsed = 01:02:31 . Memory (MB): peak = 1311.094 ; gain = 1103.793 
+// Tcl Message: 225 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// OpenDesignTask elapsed time: 746.8s
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// 'cv' command handler elapsed time: 13 seconds
+// Elapsed time: 768 seconds
+dismissDialog("Open Elaborated Design"); // bL:g (cv:JFrame)
+// y:bL (cv:JFrame):  Generate Schematic : addNotify
+// [GUI Memory]: 101 MB (+3240kb) [01:02:27]
+dismissDialog("Generate Schematic"); // y:bL (cv:JFrame)
+// [GUI Memory]: 112 MB (+5968kb) [01:02:29]
+// y:bL (cv:JFrame):  Generate Schematic : addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Generate Schematic"); // y:bL (cv:JFrame)
+// Elapsed time: 14 seconds
+floatFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // ao:DockableFrame (FrameContainer:JideTabbedPane, cv:JFrame)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: float view
+// Device view-level: 0.0
+// [GUI Memory]: 120 MB (+2275kb) [01:03:04]
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // y:JideButton (CommandBar:DockableBar, FrameFloatingContainer:ResizableFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// [GUI Memory]: 131 MB (+5297kb) [01:03:07]
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // y:JideButton (CommandBar:DockableBar, FrameFloatingContainer:ResizableFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// y:bL (cv:JFrame):  Generate Schematic : addNotify
+// Elapsed time: 17 seconds
+dismissDialog("Generate Schematic"); // y:bL (cv:JFrame)
+// Elapsed time: 18 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // y:JideButton (CommandBar:DockableBar, FrameFloatingContainer:ResizableFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// PAPropertyPanels.initPanels (slv_reg4_reg_n_0) elapsed time: 1.9s
+// PAPropertyPanels.initPanels (S_AXI_ACLK) elapsed time: 1.3s
+// PAPropertyPanels.initPanels (s00_axi_aclk) elapsed time: 0.4s
+// Elapsed time: 46 seconds
+closeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // ao:DockableFrame (FrameContainer:JideTabbedPane, FrameFloatingContainer:ResizableFrame)
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // ao:DockableFrame (FrameContainer:JideTabbedPane, FrameFloatingContainer:ResizableFrame)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // g:X
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 29, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bL:g (cv:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Feb 02 15:19:21 2017] Launched impl_1... Run output will be captured here: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1327.477 ; gain = 0.000 
+// Elapsed time: 24 seconds
+dismissDialog("Generate Bitstream"); // bL:g (cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// aW:be (cv:JFrame): Feedback Request: addNotify
+// Elapsed time: 447 seconds
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a:JButton (JPanel:JComponent, aW:be)
+dismissDialog("Feedback Request"); // aW:be (cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // af:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// af:x (cv:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:x)
+// 'n' command handler elapsed time: 7 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+dismissDialog("Export Hardware"); // af:x (cv:JFrame)
+// bL:g (cv:JFrame):  Export Hardware : addNotify
+// Tcl Message: file copy -force C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.runs/impl_1/design_1_wrapper.sysdef C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/warmup_demo/warmup/warmup.sdk/design_1_wrapper.hdf  
+dismissDialog("Export Hardware"); // bL:g (cv:JFrame)
