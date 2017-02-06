@@ -1,0 +1,460 @@
+23:08:02 INFO  : Launching XSDB server: xsdb.bat -interactive E:\ECE532\PWM\Project\Project.sdk\temp_xsdb_launch_script.tcl
+23:08:07 INFO  : XSDB server has started successfully.
+23:08:11 INFO  : Processing command line option -hwspec E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+23:16:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:16:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+23:16:16 INFO  : FPGA configured successfully with bitstream "E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:18:55 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: A program file was not specified in the launch configuration.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:580)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+23:24:06 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+23:24:11 INFO  : Processor reset is completed for microblaze_0
+23:24:26 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:24:28 INFO  : Processor reset is completed for microblaze_0
+23:24:46 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:24:47 INFO  : Processor reset is completed for microblaze_0
+23:25:12 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:25:13 INFO  : Processor reset is completed for microblaze_0
+23:25:46 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:25:47 INFO  : Processor reset is completed for microblaze_0
+23:26:03 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:26:05 INFO  : Processor reset is completed for microblaze_0
+23:26:26 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:26:27 INFO  : Processor reset is completed for microblaze_0
+23:26:40 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:26:42 INFO  : Processor reset is completed for microblaze_0
+23:40:06 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1486269494839,  Project:1486267510840
+23:40:06 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:40:18 INFO  : Copied contents of E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+23:40:19 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:40:32 INFO  : 
+23:40:33 INFO  : Updating hardware inferred compiler options for PWM.
+23:40:33 INFO  : Clearing existing target manager status.
+23:40:33 INFO  : Closing and re-opening the MSS file of ther project PWM_bsp
+23:40:34 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:40:37 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+23:40:51 INFO  : Processor reset is completed for microblaze_0
+23:40:51 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor State is "Running"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+23:42:29 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:43:16 INFO  : Launching XSDB server: xsdb.bat -interactive E:\ECE532\PWM\Project\Project.sdk\temp_xsdb_launch_script.tcl
+23:43:20 INFO  : XSDB server has started successfully.
+23:43:20 INFO  : Processing command line option -hwspec E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+23:43:21 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:44:12 INFO  : Processor reset is completed for microblaze_0
+23:44:23 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:44:25 INFO  : Processor reset is completed for microblaze_0
+23:44:35 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:44:38 INFO  : Processor reset is completed for microblaze_0
+23:44:51 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:44:53 INFO  : Processor reset is completed for microblaze_0
+23:45:04 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:45:06 INFO  : Processor reset is completed for microblaze_0
+23:45:21 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:45:22 INFO  : Processor reset is completed for microblaze_0
+23:46:06 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:46:09 INFO  : Processor reset is completed for microblaze_0
+23:46:50 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:46:51 INFO  : Processor reset is completed for microblaze_0
+23:47:01 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:47:03 INFO  : Processor reset is completed for microblaze_0
+23:48:25 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:48:27 INFO  : Processor reset is completed for microblaze_0
+23:48:41 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:48:42 INFO  : Processor reset is completed for microblaze_0
+23:51:31 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:51:33 INFO  : Processor reset is completed for microblaze_0
+23:51:50 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:51:51 INFO  : Processor reset is completed for microblaze_0
+23:52:08 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:52:11 INFO  : Processor reset is completed for microblaze_0
+23:52:24 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+23:52:26 INFO  : Processor reset is completed for microblaze_0
+00:51:12 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:53:10 INFO  : Launching XSDB server: xsdb.bat -interactive E:\ECE532\PWM\Project\Project.sdk\temp_xsdb_launch_script.tcl
+00:53:17 INFO  : XSDB server has started successfully.
+00:53:18 INFO  : Processing command line option -hwspec E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+00:53:19 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:53:19 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1486273657715,  Project:1486269494839
+00:53:19 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+00:53:20 INFO  : Copied contents of E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+00:53:20 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:53:32 INFO  : 
+00:53:34 INFO  : Updating hardware inferred compiler options for PWM.
+00:53:34 INFO  : Clearing existing target manager status.
+00:53:50 INFO  : Processor reset is completed for microblaze_0
+00:54:04 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:54:06 INFO  : Processor reset is completed for microblaze_0
+00:54:21 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:54:24 INFO  : Processor reset is completed for microblaze_0
+00:54:50 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:54:52 INFO  : Processor reset is completed for microblaze_0
+00:57:07 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:57:09 INFO  : Processor reset is completed for microblaze_0
+00:57:20 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:57:22 INFO  : Processor reset is completed for microblaze_0
+00:57:30 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:57:32 INFO  : Processor reset is completed for microblaze_0
+01:00:55 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:00:57 INFO  : Processor reset is completed for microblaze_0
+01:01:07 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:01:09 INFO  : Processor reset is completed for microblaze_0
+01:01:21 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+01:01:23 INFO  : Processor reset is completed for microblaze_0
+13:20:45 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1486318255457,  Project:1486273657715
+13:20:45 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:21:03 INFO  : Copied contents of E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+13:21:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:21:16 INFO  : 
+13:21:17 INFO  : Updating hardware inferred compiler options for PWM.
+13:21:17 INFO  : Clearing existing target manager status.
+13:23:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:23:52 INFO  : Launching XSDB server: xsdb.bat -interactive E:\ECE532\PWM\Project\Project.sdk\temp_xsdb_launch_script.tcl
+13:23:58 INFO  : XSDB server has started successfully.
+13:23:59 INFO  : Processing command line option -hwspec E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+13:23:59 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+13:25:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:25:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+13:25:50 INFO  : FPGA configured successfully with bitstream "E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+13:26:14 INFO  : Processor reset is completed for microblaze_0
+13:26:23 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:26:28 INFO  : Processor reset is completed for microblaze_0
+13:29:32 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:38:30 INFO  : Launching XSDB server: xsdb.bat -interactive E:\ECE532\PWM\Project\Project.sdk\temp_xsdb_launch_script.tcl
+13:38:35 INFO  : XSDB server has started successfully.
+13:38:36 INFO  : Processing command line option -hwspec E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+13:38:36 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+13:38:36 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1486319846586,  Project:1486318255457
+13:38:36 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+13:38:37 INFO  : Copied contents of E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+13:38:37 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:38:48 INFO  : 
+13:38:49 INFO  : Updating hardware inferred compiler options for PWM.
+13:38:49 INFO  : Clearing existing target manager status.
+13:39:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:39:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+13:39:32 INFO  : FPGA configured successfully with bitstream "E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+13:39:47 INFO  : Processor reset is completed for microblaze_0
+13:40:12 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:40:14 INFO  : Processor reset is completed for microblaze_0
+13:40:21 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:40:24 INFO  : Processor reset is completed for microblaze_0
+13:41:05 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:41:06 INFO  : Processor reset is completed for microblaze_0
+13:41:30 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:41:31 INFO  : Processor reset is completed for microblaze_0
+13:41:45 INFO  : Processor reset is completed for microblaze_0
+13:42:02 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+13:42:06 INFO  : Processor reset is completed for microblaze_0
+14:36:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:36:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+14:36:06 INFO  : FPGA configured successfully with bitstream "E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+14:39:24 INFO  : Processor reset is completed for microblaze_0
+14:43:43 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:43:44 INFO  : Processor reset is completed for microblaze_0
+14:43:53 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:43:56 INFO  : Processor reset is completed for microblaze_0
+14:44:09 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:44:10 INFO  : Processor reset is completed for microblaze_0
+14:44:38 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+14:44:40 INFO  : Processor reset is completed for microblaze_0
+15:12:33 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:13:11 INFO  : Launching XSDB server: xsdb.bat -interactive E:\ECE532\PWM\Project\Project.sdk\temp_xsdb_launch_script.tcl
+15:13:18 INFO  : XSDB server has started successfully.
+15:13:19 INFO  : Processing command line option -hwspec E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+15:13:19 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+15:13:19 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1486325407904,  Project:1486319846586
+15:13:19 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+15:13:19 INFO  : Copied contents of E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+15:13:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:13:41 INFO  : 
+15:13:42 INFO  : Updating hardware inferred compiler options for PWM.
+15:13:42 INFO  : Clearing existing target manager status.
+15:16:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:16:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+15:16:13 INFO  : FPGA configured successfully with bitstream "E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:16:20 INFO  : Processor reset is completed for microblaze_0
+15:16:40 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:16:42 INFO  : Processor reset is completed for microblaze_0
+15:16:55 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:16:57 INFO  : Processor reset is completed for microblaze_0
+15:42:11 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1486327275397,  Project:1486325407904
+15:42:11 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+15:42:17 INFO  : Copied contents of E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+15:42:18 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:42:29 INFO  : 
+15:42:30 INFO  : Updating hardware inferred compiler options for PWM.
+15:42:30 INFO  : Clearing existing target manager status.
+15:43:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:43:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+15:43:54 INFO  : FPGA configured successfully with bitstream "E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:44:08 INFO  : Processor reset is completed for microblaze_0
+15:44:23 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:44:26 INFO  : Processor reset is completed for microblaze_0
+15:44:39 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:44:40 INFO  : Processor reset is completed for microblaze_0
+15:44:47 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:44:48 INFO  : Processor reset is completed for microblaze_0
+15:45:04 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:45:06 INFO  : Processor reset is completed for microblaze_0
+15:45:30 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:45:31 INFO  : Processor reset is completed for microblaze_0
+15:45:47 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:45:49 INFO  : Processor reset is completed for microblaze_0
+15:46:05 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:46:06 INFO  : Processor reset is completed for microblaze_0
+15:46:33 INFO  : Processor reset is completed for microblaze_0
+15:46:46 INFO  : Processor reset is completed for microblaze_0
+15:46:54 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:46:58 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:47:04 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:47:10 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:47:17 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:47:23 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:47:54 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:47:58 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:48:02 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:48:08 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:49:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:49:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+15:49:07 INFO  : FPGA configured successfully with bitstream "E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+15:49:13 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:49:19 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: MicroBlaze is under RESET. Check if the Reset input to MicroBlaze and its Bus Interfaces are connected properly
+    UNABLE to STOP MicroBlaze
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:451)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+15:49:27 INFO  : Processor reset is completed for microblaze_0
+15:50:54 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:50:55 INFO  : Processor reset is completed for microblaze_0
+15:51:23 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:51:25 INFO  : Processor reset is completed for microblaze_0
+15:51:47 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:51:48 INFO  : Processor reset is completed for microblaze_0
+15:52:14 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:52:15 INFO  : Processor reset is completed for microblaze_0
+15:52:46 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+15:52:47 INFO  : Processor reset is completed for microblaze_0
+16:08:08 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1486328720303,  Project:1486327275397
+16:08:08 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+16:08:14 INFO  : Copied contents of E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+16:08:15 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:08:29 INFO  : 
+16:08:30 INFO  : Updating hardware inferred compiler options for PWM.
+16:08:30 INFO  : Clearing existing target manager status.
+16:13:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+16:13:16 INFO  : FPGA configured successfully with bitstream "E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:13:24 INFO  : Processor reset is completed for microblaze_0
+16:13:24 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor State is "Running"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(TM.java:686)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:129)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+16:14:08 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:14:46 INFO  : Launching XSDB server: xsdb.bat -interactive E:\ECE532\PWM\Project\Project.sdk\temp_xsdb_launch_script.tcl
+16:14:51 INFO  : XSDB server has started successfully.
+16:14:51 INFO  : Processing command line option -hwspec E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper.hdf.
+16:14:51 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:15:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+16:16:06 INFO  : FPGA configured successfully with bitstream "E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:16:15 INFO  : Processor reset is completed for microblaze_0
+16:16:32 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:16:33 INFO  : Processor reset is completed for microblaze_0
+16:17:00 INFO  : Processor reset is completed for microblaze_0

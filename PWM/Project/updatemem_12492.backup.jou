@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# 
+# Start of session at: Sun Feb 05 16:12:54 2017
+# Process ID: 12492
+# Current directory: E:/ECE532/PWM/Project
+# Command line: updatemem.exe -mode batch -source E:/Xilinx/SDK/2016.2/scripts/updatemem/main.tcl -notrace -tclargs -meminfo E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data E:/Xilinx/SDK/2016.2/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out E:/ECE532/PWM/Project/Project.sdk/design_1_wrapper_hw_platform_0/download.bit -force
+# Log file: E:/ECE532/PWM/Project/updatemem.log
+# Journal file: E:/ECE532/PWM/Project\updatemem.jou
+#-----------------------------------------------------------
+source E:/Xilinx/SDK/2016.2/scripts/updatemem/main.tcl -notrace
