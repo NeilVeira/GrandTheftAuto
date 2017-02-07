@@ -1,0 +1,18 @@
+#include "xparameters.h"
+#include "xil_io.h"
+
+#define PWM_BASEADDR 0x44A00000
+
+volatile unsigned int *ctr = (unsigned int *) PWM_BASEADDR;
+volatile unsigned int *FB = (unsigned int *) (PWM_BASEADDR + 0x04);
+volatile unsigned int *LR = (unsigned int *) (PWM_BASEADDR + 0x08);
+
+int main()
+{
+	*ctr=0xF;
+	*FB=0xFFFF;
+	*LR=0xFFFF;
+	for(;;);
+	return 0;
+}
+

@@ -1,0 +1,364 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 9096
+
+Current time: 	2/5/17 12:56:41 PM EST
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	E:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Mixi
+User home directory: C:/Users/Mixi
+User working directory: E:/ECE532/PWM/IP/ip_repo
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI Base root directory: E:/Xilinx/Vivado
+RDI Data directory: E:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: E:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/Mixi/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/Mixi/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	168 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 401 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 35 MB (+33714kb) [00:00:13]
+// [Engine Memory]: 384 MB (+250685kb) [00:00:13]
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: E:\ECE532\PWM\IP\ip_repo\edit_PWM_v1_0.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/ECE532/PWM/IP/ip_repo/edit_PWM_v1_0.xpr 
+// [GUI Memory]: 37 MB (+783kb) [00:00:16]
+// [Engine Memory]: 410 MB (+7181kb) [00:00:16]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 420 MB. GUI used memory: 26 MB. Current time: 2/5/17 12:56:43 PM EST
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project E:/ECE532/PWM/IP/ip_repo/edit_PWM_v1_0.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE532/PWM/IP/ip_repo/PWM_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE532/PWM/IP/ip_repo/PWM_1.0'. 
+// [Engine Memory]: 435 MB (+4673kb) [00:00:26]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 45 MB (+5914kb) [00:00:30]
+// [Engine Memory]: 492 MB (+37558kb) [00:00:30]
+// [GUI Memory]: 57 MB (+10891kb) [00:00:33]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 506 MB. GUI used memory: 32 MB. Current time: 2/5/17 12:57:01 PM EST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: edit_PWM_v1_0; location: E:/ECE532/PWM/IP/ip_repo; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 756.281 ; gain = 138.609 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+// PAPropertyPanels.initPanels (PWM_Module.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 379, 141); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 63 MB (+3327kb) [00:01:19]
+// Elapsed time: 20 seconds
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 27, 162); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 26, 100); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 306, 115); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 299, 134); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 305, 140); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // x:Y (w:G, cv:JFrame)
+// bL:g (cv:JFrame):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bL:g (cv:JFrame)
+// bL:g (cv:JFrame):  IP Packager : addNotify
+// Tcl Message: ipx::open_ipxact_file E:/ECE532/PWM/IP/ip_repo/PWM_1.0/component.xml 
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: LOAD_FEATURE
+// [GUI Memory]: 72 MB (+6217kb) [00:01:39]
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [Engine Memory]: 521 MB (+4675kb) [00:01:40]
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 535 MB. GUI used memory: 40 MB. Current time: 2/5/17 12:58:09 PM EST
+// Tcl Message: ipx::open_ipxact_file: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 757.570 ; gain = 1.289 
+dismissDialog("IP Packager"); // bL:g (cv:JFrame)
+minimizeFrame(PAResourceOtoP.PAViews_DESIGN_RUNS, "Design Runs"); // ao:DockableFrame (FrameContainer:JideTabbedPane, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ao:v (JViewport:JComponent, cv:JFrame)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // i:l (JPanel:JComponent, cv:JFrame)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ao:v (JViewport:JComponent, cv:JFrame)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // i:l (JPanel:JComponent, cv:JFrame)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// [GUI Memory]: 77 MB (+830kb) [00:01:52]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cv:JFrame)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [Engine Memory]: 549 MB (+2310kb) [00:01:56]
+// Tcl Message: set_property core_revision 9 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// bL:g (cv:JFrame):  Package IP : addNotify
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path e:/ECE532/PWM/IP/ip_repo/PWM_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'e:/ECE532/PWM/IP/ip_repo/PWM_1.0' 
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ao:v (JViewport:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v)]", 2); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// [GUI Memory]: 81 MB (+57kb) [00:10:51]
+// Elapsed time: 1681 seconds
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 92, 386); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // x:Y (w:G, cv:JFrame)
+// bL:g (cv:JFrame):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bL:g (cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // ao:v (JViewport:JComponent, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ao:v (JViewport:JComponent, cv:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao:v (JViewport:JComponent, cv:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 10 [ipx::current_core] 
+// bL:g (cv:JFrame):  Package IP : addNotify
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path e:/ECE532/PWM/IP/ip_repo/PWM_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'e:/ECE532/PWM/IP/ip_repo/PWM_1.0' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// [GUI Memory]: 88 MB (+3840kb) [00:30:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 42 MB. Current time: 2/5/17 1:28:14 PM EST
+// Elapsed time: 1191 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v)]", 2); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+typeControlKey(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 'a'); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("PWM_Module.v", 237, 304); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_Module.v", 237, 304, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+typeControlKey((HResource) null, "PWM_Module.v", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v), Core4 - PWM_Core (PWM_Module.v)]", 7, false); // z:k (G:JPanel, cv:JFrame)
+// [GUI Memory]: 93 MB (+207kb) [00:55:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 41 MB. Current time: 2/5/17 1:58:15 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 38 MB. Current time: 2/5/17 2:28:16 PM EST
+// Elapsed time: 4094 seconds
+selectCodeEditor("PWM_Module.v", 285, 469); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_Module.v", 300, 418); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_Module.v", 115, 371); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_Module.v", 115, 371, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("PWM_Module.v", 123, 375); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_Module.v", 123, 374); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_Module.v", 123, 369); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_Module.v", 123, 369, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("PWM_Module.v", 154, 362); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_Module.v", 154, 362, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // x:Y (w:G, cv:JFrame)
+// bL:g (cv:JFrame):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bL:g (cv:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// bL:g (cv:JFrame):  Package IP : addNotify
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 11 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path e:/ECE532/PWM/IP/ip_repo/PWM_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'e:/ECE532/PWM/IP/ip_repo/PWM_1.0' 
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 40 MB. Current time: 2/5/17 2:58:15 PM EST
+// Elapsed time: 247 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 1011 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_v1_0_S00_AXI.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 412 seconds
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 110, 243); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "PWM_v1_0_S00_AXI.v", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 375, 299); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 372, 296); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 372, 296, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+typeControlKey((HResource) null, "PWM_v1_0_S00_AXI.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 142, 260); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 142, 259, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+typeControlKey((HResource) null, "PWM_v1_0_S00_AXI.v", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 441, 295); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 441, 295, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+typeControlKey((HResource) null, "PWM_v1_0_S00_AXI.v", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 193, 268); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 43, 296); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 98, 234); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 197, 258); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 176, 210); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Module.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_v1_0_S00_AXI.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_Module.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PWM_v1_0_S00_AXI.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // x:Y (w:G, cv:JFrame)
+// bL:g (cv:JFrame):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bL:g (cv:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// bL:g (cv:JFrame):  Package IP : addNotify
+// Tcl Message: set_property core_revision 12 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path e:/ECE532/PWM/IP/ip_repo/PWM_1.0 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'e:/ECE532/PWM/IP/ip_repo/PWM_1.0' 
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 41 MB. Current time: 2/5/17 3:28:16 PM EST
+// Elapsed time: 1692 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v)]", 2); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_v1_0 (PWM_v1_0.v), PWM_v1_0_S00_AXI_inst - PWM_v1_0_S00_AXI (PWM_v1_0_S00_AXI.v), Module - PWM_Module (PWM_Module.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("PWM_v1_0_S00_AXI.v", 123, 440); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // x:Y (w:G, cv:JFrame)
+// bL:g (cv:JFrame):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bL:g (cv:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cv:JFrame)
+// bL:g (cv:JFrame):  Package IP : addNotify
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 13 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path e:/ECE532/PWM/IP/ip_repo/PWM_1.0 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'e:/ECE532/PWM/IP/ip_repo/PWM_1.0' 
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 42 MB. Current time: 2/5/17 3:58:17 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 39 MB. Current time: 2/5/17 4:28:16 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 38 MB. Current time: 2/5/17 4:58:16 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 39 MB. Current time: 2/5/17 5:28:16 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 39 MB. Current time: 2/5/17 5:58:16 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 39 MB. Current time: 2/5/17 6:28:17 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 549 MB. GUI used memory: 39 MB. Current time: 2/5/17 6:58:18 PM EST
