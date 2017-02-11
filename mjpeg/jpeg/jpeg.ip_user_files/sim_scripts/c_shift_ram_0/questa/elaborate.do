@@ -1,0 +1,1 @@
+vopt -64 +acc -l elaborate.log -L unisims_ver -L unimacro_ver -L secureip -L xil_defaultlib -L xpm -L xbip_utils_v3_0_6 -L c_reg_fd_v12_0_2 -L c_mux_bit_v12_0_2 -L c_shift_ram_v12_0_9 -work xil_defaultlib xil_defaultlib.c_shift_ram_0 xil_defaultlib.glbl -o c_shift_ram_0_opt

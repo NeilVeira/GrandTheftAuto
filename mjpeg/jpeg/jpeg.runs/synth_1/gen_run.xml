@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1486753692">
+  <File Type="RDS-PROPCONSTRS" Name="jpeg_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="jpeg.tcl"/>
+  <File Type="RDS-RDS" Name="jpeg.vds"/>
+  <File Type="RDS-UTIL" Name="jpeg_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="jpeg_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="jpeg.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="jpeg_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="jpeg_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_upsampling_buffer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_upsampling_buffer.vhd"/>
+        <Attr Name="ImportTime" Val="1486674874"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_qt_sr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_qt_sr.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_idct_core_12.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_idct_core_12.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_huffman_input_sr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_huffman_input_sr.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_ht_tables.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_ht_tables.vhd"/>
+        <Attr Name="ImportTime" Val="1486652712"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_ht_nr_of_symbols.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_ht_nr_of_symbols.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_dequant_multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_dequant_multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_YCbCr2RGB.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_YCbCr2RGB.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_upsampling.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_upsampling.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_input_fifo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_input_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_idct.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_idct.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_huffman.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_huffman.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_header.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_header.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_dezigzag.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_dezigzag.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_dequantize.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_dequantize.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_check_FF.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_check_FF.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_checkff_fifo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_checkff_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg.vhd"/>
+        <Attr Name="ImportTime" Val="1486584347"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/jpeg/jpeg_qt_tables.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/jpeg/jpeg_qt_tables.vhd"/>
+        <Attr Name="ImportTime" Val="1486652704"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="jpeg"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,811 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Feb 10 14:08:23 2017
+# Process ID: 7076
+# Current directory: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.runs/synth_1
+# Command line: vivado.exe -log jpeg.vds -mode batch -messageDb vivado.pb -notrace -source jpeg.tcl
+# Log file: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.runs/synth_1/jpeg.vds
+# Journal file: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source jpeg.tcl -notrace
+Command: synth_design -top jpeg -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7352 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:24 ; elapsed = 00:00:48 . Memory (MB): peak = 294.398 ; gain = 87.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'jpeg' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:55]
+WARNING: [Synth 8-5640] Port 'almost_empty' is missing in component declaration [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:64]
+INFO: [Synth 8-3491] module 'jpeg_input_fifo' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_input_fifo.vhd:43' bound to instance 'jpeg_input_fifo_p' of component 'jpeg_input_fifo' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:522]
+INFO: [Synth 8-638] synthesizing module 'jpeg_input_fifo' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_input_fifo.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_input_fifo' (1#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_input_fifo.vhd:59]
+INFO: [Synth 8-3491] module 'jpeg_check_FF' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_check_FF.vhd:11' bound to instance 'jpeg_check_FF_p' of component 'jpeg_check_FF' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:546]
+INFO: [Synth 8-638] synthesizing module 'jpeg_check_FF' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_check_FF.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_check_FF' (2#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_check_FF.vhd:41]
+INFO: [Synth 8-3491] module 'jpeg_checkff_fifo' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_checkff_fifo.vhd:43' bound to instance 'jpeg_checkff_fifo_p' of component 'jpeg_checkff_fifo' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:567]
+INFO: [Synth 8-638] synthesizing module 'jpeg_checkff_fifo' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_checkff_fifo.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_checkff_fifo' (3#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_checkff_fifo.vhd:59]
+INFO: [Synth 8-3491] module 'jpeg_huffman' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:14' bound to instance 'jpeg_huffman_p' of component 'jpeg_huffman' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:591]
+INFO: [Synth 8-638] synthesizing module 'jpeg_huffman' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:55]
+INFO: [Synth 8-3491] module 'jpeg_ht_nr_of_symbols' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_ht_nr_of_symbols.vhd:43' bound to instance 'ht_nr_of_symbols' of component 'jpeg_ht_nr_of_symbols' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'jpeg_ht_nr_of_symbols' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_ht_nr_of_symbols.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_ht_nr_of_symbols' (4#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_ht_nr_of_symbols.vhd:54]
+INFO: [Synth 8-3491] module 'jpeg_ht_tables' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_ht_tables.vhd:43' bound to instance 'ht_table' of component 'jpeg_ht_tables' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'jpeg_ht_tables' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_ht_tables.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_ht_tables' (5#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_ht_tables.vhd:54]
+INFO: [Synth 8-3491] module 'jpeg_huffman_input_sr' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman_input_sr.vhd:43' bound to instance 'jpeg_huffman_input_sr_p' of component 'jpeg_huffman_input_sr' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'jpeg_huffman_input_sr' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman_input_sr.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_huffman_input_sr' (6#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman_input_sr.vhd:53]
+WARNING: [Synth 8-614] signal 'last_ready' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:327]
+WARNING: [Synth 8-614] signal 'ready' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:327]
+WARNING: [Synth 8-614] signal 'eob' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:653]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_huffman' (7#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:55]
+INFO: [Synth 8-3491] module 'jpeg_dequantize' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:7' bound to instance 'jpeg_dequantize_p' of component 'jpeg_dequantize' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:625]
+INFO: [Synth 8-638] synthesizing module 'jpeg_dequantize' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:45]
+WARNING: [Synth 8-614] signal 'comp1_qt_number_i' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:132]
+WARNING: [Synth 8-614] signal 'comp2_qt_number_i' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:132]
+WARNING: [Synth 8-614] signal 'comp3_qt_number_i' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:132]
+WARNING: [Synth 8-614] signal 'context' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:215]
+WARNING: [Synth 8-614] signal 'comp1_qt_number' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:215]
+WARNING: [Synth 8-614] signal 'comp2_qt_number' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:215]
+WARNING: [Synth 8-614] signal 'comp3_qt_number' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:215]
+INFO: [Synth 8-3491] module 'jpeg_dequant_multiplier' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequant_multiplier.vhd:43' bound to instance 'jpeg_dequant_multiplier_p' of component 'jpeg_dequant_multiplier' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:351]
+INFO: [Synth 8-638] synthesizing module 'jpeg_dequant_multiplier' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequant_multiplier.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_dequant_multiplier' (8#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequant_multiplier.vhd:50]
+INFO: [Synth 8-3491] module 'jpeg_qt_sr' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_qt_sr.vhd:43' bound to instance 'jpeg_qt_sr_0_0_p' of component 'jpeg_qt_sr' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:362]
+INFO: [Synth 8-638] synthesizing module 'jpeg_qt_sr' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_qt_sr.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_qt_sr' (9#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_qt_sr.vhd:51]
+INFO: [Synth 8-3491] module 'jpeg_qt_sr' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_qt_sr.vhd:43' bound to instance 'jpeg_qt_sr_1_0_p' of component 'jpeg_qt_sr' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:370]
+INFO: [Synth 8-3491] module 'jpeg_qt_sr' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_qt_sr.vhd:43' bound to instance 'jpeg_qt_sr_0_1_p' of component 'jpeg_qt_sr' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:378]
+INFO: [Synth 8-3491] module 'jpeg_qt_sr' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_qt_sr.vhd:43' bound to instance 'jpeg_qt_sr_1_1_p' of component 'jpeg_qt_sr' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:386]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_dequantize' (10#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:45]
+INFO: [Synth 8-3491] module 'jpeg_dezigzag' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dezigzag.vhd:14' bound to instance 'jpeg_dezigzag_p' of component 'jpeg_dezigzag' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:653]
+INFO: [Synth 8-638] synthesizing module 'jpeg_dezigzag' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dezigzag.vhd:36]
+WARNING: [Synth 8-614] signal 'stop_in' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dezigzag.vhd:186]
+WARNING: [Synth 8-614] signal 'stop_out' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dezigzag.vhd:396]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_dezigzag' (11#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dezigzag.vhd:36]
+INFO: [Synth 8-3491] module 'jpeg_idct' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_idct.vhd:7' bound to instance 'jpeg_idct_p' of component 'jpeg_idct' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:672]
+INFO: [Synth 8-638] synthesizing module 'jpeg_idct' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_idct.vhd:29]
+INFO: [Synth 8-3491] module 'jpeg_idct_core_12' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_idct_core_12.vhd:43' bound to instance 'jpeg_idct_core_12_p' of component 'jpeg_idct_core_12' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_idct.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'jpeg_idct_core_12' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_idct_core_12.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_idct_core_12' (12#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_idct_core_12.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_idct' (13#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_idct.vhd:29]
+INFO: [Synth 8-3491] module 'jpeg_upsampling' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling.vhd:11' bound to instance 'jpeg_upsampling_p' of component 'jpeg_upsampling' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:691]
+INFO: [Synth 8-638] synthesizing module 'jpeg_upsampling' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling.vhd:30]
+INFO: [Synth 8-3491] module 'jpeg_upsampling_buffer' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling_buffer.vhd:42' bound to instance 'Y_buffer' of component 'jpeg_upsampling_buffer' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'jpeg_upsampling_buffer' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling_buffer.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_upsampling_buffer' (14#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling_buffer.vhd:53]
+INFO: [Synth 8-3491] module 'jpeg_upsampling_buffer' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling_buffer.vhd:42' bound to instance 'Cb_buffer' of component 'jpeg_upsampling_buffer' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling.vhd:91]
+INFO: [Synth 8-3491] module 'jpeg_upsampling_buffer' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling_buffer.vhd:42' bound to instance 'Cr_buffer' of component 'jpeg_upsampling_buffer' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling.vhd:101]
+WARNING: [Synth 8-614] signal 'counter_out_hold' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling.vhd:321]
+WARNING: [Synth 8-614] signal 'do_copy' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling.vhd:393]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_upsampling' (15#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_upsampling.vhd:30]
+INFO: [Synth 8-3491] module 'jpeg_YCbCr2RGB' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_YCbCr2RGB.vhd:13' bound to instance 'jpeg_YCbCr2RGB_p' of component 'jpeg_YCbCr2RGB' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:713]
+INFO: [Synth 8-638] synthesizing module 'jpeg_YCbCr2RGB' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_YCbCr2RGB.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_YCbCr2RGB' (16#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_YCbCr2RGB.vhd:38]
+INFO: [Synth 8-3491] module 'jpeg_header' declared at 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_header.vhd:7' bound to instance 'jpeg_header_p' of component 'jpeg_header' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:738]
+INFO: [Synth 8-638] synthesizing module 'jpeg_header' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_header.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_header' (17#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_header.vhd:52]
+WARNING: [Synth 8-614] signal 'ready' is read in the process but is not in the sensitivity list [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:825]
+INFO: [Synth 8-256] done synthesizing module 'jpeg' (18#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg.vhd:55]
+WARNING: [Synth 8-3331] design jpeg_idct has unconnected port context_i[2]
+WARNING: [Synth 8-3331] design jpeg_idct has unconnected port context_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_dc_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_dc_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_dc_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_dc_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_dc_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_dc_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_dc_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_dc_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_dc_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_dc_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_dc_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_dc_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_ac_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_ac_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_ac_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_ac_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_ac_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_ac_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_ac_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_ac_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_ac_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_ac_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_ac_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_ac_i[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:32 ; elapsed = 00:00:58 . Memory (MB): peak = 353.262 ; gain = 146.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 353.262 ; gain = 146.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:59 . Memory (MB): peak = 353.262 ; gain = 146.563
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_huffman.vhd:292]
+INFO: [Synth 8-5544] ROM "last_dc_select_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "last_dc_select_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "last_dc_select_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sampling_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "next_state" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_nr_of_ht0_codes_ac" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht0_codes_dc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht1_codes_ac" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht1_codes_dc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht2_codes_ac" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht2_codes_dc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht3_codes_ac" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht3_codes_dc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_ht_symbols_wea" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_qt_wea" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'qt_out_reg' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.srcs/sources_1/imports/jpeg/jpeg_dequantize.vhd:336]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 436.754 ; gain = 230.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 7     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 24    
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 11    
+	               12 Bit    Registers := 129   
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 24    
+	                6 Bit    Registers := 6     
+	                4 Bit    Registers := 22    
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 56    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 10    
+	   4 Input     16 Bit        Muxes := 2     
+	  59 Input     16 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 62    
+	   4 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 11    
+	  11 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	  11 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 14    
+	   3 Input      6 Bit        Muxes := 12    
+	   7 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 2     
+	   6 Input      6 Bit        Muxes := 1     
+	   9 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	  11 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 10    
+	   3 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 4     
+	  59 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 14    
+	   4 Input      2 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 1     
+	  59 Input      2 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 52    
+	   6 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 23    
+	   7 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 10    
+	  59 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module jpeg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module jpeg_check_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module jpeg_huffman 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 6     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 8     
+	   4 Input     16 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 2     
+	  11 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   6 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 4     
+Module jpeg_dequantize 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 1     
+Module jpeg_dezigzag 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 128   
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 62    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module jpeg_idct 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module jpeg_upsampling 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   4 Input      9 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module jpeg_YCbCr2RGB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+Module jpeg_header 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 16    
++---Registers : 
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 15    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  59 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 13    
+	   7 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 2     
+	   6 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 11    
+	   9 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  59 Input      3 Bit        Muxes := 1     
+	  59 Input      2 Bit        Muxes := 14    
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 14    
+	  59 Input      1 Bit        Muxes := 13    
+	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:55 ; elapsed = 00:01:20 . Memory (MB): peak = 452.820 ; gain = 246.121
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP tmp_R_reg, operation Mode is: (C+(A:0x59c)*B)'.
+DSP Report: register tmp_R_reg is absorbed into DSP tmp_R_reg.
+DSP Report: operator tmp_R_D0 is absorbed into DSP tmp_R_reg.
+DSP Report: operator tmp_R_D1 is absorbed into DSP tmp_R_reg.
+DSP Report: Generating DSP tmp_G_D2, operation Mode is: (A:0x160)*B.
+DSP Report: operator tmp_G_D2 is absorbed into DSP tmp_G_D2.
+DSP Report: Generating DSP tmp_G_D1, operation Mode is: (A:0x2db)*B.
+DSP Report: operator tmp_G_D1 is absorbed into DSP tmp_G_D1.
+DSP Report: Generating DSP tmp_B_reg, operation Mode is: (C+(A:0x717)*B)'.
+DSP Report: register tmp_B_reg is absorbed into DSP tmp_B_reg.
+DSP Report: operator tmp_B_D0 is absorbed into DSP tmp_B_reg.
+DSP Report: operator tmp_B_D1 is absorbed into DSP tmp_B_reg.
+INFO: [Synth 8-5546] ROM "sampling_o" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design jpeg_idct has unconnected port context_i[2]
+WARNING: [Synth 8-3331] design jpeg_idct has unconnected port context_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_dc_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_dc_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_dc_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_dc_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_dc_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_dc_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_dc_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_dc_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_dc_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_dc_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_dc_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_dc_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_ac_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_ac_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_ac_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp1_huff_ac_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_ac_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_ac_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_ac_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp2_huff_ac_i[0]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_ac_i[3]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_ac_i[2]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_ac_i[1]
+WARNING: [Synth 8-3331] design jpeg_huffman has unconnected port comp3_huff_ac_i[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:28 . Memory (MB): peak = 457.984 ; gain = 251.285
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:03 ; elapsed = 00:01:28 . Memory (MB): peak = 457.984 ; gain = 251.285
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|jpeg_YCbCr2RGB | (C+(A:0x59c)*B)' | 9      | 12     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|jpeg_YCbCr2RGB | (A:0x160)*B      | 9      | 10     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|jpeg_YCbCr2RGB | (A:0x2db)*B      | 9      | 11     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|jpeg_YCbCr2RGB | (C+(A:0x717)*B)' | 9      | 12     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++---------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+WARNING: [Synth 8-3332] Sequential element (context_in_reg[3]) is unused and will be removed from module jpeg_upsampling.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'jpeg_idct_p/context_reg[0]' (FDRE) to 'jpeg_idct_p/context_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpeg_idct_p/\context_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpeg_huffman_p/\ht_select_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpeg_check_FF_p/\context_reg[2] )
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[21]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[22]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[23]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[24]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[25]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[26]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[27]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[28]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[29]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_YCbCr2RGB_p/tmp_G_reg[30]' (FDE) to 'jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3886] merging instance 'jpeg_upsampling_p/context_o_reg[0]' (FD) to 'jpeg_upsampling_p/context_o_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (jpeg_upsampling_p/\context_o_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_check_FF.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (header_valid_out_reg) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (ht_select_reg[1]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (data_reg[14]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (data_reg[13]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (data_reg[12]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (data_reg[11]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[7]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[6]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[5]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[4]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[3]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[2]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[1]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[0]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[2]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[0]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_D_reg[2]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (context_D_reg[0]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (context_in_reg[2]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_in_reg[0]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_out_reg[2]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_out_reg[0]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[2]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[0]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[2]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[0]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[30]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[29]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[28]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[27]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[26]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[25]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[24]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[23]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[22]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (tmp_G_reg[21]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_dc_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_dc_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_dc_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_dc_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_dc_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_dc_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_dc_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_dc_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_dc_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_dc_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_dc_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_dc_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_ac_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_ac_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_ac_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_ac_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_ac_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_ac_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_ac_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_ac_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_ac_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_ac_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_ac_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_ac_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[7]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[6]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[5]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[4]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[7]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[6]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[5]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[4]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[7]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[6]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[5]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[4]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[1]) is unused and will be removed from module jpeg_header.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:02:03 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:36 ; elapsed = 00:02:03 . Memory (MB): peak = 549.766 ; gain = 343.066
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:02:03 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:02:09 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:42 ; elapsed = 00:02:09 . Memory (MB): peak = 549.766 ; gain = 343.066
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:42 ; elapsed = 00:02:09 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:45 ; elapsed = 00:02:12 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:45 ; elapsed = 00:02:13 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:46 ; elapsed = 00:02:13 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:46 ; elapsed = 00:02:13 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:02:15 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:48 ; elapsed = 00:02:15 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------+----------+
+|      |BlackBox name           |Instances |
++------+------------------------+----------+
+|1     |jpeg_input_fifo         |         1|
+|2     |jpeg_checkff_fifo       |         1|
+|3     |jpeg_dequant_multiplier |         1|
+|4     |jpeg_qt_sr              |         4|
+|5     |jpeg_ht_nr_of_symbols   |         1|
+|6     |jpeg_ht_tables          |         1|
+|7     |jpeg_huffman_input_sr   |         1|
+|8     |jpeg_idct_core_12       |         1|
+|9     |jpeg_upsampling_buffer  |         3|
++------+------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |jpeg_checkff_fifo         |     1|
+|2     |jpeg_dequant_multiplier   |     1|
+|3     |jpeg_ht_nr_of_symbols     |     1|
+|4     |jpeg_ht_tables            |     1|
+|5     |jpeg_huffman_input_sr     |     1|
+|6     |jpeg_idct_core_12         |     1|
+|7     |jpeg_input_fifo           |     1|
+|8     |jpeg_qt_sr                |     1|
+|9     |jpeg_qt_sr__1             |     1|
+|10    |jpeg_qt_sr__2             |     1|
+|11    |jpeg_qt_sr__3             |     1|
+|12    |jpeg_upsampling_buffer    |     1|
+|13    |jpeg_upsampling_buffer__1 |     1|
+|14    |jpeg_upsampling_buffer__2 |     1|
+|15    |BUFG                      |     1|
+|16    |CARRY4                    |   119|
+|17    |DSP48E1                   |     4|
+|18    |LUT1                      |   134|
+|19    |LUT2                      |   291|
+|20    |LUT3                      |   999|
+|21    |LUT4                      |   238|
+|22    |LUT5                      |   176|
+|23    |LUT6                      |   361|
+|24    |MUXF7                     |    20|
+|25    |MUXF8                     |     2|
+|26    |FDRE                      |  2150|
+|27    |FDSE                      |    11|
+|28    |IBUF                      |    36|
+|29    |OBUF                      |    66|
++------+--------------------------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |  4753|
+|2     |  jpeg_YCbCr2RGB_p  |jpeg_YCbCr2RGB  |   418|
+|3     |  jpeg_check_FF_p   |jpeg_check_FF   |    35|
+|4     |  jpeg_dequantize_p |jpeg_dequantize |   112|
+|5     |  jpeg_dezigzag_p   |jpeg_dezigzag   |  2337|
+|6     |  jpeg_header_p     |jpeg_header     |   882|
+|7     |  jpeg_huffman_p    |jpeg_huffman    |   515|
+|8     |  jpeg_idct_p       |jpeg_idct       |    81|
+|9     |  jpeg_upsampling_p |jpeg_upsampling |   159|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:48 ; elapsed = 00:02:15 . Memory (MB): peak = 549.766 ; gain = 343.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 162 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:37 ; elapsed = 00:01:43 . Memory (MB): peak = 549.766 ; gain = 333.730
+Synthesis Optimization Complete : Time (s): cpu = 00:01:48 ; elapsed = 00:02:15 . Memory (MB): peak = 549.766 ; gain = 343.066
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 159 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+110 Infos, 162 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:50 ; elapsed = 00:02:33 . Memory (MB): peak = 595.934 ; gain = 382.102
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 595.934 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 595.934 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 10 14:11:45 2017...
