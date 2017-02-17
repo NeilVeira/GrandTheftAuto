@@ -25,8 +25,6 @@ module image_processor_tb(
     );
     
     //ports for image_processor
-    reg [7:0] x;
-    reg [7:0] y;
     reg [7:0] r;
     reg [7:0] g;
     reg [7:0] b;
@@ -52,8 +50,6 @@ module image_processor_tb(
         .target_b(60),
         .loss_threshold(3500)
     ) image_processor_inst (
-        .x(x),
-        .y(y),
         .r(r),
         .g(g),
         .b(b),
@@ -76,15 +72,16 @@ module image_processor_tb(
         colour_file = $fopen("tb_colour.txt","r");
         edge_file = $fopen("tb_edges.txt","r");
         
-        cnt1 = $fscanf(in_file, "%d %d %d %d %d\n", x,y,r,g,b);
+        #15
+        cnt1 = $fscanf(in_file, "%d %d %d\n", r,g,b);
         cnt2 = $fscanf(colour_file, "%d\n", expected_colour);
-        while (cnt1 == 5) begin
+        while (cnt1 == 3) begin
             data_valid = 1;
             #10
             if (colour != expected_colour)
                 $display("colour incorrect at",$time);
             
-             cnt1 = $fscanf(in_file, "%d %d %d %d %d\n", x,y,r,g,b);
+             cnt1 = $fscanf(in_file, "%d %d %d\n",r,g,b);
              cnt2 = $fscanf(colour_file, "%d\n", expected_colour);
         end
     end     
@@ -93,7 +90,7 @@ module image_processor_tb(
         #5 clk = !clk;
         
     always begin
-        #20 rst = 1;
+        #10 rst = 1;
         #10000 rst = 0;
     end        
     
@@ -113,8 +110,10 @@ module image_processor_tb(
             edge_y <= dout[15:8];
             edge_x <= dout[7:0];
             cnt3 = $fscanf(edge_file, "%d %d\n", expected_edge_x, expected_edge_y);
+            #10
             if (edge_y != expected_edge_y || edge_x != expected_edge_x) begin
-                $display("Incorrect edge pixel at",$time);
+                $display("Incorrect edge pixel. Expected (%d,%d) received (%d,%d) at time",
+                    expected_edge_x,expected_edge_y,edge_x,edge_y,$time);
             end
         end
     end

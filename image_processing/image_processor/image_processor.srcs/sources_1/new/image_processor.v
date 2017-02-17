@@ -37,8 +37,6 @@ module image_processor #(
     parameter real HIGH = 0.545
 )
 (
-    input [7:0] x,
-    input [7:0] y,
     input [7:0] r,
     input [7:0] g,
     input [7:0] b,
@@ -56,8 +54,8 @@ module image_processor #(
     
 wire [16:0] loss;
 assign loss = (r-target_r)*(r-target_r) + (g-target_g)*(g-target_g) + (b-target_b)*(b-target_b);
-reg [7:0] x_reg;
-reg [7:0] y_reg;
+reg [7:0] x;
+reg [7:0] y;
 
 localparam sz = (2*K+1)*W;
 reg [sz-1 : 0] cur_pixels;
@@ -65,13 +63,20 @@ reg [sz-1 : 0] cur_pixels;
 always @(posedge clk)
 begin
     //store x,y in registers to allow for delay reading from buffer
-    x_reg <= x;
-    y_reg <= y;
     if (~rst) begin
         cur_pixels <= 0;
         colour <= 0;
+        x <= -1; //hack: x and y should be 0 for the entire first cycle that data_valid is high
+        y <= 0;
     end
     else if (data_valid) begin 
+        if (x == W-1) begin
+            x <= 0;
+            y <= y+1;
+        end else begin
+            x <= x+1;
+        end
+    
         cur_pixels[sz-1:1] <= cur_pixels[sz-2:0];
         cur_pixels[0] <= (loss < loss_threshold) ? 1 : 0;
         colour <= (loss < loss_threshold) ? 1 : 0;
@@ -98,10 +103,10 @@ localparam integer max_sum = HIGH*(2*K+1)*(2*K+1);
 wire wr_en;
 wire [15:0] din;
 
-assign wr_en = (y_reg >= 2*K && x_reg >= 2*K && //need to have processed a full window to be valid
-                min_sum < sum && sum < max_sum) ? 1 : 0;
-assign din[15:8] = y_reg - K;
-assign din[7:0] = x_reg - K;
+assign wr_en = (y >= 2*K && x >= 2*K && //need to have processed a full window to be valid
+                min_sum <= sum && sum <= max_sum) ? 1 : 0;
+assign din[15:8] = y - K;
+assign din[7:0] = x - K;
 
 fifo_generator_0 edge_pixels (
   .clk(clk),      // input wire clk

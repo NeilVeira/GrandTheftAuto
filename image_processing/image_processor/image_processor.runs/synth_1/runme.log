@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10172 
+INFO: Helper process launched with PID 2500 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:01:00 . Memory (MB): peak = 295.023 ; gain = 87.816
+Starting RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:01:09 . Memory (MB): peak = 295.367 ; gain = 88.121
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'image_processor' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v:23]
 	Parameter target_r bound to: 255 - type: integer 
@@ -31,10 +31,10 @@ INFO: [Synth 8-638] synthesizing module 'image_processor' [C:/Users/Neil/Documen
 	Parameter sz bound to: 450 - type: integer 
 	Parameter min_sum bound to: 36 - type: integer 
 	Parameter max_sum bound to: 44 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.runs/synth_1/.Xil/Vivado-8668-DESKTOP-QUJLBQI/realtime/fifo_generator_0_stub.vhdl:18]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.runs/synth_1/.Xil/Vivado-9284-DESKTOP-QUJLBQI/realtime/fifo_generator_0_stub.vhdl:18]
 INFO: [Synth 8-256] done synthesizing module 'image_processor' (1#1) [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:01:05 . Memory (MB): peak = 332.352 ; gain = 125.145
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:01:18 . Memory (MB): peak = 332.746 ; gain = 125.500
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -44,40 +44,41 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:06 . Memory (MB): peak = 332.352 ; gain = 125.145
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:01:20 . Memory (MB): peak = 332.746 ; gain = 125.500
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'fifo_generator_0' instantiated as 'edge_pixels' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v:106]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'fifo_generator_0' instantiated as 'edge_pixels' [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v:111]
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.runs/synth_1/.Xil/Vivado-8668-DESKTOP-QUJLBQI/dcp/fifo_generator_0_in_context.xdc] for cell 'edge_pixels'
-Finished Parsing XDC File [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.runs/synth_1/.Xil/Vivado-8668-DESKTOP-QUJLBQI/dcp/fifo_generator_0_in_context.xdc] for cell 'edge_pixels'
+Parsing XDC File [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.runs/synth_1/.Xil/Vivado-9284-DESKTOP-QUJLBQI/dcp/fifo_generator_0_in_context.xdc] for cell 'edge_pixels'
+Finished Parsing XDC File [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.runs/synth_1/.Xil/Vivado-9284-DESKTOP-QUJLBQI/dcp/fifo_generator_0_in_context.xdc] for cell 'edge_pixels'
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.540 . Memory (MB): peak = 626.516 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 626.613 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:07 ; elapsed = 00:02:21 . Memory (MB): peak = 626.516 ; gain = 419.309
+Finished Constraint Validation : Time (s): cpu = 00:01:13 ; elapsed = 00:04:24 . Memory (MB): peak = 626.613 ; gain = 419.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:07 ; elapsed = 00:02:22 . Memory (MB): peak = 626.516 ; gain = 419.309
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:13 ; elapsed = 00:04:24 . Memory (MB): peak = 626.613 ; gain = 419.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:02:22 . Memory (MB): peak = 626.516 ; gain = 419.309
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:04:25 . Memory (MB): peak = 626.613 ; gain = 419.367
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:08 ; elapsed = 00:02:25 . Memory (MB): peak = 626.516 ; gain = 419.309
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:14 ; elapsed = 00:04:29 . Memory (MB): peak = 626.613 ; gain = 419.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -91,12 +92,15 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     17 Bit       Adders := 3     
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
 	  81 Input      8 Bit       Adders := 1     
 +---Registers : 
 	              450 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -108,12 +112,15 @@ Module image_processor
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     17 Bit       Adders := 3     
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
 	  81 Input      8 Bit       Adders := 1     
 +---Registers : 
 	              450 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -126,10 +133,11 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:09 ; elapsed = 00:02:27 . Memory (MB): peak = 626.516 ; gain = 419.309
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:15 ; elapsed = 00:04:31 . Memory (MB): peak = 626.613 ; gain = 419.367
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
 DSP Report: Generating DSP loss0, operation Mode is: A*B.
 DSP Report: operator loss0 is absorbed into DSP loss0.
 DSP Report: Generating DSP loss, operation Mode is: C+A*B.
@@ -139,9 +147,9 @@ DSP Report: Generating DSP loss, operation Mode is: PCIN+A*B.
 DSP Report: operator loss is absorbed into DSP loss.
 DSP Report: operator loss1 is absorbed into DSP loss.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:02:31 . Memory (MB): peak = 626.516 ; gain = 419.309
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:04:36 . Memory (MB): peak = 626.613 ; gain = 419.367
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:01:12 ; elapsed = 00:02:31 . Memory (MB): peak = 626.516 ; gain = 419.309
+Finished Parallel Reinference  : Time (s): cpu = 00:01:18 ; elapsed = 00:04:36 . Memory (MB): peak = 626.613 ; gain = 419.367
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -212,9 +220,9 @@ WARNING: [Synth 8-3332] Sequential element (cur_pixels_reg[410]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (cur_pixels_reg[409]) is unused and will be removed from module image_processor.
 WARNING: [Synth 8-3332] Sequential element (cur_pixels_reg[0]) is unused and will be removed from module image_processor.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:02:43 . Memory (MB): peak = 626.516 ; gain = 419.309
+Finished Area Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:05:00 . Memory (MB): peak = 626.613 ; gain = 419.367
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:01:21 ; elapsed = 00:02:43 . Memory (MB): peak = 626.516 ; gain = 419.309
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:31 ; elapsed = 00:05:01 . Memory (MB): peak = 626.613 ; gain = 419.367
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -228,10 +236,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:28 ; elapsed = 00:04:06 . Memory (MB): peak = 645.758 ; gain = 438.551
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:42 ; elapsed = 00:06:53 . Memory (MB): peak = 645.785 ; gain = 438.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:28 ; elapsed = 00:04:07 . Memory (MB): peak = 645.758 ; gain = 438.551
+Finished Timing Optimization : Time (s): cpu = 00:02:42 ; elapsed = 00:06:57 . Memory (MB): peak = 645.785 ; gain = 438.539
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -243,16 +251,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:29 ; elapsed = 00:04:09 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished Technology Mapping : Time (s): cpu = 00:02:43 ; elapsed = 00:07:04 . Memory (MB): peak = 667.281 ; gain = 460.035
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:29 ; elapsed = 00:04:09 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:43 ; elapsed = 00:07:04 . Memory (MB): peak = 667.281 ; gain = 460.035
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:29 ; elapsed = 00:04:09 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:43 ; elapsed = 00:07:04 . Memory (MB): peak = 667.281 ; gain = 460.035
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -269,7 +277,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:32 ; elapsed = 00:04:13 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished IO Insertion : Time (s): cpu = 00:02:47 ; elapsed = 00:07:14 . Memory (MB): peak = 667.281 ; gain = 460.035
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -282,7 +290,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:32 ; elapsed = 00:04:13 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:47 ; elapsed = 00:07:15 . Memory (MB): peak = 667.281 ; gain = 460.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -294,25 +302,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:32 ; elapsed = 00:04:13 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:47 ; elapsed = 00:07:15 . Memory (MB): peak = 667.281 ; gain = 460.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:32 ; elapsed = 00:04:13 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:47 ; elapsed = 00:07:15 . Memory (MB): peak = 667.281 ; gain = 460.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:32 ; elapsed = 00:04:13 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:47 ; elapsed = 00:07:16 . Memory (MB): peak = 667.281 ; gain = 460.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:32 ; elapsed = 00:04:13 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:47 ; elapsed = 00:07:16 . Memory (MB): peak = 667.281 ; gain = 460.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -347,32 +355,33 @@ Report Cell Usage:
 |2     |BUFG                  |     1|
 |3     |DSP48E1               |     2|
 |4     |DSP48E1_1             |     1|
-|5     |LUT1                  |     6|
-|6     |LUT2                  |    17|
-|7     |LUT3                  |    66|
-|8     |LUT4                  |     7|
-|9     |LUT5                  |    49|
-|10    |LUT6                  |    52|
+|5     |LUT1                  |     7|
+|6     |LUT2                  |    23|
+|7     |LUT3                  |    80|
+|8     |LUT4                  |     8|
+|9     |LUT5                  |    55|
+|10    |LUT6                  |    50|
 |11    |SRLC32E               |    16|
-|12    |FDRE                  |   146|
-|13    |IBUF                  |    44|
-|14    |OBUF                  |    19|
+|12    |FDRE                  |   138|
+|13    |FDSE                  |     8|
+|14    |IBUF                  |    28|
+|15    |OBUF                  |    19|
 +------+----------------------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |   444|
+|1     |top      |       |   454|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:32 ; elapsed = 00:04:13 . Memory (MB): peak = 663.273 ; gain = 456.066
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:47 ; elapsed = 00:07:16 . Memory (MB): peak = 667.281 ; gain = 460.035
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:39 ; elapsed = 00:02:34 . Memory (MB): peak = 663.273 ; gain = 143.820
-Synthesis Optimization Complete : Time (s): cpu = 00:02:33 ; elapsed = 00:04:14 . Memory (MB): peak = 663.273 ; gain = 456.066
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:49 ; elapsed = 00:04:17 . Memory (MB): peak = 667.281 ; gain = 148.953
+Synthesis Optimization Complete : Time (s): cpu = 00:02:48 ; elapsed = 00:07:22 . Memory (MB): peak = 667.281 ; gain = 460.035
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -381,8 +390,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   SRLC32E => SRL16E: 8 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-15 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+17 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:25 ; elapsed = 00:03:50 . Memory (MB): peak = 663.273 ; gain = 442.148
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.899 . Memory (MB): peak = 663.273 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 16 23:41:11 2017...
+synth_design: Time (s): cpu = 00:02:39 ; elapsed = 00:07:26 . Memory (MB): peak = 667.281 ; gain = 446.121
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 667.281 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 17 16:49:24 2017...

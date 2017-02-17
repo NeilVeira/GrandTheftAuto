@@ -1,4 +1,5 @@
 from PIL import Image
+import math
 
 K = 4
 LOW = 0.444
@@ -32,8 +33,9 @@ def detect_edges(pix):
     h = len(pix)
     w = len(pix[0]) 
     k = K
-    low = LOW*(2*k+1)*(2*k+1)
-    high = HIGH*(2*k+1)*(2*k+1)
+    #use ints for precise agreement with verilog implementation
+    low = int(math.ceil(LOW*(2*k+1)*(2*k+1)))
+    high = int(HIGH*(2*k+1)*(2*k+1))
     output = [list(row) for row in pix]
     
     #colsum[y][x] = sum of pixels along column x from y-2*k to y
@@ -51,7 +53,7 @@ def detect_edges(pix):
     #for each pixel, sum all pixels in (2k+1) x (2k+1) window around it.
     for y in xrange(k,h-k):   
         prev = colsum[y+k][0]
-        for x in xrange(1,w-k):
+        for x in xrange(1,w):
             s = prev + colsum[y+k][x]
             if x-2*k-1 >= 0:
                 s -= colsum[y+k][x-2*k-1]
@@ -97,7 +99,7 @@ decoded = open("image_processor/image_processor.srcs/sim_1/imports/image_process
 for y in xrange(h):
     for x in xrange(w):
         r,g,b = pixels[y][x]
-        decoded.write("%i %i %i %i %i\n" %(x,y,r,g,b))
+        decoded.write("%i %i %i\n" %(r,g,b))
 decoded.close()
 
 colour_file = open("image_processor/image_processor.srcs/sim_1/imports/image_processing/tb_colour.txt","w")

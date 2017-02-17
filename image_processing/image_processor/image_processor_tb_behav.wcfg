@@ -11,17 +11,17 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1785360000fs"></ZoomStartTime>
-      <ZoomEndTime time="1879160001fs"></ZoomEndTime>
-      <Cursor1Time time="6000000000fs"></Cursor1Time>
+      <ZoomStartTime time="5826800000fs"></ZoomStartTime>
+      <ZoomEndTime time="5935800001fs"></ZoomEndTime>
+      <Cursor1Time time="81695000fs"></Cursor1Time>
    </zoom_setting>
    <WVObjectSize size="22" />
-   <wvobject fp_name="/image_processor_tb/x" type="array">
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/x" type="array">
       <obj_property name="ElementShortName">x[7:0]</obj_property>
       <obj_property name="ObjectShortName">x[7:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/image_processor_tb/y" type="array">
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/y" type="array">
       <obj_property name="ElementShortName">y[7:0]</obj_property>
       <obj_property name="ObjectShortName">y[7:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
@@ -71,16 +71,6 @@
       <obj_property name="ObjectShortName">sum[7:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/image_processor_tb/image_processor_inst/x_reg" type="array">
-      <obj_property name="ElementShortName">x_reg[7:0]</obj_property>
-      <obj_property name="ObjectShortName">x_reg[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/image_processor_tb/image_processor_inst/y_reg" type="array">
-      <obj_property name="ElementShortName">y_reg[7:0]</obj_property>
-      <obj_property name="ObjectShortName">y_reg[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
    <wvobject fp_name="/image_processor_tb/image_processor_inst/wr_en" type="logic">
       <obj_property name="ElementShortName">wr_en</obj_property>
       <obj_property name="ObjectShortName">wr_en</obj_property>
@@ -105,14 +95,24 @@
       <obj_property name="ElementShortName">dout[15:0]</obj_property>
       <obj_property name="ObjectShortName">dout[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/image_processor_tb/x_edge" type="array">
-      <obj_property name="ElementShortName">x_edge[7:0]</obj_property>
-      <obj_property name="ObjectShortName">x_edge[7:0]</obj_property>
+   <wvobject fp_name="/image_processor_tb/edge_x" type="array">
+      <obj_property name="ElementShortName">edge_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">edge_x[7:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/image_processor_tb/y_edge" type="array">
-      <obj_property name="ElementShortName">y_edge[7:0]</obj_property>
-      <obj_property name="ObjectShortName">y_edge[7:0]</obj_property>
+   <wvobject fp_name="/image_processor_tb/edge_y" type="array">
+      <obj_property name="ElementShortName">edge_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">edge_y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/expected_edge_x" type="array">
+      <obj_property name="ElementShortName">expected_edge_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_edge_x[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/expected_edge_y" type="array">
+      <obj_property name="ElementShortName">expected_edge_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_edge_y[7:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>
