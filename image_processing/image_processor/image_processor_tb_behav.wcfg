@@ -11,11 +11,11 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="110200001fs"></ZoomEndTime>
-      <Cursor1Time time="1021660000fs"></Cursor1Time>
+      <ZoomStartTime time="1785360000fs"></ZoomStartTime>
+      <ZoomEndTime time="1879160001fs"></ZoomEndTime>
+      <Cursor1Time time="6000000000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="22" />
    <wvobject fp_name="/image_processor_tb/x" type="array">
       <obj_property name="ElementShortName">x[7:0]</obj_property>
       <obj_property name="ObjectShortName">x[7:0]</obj_property>
@@ -60,5 +60,59 @@
    <wvobject fp_name="/image_processor_tb/expected_colour" type="array">
       <obj_property name="ElementShortName">expected_colour[7:0]</obj_property>
       <obj_property name="ObjectShortName">expected_colour[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/cur_pixels" type="array">
+      <obj_property name="ElementShortName">cur_pixels[449:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_pixels[449:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/sum" type="array">
+      <obj_property name="ElementShortName">sum[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/x_reg" type="array">
+      <obj_property name="ElementShortName">x_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_reg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/y_reg" type="array">
+      <obj_property name="ElementShortName">y_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">y_reg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/din" type="array">
+      <obj_property name="ElementShortName">din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">din[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/empty" type="logic">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/image_processor_inst/dout" type="array">
+      <obj_property name="ElementShortName">dout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/x_edge" type="array">
+      <obj_property name="ElementShortName">x_edge[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_edge[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/image_processor_tb/y_edge" type="array">
+      <obj_property name="ElementShortName">y_edge[7:0]</obj_property>
+      <obj_property name="ObjectShortName">y_edge[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

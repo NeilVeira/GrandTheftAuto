@@ -1,0 +1,3378 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Feb 15 09:38:02 2017
+# Process ID: 8460
+# Current directory: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13616 C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\image_processing\image_processor\image_processor.xpr
+# Log file: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/vivado.log
+# Journal file: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 697.785 ; gain = 103.445
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v w ]
+add_files -fileset sim_1 C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 737.672 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '13' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 1b46c6a12fde4da4806c60d9312a2da6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_processor_tb_behav xil_defaultlib.image_processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.image_processor(target_r=180,tar...
+Compiling module xil_defaultlib.image_processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_processor_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/xsim.dir/image_processor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 15 10:14:49 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 737.672 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '31' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_processor_tb_behav -key {Behavioral:sim_1:Functional:image_processor_tb} -tclbatch {image_processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file tb_input.txt could not be opened
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v at line 59 is not valid.
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 784.176 ; gain = 46.504
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:01:04 . Memory (MB): peak = 784.176 ; gain = 46.504
+add_bp {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v} 55
+remove_bps -file {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v} -line 55
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 784.176 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor_tb
+ERROR: [VRFC 10-1412] syntax error near # [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v:62]
+ERROR: [VRFC 10-1040] module image_processor_tb ignored due to previous errors [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 1b46c6a12fde4da4806c60d9312a2da6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_processor_tb_behav xil_defaultlib.image_processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.image_processor(target_r=180,tar...
+Compiling module xil_defaultlib.image_processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_processor_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/xsim.dir/image_processor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 15 10:19:52 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 784.176 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_processor_tb_behav -key {Behavioral:sim_1:Functional:image_processor_tb} -tclbatch {image_processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file tb_input.txt could not be opened
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v at line 59 is not valid.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 784.176 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/tb_input.txt
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 784.176 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_input.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 1b46c6a12fde4da4806c60d9312a2da6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_processor_tb_behav xil_defaultlib.image_processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-91] file is not declared [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v:59]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 784.176 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_input.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 1b46c6a12fde4da4806c60d9312a2da6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_processor_tb_behav xil_defaultlib.image_processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.image_processor(target_r=180,tar...
+Compiling module xil_defaultlib.image_processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_processor_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/xsim.dir/image_processor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 15 10:25:50 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 784.176 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '16' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_processor_tb_behav -key {Behavioral:sim_1:Functional:image_processor_tb} -tclbatch {image_processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 784.176 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 784.176 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/tb_colour.txt C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/tb_edges.txt}
+set_property -name {xsim.simulate.runtime} -value {2000ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 836.906 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_input.txt'
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_colour.txt'
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_edges.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 1b46c6a12fde4da4806c60d9312a2da6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_processor_tb_behav xil_defaultlib.image_processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.image_processor(target_r=180,tar...
+Compiling module xil_defaultlib.image_processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_processor_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/xsim.dir/image_processor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 15 11:12:00 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 836.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_processor_tb_behav -key {Behavioral:sim_1:Functional:image_processor_tb} -tclbatch {image_processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+WARNING: file tg_edges.txt could not be opened
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 836.906 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:30 . Memory (MB): peak = 836.906 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 836.906 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_input.txt'
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_colour.txt'
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_edges.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 1b46c6a12fde4da4806c60d9312a2da6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_processor_tb_behav xil_defaultlib.image_processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.image_processor(target_r=180,tar...
+Compiling module xil_defaultlib.image_processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_processor_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/xsim.dir/image_processor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 15 11:18:34 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:26 . Memory (MB): peak = 836.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '26' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_processor_tb_behav -key {Behavioral:sim_1:Functional:image_processor_tb} -tclbatch {image_processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+WARNING: file tg_edges.txt could not be opened
+colour incorrect at                  10
+colour incorrect at                  20
+colour incorrect at                  30
+colour incorrect at                  40
+colour incorrect at                  50
+colour incorrect at                  60
+colour incorrect at                  70
+colour incorrect at                  80
+colour incorrect at                  90
+colour incorrect at                 100
+colour incorrect at                 110
+colour incorrect at                 120
+colour incorrect at                 130
+colour incorrect at                 140
+colour incorrect at                 150
+colour incorrect at                 160
+colour incorrect at                 170
+colour incorrect at                 180
+colour incorrect at                 190
+colour incorrect at                 200
+colour incorrect at                 210
+colour incorrect at                 220
+colour incorrect at                 230
+colour incorrect at                 240
+colour incorrect at                 250
+colour incorrect at                 260
+colour incorrect at                 270
+colour incorrect at                 280
+colour incorrect at                 290
+colour incorrect at                 300
+colour incorrect at                 310
+colour incorrect at                 320
+colour incorrect at                 330
+colour incorrect at                 340
+colour incorrect at                 350
+colour incorrect at                 360
+colour incorrect at                 370
+colour incorrect at                 380
+colour incorrect at                 390
+colour incorrect at                 400
+colour incorrect at                 410
+colour incorrect at                 420
+colour incorrect at                 430
+colour incorrect at                 440
+colour incorrect at                 450
+colour incorrect at                 460
+colour incorrect at                 470
+colour incorrect at                 480
+colour incorrect at                 490
+colour incorrect at                 500
+colour incorrect at                 510
+colour incorrect at                 520
+colour incorrect at                 530
+colour incorrect at                 540
+colour incorrect at                 550
+colour incorrect at                 560
+colour incorrect at                 570
+colour incorrect at                 580
+colour incorrect at                 590
+colour incorrect at                 600
+colour incorrect at                 610
+colour incorrect at                 620
+colour incorrect at                 630
+colour incorrect at                 640
+colour incorrect at                 650
+colour incorrect at                 660
+colour incorrect at                 670
+colour incorrect at                 680
+colour incorrect at                 690
+colour incorrect at                 700
+colour incorrect at                 710
+colour incorrect at                 720
+colour incorrect at                 730
+colour incorrect at                 740
+colour incorrect at                 750
+colour incorrect at                 760
+colour incorrect at                 770
+colour incorrect at                 780
+colour incorrect at                 790
+colour incorrect at                 800
+colour incorrect at                 810
+colour incorrect at                 820
+colour incorrect at                 830
+colour incorrect at                 840
+colour incorrect at                 850
+colour incorrect at                 860
+colour incorrect at                 870
+colour incorrect at                 880
+colour incorrect at                 890
+colour incorrect at                 900
+colour incorrect at                 910
+colour incorrect at                 920
+colour incorrect at                 930
+colour incorrect at                 940
+colour incorrect at                 950
+colour incorrect at                 960
+colour incorrect at                 970
+colour incorrect at                 980
+colour incorrect at                 990
+colour incorrect at                1000
+colour incorrect at                1010
+colour incorrect at                1020
+colour incorrect at                1030
+colour incorrect at                1040
+colour incorrect at                1050
+colour incorrect at                1060
+colour incorrect at                1070
+colour incorrect at                1080
+colour incorrect at                1090
+colour incorrect at                1100
+colour incorrect at                1110
+colour incorrect at                1120
+colour incorrect at                1130
+colour incorrect at                1140
+colour incorrect at                1150
+colour incorrect at                1160
+colour incorrect at                1170
+colour incorrect at                1180
+colour incorrect at                1190
+colour incorrect at                1200
+colour incorrect at                1210
+colour incorrect at                1220
+colour incorrect at                1230
+colour incorrect at                1240
+colour incorrect at                1250
+colour incorrect at                1260
+colour incorrect at                1270
+colour incorrect at                1280
+colour incorrect at                1290
+colour incorrect at                1300
+colour incorrect at                1310
+colour incorrect at                1320
+colour incorrect at                1330
+colour incorrect at                1340
+colour incorrect at                1350
+colour incorrect at                1360
+colour incorrect at                1370
+colour incorrect at                1380
+colour incorrect at                1390
+colour incorrect at                1400
+colour incorrect at                1410
+colour incorrect at                1420
+colour incorrect at                1430
+colour incorrect at                1440
+colour incorrect at                1450
+colour incorrect at                1460
+colour incorrect at                1470
+colour incorrect at                1480
+colour incorrect at                1490
+colour incorrect at                1500
+colour incorrect at                1510
+colour incorrect at                1520
+colour incorrect at                1530
+colour incorrect at                1540
+colour incorrect at                1550
+colour incorrect at                1560
+colour incorrect at                1570
+colour incorrect at                1580
+colour incorrect at                1590
+colour incorrect at                1600
+colour incorrect at                1610
+colour incorrect at                1620
+colour incorrect at                1630
+colour incorrect at                1640
+colour incorrect at                1650
+colour incorrect at                1660
+colour incorrect at                1670
+colour incorrect at                1680
+colour incorrect at                1690
+colour incorrect at                1700
+colour incorrect at                1710
+colour incorrect at                1720
+colour incorrect at                1730
+colour incorrect at                1740
+colour incorrect at                1750
+colour incorrect at                1760
+colour incorrect at                1770
+colour incorrect at                1780
+colour incorrect at                1790
+colour incorrect at                1800
+colour incorrect at                1810
+colour incorrect at                1820
+colour incorrect at                1830
+colour incorrect at                1840
+colour incorrect at                1850
+colour incorrect at                1860
+colour incorrect at                1870
+colour incorrect at                1880
+colour incorrect at                1890
+colour incorrect at                1900
+colour incorrect at                1910
+colour incorrect at                1920
+colour incorrect at                1930
+colour incorrect at                1940
+colour incorrect at                1950
+colour incorrect at                1960
+colour incorrect at                1970
+colour incorrect at                1980
+colour incorrect at                1990
+colour incorrect at                2000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:37 . Memory (MB): peak = 836.906 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {1000} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 836.906 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_input.txt'
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_colour.txt'
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_edges.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 1b46c6a12fde4da4806c60d9312a2da6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_processor_tb_behav xil_defaultlib.image_processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.image_processor(target_r=180,tar...
+Compiling module xil_defaultlib.image_processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_processor_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/xsim.dir/image_processor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 15 11:24:21 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 836.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_processor_tb_behav -key {Behavioral:sim_1:Functional:image_processor_tb} -tclbatch {image_processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000
+WARNING: file tg_edges.txt could not be opened
+colour correct at                  10
+colour correct at                  20
+colour correct at                  30
+colour correct at                  40
+colour correct at                  50
+colour correct at                  60
+colour correct at                  70
+colour correct at                  80
+colour correct at                  90
+colour correct at                 100
+colour correct at                 110
+colour correct at                 120
+colour correct at                 130
+colour correct at                 140
+colour correct at                 150
+colour correct at                 160
+colour correct at                 170
+colour correct at                 180
+colour correct at                 190
+colour correct at                 200
+colour correct at                 210
+colour correct at                 220
+colour correct at                 230
+colour correct at                 240
+colour correct at                 250
+colour correct at                 260
+colour correct at                 270
+colour correct at                 280
+colour correct at                 290
+colour correct at                 300
+colour correct at                 310
+colour correct at                 320
+colour correct at                 330
+colour correct at                 340
+colour correct at                 350
+colour correct at                 360
+colour correct at                 370
+colour correct at                 380
+colour correct at                 390
+colour correct at                 400
+colour correct at                 410
+colour correct at                 420
+colour correct at                 430
+colour correct at                 440
+colour correct at                 450
+colour correct at                 460
+colour correct at                 470
+colour correct at                 480
+colour correct at                 490
+colour correct at                 500
+colour correct at                 510
+colour correct at                 520
+colour correct at                 530
+colour correct at                 540
+colour correct at                 550
+colour correct at                 560
+colour correct at                 570
+colour correct at                 580
+colour correct at                 590
+colour correct at                 600
+colour correct at                 610
+colour correct at                 620
+colour correct at                 630
+colour correct at                 640
+colour correct at                 650
+colour correct at                 660
+colour correct at                 670
+colour correct at                 680
+colour correct at                 690
+colour correct at                 700
+colour correct at                 710
+colour correct at                 720
+colour correct at                 730
+colour correct at                 740
+colour correct at                 750
+colour correct at                 760
+colour correct at                 770
+colour correct at                 780
+colour correct at                 790
+colour correct at                 800
+colour correct at                 810
+colour correct at                 820
+colour correct at                 830
+colour correct at                 840
+colour correct at                 850
+colour correct at                 860
+colour correct at                 870
+colour correct at                 880
+colour correct at                 890
+colour correct at                 900
+colour correct at                 910
+colour correct at                 920
+colour correct at                 930
+colour correct at                 940
+colour correct at                 950
+colour correct at                 960
+colour correct at                 970
+colour correct at                 980
+colour correct at                 990
+colour correct at                1000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 836.906 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 836.906 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'image_processor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_input.txt'
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_colour.txt'
+INFO: [USF-XSim-25] Exported 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/tb_edges.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+"xvlog -m64 --relax -prj image_processor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sim_1/new/image_processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 1b46c6a12fde4da4806c60d9312a2da6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot image_processor_tb_behav xil_defaultlib.image_processor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.image_processor(target_r=180,tar...
+Compiling module xil_defaultlib.image_processor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot image_processor_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav/xsim.dir/image_processor_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 15 11:26:39 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 836.906 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "image_processor_tb_behav -key {Behavioral:sim_1:Functional:image_processor_tb} -tclbatch {image_processor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source image_processor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000
+WARNING: file tg_edges.txt could not be opened
+colour correct at                  10
+colour correct at                  20
+colour correct at                  30
+colour correct at                  40
+colour correct at                  50
+colour correct at                  60
+colour correct at                  70
+colour correct at                  80
+colour correct at                  90
+colour correct at                 100
+colour correct at                 110
+colour correct at                 120
+colour correct at                 130
+colour correct at                 140
+colour correct at                 150
+colour correct at                 160
+colour correct at                 170
+colour correct at                 180
+colour correct at                 190
+colour correct at                 200
+colour correct at                 210
+colour correct at                 220
+colour correct at                 230
+colour correct at                 240
+colour correct at                 250
+colour correct at                 260
+colour correct at                 270
+colour correct at                 280
+colour correct at                 290
+colour correct at                 300
+colour correct at                 310
+colour correct at                 320
+colour correct at                 330
+colour correct at                 340
+colour correct at                 350
+colour correct at                 360
+colour correct at                 370
+colour correct at                 380
+colour correct at                 390
+colour correct at                 400
+colour correct at                 410
+colour correct at                 420
+colour correct at                 430
+colour correct at                 440
+colour correct at                 450
+colour correct at                 460
+colour correct at                 470
+colour correct at                 480
+colour correct at                 490
+colour correct at                 500
+colour correct at                 510
+colour correct at                 520
+colour correct at                 530
+colour correct at                 540
+colour correct at                 550
+colour correct at                 560
+colour correct at                 570
+colour correct at                 580
+colour correct at                 590
+colour correct at                 600
+colour correct at                 610
+colour correct at                 620
+colour correct at                 630
+colour correct at                 640
+colour correct at                 650
+colour correct at                 660
+colour correct at                 670
+colour correct at                 680
+colour correct at                 690
+colour correct at                 700
+colour correct at                 710
+colour correct at                 720
+colour correct at                 730
+colour correct at                 740
+colour correct at                 750
+colour correct at                 760
+colour correct at                 770
+colour correct at                 780
+colour correct at                 790
+colour correct at                 800
+colour correct at                 810
+colour correct at                 820
+colour correct at                 830
+colour correct at                 840
+colour correct at                 850
+colour correct at                 860
+colour correct at                 870
+colour correct at                 880
+colour correct at                 890
+colour correct at                 900
+colour correct at                 910
+colour correct at                 920
+colour correct at                 930
+colour correct at                 940
+colour correct at                 950
+colour correct at                 960
+colour correct at                 970
+colour correct at                 980
+colour correct at                 990
+colour correct at                1000
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 836.906 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'image_processor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 836.906 ; gain = 0.000
+save_wave_config {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor_tb_behav.wcfg
+set_property xsim.view C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor_tb_behav.wcfg [get_filesets sim_1]
+run 1000 ns
+colour correct at                1010
+colour correct at                1020
+colour correct at                1030
+colour correct at                1040
+colour correct at                1050
+colour correct at                1060
+colour correct at                1070
+colour correct at                1080
+colour correct at                1090
+colour correct at                1100
+colour correct at                1110
+colour correct at                1120
+colour correct at                1130
+colour correct at                1140
+colour correct at                1150
+colour correct at                1160
+colour correct at                1170
+colour correct at                1180
+colour correct at                1190
+colour correct at                1200
+colour correct at                1210
+colour correct at                1220
+colour correct at                1230
+colour correct at                1240
+colour correct at                1250
+colour correct at                1260
+colour correct at                1270
+colour correct at                1280
+colour correct at                1290
+colour correct at                1300
+colour correct at                1310
+colour correct at                1320
+colour correct at                1330
+colour correct at                1340
+colour correct at                1350
+colour correct at                1360
+colour correct at                1370
+colour correct at                1380
+colour correct at                1390
+colour correct at                1400
+colour correct at                1410
+colour correct at                1420
+colour correct at                1430
+colour correct at                1440
+colour correct at                1450
+colour correct at                1460
+colour correct at                1470
+colour correct at                1480
+colour correct at                1490
+colour correct at                1500
+colour correct at                1510
+colour correct at                1520
+colour correct at                1530
+colour correct at                1540
+colour correct at                1550
+colour correct at                1560
+colour correct at                1570
+colour correct at                1580
+colour correct at                1590
+colour correct at                1600
+colour correct at                1610
+colour correct at                1620
+colour correct at                1630
+colour correct at                1640
+colour correct at                1650
+colour correct at                1660
+colour correct at                1670
+colour correct at                1680
+colour correct at                1690
+colour correct at                1700
+colour correct at                1710
+colour correct at                1720
+colour correct at                1730
+colour correct at                1740
+colour correct at                1750
+colour correct at                1760
+colour correct at                1770
+colour correct at                1780
+colour correct at                1790
+colour correct at                1800
+colour correct at                1810
+colour correct at                1820
+colour correct at                1830
+colour correct at                1840
+colour correct at                1850
+colour correct at                1860
+colour correct at                1870
+colour correct at                1880
+colour correct at                1890
+colour correct at                1900
+colour correct at                1910
+colour correct at                1920
+colour correct at                1930
+colour correct at                1940
+colour correct at                1950
+colour correct at                1960
+colour correct at                1970
+colour correct at                1980
+colour correct at                1990
+colour correct at                2000
+save_wave_config {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor_tb_behav.wcfg}
+run 20000 ns
+colour correct at                2010
+colour correct at                2020
+colour correct at                2030
+colour correct at                2040
+colour correct at                2050
+colour correct at                2060
+colour correct at                2070
+colour correct at                2080
+colour correct at                2090
+colour correct at                2100
+colour correct at                2110
+colour correct at                2120
+colour correct at                2130
+colour correct at                2140
+colour correct at                2150
+colour correct at                2160
+colour correct at                2170
+colour correct at                2180
+colour correct at                2190
+colour correct at                2200
+colour correct at                2210
+colour correct at                2220
+colour correct at                2230
+colour correct at                2240
+colour correct at                2250
+colour correct at                2260
+colour correct at                2270
+colour correct at                2280
+colour correct at                2290
+colour correct at                2300
+colour correct at                2310
+colour correct at                2320
+colour correct at                2330
+colour correct at                2340
+colour correct at                2350
+colour correct at                2360
+colour correct at                2370
+colour correct at                2380
+colour correct at                2390
+colour correct at                2400
+colour correct at                2410
+colour correct at                2420
+colour correct at                2430
+colour correct at                2440
+colour correct at                2450
+colour correct at                2460
+colour correct at                2470
+colour correct at                2480
+colour correct at                2490
+colour correct at                2500
+colour correct at                2510
+colour correct at                2520
+colour correct at                2530
+colour correct at                2540
+colour correct at                2550
+colour correct at                2560
+colour correct at                2570
+colour correct at                2580
+colour correct at                2590
+colour correct at                2600
+colour correct at                2610
+colour correct at                2620
+colour correct at                2630
+colour correct at                2640
+colour correct at                2650
+colour correct at                2660
+colour correct at                2670
+colour correct at                2680
+colour correct at                2690
+colour correct at                2700
+colour correct at                2710
+colour correct at                2720
+colour correct at                2730
+colour correct at                2740
+colour correct at                2750
+colour correct at                2760
+colour correct at                2770
+colour correct at                2780
+colour correct at                2790
+colour correct at                2800
+colour correct at                2810
+colour correct at                2820
+colour correct at                2830
+colour correct at                2840
+colour correct at                2850
+colour correct at                2860
+colour correct at                2870
+colour correct at                2880
+colour correct at                2890
+colour correct at                2900
+colour correct at                2910
+colour correct at                2920
+colour correct at                2930
+colour correct at                2940
+colour correct at                2950
+colour correct at                2960
+colour correct at                2970
+colour correct at                2980
+colour correct at                2990
+colour correct at                3000
+colour correct at                3010
+colour correct at                3020
+colour correct at                3030
+colour correct at                3040
+colour correct at                3050
+colour correct at                3060
+colour correct at                3070
+colour correct at                3080
+colour correct at                3090
+colour correct at                3100
+colour correct at                3110
+colour correct at                3120
+colour correct at                3130
+colour correct at                3140
+colour correct at                3150
+colour correct at                3160
+colour correct at                3170
+colour correct at                3180
+colour correct at                3190
+colour correct at                3200
+colour correct at                3210
+colour correct at                3220
+colour correct at                3230
+colour correct at                3240
+colour correct at                3250
+colour correct at                3260
+colour correct at                3270
+colour correct at                3280
+colour correct at                3290
+colour correct at                3300
+colour correct at                3310
+colour correct at                3320
+colour correct at                3330
+colour correct at                3340
+colour correct at                3350
+colour correct at                3360
+colour correct at                3370
+colour correct at                3380
+colour correct at                3390
+colour correct at                3400
+colour correct at                3410
+colour correct at                3420
+colour correct at                3430
+colour correct at                3440
+colour correct at                3450
+colour correct at                3460
+colour correct at                3470
+colour correct at                3480
+colour correct at                3490
+colour correct at                3500
+colour correct at                3510
+colour correct at                3520
+colour correct at                3530
+colour correct at                3540
+colour correct at                3550
+colour correct at                3560
+colour correct at                3570
+colour correct at                3580
+colour correct at                3590
+colour correct at                3600
+colour correct at                3610
+colour correct at                3620
+colour correct at                3630
+colour correct at                3640
+colour correct at                3650
+colour correct at                3660
+colour correct at                3670
+colour correct at                3680
+colour correct at                3690
+colour correct at                3700
+colour correct at                3710
+colour correct at                3720
+colour correct at                3730
+colour correct at                3740
+colour correct at                3750
+colour correct at                3760
+colour correct at                3770
+colour correct at                3780
+colour correct at                3790
+colour correct at                3800
+colour correct at                3810
+colour correct at                3820
+colour correct at                3830
+colour correct at                3840
+colour correct at                3850
+colour correct at                3860
+colour correct at                3870
+colour correct at                3880
+colour correct at                3890
+colour correct at                3900
+colour correct at                3910
+colour correct at                3920
+colour correct at                3930
+colour correct at                3940
+colour correct at                3950
+colour correct at                3960
+colour correct at                3970
+colour correct at                3980
+colour correct at                3990
+colour correct at                4000
+colour correct at                4010
+colour correct at                4020
+colour correct at                4030
+colour correct at                4040
+colour correct at                4050
+colour correct at                4060
+colour correct at                4070
+colour correct at                4080
+colour correct at                4090
+colour correct at                4100
+colour correct at                4110
+colour correct at                4120
+colour correct at                4130
+colour correct at                4140
+colour correct at                4150
+colour correct at                4160
+colour correct at                4170
+colour correct at                4180
+colour correct at                4190
+colour correct at                4200
+colour correct at                4210
+colour correct at                4220
+colour correct at                4230
+colour correct at                4240
+colour correct at                4250
+colour correct at                4260
+colour correct at                4270
+colour correct at                4280
+colour correct at                4290
+colour correct at                4300
+colour correct at                4310
+colour correct at                4320
+colour correct at                4330
+colour correct at                4340
+colour correct at                4350
+colour correct at                4360
+colour correct at                4370
+colour correct at                4380
+colour correct at                4390
+colour correct at                4400
+colour correct at                4410
+colour correct at                4420
+colour correct at                4430
+colour correct at                4440
+colour correct at                4450
+colour correct at                4460
+colour correct at                4470
+colour correct at                4480
+colour correct at                4490
+colour correct at                4500
+colour correct at                4510
+colour correct at                4520
+colour correct at                4530
+colour correct at                4540
+colour correct at                4550
+colour correct at                4560
+colour correct at                4570
+colour correct at                4580
+colour correct at                4590
+colour correct at                4600
+colour correct at                4610
+colour correct at                4620
+colour correct at                4630
+colour correct at                4640
+colour correct at                4650
+colour correct at                4660
+colour correct at                4670
+colour correct at                4680
+colour correct at                4690
+colour correct at                4700
+colour correct at                4710
+colour correct at                4720
+colour correct at                4730
+colour correct at                4740
+colour correct at                4750
+colour correct at                4760
+colour correct at                4770
+colour correct at                4780
+colour correct at                4790
+colour correct at                4800
+colour correct at                4810
+colour correct at                4820
+colour correct at                4830
+colour correct at                4840
+colour correct at                4850
+colour correct at                4860
+colour correct at                4870
+colour correct at                4880
+colour correct at                4890
+colour correct at                4900
+colour correct at                4910
+colour correct at                4920
+colour correct at                4930
+colour correct at                4940
+colour correct at                4950
+colour correct at                4960
+colour correct at                4970
+colour correct at                4980
+colour correct at                4990
+colour correct at                5000
+colour correct at                5010
+colour correct at                5020
+colour correct at                5030
+colour correct at                5040
+colour correct at                5050
+colour correct at                5060
+colour correct at                5070
+colour correct at                5080
+colour correct at                5090
+colour correct at                5100
+colour correct at                5110
+colour correct at                5120
+colour correct at                5130
+colour correct at                5140
+colour correct at                5150
+colour correct at                5160
+colour correct at                5170
+colour correct at                5180
+colour correct at                5190
+colour correct at                5200
+colour correct at                5210
+colour correct at                5220
+colour correct at                5230
+colour correct at                5240
+colour correct at                5250
+colour correct at                5260
+colour correct at                5270
+colour correct at                5280
+colour correct at                5290
+colour correct at                5300
+colour correct at                5310
+colour correct at                5320
+colour correct at                5330
+colour correct at                5340
+colour correct at                5350
+colour correct at                5360
+colour correct at                5370
+colour correct at                5380
+colour correct at                5390
+colour correct at                5400
+colour correct at                5410
+colour correct at                5420
+colour correct at                5430
+colour correct at                5440
+colour correct at                5450
+colour correct at                5460
+colour correct at                5470
+colour correct at                5480
+colour correct at                5490
+colour correct at                5500
+colour correct at                5510
+colour correct at                5520
+colour correct at                5530
+colour correct at                5540
+colour correct at                5550
+colour correct at                5560
+colour correct at                5570
+colour correct at                5580
+colour correct at                5590
+colour correct at                5600
+colour correct at                5610
+colour correct at                5620
+colour correct at                5630
+colour correct at                5640
+colour correct at                5650
+colour correct at                5660
+colour correct at                5670
+colour correct at                5680
+colour correct at                5690
+colour correct at                5700
+colour correct at                5710
+colour correct at                5720
+colour correct at                5730
+colour correct at                5740
+colour correct at                5750
+colour correct at                5760
+colour correct at                5770
+colour correct at                5780
+colour correct at                5790
+colour correct at                5800
+colour correct at                5810
+colour correct at                5820
+colour correct at                5830
+colour correct at                5840
+colour correct at                5850
+colour correct at                5860
+colour correct at                5870
+colour correct at                5880
+colour correct at                5890
+colour correct at                5900
+colour correct at                5910
+colour correct at                5920
+colour correct at                5930
+colour correct at                5940
+colour correct at                5950
+colour correct at                5960
+colour correct at                5970
+colour correct at                5980
+colour correct at                5990
+colour correct at                6000
+colour correct at                6010
+colour correct at                6020
+colour correct at                6030
+colour correct at                6040
+colour correct at                6050
+colour correct at                6060
+colour correct at                6070
+colour correct at                6080
+colour correct at                6090
+colour correct at                6100
+colour correct at                6110
+colour correct at                6120
+colour correct at                6130
+colour correct at                6140
+colour correct at                6150
+colour correct at                6160
+colour correct at                6170
+colour correct at                6180
+colour correct at                6190
+colour correct at                6200
+colour correct at                6210
+colour correct at                6220
+colour correct at                6230
+colour correct at                6240
+colour correct at                6250
+colour correct at                6260
+colour correct at                6270
+colour correct at                6280
+colour correct at                6290
+colour correct at                6300
+colour correct at                6310
+colour correct at                6320
+colour correct at                6330
+colour correct at                6340
+colour correct at                6350
+colour correct at                6360
+colour correct at                6370
+colour correct at                6380
+colour correct at                6390
+colour correct at                6400
+colour correct at                6410
+colour correct at                6420
+colour correct at                6430
+colour correct at                6440
+colour correct at                6450
+colour correct at                6460
+colour correct at                6470
+colour correct at                6480
+colour correct at                6490
+colour correct at                6500
+colour correct at                6510
+colour correct at                6520
+colour correct at                6530
+colour correct at                6540
+colour correct at                6550
+colour correct at                6560
+colour correct at                6570
+colour correct at                6580
+colour correct at                6590
+colour correct at                6600
+colour correct at                6610
+colour correct at                6620
+colour correct at                6630
+colour correct at                6640
+colour correct at                6650
+colour correct at                6660
+colour correct at                6670
+colour correct at                6680
+colour correct at                6690
+colour correct at                6700
+colour correct at                6710
+colour correct at                6720
+colour correct at                6730
+colour correct at                6740
+colour correct at                6750
+colour correct at                6760
+colour correct at                6770
+colour correct at                6780
+colour correct at                6790
+colour correct at                6800
+colour correct at                6810
+colour correct at                6820
+colour correct at                6830
+colour correct at                6840
+colour correct at                6850
+colour correct at                6860
+colour correct at                6870
+colour correct at                6880
+colour correct at                6890
+colour correct at                6900
+colour correct at                6910
+colour correct at                6920
+colour correct at                6930
+colour correct at                6940
+colour correct at                6950
+colour correct at                6960
+colour correct at                6970
+colour correct at                6980
+colour correct at                6990
+colour correct at                7000
+colour correct at                7010
+colour correct at                7020
+colour correct at                7030
+colour correct at                7040
+colour correct at                7050
+colour correct at                7060
+colour correct at                7070
+colour correct at                7080
+colour correct at                7090
+colour correct at                7100
+colour correct at                7110
+colour correct at                7120
+colour correct at                7130
+colour correct at                7140
+colour correct at                7150
+colour correct at                7160
+colour correct at                7170
+colour correct at                7180
+colour correct at                7190
+colour correct at                7200
+colour correct at                7210
+colour correct at                7220
+colour correct at                7230
+colour correct at                7240
+colour correct at                7250
+colour correct at                7260
+colour correct at                7270
+colour correct at                7280
+colour correct at                7290
+colour correct at                7300
+colour correct at                7310
+colour correct at                7320
+colour correct at                7330
+colour correct at                7340
+colour correct at                7350
+colour correct at                7360
+colour correct at                7370
+colour correct at                7380
+colour correct at                7390
+colour correct at                7400
+colour correct at                7410
+colour correct at                7420
+colour correct at                7430
+colour correct at                7440
+colour correct at                7450
+colour correct at                7460
+colour correct at                7470
+colour correct at                7480
+colour correct at                7490
+colour correct at                7500
+colour correct at                7510
+colour correct at                7520
+colour correct at                7530
+colour correct at                7540
+colour correct at                7550
+colour correct at                7560
+colour correct at                7570
+colour correct at                7580
+colour correct at                7590
+colour correct at                7600
+colour correct at                7610
+colour correct at                7620
+colour correct at                7630
+colour correct at                7640
+colour correct at                7650
+colour correct at                7660
+colour correct at                7670
+colour correct at                7680
+colour correct at                7690
+colour correct at                7700
+colour correct at                7710
+colour correct at                7720
+colour correct at                7730
+colour correct at                7740
+colour correct at                7750
+colour correct at                7760
+colour correct at                7770
+colour correct at                7780
+colour correct at                7790
+colour correct at                7800
+colour correct at                7810
+colour correct at                7820
+colour correct at                7830
+colour correct at                7840
+colour correct at                7850
+colour correct at                7860
+colour correct at                7870
+colour correct at                7880
+colour correct at                7890
+colour correct at                7900
+colour correct at                7910
+colour correct at                7920
+colour correct at                7930
+colour correct at                7940
+colour correct at                7950
+colour correct at                7960
+colour correct at                7970
+colour correct at                7980
+colour correct at                7990
+colour correct at                8000
+colour correct at                8010
+colour correct at                8020
+colour correct at                8030
+colour correct at                8040
+colour correct at                8050
+colour correct at                8060
+colour correct at                8070
+colour correct at                8080
+colour correct at                8090
+colour correct at                8100
+colour correct at                8110
+colour correct at                8120
+colour correct at                8130
+colour correct at                8140
+colour correct at                8150
+colour correct at                8160
+colour correct at                8170
+colour correct at                8180
+colour correct at                8190
+colour correct at                8200
+colour correct at                8210
+colour correct at                8220
+colour correct at                8230
+colour correct at                8240
+colour correct at                8250
+colour correct at                8260
+colour correct at                8270
+colour correct at                8280
+colour correct at                8290
+colour correct at                8300
+colour correct at                8310
+colour correct at                8320
+colour correct at                8330
+colour correct at                8340
+colour correct at                8350
+colour correct at                8360
+colour correct at                8370
+colour correct at                8380
+colour correct at                8390
+colour correct at                8400
+colour correct at                8410
+colour correct at                8420
+colour correct at                8430
+colour correct at                8440
+colour correct at                8450
+colour correct at                8460
+colour correct at                8470
+colour correct at                8480
+colour correct at                8490
+colour correct at                8500
+colour correct at                8510
+colour correct at                8520
+colour correct at                8530
+colour correct at                8540
+colour correct at                8550
+colour correct at                8560
+colour correct at                8570
+colour correct at                8580
+colour correct at                8590
+colour correct at                8600
+colour correct at                8610
+colour correct at                8620
+colour correct at                8630
+colour correct at                8640
+colour correct at                8650
+colour correct at                8660
+colour correct at                8670
+colour correct at                8680
+colour correct at                8690
+colour correct at                8700
+colour correct at                8710
+colour correct at                8720
+colour correct at                8730
+colour correct at                8740
+colour correct at                8750
+colour correct at                8760
+colour correct at                8770
+colour correct at                8780
+colour correct at                8790
+colour correct at                8800
+colour correct at                8810
+colour correct at                8820
+colour correct at                8830
+colour correct at                8840
+colour correct at                8850
+colour correct at                8860
+colour correct at                8870
+colour correct at                8880
+colour correct at                8890
+colour correct at                8900
+colour correct at                8910
+colour correct at                8920
+colour correct at                8930
+colour correct at                8940
+colour correct at                8950
+colour correct at                8960
+colour correct at                8970
+colour correct at                8980
+colour correct at                8990
+colour correct at                9000
+colour correct at                9010
+colour correct at                9020
+colour correct at                9030
+colour correct at                9040
+colour correct at                9050
+colour correct at                9060
+colour correct at                9070
+colour correct at                9080
+colour correct at                9090
+colour correct at                9100
+colour correct at                9110
+colour correct at                9120
+colour correct at                9130
+colour correct at                9140
+colour correct at                9150
+colour correct at                9160
+colour correct at                9170
+colour correct at                9180
+colour correct at                9190
+colour correct at                9200
+colour correct at                9210
+colour correct at                9220
+colour correct at                9230
+colour correct at                9240
+colour correct at                9250
+colour correct at                9260
+colour correct at                9270
+colour correct at                9280
+colour correct at                9290
+colour correct at                9300
+colour correct at                9310
+colour correct at                9320
+colour correct at                9330
+colour correct at                9340
+colour correct at                9350
+colour correct at                9360
+colour correct at                9370
+colour correct at                9380
+colour correct at                9390
+colour correct at                9400
+colour correct at                9410
+colour correct at                9420
+colour correct at                9430
+colour correct at                9440
+colour correct at                9450
+colour correct at                9460
+colour correct at                9470
+colour correct at                9480
+colour correct at                9490
+colour correct at                9500
+colour correct at                9510
+colour correct at                9520
+colour correct at                9530
+colour correct at                9540
+colour correct at                9550
+colour correct at                9560
+colour correct at                9570
+colour correct at                9580
+colour correct at                9590
+colour correct at                9600
+colour correct at                9610
+colour correct at                9620
+colour correct at                9630
+colour correct at                9640
+colour correct at                9650
+colour correct at                9660
+colour correct at                9670
+colour correct at                9680
+colour correct at                9690
+colour correct at                9700
+colour correct at                9710
+colour correct at                9720
+colour correct at                9730
+colour correct at                9740
+colour correct at                9750
+colour correct at                9760
+colour correct at                9770
+colour correct at                9780
+colour correct at                9790
+colour correct at                9800
+colour correct at                9810
+colour correct at                9820
+colour correct at                9830
+colour correct at                9840
+colour correct at                9850
+colour correct at                9860
+colour correct at                9870
+colour correct at                9880
+colour correct at                9890
+colour correct at                9900
+colour correct at                9910
+colour correct at                9920
+colour correct at                9930
+colour correct at                9940
+colour correct at                9950
+colour correct at                9960
+colour correct at                9970
+colour correct at                9980
+colour correct at                9990
+colour correct at               10000
+colour correct at               10010
+colour correct at               10020
+colour correct at               10030
+colour correct at               10040
+colour correct at               10050
+colour correct at               10060
+colour correct at               10070
+colour correct at               10080
+colour correct at               10090
+colour correct at               10100
+colour correct at               10110
+colour correct at               10120
+colour correct at               10130
+colour correct at               10140
+colour correct at               10150
+colour correct at               10160
+colour correct at               10170
+colour correct at               10180
+colour correct at               10190
+colour correct at               10200
+colour correct at               10210
+colour correct at               10220
+colour correct at               10230
+colour correct at               10240
+colour correct at               10250
+colour correct at               10260
+colour correct at               10270
+colour correct at               10280
+colour correct at               10290
+colour correct at               10300
+colour correct at               10310
+colour correct at               10320
+colour correct at               10330
+colour correct at               10340
+colour correct at               10350
+colour correct at               10360
+colour correct at               10370
+colour correct at               10380
+colour correct at               10390
+colour correct at               10400
+colour correct at               10410
+colour correct at               10420
+colour correct at               10430
+colour correct at               10440
+colour correct at               10450
+colour correct at               10460
+colour correct at               10470
+colour correct at               10480
+colour correct at               10490
+colour correct at               10500
+colour correct at               10510
+colour correct at               10520
+colour correct at               10530
+colour correct at               10540
+colour correct at               10550
+colour correct at               10560
+colour correct at               10570
+colour correct at               10580
+colour correct at               10590
+colour correct at               10600
+colour correct at               10610
+colour correct at               10620
+colour correct at               10630
+colour correct at               10640
+colour correct at               10650
+colour correct at               10660
+colour correct at               10670
+colour correct at               10680
+colour correct at               10690
+colour correct at               10700
+colour correct at               10710
+colour correct at               10720
+colour correct at               10730
+colour correct at               10740
+colour correct at               10750
+colour correct at               10760
+colour correct at               10770
+colour correct at               10780
+colour correct at               10790
+colour correct at               10800
+colour correct at               10810
+colour correct at               10820
+colour correct at               10830
+colour correct at               10840
+colour correct at               10850
+colour correct at               10860
+colour correct at               10870
+colour correct at               10880
+colour correct at               10890
+colour correct at               10900
+colour correct at               10910
+colour correct at               10920
+colour correct at               10930
+colour correct at               10940
+colour correct at               10950
+colour correct at               10960
+colour correct at               10970
+colour correct at               10980
+colour correct at               10990
+colour correct at               11000
+colour correct at               11010
+colour correct at               11020
+colour correct at               11030
+colour correct at               11040
+colour correct at               11050
+colour correct at               11060
+colour correct at               11070
+colour correct at               11080
+colour correct at               11090
+colour correct at               11100
+colour correct at               11110
+colour correct at               11120
+colour correct at               11130
+colour correct at               11140
+colour correct at               11150
+colour correct at               11160
+colour correct at               11170
+colour correct at               11180
+colour correct at               11190
+colour correct at               11200
+colour correct at               11210
+colour correct at               11220
+colour correct at               11230
+colour correct at               11240
+colour correct at               11250
+colour correct at               11260
+colour correct at               11270
+colour correct at               11280
+colour correct at               11290
+colour correct at               11300
+colour correct at               11310
+colour correct at               11320
+colour correct at               11330
+colour correct at               11340
+colour correct at               11350
+colour correct at               11360
+colour correct at               11370
+colour correct at               11380
+colour correct at               11390
+colour correct at               11400
+colour correct at               11410
+colour correct at               11420
+colour correct at               11430
+colour correct at               11440
+colour correct at               11450
+colour correct at               11460
+colour correct at               11470
+colour correct at               11480
+colour correct at               11490
+colour correct at               11500
+colour correct at               11510
+colour correct at               11520
+colour correct at               11530
+colour correct at               11540
+colour correct at               11550
+colour correct at               11560
+colour correct at               11570
+colour correct at               11580
+colour correct at               11590
+colour correct at               11600
+colour correct at               11610
+colour correct at               11620
+colour correct at               11630
+colour correct at               11640
+colour correct at               11650
+colour correct at               11660
+colour correct at               11670
+colour correct at               11680
+colour correct at               11690
+colour correct at               11700
+colour correct at               11710
+colour correct at               11720
+colour correct at               11730
+colour correct at               11740
+colour correct at               11750
+colour correct at               11760
+colour correct at               11770
+colour correct at               11780
+colour correct at               11790
+colour correct at               11800
+colour correct at               11810
+colour correct at               11820
+colour correct at               11830
+colour correct at               11840
+colour correct at               11850
+colour correct at               11860
+colour correct at               11870
+colour correct at               11880
+colour correct at               11890
+colour correct at               11900
+colour correct at               11910
+colour correct at               11920
+colour correct at               11930
+colour correct at               11940
+colour correct at               11950
+colour correct at               11960
+colour correct at               11970
+colour correct at               11980
+colour correct at               11990
+colour correct at               12000
+colour correct at               12010
+colour correct at               12020
+colour correct at               12030
+colour correct at               12040
+colour correct at               12050
+colour correct at               12060
+colour correct at               12070
+colour correct at               12080
+colour correct at               12090
+colour correct at               12100
+colour correct at               12110
+colour correct at               12120
+colour correct at               12130
+colour correct at               12140
+colour correct at               12150
+colour correct at               12160
+colour correct at               12170
+colour correct at               12180
+colour correct at               12190
+colour correct at               12200
+colour correct at               12210
+colour correct at               12220
+colour correct at               12230
+colour correct at               12240
+colour correct at               12250
+colour correct at               12260
+colour correct at               12270
+colour correct at               12280
+colour correct at               12290
+colour correct at               12300
+colour correct at               12310
+colour correct at               12320
+colour correct at               12330
+colour correct at               12340
+colour correct at               12350
+colour correct at               12360
+colour correct at               12370
+colour correct at               12380
+colour correct at               12390
+colour correct at               12400
+colour correct at               12410
+colour correct at               12420
+colour correct at               12430
+colour correct at               12440
+colour correct at               12450
+colour correct at               12460
+colour correct at               12470
+colour correct at               12480
+colour correct at               12490
+colour correct at               12500
+colour correct at               12510
+colour correct at               12520
+colour correct at               12530
+colour correct at               12540
+colour correct at               12550
+colour correct at               12560
+colour correct at               12570
+colour correct at               12580
+colour correct at               12590
+colour correct at               12600
+colour correct at               12610
+colour correct at               12620
+colour correct at               12630
+colour correct at               12640
+colour correct at               12650
+colour correct at               12660
+colour correct at               12670
+colour correct at               12680
+colour correct at               12690
+colour correct at               12700
+colour correct at               12710
+colour correct at               12720
+colour correct at               12730
+colour correct at               12740
+colour correct at               12750
+colour correct at               12760
+colour correct at               12770
+colour correct at               12780
+colour correct at               12790
+colour correct at               12800
+colour correct at               12810
+colour correct at               12820
+colour correct at               12830
+colour correct at               12840
+colour correct at               12850
+colour correct at               12860
+colour correct at               12870
+colour correct at               12880
+colour correct at               12890
+colour correct at               12900
+colour correct at               12910
+colour correct at               12920
+colour correct at               12930
+colour correct at               12940
+colour correct at               12950
+colour correct at               12960
+colour correct at               12970
+colour correct at               12980
+colour correct at               12990
+colour correct at               13000
+colour correct at               13010
+colour correct at               13020
+colour correct at               13030
+colour correct at               13040
+colour correct at               13050
+colour correct at               13060
+colour correct at               13070
+colour correct at               13080
+colour correct at               13090
+colour correct at               13100
+colour correct at               13110
+colour correct at               13120
+colour correct at               13130
+colour correct at               13140
+colour correct at               13150
+colour correct at               13160
+colour correct at               13170
+colour correct at               13180
+colour correct at               13190
+colour correct at               13200
+colour correct at               13210
+colour correct at               13220
+colour correct at               13230
+colour correct at               13240
+colour correct at               13250
+colour correct at               13260
+colour correct at               13270
+colour correct at               13280
+colour correct at               13290
+colour correct at               13300
+colour correct at               13310
+colour correct at               13320
+colour correct at               13330
+colour correct at               13340
+colour correct at               13350
+colour correct at               13360
+colour correct at               13370
+colour correct at               13380
+colour correct at               13390
+colour correct at               13400
+colour correct at               13410
+colour correct at               13420
+colour correct at               13430
+colour correct at               13440
+colour correct at               13450
+colour correct at               13460
+colour correct at               13470
+colour correct at               13480
+colour correct at               13490
+colour correct at               13500
+colour correct at               13510
+colour correct at               13520
+colour correct at               13530
+colour correct at               13540
+colour correct at               13550
+colour correct at               13560
+colour correct at               13570
+colour correct at               13580
+colour correct at               13590
+colour correct at               13600
+colour correct at               13610
+colour correct at               13620
+colour correct at               13630
+colour correct at               13640
+colour correct at               13650
+colour correct at               13660
+colour correct at               13670
+colour correct at               13680
+colour correct at               13690
+colour correct at               13700
+colour correct at               13710
+colour correct at               13720
+colour correct at               13730
+colour correct at               13740
+colour correct at               13750
+colour correct at               13760
+colour correct at               13770
+colour correct at               13780
+colour correct at               13790
+colour correct at               13800
+colour correct at               13810
+colour correct at               13820
+colour correct at               13830
+colour correct at               13840
+colour correct at               13850
+colour correct at               13860
+colour correct at               13870
+colour correct at               13880
+colour correct at               13890
+colour correct at               13900
+colour correct at               13910
+colour correct at               13920
+colour correct at               13930
+colour correct at               13940
+colour correct at               13950
+colour correct at               13960
+colour correct at               13970
+colour correct at               13980
+colour correct at               13990
+colour correct at               14000
+colour correct at               14010
+colour correct at               14020
+colour correct at               14030
+colour correct at               14040
+colour correct at               14050
+colour correct at               14060
+colour correct at               14070
+colour correct at               14080
+colour correct at               14090
+colour correct at               14100
+colour correct at               14110
+colour correct at               14120
+colour correct at               14130
+colour correct at               14140
+colour correct at               14150
+colour correct at               14160
+colour correct at               14170
+colour correct at               14180
+colour correct at               14190
+colour correct at               14200
+colour correct at               14210
+colour correct at               14220
+colour correct at               14230
+colour correct at               14240
+colour correct at               14250
+colour correct at               14260
+colour correct at               14270
+colour correct at               14280
+colour correct at               14290
+colour correct at               14300
+colour correct at               14310
+colour correct at               14320
+colour correct at               14330
+colour correct at               14340
+colour correct at               14350
+colour correct at               14360
+colour correct at               14370
+colour correct at               14380
+colour correct at               14390
+colour correct at               14400
+colour correct at               14410
+colour correct at               14420
+colour correct at               14430
+colour correct at               14440
+colour correct at               14450
+colour correct at               14460
+colour correct at               14470
+colour correct at               14480
+colour correct at               14490
+colour correct at               14500
+colour correct at               14510
+colour correct at               14520
+colour correct at               14530
+colour correct at               14540
+colour correct at               14550
+colour correct at               14560
+colour correct at               14570
+colour correct at               14580
+colour correct at               14590
+colour correct at               14600
+colour correct at               14610
+colour correct at               14620
+colour correct at               14630
+colour correct at               14640
+colour correct at               14650
+colour correct at               14660
+colour correct at               14670
+colour correct at               14680
+colour correct at               14690
+colour correct at               14700
+colour correct at               14710
+colour correct at               14720
+colour correct at               14730
+colour correct at               14740
+colour correct at               14750
+colour correct at               14760
+colour correct at               14770
+colour correct at               14780
+colour correct at               14790
+colour correct at               14800
+colour correct at               14810
+colour correct at               14820
+colour correct at               14830
+colour correct at               14840
+colour correct at               14850
+colour correct at               14860
+colour correct at               14870
+colour correct at               14880
+colour correct at               14890
+colour correct at               14900
+colour correct at               14910
+colour correct at               14920
+colour correct at               14930
+colour correct at               14940
+colour correct at               14950
+colour correct at               14960
+colour correct at               14970
+colour correct at               14980
+colour correct at               14990
+colour correct at               15000
+colour correct at               15010
+colour correct at               15020
+colour correct at               15030
+colour correct at               15040
+colour correct at               15050
+colour correct at               15060
+colour correct at               15070
+colour correct at               15080
+colour correct at               15090
+colour correct at               15100
+colour correct at               15110
+colour correct at               15120
+colour correct at               15130
+colour correct at               15140
+colour correct at               15150
+colour correct at               15160
+colour correct at               15170
+colour correct at               15180
+colour correct at               15190
+colour correct at               15200
+colour correct at               15210
+colour correct at               15220
+colour correct at               15230
+colour correct at               15240
+colour correct at               15250
+colour correct at               15260
+colour correct at               15270
+colour correct at               15280
+colour correct at               15290
+colour correct at               15300
+colour correct at               15310
+colour correct at               15320
+colour correct at               15330
+colour correct at               15340
+colour correct at               15350
+colour correct at               15360
+colour correct at               15370
+colour correct at               15380
+colour correct at               15390
+colour correct at               15400
+colour correct at               15410
+colour correct at               15420
+colour correct at               15430
+colour correct at               15440
+colour correct at               15450
+colour correct at               15460
+colour correct at               15470
+colour correct at               15480
+colour correct at               15490
+colour correct at               15500
+colour correct at               15510
+colour correct at               15520
+colour correct at               15530
+colour correct at               15540
+colour correct at               15550
+colour correct at               15560
+colour correct at               15570
+colour correct at               15580
+colour correct at               15590
+colour correct at               15600
+colour correct at               15610
+colour correct at               15620
+colour correct at               15630
+colour correct at               15640
+colour correct at               15650
+colour correct at               15660
+colour correct at               15670
+colour correct at               15680
+colour correct at               15690
+colour correct at               15700
+colour correct at               15710
+colour correct at               15720
+colour correct at               15730
+colour correct at               15740
+colour correct at               15750
+colour correct at               15760
+colour correct at               15770
+colour correct at               15780
+colour correct at               15790
+colour correct at               15800
+colour correct at               15810
+colour correct at               15820
+colour correct at               15830
+colour correct at               15840
+colour correct at               15850
+colour correct at               15860
+colour correct at               15870
+colour correct at               15880
+colour correct at               15890
+colour correct at               15900
+colour correct at               15910
+colour correct at               15920
+colour correct at               15930
+colour correct at               15940
+colour correct at               15950
+colour correct at               15960
+colour correct at               15970
+colour correct at               15980
+colour correct at               15990
+colour correct at               16000
+colour correct at               16010
+colour correct at               16020
+colour correct at               16030
+colour correct at               16040
+colour correct at               16050
+colour correct at               16060
+colour correct at               16070
+colour correct at               16080
+colour correct at               16090
+colour correct at               16100
+colour correct at               16110
+colour correct at               16120
+colour correct at               16130
+colour correct at               16140
+colour correct at               16150
+colour correct at               16160
+colour correct at               16170
+colour correct at               16180
+colour correct at               16190
+colour correct at               16200
+colour correct at               16210
+colour correct at               16220
+colour correct at               16230
+colour correct at               16240
+colour correct at               16250
+colour correct at               16260
+colour correct at               16270
+colour correct at               16280
+colour correct at               16290
+colour correct at               16300
+colour correct at               16310
+colour correct at               16320
+colour correct at               16330
+colour correct at               16340
+colour correct at               16350
+colour correct at               16360
+colour correct at               16370
+colour correct at               16380
+colour correct at               16390
+colour correct at               16400
+colour correct at               16410
+colour correct at               16420
+colour correct at               16430
+colour correct at               16440
+colour correct at               16450
+colour correct at               16460
+colour correct at               16470
+colour correct at               16480
+colour correct at               16490
+colour correct at               16500
+colour correct at               16510
+colour correct at               16520
+colour correct at               16530
+colour correct at               16540
+colour correct at               16550
+colour correct at               16560
+colour correct at               16570
+colour correct at               16580
+colour correct at               16590
+colour correct at               16600
+colour correct at               16610
+colour correct at               16620
+colour correct at               16630
+colour correct at               16640
+colour correct at               16650
+colour correct at               16660
+colour correct at               16670
+colour correct at               16680
+colour correct at               16690
+colour correct at               16700
+colour correct at               16710
+colour correct at               16720
+colour correct at               16730
+colour correct at               16740
+colour correct at               16750
+colour correct at               16760
+colour correct at               16770
+colour correct at               16780
+colour correct at               16790
+colour correct at               16800
+colour correct at               16810
+colour correct at               16820
+colour correct at               16830
+colour correct at               16840
+colour correct at               16850
+colour correct at               16860
+colour correct at               16870
+colour correct at               16880
+colour correct at               16890
+colour correct at               16900
+colour correct at               16910
+colour correct at               16920
+colour correct at               16930
+colour correct at               16940
+colour correct at               16950
+colour correct at               16960
+colour correct at               16970
+colour correct at               16980
+colour correct at               16990
+colour correct at               17000
+colour correct at               17010
+colour correct at               17020
+colour correct at               17030
+colour correct at               17040
+colour correct at               17050
+colour correct at               17060
+colour correct at               17070
+colour correct at               17080
+colour correct at               17090
+colour correct at               17100
+colour correct at               17110
+colour correct at               17120
+colour correct at               17130
+colour correct at               17140
+colour correct at               17150
+colour correct at               17160
+colour correct at               17170
+colour correct at               17180
+colour correct at               17190
+colour correct at               17200
+colour correct at               17210
+colour correct at               17220
+colour correct at               17230
+colour correct at               17240
+colour correct at               17250
+colour correct at               17260
+colour correct at               17270
+colour correct at               17280
+colour correct at               17290
+colour correct at               17300
+colour correct at               17310
+colour correct at               17320
+colour correct at               17330
+colour correct at               17340
+colour correct at               17350
+colour incorrect at               17360
+colour correct at               17370
+colour correct at               17380
+colour correct at               17390
+colour correct at               17400
+colour correct at               17410
+colour correct at               17420
+colour correct at               17430
+colour correct at               17440
+colour correct at               17450
+colour correct at               17460
+colour correct at               17470
+colour correct at               17480
+colour correct at               17490
+colour correct at               17500
+colour correct at               17510
+colour correct at               17520
+colour correct at               17530
+colour correct at               17540
+colour correct at               17550
+colour correct at               17560
+colour correct at               17570
+colour correct at               17580
+colour correct at               17590
+colour correct at               17600
+colour correct at               17610
+colour correct at               17620
+colour correct at               17630
+colour correct at               17640
+colour correct at               17650
+colour correct at               17660
+colour correct at               17670
+colour correct at               17680
+colour correct at               17690
+colour correct at               17700
+colour correct at               17710
+colour correct at               17720
+colour correct at               17730
+colour correct at               17740
+colour correct at               17750
+colour correct at               17760
+colour correct at               17770
+colour correct at               17780
+colour correct at               17790
+colour correct at               17800
+colour correct at               17810
+colour correct at               17820
+colour correct at               17830
+colour correct at               17840
+colour correct at               17850
+colour correct at               17860
+colour correct at               17870
+colour correct at               17880
+colour correct at               17890
+colour correct at               17900
+colour correct at               17910
+colour correct at               17920
+colour correct at               17930
+colour correct at               17940
+colour correct at               17950
+colour correct at               17960
+colour correct at               17970
+colour correct at               17980
+colour correct at               17990
+colour correct at               18000
+colour correct at               18010
+colour correct at               18020
+colour correct at               18030
+colour correct at               18040
+colour correct at               18050
+colour correct at               18060
+colour correct at               18070
+colour correct at               18080
+colour correct at               18090
+colour correct at               18100
+colour correct at               18110
+colour correct at               18120
+colour correct at               18130
+colour correct at               18140
+colour correct at               18150
+colour correct at               18160
+colour correct at               18170
+colour correct at               18180
+colour correct at               18190
+colour correct at               18200
+colour correct at               18210
+colour correct at               18220
+colour correct at               18230
+colour correct at               18240
+colour correct at               18250
+colour correct at               18260
+colour correct at               18270
+colour correct at               18280
+colour correct at               18290
+colour correct at               18300
+colour correct at               18310
+colour correct at               18320
+colour correct at               18330
+colour correct at               18340
+colour correct at               18350
+colour correct at               18360
+colour incorrect at               18370
+colour incorrect at               18380
+colour correct at               18390
+colour correct at               18400
+colour correct at               18410
+colour correct at               18420
+colour correct at               18430
+colour correct at               18440
+colour correct at               18450
+colour correct at               18460
+colour correct at               18470
+colour correct at               18480
+colour correct at               18490
+colour correct at               18500
+colour correct at               18510
+colour correct at               18520
+colour correct at               18530
+colour correct at               18540
+colour correct at               18550
+colour correct at               18560
+colour correct at               18570
+colour correct at               18580
+colour correct at               18590
+colour correct at               18600
+colour correct at               18610
+colour correct at               18620
+colour correct at               18630
+colour correct at               18640
+colour correct at               18650
+colour correct at               18660
+colour correct at               18670
+colour correct at               18680
+colour correct at               18690
+colour correct at               18700
+colour correct at               18710
+colour correct at               18720
+colour correct at               18730
+colour correct at               18740
+colour correct at               18750
+colour correct at               18760
+colour correct at               18770
+colour correct at               18780
+colour correct at               18790
+colour correct at               18800
+colour correct at               18810
+colour correct at               18820
+colour correct at               18830
+colour correct at               18840
+colour correct at               18850
+colour correct at               18860
+colour correct at               18870
+colour correct at               18880
+colour correct at               18890
+colour correct at               18900
+colour correct at               18910
+colour correct at               18920
+colour correct at               18930
+colour correct at               18940
+colour correct at               18950
+colour correct at               18960
+colour correct at               18970
+colour correct at               18980
+colour correct at               18990
+colour correct at               19000
+colour correct at               19010
+colour correct at               19020
+colour correct at               19030
+colour correct at               19040
+colour correct at               19050
+colour correct at               19060
+colour correct at               19070
+colour correct at               19080
+colour correct at               19090
+colour correct at               19100
+colour correct at               19110
+colour correct at               19120
+colour correct at               19130
+colour correct at               19140
+colour correct at               19150
+colour correct at               19160
+colour correct at               19170
+colour correct at               19180
+colour correct at               19190
+colour correct at               19200
+colour correct at               19210
+colour correct at               19220
+colour correct at               19230
+colour correct at               19240
+colour correct at               19250
+colour correct at               19260
+colour correct at               19270
+colour correct at               19280
+colour correct at               19290
+colour correct at               19300
+colour correct at               19310
+colour correct at               19320
+colour correct at               19330
+colour correct at               19340
+colour correct at               19350
+colour correct at               19360
+colour correct at               19370
+colour correct at               19380
+colour incorrect at               19390
+colour incorrect at               19400
+colour correct at               19410
+colour correct at               19420
+colour correct at               19430
+colour correct at               19440
+colour correct at               19450
+colour correct at               19460
+colour correct at               19470
+colour correct at               19480
+colour correct at               19490
+colour correct at               19500
+colour correct at               19510
+colour correct at               19520
+colour correct at               19530
+colour correct at               19540
+colour correct at               19550
+colour correct at               19560
+colour correct at               19570
+colour correct at               19580
+colour correct at               19590
+colour correct at               19600
+colour correct at               19610
+colour correct at               19620
+colour correct at               19630
+colour correct at               19640
+colour correct at               19650
+colour correct at               19660
+colour correct at               19670
+colour correct at               19680
+colour correct at               19690
+colour correct at               19700
+colour correct at               19710
+colour correct at               19720
+colour correct at               19730
+colour correct at               19740
+colour correct at               19750
+colour correct at               19760
+colour correct at               19770
+colour correct at               19780
+colour correct at               19790
+colour correct at               19800
+colour correct at               19810
+colour correct at               19820
+colour correct at               19830
+colour correct at               19840
+colour correct at               19850
+colour correct at               19860
+colour correct at               19870
+colour correct at               19880
+colour correct at               19890
+colour correct at               19900
+colour correct at               19910
+colour correct at               19920
+colour correct at               19930
+colour correct at               19940
+colour correct at               19950
+colour correct at               19960
+colour correct at               19970
+colour correct at               19980
+colour correct at               19990
+colour correct at               20000
+colour correct at               20010
+colour correct at               20020
+colour correct at               20030
+colour correct at               20040
+colour correct at               20050
+colour correct at               20060
+colour correct at               20070
+colour correct at               20080
+colour correct at               20090
+colour correct at               20100
+colour correct at               20110
+colour correct at               20120
+colour correct at               20130
+colour correct at               20140
+colour correct at               20150
+colour correct at               20160
+colour correct at               20170
+colour correct at               20180
+colour correct at               20190
+colour correct at               20200
+colour correct at               20210
+colour correct at               20220
+colour correct at               20230
+colour correct at               20240
+colour correct at               20250
+colour correct at               20260
+colour correct at               20270
+colour correct at               20280
+colour correct at               20290
+colour correct at               20300
+colour correct at               20310
+colour correct at               20320
+colour correct at               20330
+colour correct at               20340
+colour correct at               20350
+colour correct at               20360
+colour correct at               20370
+colour correct at               20380
+colour correct at               20390
+colour correct at               20400
+colour incorrect at               20410
+colour incorrect at               20420
+colour correct at               20430
+colour correct at               20440
+colour correct at               20450
+colour correct at               20460
+colour correct at               20470
+colour correct at               20480
+colour correct at               20490
+colour correct at               20500
+colour correct at               20510
+colour correct at               20520
+colour correct at               20530
+colour correct at               20540
+colour correct at               20550
+colour correct at               20560
+colour correct at               20570
+colour correct at               20580
+colour correct at               20590
+colour correct at               20600
+colour correct at               20610
+colour correct at               20620
+colour correct at               20630
+colour correct at               20640
+colour correct at               20650
+colour correct at               20660
+colour correct at               20670
+colour correct at               20680
+colour correct at               20690
+colour correct at               20700
+colour correct at               20710
+colour correct at               20720
+colour correct at               20730
+colour correct at               20740
+colour correct at               20750
+colour correct at               20760
+colour correct at               20770
+colour correct at               20780
+colour correct at               20790
+colour correct at               20800
+colour correct at               20810
+colour correct at               20820
+colour correct at               20830
+colour correct at               20840
+colour correct at               20850
+colour correct at               20860
+colour correct at               20870
+colour correct at               20880
+colour correct at               20890
+colour correct at               20900
+colour correct at               20910
+colour correct at               20920
+colour correct at               20930
+colour correct at               20940
+colour correct at               20950
+colour correct at               20960
+colour correct at               20970
+colour correct at               20980
+colour correct at               20990
+colour correct at               21000
+colour correct at               21010
+colour correct at               21020
+colour correct at               21030
+colour correct at               21040
+colour correct at               21050
+colour correct at               21060
+colour correct at               21070
+colour correct at               21080
+colour correct at               21090
+colour correct at               21100
+colour correct at               21110
+colour correct at               21120
+colour correct at               21130
+colour correct at               21140
+colour correct at               21150
+colour correct at               21160
+colour correct at               21170
+colour correct at               21180
+colour correct at               21190
+colour correct at               21200
+colour correct at               21210
+colour correct at               21220
+colour correct at               21230
+colour correct at               21240
+colour correct at               21250
+colour correct at               21260
+colour correct at               21270
+colour correct at               21280
+colour correct at               21290
+colour correct at               21300
+colour correct at               21310
+colour correct at               21320
+colour correct at               21330
+colour correct at               21340
+colour correct at               21350
+colour correct at               21360
+colour correct at               21370
+colour correct at               21380
+colour correct at               21390
+colour correct at               21400
+colour correct at               21410
+colour correct at               21420
+colour incorrect at               21430
+colour incorrect at               21440
+colour correct at               21450
+colour correct at               21460
+colour correct at               21470
+colour correct at               21480
+colour correct at               21490
+colour correct at               21500
+colour correct at               21510
+colour correct at               21520
+colour correct at               21530
+colour correct at               21540
+colour correct at               21550
+colour correct at               21560
+colour correct at               21570
+colour correct at               21580
+colour correct at               21590
+colour correct at               21600
+colour correct at               21610
+colour correct at               21620
+colour correct at               21630
+colour correct at               21640
+colour correct at               21650
+colour correct at               21660
+colour correct at               21670
+colour correct at               21680
+colour correct at               21690
+colour correct at               21700
+colour correct at               21710
+colour correct at               21720
+colour correct at               21730
+colour correct at               21740
+colour correct at               21750
+colour correct at               21760
+colour correct at               21770
+colour correct at               21780
+colour correct at               21790
+colour correct at               21800
+colour correct at               21810
+colour correct at               21820
+colour correct at               21830
+colour correct at               21840
+colour correct at               21850
+colour correct at               21860
+colour correct at               21870
+colour correct at               21880
+colour correct at               21890
+colour correct at               21900
+colour correct at               21910
+colour correct at               21920
+colour correct at               21930
+colour correct at               21940
+colour correct at               21950
+colour correct at               21960
+colour correct at               21970
+colour correct at               21980
+colour correct at               21990
+colour correct at               22000
+run 2000 ns
+colour correct at               22010
+colour correct at               22020
+colour correct at               22030
+colour correct at               22040
+colour correct at               22050
+colour correct at               22060
+colour correct at               22070
+colour correct at               22080
+colour correct at               22090
+colour correct at               22100
+colour correct at               22110
+colour correct at               22120
+colour correct at               22130
+colour correct at               22140
+colour correct at               22150
+colour correct at               22160
+colour correct at               22170
+colour correct at               22180
+colour correct at               22190
+colour correct at               22200
+colour correct at               22210
+colour correct at               22220
+colour correct at               22230
+colour correct at               22240
+colour correct at               22250
+colour correct at               22260
+colour correct at               22270
+colour correct at               22280
+colour correct at               22290
+colour correct at               22300
+colour correct at               22310
+colour correct at               22320
+colour correct at               22330
+colour correct at               22340
+colour correct at               22350
+colour correct at               22360
+colour correct at               22370
+colour correct at               22380
+colour correct at               22390
+colour correct at               22400
+colour correct at               22410
+colour correct at               22420
+colour correct at               22430
+colour correct at               22440
+colour incorrect at               22450
+colour incorrect at               22460
+colour correct at               22470
+colour correct at               22480
+colour correct at               22490
+colour correct at               22500
+colour correct at               22510
+colour correct at               22520
+colour correct at               22530
+colour correct at               22540
+colour correct at               22550
+colour correct at               22560
+colour correct at               22570
+colour correct at               22580
+colour correct at               22590
+colour correct at               22600
+colour correct at               22610
+colour correct at               22620
+colour correct at               22630
+colour correct at               22640
+colour correct at               22650
+colour correct at               22660
+colour correct at               22670
+colour correct at               22680
+colour correct at               22690
+colour correct at               22700
+colour correct at               22710
+colour correct at               22720
+colour correct at               22730
+colour correct at               22740
+colour correct at               22750
+colour correct at               22760
+colour correct at               22770
+colour correct at               22780
+colour correct at               22790
+colour correct at               22800
+colour correct at               22810
+colour correct at               22820
+colour correct at               22830
+colour correct at               22840
+colour correct at               22850
+colour correct at               22860
+colour correct at               22870
+colour correct at               22880
+colour correct at               22890
+colour correct at               22900
+colour correct at               22910
+colour correct at               22920
+colour correct at               22930
+colour correct at               22940
+colour correct at               22950
+colour correct at               22960
+colour correct at               22970
+colour correct at               22980
+colour correct at               22990
+colour correct at               23000
+colour correct at               23010
+colour correct at               23020
+colour correct at               23030
+colour correct at               23040
+colour correct at               23050
+colour correct at               23060
+colour correct at               23070
+colour correct at               23080
+colour correct at               23090
+colour correct at               23100
+colour correct at               23110
+colour correct at               23120
+colour correct at               23130
+colour correct at               23140
+colour correct at               23150
+colour correct at               23160
+colour correct at               23170
+colour correct at               23180
+colour correct at               23190
+colour correct at               23200
+colour correct at               23210
+colour correct at               23220
+colour correct at               23230
+colour correct at               23240
+colour correct at               23250
+colour correct at               23260
+colour correct at               23270
+colour correct at               23280
+colour correct at               23290
+colour correct at               23300
+colour correct at               23310
+colour correct at               23320
+colour correct at               23330
+colour correct at               23340
+colour correct at               23350
+colour correct at               23360
+colour correct at               23370
+colour correct at               23380
+colour correct at               23390
+colour correct at               23400
+colour correct at               23410
+colour correct at               23420
+colour correct at               23430
+colour correct at               23440
+colour correct at               23450
+colour correct at               23460
+colour incorrect at               23470
+colour incorrect at               23480
+colour correct at               23490
+colour correct at               23500
+colour correct at               23510
+colour correct at               23520
+colour correct at               23530
+colour correct at               23540
+colour correct at               23550
+colour correct at               23560
+colour correct at               23570
+colour correct at               23580
+colour correct at               23590
+colour correct at               23600
+colour correct at               23610
+colour correct at               23620
+colour correct at               23630
+colour correct at               23640
+colour correct at               23650
+colour correct at               23660
+colour correct at               23670
+colour correct at               23680
+colour correct at               23690
+colour correct at               23700
+colour correct at               23710
+colour correct at               23720
+colour correct at               23730
+colour correct at               23740
+colour correct at               23750
+colour correct at               23760
+colour correct at               23770
+colour correct at               23780
+colour correct at               23790
+colour correct at               23800
+colour correct at               23810
+colour correct at               23820
+colour correct at               23830
+colour correct at               23840
+colour correct at               23850
+colour correct at               23860
+colour correct at               23870
+colour correct at               23880
+colour correct at               23890
+colour correct at               23900
+colour correct at               23910
+colour correct at               23920
+colour correct at               23930
+colour correct at               23940
+colour correct at               23950
+colour correct at               23960
+colour correct at               23970
+colour correct at               23980
+colour correct at               23990
+colour correct at               24000
+run 2000 ns
+colour correct at               24010
+colour correct at               24020
+colour correct at               24030
+colour correct at               24040
+colour correct at               24050
+colour correct at               24060
+colour correct at               24070
+colour correct at               24080
+colour correct at               24090
+colour correct at               24100
+colour correct at               24110
+colour correct at               24120
+colour correct at               24130
+colour correct at               24140
+colour correct at               24150
+colour correct at               24160
+colour correct at               24170
+colour correct at               24180
+colour correct at               24190
+colour correct at               24200
+colour correct at               24210
+colour correct at               24220
+colour correct at               24230
+colour correct at               24240
+colour correct at               24250
+colour correct at               24260
+colour correct at               24270
+colour correct at               24280
+colour correct at               24290
+colour correct at               24300
+colour correct at               24310
+colour correct at               24320
+colour correct at               24330
+colour correct at               24340
+colour correct at               24350
+colour correct at               24360
+colour correct at               24370
+colour correct at               24380
+colour correct at               24390
+colour correct at               24400
+colour correct at               24410
+colour correct at               24420
+colour correct at               24430
+colour correct at               24440
+colour correct at               24450
+colour correct at               24460
+colour correct at               24470
+colour correct at               24480
+colour incorrect at               24490
+colour incorrect at               24500
+colour correct at               24510
+colour correct at               24520
+colour correct at               24530
+colour correct at               24540
+colour correct at               24550
+colour correct at               24560
+colour correct at               24570
+colour correct at               24580
+colour correct at               24590
+colour correct at               24600
+colour correct at               24610
+colour correct at               24620
+colour correct at               24630
+colour correct at               24640
+colour correct at               24650
+colour correct at               24660
+colour correct at               24670
+colour correct at               24680
+colour correct at               24690
+colour correct at               24700
+colour correct at               24710
+colour correct at               24720
+colour correct at               24730
+colour correct at               24740
+colour correct at               24750
+colour correct at               24760
+colour correct at               24770
+colour correct at               24780
+colour correct at               24790
+colour correct at               24800
+colour correct at               24810
+colour correct at               24820
+colour correct at               24830
+colour correct at               24840
+colour correct at               24850
+colour correct at               24860
+colour correct at               24870
+colour correct at               24880
+colour correct at               24890
+colour correct at               24900
+colour correct at               24910
+colour correct at               24920
+colour correct at               24930
+colour correct at               24940
+colour correct at               24950
+colour correct at               24960
+colour correct at               24970
+colour correct at               24980
+colour correct at               24990
+colour correct at               25000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v" into library work [C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.srcs/sources_1/new/image_processor.v:1]
+[Wed Feb 15 11:40:25 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 836.906 ; gain = 0.000
+save_wave_config {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/image_processing/image_processor/image_processor_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 836.906 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 15 12:23:38 2017...

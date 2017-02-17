@@ -63,7 +63,7 @@ def detect_edges(pix):
 
 
 print "Getting input pixels"
-im = Image.open("test_images/16.jpg")
+im = Image.open("tb_input.jpg")
 #get pixels
 w = im.size[0]
 h = im.size[1]
@@ -89,10 +89,10 @@ for y in xrange(h):
         elif output[y][x] == 2:
             out_pixels[x,y] = (0,255,0)
 im.show()
-im.save("tmp.jpg")
+im.save("tb_output.jpg")
 
 
-'''#write testbench inputs, expected colour, and edge outputs to files
+#write testbench inputs, expected colour, and edge outputs to files
 decoded = open("image_processor/image_processor.srcs/sim_1/imports/image_processing/tb_input.txt","w")
 for y in xrange(h):
     for x in xrange(w):
@@ -111,4 +111,4 @@ for y in xrange(h):
     for x in xrange(w):
         if output[y][x] == 2:
             edge_file.write("%i %i\n" %(x,y))
-edge_file.close()'''
+edge_file.close()
