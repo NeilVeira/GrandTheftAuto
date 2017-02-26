@@ -1,0 +1,24 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/coregen/upsampling_buffer/jpeg_upsampling_buffer.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/coregen/qt_table/jpeg_qt_sr.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/coregen/idct/jpeg_idct_core_12.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/coregen/huffman_input_sr/jpeg_huffman_input_sr.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/coregen/ht_tables/jpeg_ht_tables.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_YCbCr2RGB.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_header.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_check_FF.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/fifo_sim32.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd"
+vhdl xil_defaultlib  "../../../jpeg.srcs/sim_1/imports/vhdl/jpeg_testbench.vhd"
+
+# Do not sort compile order
+nosort

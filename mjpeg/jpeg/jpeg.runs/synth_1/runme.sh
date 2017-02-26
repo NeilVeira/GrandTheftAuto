@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/mjpeg_decoder/tmp/jpeg/jpeg.runs/synth_1'
+HD_PWD='C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

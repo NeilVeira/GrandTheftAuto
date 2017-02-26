@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="jpeg_testbench_func_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="jpeg_testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="33020000fs"></ZoomStartTime>
+      <ZoomEndTime time="125620001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/jpeg_testbench/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/ddr_address" type="array">
+      <obj_property name="ElementShortName">ddr_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/wea" type="logic">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/counter" type="array">
+      <obj_property name="ElementShortName">counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_ready" type="logic">
+      <obj_property name="ElementShortName">jpeg_ready</obj_property>
+      <obj_property name="ObjectShortName">jpeg_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_eoi" type="logic">
+      <obj_property name="ElementShortName">jpeg_eoi</obj_property>
+      <obj_property name="ObjectShortName">jpeg_eoi</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_error" type="logic">
+      <obj_property name="ElementShortName">jpeg_error</obj_property>
+      <obj_property name="ObjectShortName">jpeg_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/fifo_sim32_data" type="array">
+      <obj_property name="ElementShortName">fifo_sim32_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_sim32_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/fifo_sim32_wea" type="logic">
+      <obj_property name="ElementShortName">fifo_sim32_wea</obj_property>
+      <obj_property name="ObjectShortName">fifo_sim32_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/fifo_sim32_full" type="logic">
+      <obj_property name="ElementShortName">fifo_sim32_full</obj_property>
+      <obj_property name="ObjectShortName">fifo_sim32_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/fifo_sim32_notfull" type="logic">
+      <obj_property name="ElementShortName">fifo_sim32_notfull</obj_property>
+      <obj_property name="ObjectShortName">fifo_sim32_notfull</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_file_name" type="array">
+      <obj_property name="ElementShortName">jpeg_file_name[1:10]</obj_property>
+      <obj_property name="ObjectShortName">jpeg_file_name[1:10]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/log_file_name" type="array">
+      <obj_property name="ElementShortName">log_file_name[1:13]</obj_property>
+      <obj_property name="ObjectShortName">log_file_name[1:13]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/width_o" type="array">
+      <obj_property name="ElementShortName">width_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">width_o[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/height_o" type="array">
+      <obj_property name="ElementShortName">height_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">height_o[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/red_o" type="array">
+      <obj_property name="ElementShortName">red_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">red_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/green_o" type="array">
+      <obj_property name="ElementShortName">green_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">green_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/blue_o" type="array">
+      <obj_property name="ElementShortName">blue_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">blue_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
