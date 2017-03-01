@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="8387000000fs"></ZoomStartTime>
+      <ZoomEndTime time="8615000001fs"></ZoomEndTime>
+      <Cursor1Time time="8425000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="23" />
+   <wave_markers>
+      <marker time="5245000000" label="" />
+      <marker time="6025000000" label="" />
+      <marker time="6825000000" label="" />
+      <marker time="4554100000" label="" />
+      <marker time="5728250000" label="" />
+      <marker time="6365700000" label="" />
+      <marker time="7321000000" label="" />
+      <marker time="7625000000" label="" />
+      <marker time="7950600000" label="" />
+      <marker time="8425000000" label="" />
+      <marker time="8917000000" label="" />
+      <marker time="9225000000" label="" />
+      <marker time="9535000000" label="" />
+      <marker time="301500000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/s00_axi_aclk" type="logic">
+      <obj_property name="ElementShortName">s00_axi_aclk</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_tb_inst/data_valid" type="logic">
+      <obj_property name="ElementShortName">data_valid</obj_property>
+      <obj_property name="ObjectShortName">data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_tb_inst/r" type="array">
+      <obj_property name="ElementShortName">r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_tb_inst/g" type="array">
+      <obj_property name="ElementShortName">g[7:0]</obj_property>
+      <obj_property name="ObjectShortName">g[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_tb_inst/b" type="array">
+      <obj_property name="ElementShortName">b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_inst/x" type="array">
+      <obj_property name="ElementShortName">x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_inst/y" type="array">
+      <obj_property name="ElementShortName">y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_inst/colour" type="logic">
+      <obj_property name="ElementShortName">colour</obj_property>
+      <obj_property name="ObjectShortName">colour</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_inst/fifo_din" type="array">
+      <obj_property name="ElementShortName">fifo_din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_din[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/image_processor_inst/fifo_wr_en" type="logic">
+      <obj_property name="ElementShortName">fifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">fifo_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/fifo_generator_0/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/fifo_generator_0/empty" type="logic">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/fifo_generator_0/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/fifo_generator_0/din" type="array">
+      <obj_property name="ElementShortName">din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">din[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/fifo_generator_0/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/fifo_generator_0/dout" type="array">
+      <obj_property name="ElementShortName">dout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/slv_reg0" type="array">
+      <obj_property name="ElementShortName">slv_reg0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/slv_reg1" type="array">
+      <obj_property name="ElementShortName">slv_reg1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/slv_reg2" type="array">
+      <obj_property name="ElementShortName">slv_reg2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/slv_reg3" type="array">
+      <obj_property name="ElementShortName">slv_reg3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/slv_reg4" type="array">
+      <obj_property name="ElementShortName">slv_reg4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg4[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/img_proc_mb_inst/img_proc_mb_i/image_proc_AXI_v1_0_1/inst/image_proc_AXI_v1_0_S00_AXI_inst/slv_reg5" type="array">
+      <obj_property name="ElementShortName">slv_reg5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg5[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

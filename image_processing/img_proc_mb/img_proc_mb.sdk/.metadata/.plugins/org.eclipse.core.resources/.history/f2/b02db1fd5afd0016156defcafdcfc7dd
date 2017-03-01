@@ -1,0 +1,21 @@
+#include "xparameters.h"
+#include "xil_io.h"
+#include "image_proc_AXI.h"
+
+volatile unsigned int *axi_ptr = (unsigned int*) XPAR_IMAGE_PROC_AXI_0_S00_AXI_BASEADDR;
+
+int main()
+{
+	// Low Level Driver
+	MYIP_mWriteReg(XPAR_MYIP_0_S00_AXI_BASEADDR, 0, 0xDEADBEEF);
+	// Direct Access
+	*(myip_ptr + 1) = 0xBAADF00D;
+
+	int i;
+	for (i=0; i<1000; i++){
+		unsigned int dout = *(axi_ptr+4);
+		unsigned int empty = *(axi_ptr+8);
+		unsigned int full = *(axi_ptr+12);
+	}
+	return 0;
+}

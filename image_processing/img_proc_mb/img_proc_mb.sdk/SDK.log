@@ -1,0 +1,280 @@
+22:56:34 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\GrandTheftAuto\image_processing\img_proc_mb\img_proc_mb.sdk\temp_xsdb_launch_script.tcl
+22:57:08 INFO  : XSDB server has started successfully.
+22:57:32 INFO  : Processing command line option -hwspec C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf.
+23:02:39 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3_5::generate : can't read "source_name(0)": no such variable
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 17)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 17)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 71)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_5::generate" line 57)
+    invoked from within
+"::sw_intc_v3_5::generate microblaze_0_axi_intc"
+
+23:02:39 ERROR : (XSDB Server)ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+
+23:02:39 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+23:02:40 ERROR : Failed to closesw "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_bsp/system.mss"
+Reason: Cannot close sw design 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_bsp/system.mss'.
+Design is not opened in the current session.
+
+
+23:03:14 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3_5::generate : can't read "source_name(0)": no such variable
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 17)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 17)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 71)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_5::generate" line 57)
+    invoked from within
+"::sw_intc_v3_5::generate microblaze_0_axi_intc"
+
+23:03:14 ERROR : (XSDB Server)ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+
+23:03:14 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+23:03:14 ERROR : Failed to closesw "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_bsp/system.mss"
+Reason: Cannot close sw design 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_bsp/system.mss'.
+Design is not opened in the current session.
+
+
+23:04:56 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3_5::generate : can't read "source_name(0)": no such variable
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 17)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 17)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 71)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_5::generate" line 57)
+    invoked from within
+"::sw_intc_v3_5::generate microblaze_0_axi_intc"
+
+23:04:56 ERROR : (XSDB Server)ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+
+23:04:56 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+23:04:57 ERROR : Failed to closesw "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_bsp/system.mss"
+Reason: Cannot close sw design 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_bsp/system.mss'.
+Design is not opened in the current session.
+
+
+23:10:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3_5::generate : can't read "source_name(0)": no such variable
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 17)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 17)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 71)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_5::generate" line 57)
+    invoked from within
+"::sw_intc_v3_5::generate microblaze_0_axi_intc"
+ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+23:10:31 ERROR : Failed to closesw "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_test_bsp/system.mss"
+Reason: Cannot close sw design 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_test_bsp/system.mss'.
+Design is not opened in the current session.
+
+
+19:18:41 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\GrandTheftAuto\image_processing\img_proc_mb\img_proc_mb.sdk\temp_xsdb_launch_script.tcl
+19:18:48 INFO  : XSDB server has started successfully.
+19:19:15 INFO  : Processing command line option -hwspec C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf.
+19:19:15 INFO  : Checking for hwspec changes in the project img_proc_mb_wrapper_hw_platform_0.
+19:24:55 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3_5::generate : can't read "source_name(0)": no such variable
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 17)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 17)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 71)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_5::generate" line 57)
+    invoked from within
+"::sw_intc_v3_5::generate microblaze_0_axi_intc"
+ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+
+19:24:56 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+19:24:56 ERROR : Failed to closesw "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/test_img_proc_mb_bsp/system.mss"
+Reason: Cannot close sw design 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/test_img_proc_mb_bsp/system.mss'.
+Design is not opened in the current session.
+
+
+19:53:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3_5::generate : can't read "source_name(0)": no such variable
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 17)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 17)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 71)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_5::generate" line 57)
+    invoked from within
+"::sw_intc_v3_5::generate microblaze_0_axi_intc"
+
+19:53:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+19:53:05 ERROR : Failed to closesw "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/test_img_proc_mb_bsp/system.mss"
+Reason: Cannot close sw design 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/test_img_proc_mb_bsp/system.mss'.
+Design is not opened in the current session.
+
+
+20:33:47 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\GrandTheftAuto\image_processing\img_proc_mb\img_proc_mb.sdk\temp_xsdb_launch_script.tcl
+20:33:57 INFO  : XSDB server has started successfully.
+20:34:30 INFO  : Processing command line option -hwspec C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf.
+20:34:30 INFO  : Checking for hwspec changes in the project img_proc_mb_wrapper_hw_platform_0.
+20:34:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1488245463671,  Project:1488167532150
+20:34:30 INFO  : The hardware specification for project 'img_proc_mb_wrapper_hw_platform_0' is different from C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf.
+20:34:31 INFO  : Copied contents of C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf into \img_proc_mb_wrapper_hw_platform_0\system.hdf.
+20:34:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:34:34 INFO  : Clearing existing target manager status.
+20:34:44 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:34:44 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+20:37:10 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3_5::generate : can't read "source_name(0)": no such variable
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 17)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 17)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 71)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_5::generate" line 57)
+    invoked from within
+"::sw_intc_v3_5::generate microblaze_0_axi_intc"
+ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+
+20:37:10 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+20:37:11 ERROR : Failed to closesw "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/test_imc_proc_mb_bsp/system.mss"
+Reason: Cannot close sw design 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/test_imc_proc_mb_bsp/system.mss'.
+Design is not opened in the current session.
+
+
+20:37:43 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3_5::generate : can't read "source_name(0)": no such variable
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 17)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 17)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 71)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_5::generate" line 57)
+    invoked from within
+"::sw_intc_v3_5::generate microblaze_0_axi_intc"
+ERROR: [Hsi 55-1442] Error(s) while running TCL procedure generate()
+ERROR: [Hsi 55-1450] Error: running generate_bsp.
+
+20:37:44 ERROR : Failed to closesw "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/test_imc_proc_mb_bsp/system.mss"
+Reason: Cannot close sw design 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/test_imc_proc_mb_bsp/system.mss'.
+Design is not opened in the current session.
+
+
+20:38:23 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:50:21 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\GrandTheftAuto\image_processing\img_proc_mb\img_proc_mb.sdk\temp_xsdb_launch_script.tcl
+20:50:27 INFO  : XSDB server has started successfully.
+20:51:30 INFO  : Processing command line option -hwspec C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf.
+20:51:31 INFO  : Checking for hwspec changes in the project img_proc_mb_wrapper_hw_platform_0.
+20:51:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1488246560902,  Project:1488245463671
+20:51:31 INFO  : The hardware specification for project 'img_proc_mb_wrapper_hw_platform_0' is different from C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf.
+20:51:32 INFO  : Copied contents of C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf into \img_proc_mb_wrapper_hw_platform_0\system.hdf.
+20:51:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:51:34 INFO  : Clearing existing target manager status.
+20:51:39 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:51:39 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+08:27:13 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:12:56 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\GrandTheftAuto\image_processing\img_proc_mb\img_proc_mb.sdk\temp_xsdb_launch_script.tcl
+18:13:09 INFO  : XSDB server has started successfully.
+18:13:33 INFO  : Processing command line option -hwspec C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf.
+18:13:33 INFO  : Checking for hwspec changes in the project img_proc_mb_wrapper_hw_platform_0.
+18:13:34 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1488323459173,  Project:1488246560902
+18:13:34 INFO  : The hardware specification for project 'img_proc_mb_wrapper_hw_platform_0' is different from C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf.
+18:13:35 INFO  : Copied contents of C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf into \img_proc_mb_wrapper_hw_platform_0\system.hdf.
+18:13:35 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:15:54 INFO  : 
+18:15:57 INFO  : Updating hardware inferred compiler options for test_img_proc_mb.
+18:15:57 INFO  : Clearing existing target manager status.
+22:22:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1488338567373,  Project:1488323459173
+22:22:48 INFO  : Project img_proc_mb_wrapper_hw_platform_0's source hardware specification located at C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:24:47 INFO  : Copied contents of C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/image_processing/img_proc_mb/img_proc_mb.sdk/img_proc_mb_wrapper.hdf into \img_proc_mb_wrapper_hw_platform_0\system.hdf.
+22:24:51 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:25:16 INFO  : 
+22:25:24 INFO  : 
+22:25:26 INFO  : Updating hardware inferred compiler options for test_img_proc_mb3.
+22:25:26 INFO  : Updating hardware inferred compiler options for test_img_proc_mb.
+22:25:27 INFO  : Clearing existing target manager status.
+22:25:27 INFO  : Closing and re-opening the MSS file of ther project test_img_proc_mb3_bsp
+22:25:33 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:25:47 WARN  : Linker script will not be updated automatically. Users need to update it manually.
