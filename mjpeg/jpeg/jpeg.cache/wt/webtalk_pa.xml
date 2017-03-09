@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sun Feb 26 11:41:58 2017">
+<application name="pa" timeStamp="Thu Mar 09 10:02:53 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="dd31cf8da23b4441b8b178c5be29f13f" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -17,42 +17,71 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="3" type="JavaHandler"/>
-<property name="EditDelete" value="5" type="JavaHandler"/>
-<property name="MoveSources" value="2" type="JavaHandler"/>
+<property name="AddSources" value="8" type="JavaHandler"/>
+<property name="CoreView" value="1" type="JavaHandler"/>
+<property name="CustomizeCore" value="2" type="JavaHandler"/>
+<property name="EditDelete" value="10" type="JavaHandler"/>
+<property name="FlipToViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
+<property name="ManageCompositeTargets" value="3" type="JavaHandler"/>
+<property name="MoveSources" value="6" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="RunSchematic" value="3" type="JavaHandler"/>
-<property name="RunSynthesis" value="3" type="JavaHandler"/>
-<property name="SimulationRestart" value="1" type="JavaHandler"/>
-<property name="SimulationRun" value="7" type="JavaHandler"/>
-<property name="SimulationRunForTime" value="1" type="JavaHandler"/>
-<property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
-<property name="ZoomFit" value="1" type="JavaHandler"/>
-<property name="ZoomIn" value="17" type="JavaHandler"/>
-<property name="ZoomOut" value="3" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="13" type="JavaHandler"/>
+<property name="RecustomizeCore" value="3" type="JavaHandler"/>
+<property name="RunSchematic" value="6" type="JavaHandler"/>
+<property name="RunSynthesis" value="16" type="JavaHandler"/>
+<property name="SetSourceEnabled" value="2" type="JavaHandler"/>
+<property name="SetTopNode" value="1" type="JavaHandler"/>
+<property name="SimulationBreak" value="1" type="JavaHandler"/>
+<property name="SimulationClose" value="13" type="JavaHandler"/>
+<property name="SimulationRestart" value="2" type="JavaHandler"/>
+<property name="SimulationRun" value="31" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="10" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="2" type="JavaHandler"/>
+<property name="ViewTaskSimulation" value="2" type="JavaHandler"/>
+<property name="ZoomFit" value="2" type="JavaHandler"/>
+<property name="ZoomIn" value="21" type="JavaHandler"/>
+<property name="ZoomOut" value="7" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, simulation_live_restart" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, simulation_live_run_for_time" value="1" type="GuiResourceData"/>
+<property name="OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AbstractFileView_RELOAD, Reload" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_PROJECT_SETTINGS, Project Settings..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_RUN_SYNTHESIS, run_synthesis" value="1" type="GuiResourceData"/>
 <property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, Run Post-Synthesis Functional Simulation" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, blk_mem_gen_0], 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, blk_mem_gen_0], 1, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, blk_mem_gen_0], 1, true, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, edge_detector.v], 3, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, edge_detector.v], 3, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Unknown], 37" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, jpeg_testbench - test (jpeg_testbench.vhd" value="2" type="GuiResourceData"/>
 <property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, 1000" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, blue_o[7:0] ; 80 ; Array, 8, blue_o[7:0], 0, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, green_o[7:0] ; 80 ; Array, 7, green_o[7:0], 0, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, height_o[15:0] ; 0000 ; Array, 10, height_o[15:0], 0, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, red_o[7:0] ; 80 ; Array, 6, red_o[7:0], 0, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, width_o[15:0] ; 0000 ; Array, 9, width_o[15:0], 0, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, jpeg_decoder ; jpeg(STRUCTURE" value="2" type="GuiResourceData"/>
-<property name="RDIResource.GraphicalView_ZOOM_OUT, Waveform Viewer_zoom_out" value="12" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 166, 421" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, blue_o[7:0]], 20, true, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, green_o[7:0]], 19, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, width_o[15:0]], 16, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_REPORT, Report" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_TOOLS, Tools" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, bram_addrin[12:0] ; 040e ; Array, 25, bram_addrin[12:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, bram_addrout[12:0] ; 01ce ; Array, 26, bram_addrout[12:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, bram_dout[23:0] ; ZZZZZZ ; Array, 28, bram_dout[23:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, jpeg_decoder ; image_processor ; Verilog Module, 2, jpeg_decoder, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, add_files -fileset sim_1 -norecurse C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/edge_detector.v, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, set_property used_in {simulation testbench} [get_files edge_detector.v -of_objects [current_fileset -simset]], true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, set_property used_in_simulation 1 [get_files edge_detector.v -of_objects [current_fileset -simset]], true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 280, 401" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 345, 475" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 404, -103" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 405, -99" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 416, -96" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 482, 452" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, bram_din[23:0]], 17, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, ed_x[7:0]], 17, true" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, Customize Commands" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="52" type="GuiMode"/>
+<property name="GuiMode" value="58" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="38" type="TclMode"/>
+<property name="TclMode" value="44" type="TclMode"/>
 </item>
 </section>
 </application>

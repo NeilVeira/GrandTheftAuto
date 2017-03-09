@@ -8,7 +8,7 @@ use std.textio.all;
 
 entity jpeg_testbench is
 	generic (
-		jpeg_file_name: string := "simple.jpg";
+		jpeg_file_name: string := "jpeg_tb.jpg";
 		log_file_name : string := "testbench.log"
 	);
 end entity jpeg_testbench;
@@ -18,7 +18,7 @@ architecture test of jpeg_testbench is
 
 	
 
-	component jpeg is
+	component image_processor is
 	port (
     	Clk			:  in std_logic;
 		data_i		:  in std_logic_vector(31 downto 0);
@@ -45,7 +45,7 @@ architecture test of jpeg_testbench is
 		ready_i		:  in std_logic;
 		ready_o		: out std_logic
 	);
-	end component jpeg;
+	end component image_processor;
 
 
 
@@ -111,7 +111,7 @@ begin
 ------------------------------------------------------------
 -- JPEG - Decoder
 --------------------------------------------------------------
-jpeg_decoder:jpeg
+jpeg_decoder:image_processor
   port map
     (	Clk			=> Clk,
 		data_i		=> data,

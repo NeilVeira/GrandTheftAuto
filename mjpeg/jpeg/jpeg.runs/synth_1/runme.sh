@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log jpeg.vds -m64 -mode batch -messageDb vivado.pb -notrace -source jpeg.tcl
+EAStep vivado -log image_processor.vds -m64 -mode batch -messageDb vivado.pb -notrace -source image_processor.tcl
