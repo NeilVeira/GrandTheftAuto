@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Mar 07 20:10:56 2017
+# Process ID: 9696
+# Current directory: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5760 C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\GrandTheftAuto\mjpeg\jpeg\jpeg.xpr
+# Log file: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/vivado.log
+# Journal file: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.xpr
+launch_simulation -mode post-synthesis -type functional
+set_property -name {xsim.compile.xvhdl.more_options} -value {-cc clang} -objects [get_filesets sim_1]
+launch_simulation -mode post-synthesis -type functional
+set_property -name {xsim.elaborate.xelab.more_options} -value {-cc clang} -objects [get_filesets sim_1]
+set_property -name {xsim.compile.xvhdl.more_options} -value {} -objects [get_filesets sim_1]
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg_testbench_func_synth.wcfg
+source jpeg_testbench.tcl
+run 10000 ns
+run 10000 ns
+save_wave_config {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg_testbench_func_synth.wcfg}
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg_testbench_func_synth.wcfg
+source jpeg_testbench.tcl
+set_property -name {xsim.simulate.runtime} -value {50000ns} -objects [get_filesets sim_1]
+run 50000 ns
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg_testbench_func_synth.wcfg
+source jpeg_testbench.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_tb.jpg
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg_testbench_func_synth.wcfg
+source jpeg_testbench.tcl
+run 150000 ns
+save_wave_config {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg_testbench_func_synth.wcfg}
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg_testbench_func_synth.wcfg
+source jpeg_testbench.tcl
+import_files -norecurse {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/tmp/image_processor.v C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/tmp/jpeg_wrapper.v}
+remove_files C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/imports/tmp/image_processor.v
+file delete -force C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/imports/tmp/image_processor.v
+import_files -norecurse C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/tmp/edge_detector.v
+synth_design -rtl -name rtl_1
+set_property top jpeg_wrapper [current_fileset]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg_testbench_func_synth.wcfg
+source jpeg_testbench.tcl
+current_design rtl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation -mode post-synthesis -type functional
+open_wave_config C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg_testbench_func_synth.wcfg
+source jpeg_testbench.tcl
