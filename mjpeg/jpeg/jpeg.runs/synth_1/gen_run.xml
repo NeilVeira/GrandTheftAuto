@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1489094398">
+  <File Type="RDS-PROPCONSTRS" Name="image_processor_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="image_processor.tcl"/>
+  <File Type="RDS-RDS" Name="image_processor.vds"/>
+  <File Type="RDS-UTIL" Name="image_processor_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="image_processor_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="image_processor.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="image_processor_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="image_processor_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/edge_detector.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/input_fifo/jpeg_input_fifo.edn"/>
+        <Attr Name="ImportTime" Val="1488064699"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo.edn"/>
+        <Attr Name="ImportTime" Val="1488064710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling_buffer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling_buffer.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/upsampling_buffer/jpeg_upsampling_buffer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/upsampling_buffer/jpeg_upsampling_buffer.vhd"/>
+        <Attr Name="ImportTime" Val="1488064709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/upsampling_buffer/jpeg_upsampling_buffer.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/upsampling_buffer/jpeg_upsampling_buffer.ngc"/>
+        <Attr Name="ImportTime" Val="1488064708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/qt_table/jpeg_qt_sr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/qt_table/jpeg_qt_sr.vhd"/>
+        <Attr Name="ImportTime" Val="1488064710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/qt_table/jpeg_qt_sr.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/qt_table/jpeg_qt_sr.edn"/>
+        <Attr Name="ImportTime" Val="1488064710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct_core_12.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct_core_12.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/idct/jpeg_idct_core_12.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/idct/jpeg_idct_core_12.vhd"/>
+        <Attr Name="ImportTime" Val="1488064699"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/idct/jpeg_idct_core_12.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/idct/jpeg_idct_core_12.edn"/>
+        <Attr Name="ImportTime" Val="1488064700"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman_input_sr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman_input_sr.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/huffman_input_sr/jpeg_huffman_input_sr.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/huffman_input_sr/jpeg_huffman_input_sr.vhd"/>
+        <Attr Name="ImportTime" Val="1488064709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/huffman_input_sr/jpeg_huffman_input_sr.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/huffman_input_sr/jpeg_huffman_input_sr.edn"/>
+        <Attr Name="ImportTime" Val="1488064708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_tables.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_tables.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/ht_tables/jpeg_ht_tables.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/ht_tables/jpeg_ht_tables.vhd"/>
+        <Attr Name="ImportTime" Val="1488064710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/ht_tables/jpeg_ht_tables.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/ht_tables/jpeg_ht_tables.ngc"/>
+        <Attr Name="ImportTime" Val="1488064709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_nr_of_symbols.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_nr_of_symbols.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.vhd"/>
+        <Attr Name="ImportTime" Val="1488064709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.edn"/>
+        <Attr Name="ImportTime" Val="1488064709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequant_multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequant_multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1488064699"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier.edn"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_YCbCr2RGB.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_YCbCr2RGB.vhd"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_input_fifo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_input_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/input_fifo/jpeg_input_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1488064699"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_header.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_header.vhd"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_check_FF.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_check_FF.vhd"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_checkff_fifo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_checkff_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1488064711"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1.ngc"/>
+        <Attr Name="ImportTime" Val="1488064708"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn"/>
+        <Attr Name="ImportTime" Val="1488064710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_tables.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_tables.vhd"/>
+        <Attr Name="ImportTime" Val="1488064698"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/qt_table/jpeg_qt_sr_c_shift_ram_v8_0_xst_1.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/qt_table/jpeg_qt_sr_c_shift_ram_v8_0_xst_1.ngc"/>
+        <Attr Name="ImportTime" Val="1488064709"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn"/>
+        <Attr Name="ImportTime" Val="1488064699"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1.ngc"/>
+        <Attr Name="ImportTime" Val="1488064699"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/idct/jpeg_idct_core_6.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/idct/jpeg_idct_core_6.vhd"/>
+        <Attr Name="ImportTime" Val="1488064699"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/idct/jpeg_idct_core_6.edn">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/idct/jpeg_idct_core_6.edn"/>
+        <Attr Name="ImportTime" Val="1488064700"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier_mult_gen_v8_0_xst_1.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier_mult_gen_v8_0_xst_1.ngc"/>
+        <Attr Name="ImportTime" Val="1488064699"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/fifo_sim32.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/pcores/myipif/hdl/vhdl/fifo_sim32.vhd"/>
+        <Attr Name="ImportTime" Val="1488064697"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../trunk/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.mif"/>
+        <Attr Name="ImportTime" Val="1488064710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/image_processor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_generator_0/fifo_generator_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="image_processor"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
