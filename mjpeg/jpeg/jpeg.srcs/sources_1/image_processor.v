@@ -44,6 +44,8 @@ module image_processor (
         .ready_o(ready_o)
     );
     
+    wire new_image; 
+    
     //compute x and y in the weird 16x16 block way that jpeg produces data
     reg [7:0] x;
     reg [7:0] y;
@@ -59,17 +61,12 @@ module image_processor (
     reg [7:0] ed_y;
     
     always @ (negedge datavalid_o) begin
-        if (reset_i) begin 
+        if (x_base + 16 >= width_o) begin
+            y_base <= y_base+16;
             x_base <= 0;
-            y_base <= 0;
-        end else begin
-            if (x_base + 16 >= width_o) begin
-                y_base <= y_base+16;
-                x_base <= 0;
-            end
-            else begin 
-                x_base <= x_base+16;
-            end
+        end
+        else begin 
+            x_base <= x_base+16;
         end
     end
     
@@ -79,9 +76,11 @@ module image_processor (
     end 
     
     always @ (posedge Clk) begin 
-        if (reset_i) begin 
+        if (reset_i | new_image) begin 
             x <= 0;
             y <= 0;
+            x_base <= 0;
+            y_base <= 0;
         end else if (datavalid_o) begin
             if (x == x_base+15) begin
                 y <= y+1;
@@ -94,15 +93,16 @@ module image_processor (
     
     //compute x & y for the edge detector
     assign ed_ymax = y_base;
+    assign new_image = (ed_y >= height_o-1) && (ed_x >= width_o);
     
     always @ (posedge Clk) begin 
-        if (reset_i) begin 
+        if (reset_i | new_image) begin 
             ed_x <= 0;
             ed_y <= 0;
         end else if (ed_y < ed_ymax) begin  //never let y get to ed_ymax
             if (ed_y+1 == ed_ymax) begin 
                 //case where next ed_y would be ed_ymax. 
-                //Don't increment y. Just let x go until the end and then sit there.
+                //Don't increment y. Just let x go until the end.
                 if (ed_x < width_o) 
                     ed_x <= ed_x+1;
             end else begin 
@@ -128,7 +128,7 @@ module image_processor (
     wire bram_we; 
     
     assign bram_addrin = (y[4:0])*width_o + x; //y[4:0] = y mod 32
-    assign bram_addrout = (ed_y[4:0])*width_o + x;
+    assign bram_addrout = (ed_y[4:0])*width_o + ed_x;
     assign bram_din[23:16] = red_o;
     assign bram_din[15:8] = green_o;
     assign bram_din[7:0] = blue_o;
@@ -155,6 +155,7 @@ module image_processor (
         .b(bram_dout[7:0]),
         .x(ed_x),
         .y(ed_y),
+        .W(width_o),
         .data_valid(ed_go),
         .clk(Clk),
         .rst(~reset_i), //reset_i is active high
@@ -172,7 +173,8 @@ module image_processor (
     reg [11:0] edge_cnt;
     
     assign edge_buffer_wren = edge_wren; 
-    assign edge_buffer_din = edge_out;
+    assign edge_buffer_din = edge_out-2; //the -2 accounts for an offset of 2 in the x coordinate
+                                        //due to a 2-cycle delay reading pixels from the edge_buffer
     
     //signals for edge_fifo 
     reg edge_fifo_wren;
@@ -181,9 +183,10 @@ module image_processor (
     wire [11:0] edge_fifo_dout;         //to be read by microblaze
     wire edge_fifo_full;                //to be read by microblaze
     wire edge_fifo_empty;               //to be read by microblaze
+    assign edge_fifo_rden = 0; //temporary - remove later
     
     always @ (posedge Clk) begin 
-        if (reset_i) begin 
+        if (reset_i | edge_fifo_wren) begin //make sure edge_fifo_wren is only high for 1 cycle
             edge_buffer_addrin <= 0;
             edge_cnt <= 0;
             edge_fifo_wren <= 0;
@@ -193,13 +196,6 @@ module image_processor (
             edge_fifo_din <= edge_cnt;
             edge_cnt <= 0;
             edge_fifo_wren <= 1;
-            //reset all x & y counters
-            x_base <= 0;
-            y_base <= 0;
-            x <= 0;
-            y <= 0;
-            ed_y <= 0;
-            ed_x <= 0;
         end else if (edge_wren) begin 
             edge_buffer_addrin <= edge_buffer_addrin + 1;
             edge_cnt <= edge_cnt+1;

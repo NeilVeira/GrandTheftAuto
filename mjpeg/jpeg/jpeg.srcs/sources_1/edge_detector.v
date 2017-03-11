@@ -28,8 +28,8 @@ module edge_detector #(
     parameter integer loss_threshold = 3500,
     
     //dimensions of all images
-    parameter integer W = 64,
-    parameter integer H = 64,
+    //parameter integer W = 64,
+    //parameter integer H = 64,
      
     //parameters for edge detection
     parameter integer K = 4, //half window size
@@ -45,6 +45,7 @@ module edge_detector #(
     input rst, //active low
     input [7:0] x,
     input [7:0] y,
+    input [15:0] W,
     
     //fifo ports
     output wire wren,
@@ -55,7 +56,7 @@ module edge_detector #(
     assign loss = (r-target_r)*(r-target_r) + (g-target_g)*(g-target_g) + (b-target_b)*(b-target_b);
     reg colour;
 
-    localparam sz = (2*K+1)*W;
+    localparam sz = (2*K+1)*256; //256 = maximum width size it can handle right now
     reg [sz-1 : 0] cur_pixels;
 
     always @(posedge clk)

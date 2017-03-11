@@ -4,8 +4,6 @@
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -18,17 +16,17 @@ set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 read_mem C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/imports/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.mif
-read_ip -quiet c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+read_ip -quiet C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-set_property is_locked true [get_files c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+set_property is_locked true [get_files C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
 
-read_ip -quiet c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+read_ip -quiet C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
 set_property used_in_implementation false [get_files -all c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
-set_property is_locked true [get_files c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
+set_property is_locked true [get_files C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci]
 
-read_ip -quiet c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
+read_ip -quiet C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc]
-set_property is_locked true [get_files c:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+set_property is_locked true [get_files C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
 
 read_verilog -library xil_defaultlib {
   C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg/jpeg.srcs/sources_1/edge_detector.v

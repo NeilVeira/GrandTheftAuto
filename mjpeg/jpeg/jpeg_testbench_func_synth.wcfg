@@ -11,20 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="77324000000fs"></ZoomStartTime>
-      <ZoomEndTime time="77386479488fs"></ZoomEndTime>
-      <Cursor1Time time="67159016000fs"></Cursor1Time>
+      <ZoomStartTime time="320114310000fs"></ZoomStartTime>
+      <ZoomEndTime time="320372562635fs"></ZoomEndTime>
+      <Cursor1Time time="320270000000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="31" />
+   <WVObjectSize size="41" />
    <wave_markers>
-      <marker time="131109800000" label="" />
-      <marker time="21970100000" label="" />
-      <marker time="15430100000" label="" />
-      <marker time="17990000000" label="" />
-      <marker time="22420100000" label="" />
-      <marker time="29410100000" label="" />
-      <marker time="38980100000" label="" />
-      <marker time="67139955000" label="" />
+      <marker time="76640000000" label="" />
+      <marker time="25560000000" label="" />
+      <marker time="320270000000" label="" />
    </wave_markers>
    <wvobject fp_name="/jpeg_testbench/data" type="array">
       <obj_property name="ElementShortName">data[31:0]</obj_property>
@@ -162,5 +157,47 @@
    <wvobject fp_name="/jpeg_testbench/jpeg_decoder/bram_dout" type="array">
       <obj_property name="ElementShortName">bram_dout[23:0]</obj_property>
       <obj_property name="ObjectShortName">bram_dout[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/edge_wren" type="logic">
+      <obj_property name="ElementShortName">edge_wren</obj_property>
+      <obj_property name="ObjectShortName">edge_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/edge_out" type="array">
+      <obj_property name="ElementShortName">edge_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">edge_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/edge_buffer_addrin" type="array">
+      <obj_property name="ElementShortName">edge_buffer_addrin[11:0]</obj_property>
+      <obj_property name="ObjectShortName">edge_buffer_addrin[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/edge_fifo_wren" type="logic">
+      <obj_property name="ElementShortName">edge_fifo_wren</obj_property>
+      <obj_property name="ObjectShortName">edge_fifo_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/edge_fifo_din" type="array">
+      <obj_property name="ElementShortName">edge_fifo_din[11:0]</obj_property>
+      <obj_property name="ObjectShortName">edge_fifo_din[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/edge_fifo_empty" type="logic">
+      <obj_property name="ElementShortName">edge_fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">edge_fifo_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/edge_buffer_wren" type="logic">
+      <obj_property name="ElementShortName">edge_buffer_wren</obj_property>
+      <obj_property name="ObjectShortName">edge_buffer_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/edge_buffer_addrin" type="array">
+      <obj_property name="ElementShortName">edge_buffer_addrin[11:0]</obj_property>
+      <obj_property name="ObjectShortName">edge_buffer_addrin[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/edge_buffer_din" type="array">
+      <obj_property name="ElementShortName">edge_buffer_din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">edge_buffer_din[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/new_image" type="logic">
+      <obj_property name="ElementShortName">new_image</obj_property>
+      <obj_property name="ObjectShortName">new_image</obj_property>
    </wvobject>
 </wave_config>

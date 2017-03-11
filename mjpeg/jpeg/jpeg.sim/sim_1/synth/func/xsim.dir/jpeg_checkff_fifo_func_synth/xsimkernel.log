@@ -1,7 +1,0 @@
-Running: xsim.dir/jpeg_checkff_fifo_func_synth/xsimk.exe -simmode gui -wdb jpeg_checkff_fifo_func_synth.wdb -simrunnum 0 -socket 59947
-Design successfully loaded
-Design Loading Memory Usage: 11760 KB (Peak: 11760 KB)
-Design Loading CPU Usage: 187 ms
-Simulation completed
-Simulation Memory Usage: 12040 KB (Peak: 12040 KB)
-Simulation CPU Usage: 389 ms
