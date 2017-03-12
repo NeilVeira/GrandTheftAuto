@@ -56,11 +56,12 @@ COMPONENT blk_mem_gen_1
   PORT (
     clka : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    addra : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-    dina : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
+    dina : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
     clkb : IN STD_LOGIC;
-    addrb : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-    doutb : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+    enb : IN STD_LOGIC;
+    addrb : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
+    doutb : OUT STD_LOGIC_VECTOR(19 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -76,6 +77,7 @@ your_instance_name : blk_mem_gen_1
     addra => addra,
     dina => dina,
     clkb => clkb,
+    enb => enb,
     addrb => addrb,
     doutb => doutb
   );
