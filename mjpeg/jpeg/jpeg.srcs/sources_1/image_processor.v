@@ -47,40 +47,35 @@ module image_processor (
     wire new_image; 
     
     //compute x and y in the weird 16x16 block way that jpeg produces data
-    reg [7:0] x;
-    reg [7:0] y;
+    reg [9:0] x;
+    reg [9:0] y;
     //(x_base, y_base) = coordinate of first pixel in 16x16 block
-    reg [7:0] x_base;
-    reg [7:0] y_base;
+    reg [9:0] x_base;
+    reg [9:0] y_base;
     
     wire ed_go; 
     //ed_ymax: edge detector is allowed to go until y reaches this value.
     //Not all pixels are ready for y >= ed_ymax
-    wire [7:0] ed_ymax; 
-    reg [7:0] ed_x;
-    reg [7:0] ed_y;
+    wire [9:0] ed_ymax; 
+    reg [9:0] ed_x;
+    reg [9:0] ed_y;
     
-    always @ (negedge datavalid_o) begin
-        if (x_base + 16 >= width_o) begin
+    always @ (negedge datavalid_o or posedge new_image or posedge reset_i) begin
+        if (reset_i | new_image) begin
+            x_base <= 0;
+            y_base <= 0;
+        end else if (x_base + 16 >= width_o) begin
             y_base <= y_base+16;
             x_base <= 0;
-        end
-        else begin 
+        end else begin 
             x_base <= x_base+16;
         end
     end
-    
-    always @ (posedge datavalid_o) begin 
-        x <= x_base;
-        y <= y_base;
-    end 
     
     always @ (posedge Clk) begin 
         if (reset_i | new_image) begin 
             x <= 0;
             y <= 0;
-            x_base <= 0;
-            y_base <= 0;
         end else if (datavalid_o) begin
             if (x == x_base+15) begin
                 y <= y+1;
@@ -88,6 +83,9 @@ module image_processor (
             end else begin
                 x <= x+1;
             end
+        end else begin 
+            x <= x_base;
+            y <= y_base;
         end
     end 
     
@@ -121,8 +119,8 @@ module image_processor (
     assign ed_go = (ed_y < ed_ymax && ed_x < width_o); 
     
     //bram signals for buffering pixels between jpeg decoder and edge detector
-    wire [12:0] bram_addrin;
-    wire [12:0] bram_addrout;
+    wire [14:0] bram_addrin;
+    wire [14:0] bram_addrout;
     wire [23:0] bram_din;
     wire [23:0] bram_dout;
     wire bram_we; 
@@ -139,15 +137,15 @@ module image_processor (
     blk_mem_gen_0 jpeg_buffer (
         .clka(Clk),    // input wire clka
         .wea(bram_we),      // input wire [0 : 0] wea
-        .addra(bram_addrin),  // input wire [12 : 0] addra
+        .addra(bram_addrin),  // input wire [14 : 0] addra
         .dina(bram_din),    // input wire [23 : 0] dina
         .clkb(Clk),    // input wire clkb
-        .addrb(bram_addrout),  // input wire [12 : 0] addrb
+        .addrb(bram_addrout),  // input wire [14 : 0] addrb
         .doutb(bram_dout)  // output wire [23 : 0] doutb
     );
     
     wire edge_wren;
-    wire [15:0] edge_out;
+    wire [19:0] edge_out;
     
     edge_detector edge_detector_inst (
         .r(bram_dout[23:16]),
@@ -165,11 +163,11 @@ module image_processor (
     
     //bram signals for buffering edge pixels from the edge detector to the microblaze 
     wire edge_buffer_wren;
-    reg [11:0] edge_buffer_addrin;
-    wire [15:0] edge_buffer_din;
+    reg [12:0] edge_buffer_addrin;
+    wire [19:0] edge_buffer_din;
     wire edge_buffer_rden;              //to be set by microblaze
-    wire [11:0] edge_buffer_addrout;    //to be set by microblaze
-    wire [15:0] edge_buffer_dout;       //to be read by microblaze
+    wire [12:0] edge_buffer_addrout;    //to be set by microblaze
+    wire [19:0] edge_buffer_dout;       //to be read by microblaze
     reg [11:0] edge_cnt;
     
     assign edge_buffer_wren = edge_wren; 
@@ -206,11 +204,11 @@ module image_processor (
     blk_mem_gen_1 edge_buffer (
         .clka(Clk),                     // input wire clka
         .wea(edge_buffer_wren),         // input wire [0 : 0] wea
-        .addra(edge_buffer_addrin),     // input wire [11 : 0] addra
-        .dina(edge_buffer_din),         // input wire [15 : 0] dina
+        .addra(edge_buffer_addrin),     // input wire [12 : 0] addra
+        .dina(edge_buffer_din),         // input wire [19 : 0] dina
         .clkb(Clk),                     // input wire clkb
-        .addrb(edge_buffer_addrout),    // input wire [11 : 0] addrb
-        .doutb(edge_buffer_dout)        // output wire [15 : 0] doutb
+        .addrb(edge_buffer_addrout),    // input wire [12 : 0] addrb
+        .doutb(edge_buffer_dout)        // output wire [19 : 0] doutb
     );
     
     //this fifo stores the number of edge pixels for each image

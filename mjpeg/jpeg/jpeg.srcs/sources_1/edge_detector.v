@@ -25,7 +25,7 @@ module edge_detector #(
     parameter integer target_r = 180, 
     parameter integer target_g = 45,
     parameter integer target_b = 60,
-    parameter integer loss_threshold = 3500,
+    parameter integer error_threshold = 3500,
     
     //dimensions of all images
     //parameter integer W = 64,
@@ -43,20 +43,20 @@ module edge_detector #(
     input data_valid,
     input clk,
     input rst, //active low
-    input [7:0] x,
-    input [7:0] y,
+    input [9:0] x,
+    input [9:0] y,
     input [15:0] W,
     
     //fifo ports
     output wire wren,
-    output wire [15:0] edge_out
+    output wire [19:0] edge_out
     );
     
-    wire [16:0] loss;
-    assign loss = (r-target_r)*(r-target_r) + (g-target_g)*(g-target_g) + (b-target_b)*(b-target_b);
+    wire [16:0] error;
+    assign error = (r-target_r)*(r-target_r) + (g-target_g)*(g-target_g) + (b-target_b)*(b-target_b);
     reg colour;
 
-    localparam sz = (2*K+1)*256; //256 = maximum width size it can handle right now
+    localparam sz = (2*K+1)*640; //640 = maximum width size it can handle right now
     reg [sz-1 : 0] cur_pixels;
 
     always @(posedge clk)
@@ -68,8 +68,8 @@ module edge_detector #(
         end
         else if (data_valid) begin         
             cur_pixels[sz-1:1] <= cur_pixels[sz-2:0];
-            cur_pixels[0] <= (loss < loss_threshold) ? 1 : 0;
-            colour <= (loss < loss_threshold) ? 1 : 0;
+            cur_pixels[0] <= (error < error_threshold) ? 1 : 0;
+            colour <= (error < error_threshold) ? 1 : 0;
         end
     end
 
@@ -95,7 +95,7 @@ module edge_detector #(
     assign wren = (data_valid && 
                         y >= 2*K && x >= 2*K && //need to have processed a full window to be valid
                         min_sum <= sum && sum <= max_sum) ? 1 : 0;
-    assign edge_out[15:8] = y - K;
-    assign edge_out[7:0] = x - K;
+    assign edge_out[19:10] = y - K;
+    assign edge_out[9:0] = x - K;
 
 endmodule
