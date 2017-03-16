@@ -1,0 +1,215 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date             : Thu Mar 09 17:59:48 2017
+| Host             : DESKTOP-QUJLBQI running 64-bit major release  (build 9200)
+| Command          : report_power -file jpeg_power_routed.rpt -pb jpeg_power_summary_routed.pb -rpx jpeg_power_routed.rpx
+| Design           : jpeg
+| Device           : xc7a100tcsg324-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 95.263 (Junction temp exceeded!) |
+| Dynamic (W)              | 94.462                           |
+| Device Static (W)        | 0.801                            |
+| Effective TJA (C/W)      | 4.6                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic              |    29.134 |    12295 |       --- |             --- |
+|   LUT as Logic           |    23.801 |     4257 |     63400 |            6.71 |
+|   Register               |     2.730 |     6013 |    126800 |            4.74 |
+|   CARRY4                 |     2.317 |      435 |     15850 |            2.74 |
+|   LUT as Distributed RAM |     0.258 |       64 |     19000 |            0.34 |
+|   F7/F8 Muxes            |     0.023 |       22 |     63400 |            0.03 |
+|   BUFG                   |     0.006 |        1 |        32 |            3.13 |
+|   LUT as Shift Register  |    <0.001 |      112 |     19000 |            0.59 |
+|   Others                 |     0.000 |      393 |       --- |             --- |
+| Signals                  |    25.474 |     7605 |       --- |             --- |
+| Block RAM                |     0.572 |      4.5 |       135 |            3.33 |
+| DSPs                     |     4.588 |        5 |       240 |            2.08 |
+| I/O                      |    34.694 |      102 |       210 |           48.57 |
+| Static Power             |     0.801 |          |           |                 |
+| Total                    |    95.263 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |    60.434 |      59.865 |      0.569 |
+| Vccaux    |       1.800 |     2.922 |       2.829 |      0.093 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |    16.374 |      16.370 |      0.004 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.061 |       0.039 |      0.021 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------------------+-----------+
+| Name                                    | Power (W) |
++-----------------------------------------+-----------+
+| jpeg                                    |    94.462 |
+|   jpeg_YCbCr2RGB_p                      |     9.864 |
+|   jpeg_check_FF_p                       |     0.110 |
+|   jpeg_checkff_fifo_p                   |     1.682 |
+|     BU2                                 |     1.682 |
+|       U0/gen_as.fgas                    |     1.682 |
+|         normgen.memblk/mem1nc.coreinst  |     0.160 |
+|   jpeg_dequantize_p                     |     0.509 |
+|     jpeg_dequant_multiplier_p           |     0.405 |
+|       BU2                               |     0.405 |
+|     jpeg_qt_sr_0_0_p                    |    <0.001 |
+|       BU2                               |    <0.001 |
+|     jpeg_qt_sr_0_1_p                    |    <0.001 |
+|       BU2                               |    <0.001 |
+|     jpeg_qt_sr_1_0_p                    |    <0.001 |
+|       BU2                               |    <0.001 |
+|     jpeg_qt_sr_1_1_p                    |    <0.001 |
+|       BU2                               |    <0.001 |
+|   jpeg_dezigzag_p                       |     1.888 |
+|   jpeg_header_p                         |     5.491 |
+|   jpeg_huffman_p                        |     2.946 |
+|     ht_nr_of_symbols                    |     0.519 |
+|       BU100                             |     0.015 |
+|       BU103                             |     0.014 |
+|       BU106                             |     0.010 |
+|       BU111                             |     0.011 |
+|       BU114                             |     0.010 |
+|       BU117                             |     0.009 |
+|       BU120                             |     0.008 |
+|       BU123                             |     0.010 |
+|       BU126                             |     0.011 |
+|       BU129                             |     0.009 |
+|       BU132                             |     0.009 |
+|       BU33                              |     0.009 |
+|       BU36                              |     0.009 |
+|       BU39                              |     0.009 |
+|       BU42                              |     0.008 |
+|       BU45                              |     0.011 |
+|       BU48                              |     0.008 |
+|       BU51                              |     0.008 |
+|       BU54                              |     0.012 |
+|       BU59                              |     0.009 |
+|       BU62                              |     0.011 |
+|       BU65                              |     0.010 |
+|       BU68                              |     0.010 |
+|       BU71                              |     0.010 |
+|       BU74                              |     0.010 |
+|       BU77                              |     0.009 |
+|       BU80                              |     0.011 |
+|       BU85                              |     0.008 |
+|       BU88                              |     0.012 |
+|       BU91                              |     0.008 |
+|       BU94                              |     0.011 |
+|       BU97                              |     0.010 |
+|     ht_table                            |     0.255 |
+|       BU2                               |     0.255 |
+|     jpeg_huffman_input_sr_p             |     0.016 |
+|   jpeg_idct_p                           |    32.590 |
+|     jpeg_idct_core_12_p                 |    32.564 |
+|   jpeg_input_fifo_p                     |     2.477 |
+|     BU2                                 |     2.477 |
+|       U0/gen_as.fgas                    |     2.477 |
+|         normgen.memblk/mem1ncr.coreinst |     0.150 |
+|   jpeg_upsampling_p                     |     1.617 |
+|     Cb_buffer                           |     0.333 |
+|       BU2                               |     0.333 |
+|     Cr_buffer                           |     0.327 |
+|       BU2                               |     0.327 |
+|     Y_buffer                            |     0.150 |
+|       BU2                               |     0.150 |
++-----------------------------------------+-----------+
+
+

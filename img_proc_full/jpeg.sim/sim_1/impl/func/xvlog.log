@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/img_proc_full/jpeg.srcs/sim_1/wrapper_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wrapper_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/img_proc_full/jpeg.sim/sim_1/impl/func/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

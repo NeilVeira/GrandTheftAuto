@@ -1,0 +1,158 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Thu Mar 09 17:54:57 2017
+| Host         : DESKTOP-QUJLBQI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file jpeg_control_sets_placed.rpt
+| Design       : jpeg
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   105 |
+| Unused register locations in slices containing registers |   227 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1514 |          433 |
+| No           | No                    | Yes                    |            1316 |          365 |
+| No           | Yes                   | No                     |             604 |          170 |
+| Yes          | No                    | No                     |             142 |           46 |
+| Yes          | No                    | Yes                    |             439 |          110 |
+| Yes          | Yes                   | No                     |            1998 |          413 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------------------------+--------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                                Enable Signal                               |                          Set/Reset Signal                          | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------------------------------+--------------------------------------------------------------------+------------------+----------------+
+|  Clk_IBUF_BUFG | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb               | jpeg_check_FF_p/rst                                                |                1 |              1 |
+|  Clk_IBUF_BUFG | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/thrmod/aflogic/FULL_inv | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb       |                1 |              1 |
+|  Clk_IBUF_BUFG | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/rpremod/_not0001        | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]   |                1 |              1 |
+|  Clk_IBUF_BUFG | ready_i_IBUF                                                               | reset_i_IBUF                                                       |                1 |              1 |
+|  Clk_IBUF_BUFG | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]           | jpeg_check_FF_p/rst                                                |                1 |              1 |
+|  Clk_IBUF_BUFG | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/rpremod/_not0001      | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0] |                1 |              1 |
+|  Clk_IBUF_BUFG | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb             | reset_i_IBUF                                                       |                1 |              1 |
+|  Clk_IBUF_BUFG | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]         | reset_i_IBUF                                                       |                1 |              1 |
+|  Clk_IBUF_BUFG |                                                                            | jpeg_check_FF_p/rst                                                |                2 |              2 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N95                                        | jpeg_idct_p/jpeg_idct_core_12_p/N101                               |                1 |              4 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32608                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                1 |              4 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/state                                                       | jpeg_huffman_p/reset                                               |                2 |              4 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N292                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                1 |              4 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/ht_nr_of_symbols_address                                    | jpeg_huffman_p/reset                                               |                2 |              4 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/ce22_out                                                    | jpeg_huffman_p/reset                                               |                3 |              5 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/zeros_counter                                               | jpeg_huffman_p/reset                                               |                3 |              6 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_state                                                   | reset_i_IBUF                                                       |                5 |              6 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/ce50_out                                                    | reset_i_IBUF                                                       |                2 |              6 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/ac_dc_counter                                               | jpeg_huffman_p/reset                                               |                2 |              6 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N103                                       | reset_i_IBUF                                                       |                2 |              7 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N21                                        | reset_i_IBUF                                                       |                2 |              7 |
+|  Clk_IBUF_BUFG | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/ram_regout_en                         | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]   |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/symbols                                                     | jpeg_huffman_p/reset                                               |                5 |              8 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/sr_ce                                                       | jpeg_huffman_p/reset                                               |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/ht_tables_address                                           | jpeg_huffman_p/reset                                               |                3 |              8 |
+|  Clk_IBUF_BUFG | jpeg_dezigzag_p/E[0]                                                       | reset_i_IBUF                                                       |                3 |              8 |
+|  Clk_IBUF_BUFG | jpeg_upsampling_p/counter_out[7]_i_1_n_0                                   | reset_i_IBUF                                                       |                3 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/height[15]_i_1_n_0                                           | reset_i_IBUF                                                       |                1 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/height[7]_i_1_n_0                                            | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_comp1_sampl_factor                                      | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_comp2_sampl_factor                                      | reset_i_IBUF                                                       |                3 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_comp3_sampl_factor                                      | reset_i_IBUF                                                       |                3 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_components                                              | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_otherlength[11]                                         | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_nr_of_ht0_codes_ac                                      | reset_i_IBUF                                                       |                1 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_nr_of_ht0_codes_dc                                      | reset_i_IBUF                                                       |                1 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_nr_of_ht1_codes_ac                                      | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_nr_of_ht1_codes_dc                                      | reset_i_IBUF                                                       |                1 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_nr_of_ht2_codes_ac                                      | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_nr_of_ht2_codes_dc                                      | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_nr_of_ht3_codes_ac                                      | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_nr_of_ht3_codes_dc                                      | reset_i_IBUF                                                       |                1 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/otherlength[7]_i_1_n_0                                       | reset_i_IBUF                                                       |                3 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/width[15]_i_1__0_n_0                                         | reset_i_IBUF                                                       |                3 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/width[7]_i_1_n_0                                             | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_counter2[5]                                             | reset_i_IBUF                                                       |                3 |              8 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_counter2[11]                                            | reset_i_IBUF                                                       |                8 |              8 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/RDY                                        | reset_i_IBUF                                                       |                2 |              8 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/E[0]                                                           | jpeg_upsampling_p/wea_Y_D1                                         |                2 |              9 |
+|  Clk_IBUF_BUFG | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/ram_regout_en                       | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0] |                2 |             10 |
+|  Clk_IBUF_BUFG | jpeg_check_FF_p/E[0]                                                       | reset_i_IBUF                                                       |                4 |             10 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/data[15]_i_1_n_0                                            | jpeg_huffman_p/reset                                               |                5 |             11 |
+|  Clk_IBUF_BUFG | jpeg_dezigzag_p/do_copy                                                    | jpeg_dezigzag_p/sr_out[63][11]_i_1_n_0                             |                7 |             12 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N278                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N279                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N280                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N281                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N282                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N283                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                3 |             12 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N284                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N285                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                3 |             12 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32595                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                2 |             15 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32596                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                3 |             15 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32597                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                3 |             15 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32598                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                3 |             15 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32599                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                3 |             15 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32600                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                3 |             15 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32601                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                3 |             15 |
+|  Clk_IBUF_BUFG |                                                                            | jpeg_huffman_p/reset                                               |                6 |             15 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32594                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                5 |             15 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/ht_nr_of_symbols/N48                                        |                                                                    |                4 |             16 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/ht_nr_of_symbols/N49                                        |                                                                    |                4 |             16 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/ht_nr_of_symbols/N50                                        |                                                                    |                4 |             16 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/ht_nr_of_symbols/N51                                        |                                                                    |                4 |             16 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/code_build                                                  | jpeg_huffman_p/reset                                               |                7 |             16 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/code_read                                                   | jpeg_huffman_p/reset                                               |                3 |             16 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/last_dc_Cb0                                                 | jpeg_huffman_p/reset                                               |                4 |             16 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/last_dc_Cr0                                                 | jpeg_huffman_p/reset                                               |                5 |             16 |
+|  Clk_IBUF_BUFG | jpeg_huffman_p/last_dc_Y0                                                  | jpeg_huffman_p/reset                                               |                4 |             16 |
+|  Clk_IBUF_BUFG | jpeg_header_p/next_counter1                                                | reset_i_IBUF                                                       |                6 |             16 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/sr_out_reg[52][11][0]                                          | reset_i_IBUF                                                       |                6 |             18 |
+|  Clk_IBUF_BUFG | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/rpremod/RAM_RD_EN1_1  | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0] |                7 |             22 |
+|  Clk_IBUF_BUFG | ready_i_IBUF                                                               |                                                                    |                6 |             22 |
+|  Clk_IBUF_BUFG | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/rpremod/RAM_RD_EN1_1    | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]   |                8 |             22 |
+|  Clk_IBUF_BUFG | jpeg_YCbCr2RGB_p/R_o[7]_i_1_n_0                                            |                                                                    |                8 |             24 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N353                                       | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                5 |             30 |
+|  Clk_IBUF_BUFG | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/DEBUG_RAM_WR_EN                     | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb     |                9 |             33 |
+|  Clk_IBUF_BUFG | jpeg_idct_p/jpeg_idct_core_12_p/N32676                                     | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                7 |             33 |
+|  Clk_IBUF_BUFG | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/DEBUG_RAM_WR_EN                       | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb       |               14 |             36 |
+|  Clk_IBUF_BUFG | jpeg_header_p/E[0]                                                         | reset_i_IBUF                                                       |               13 |             37 |
+|  Clk_IBUF_BUFG | jpeg_header_p/header_select_o                                              | reset_i_IBUF                                                       |               13 |             37 |
+|  Clk_IBUF_BUFG |                                                                            | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb       |               10 |             37 |
+|  Clk_IBUF_BUFG |                                                                            | jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]   |               14 |             39 |
+|  Clk_IBUF_BUFG |                                                                            | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb     |               11 |             45 |
+|  Clk_IBUF_BUFG |                                                                            | jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0] |               12 |             46 |
+|  Clk_IBUF_BUFG | jpeg_dequantize_p/qt1_0_ce                                                 |                                                                    |               17 |             56 |
+|  Clk_IBUF_BUFG | jpeg_dequantize_p/qt0_0_ce                                                 |                                                                    |               17 |             56 |
+|  Clk_IBUF_BUFG | jpeg_header_p/data_o_reg[11]                                               |                                                                    |               17 |             56 |
+|  Clk_IBUF_BUFG | jpeg_header_p/ce                                                           |                                                                    |               17 |             56 |
+|  Clk_IBUF_BUFG |                                                                            | reset_i_IBUF                                                       |               35 |             72 |
+|  Clk_IBUF_BUFG | jpeg_dezigzag_p/sr_out[62]_0                                               | reset_i_IBUF                                                       |              110 |            744 |
+|  Clk_IBUF_BUFG | jpeg_dezigzag_p/sr_in[63][11]_i_1_n_0                                      | reset_i_IBUF                                                       |              139 |            774 |
+|  Clk_IBUF_BUFG |                                                                            | jpeg_idct_p/jpeg_idct_core_12_p/N269                               |              207 |            817 |
+|  Clk_IBUF_BUFG |                                                                            | jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |              238 |            847 |
+|  Clk_IBUF_BUFG |                                                                            |                                                                    |              433 |           1514 |
++----------------+----------------------------------------------------------------------------+--------------------------------------------------------------------+------------------+----------------+
+
+

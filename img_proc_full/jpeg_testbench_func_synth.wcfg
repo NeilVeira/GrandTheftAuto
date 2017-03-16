@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="wrapper_tb_func_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="wrapper_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="944916666fs"></ZoomStartTime>
+      <ZoomEndTime time="1006016667fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="19" />
+   <wave_markers>
+      <marker label="" time="25470000000" />
+      <marker label="" time="77557100000" />
+      <marker label="" time="78160200000" />
+      <marker label="" time="78790700000" />
+      <marker label="" time="97360200000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/wrapper_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/wrapper_tb/R">
+      <obj_property name="ElementShortName">R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/wrapper_tb/G">
+      <obj_property name="ElementShortName">G[3:0]</obj_property>
+      <obj_property name="ObjectShortName">G[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/wrapper_tb/B">
+      <obj_property name="ElementShortName">B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/H">
+      <obj_property name="ElementShortName">H</obj_property>
+      <obj_property name="ObjectShortName">H</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/V">
+      <obj_property name="ElementShortName">V</obj_property>
+      <obj_property name="ObjectShortName">V</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/image_processor_wrapper_inst/clk_100">
+      <obj_property name="ElementShortName">clk_100</obj_property>
+      <obj_property name="ObjectShortName">clk_100</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/image_processor_wrapper_inst/clk_25">
+      <obj_property name="ElementShortName">clk_25</obj_property>
+      <obj_property name="ObjectShortName">clk_25</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/wrapper_tb/image_processor_wrapper_inst/data">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/wrapper_tb/image_processor_wrapper_inst/addr_reg">
+      <obj_property name="ElementShortName">addr_reg[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_reg[13:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/image_processor_wrapper_inst/ready">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/image_processor_wrapper_inst/image_processor_inst/ready_o">
+      <obj_property name="ElementShortName">ready_o</obj_property>
+      <obj_property name="ObjectShortName">ready_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/image_processor_wrapper_inst/image_processor_inst/Clk">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/image_processor_wrapper_inst/image_processor_inst/clk_25">
+      <obj_property name="ElementShortName">clk_25</obj_property>
+      <obj_property name="ObjectShortName">clk_25</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/wrapper_tb/image_processor_wrapper_inst/image_processor_inst/data_i">
+      <obj_property name="ElementShortName">data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/image_processor_wrapper_inst/image_processor_inst/reset_i">
+      <obj_property name="ElementShortName">reset_i</obj_property>
+      <obj_property name="ObjectShortName">reset_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/image_processor_wrapper_inst/image_processor_inst/datavalid_i">
+      <obj_property name="ElementShortName">datavalid_i</obj_property>
+      <obj_property name="ObjectShortName">datavalid_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/wrapper_tb/image_processor_wrapper_inst/image_processor_inst/ready_i">
+      <obj_property name="ElementShortName">ready_i</obj_property>
+      <obj_property name="ObjectShortName">ready_i</obj_property>
+   </wvobject>
+</wave_config>
