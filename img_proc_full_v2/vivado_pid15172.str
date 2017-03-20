@@ -1,0 +1,391 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 15172
+
+Current time: 	3/15/17 10:48:04 AM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Neil
+User home directory: C:/Users/Neil
+User working directory: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/Neil/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/Neil/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	203 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 393 MB
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 48 MB (+47800kb) [00:00:21]
+// [Engine Memory]: 374 MB (+240331kb) [00:00:21]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\GrandTheftAuto\mjpeg\jpeg_decoder\jpeg.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder/jpeg.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder' 
+// [Engine Memory]: 394 MB (+1576kb) [00:00:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 394 MB. GUI used memory: 27 MB. Current time: 3/15/17 10:48:06 AM EDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 419 MB (+5620kb) [00:00:36]
+// Tcl Message: open_project C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder/jpeg.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 427 MB. GUI used memory: 26 MB. Current time: 3/15/17 10:48:21 AM EDT
+// [Engine Memory]: 443 MB (+3219kb) [00:00:51]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 469 MB (+4203kb) [00:00:59]
+// [GUI Memory]: 51 MB (+1003kb) [00:01:01]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 486 MB. GUI used memory: 32 MB. Current time: 3/15/17 10:48:50 AM EDT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 498 MB (+6005kb) [00:01:12]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: jpeg; location: C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 735.902 ; gain = 102.059 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 54 MB (+183kb) [00:01:23]
+// [GUI Memory]: 57 MB (+117kb) [00:01:33]
+// [GUI Memory]: 62 MB (+2241kb) [00:01:48]
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, f:bL)
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Common 17-344] 'open_run' was cancelled INFO: [Vivado 12-4706] 'setup' step aborted INFO: [Common 17-344] 'launch_simulation' was cancelled 
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Simulation Settings]", 10, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SETTINGS
+// Project Settings: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, "Simulation", 2); // g:JideTabbedPane (JPanel:JComponent, k:aP)
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, k:aP)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property -name {xsim.simulate.runtime} -value {1000ns} -objects [get_filesets sim_1] 
+dismissDialog("Project Settings"); // k:aP (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // x:Y (w:G, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, "Run Post-Synthesis Functional Simulation"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// f:bL (cv:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-synthesis -type functional 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a100tcsg324-1 
+// [Engine Memory]: 534 MB (+11625kb) [00:02:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 536 MB. GUI used memory: 35 MB. Current time: 3/15/17 10:49:51 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 554 MB. GUI used memory: 35 MB. Current time: 3/15/17 10:50:06 AM EDT
+// [Engine Memory]: 576 MB (+16023kb) [00:02:30]
+// [Engine Memory]: 650 MB (+46400kb) [00:02:35]
+// [Engine Memory]: 688 MB (+6080kb) [00:02:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 34 MB. Current time: 3/15/17 10:50:21 AM EDT
+// [Engine Memory]: 757 MB (+35906kb) [00:02:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 787 MB. GUI used memory: 35 MB. Current time: 3/15/17 10:50:36 AM EDT
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 789 MB. GUI used memory: 35 MB. Current time: 3/15/17 10:50:39 AM EDT
+// Xgd.load filename: C:/Xilinx/Vivado/2016.2/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_floorplan.xgd elapsed time: 1.3s
+// [Engine Memory]: 814 MB (+20108kb) [00:03:01]
+// Xgd.load filename: C:/Xilinx/Vivado/2016.2/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 3.6s
+// [GUI Memory]: 72 MB (+7250kb) [00:03:04]
+// [Engine Memory]: 895 MB (+43190kb) [00:03:04]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 5.2s
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 537 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.2 INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 32 instances were transformed.   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances  
+// Device view-level: 0.0
+// Tcl Message: INFO: [USF-XSim-29] Writing simulation netlist file for design 'synth_1'... INFO: [USF-XSim-90] write_vhdl -mode funcsim -nolib -force -file "C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder/jpeg.sim/sim_1/synth/func/jpeg_testbench_func_synth.vhd" 
+// Tcl Message: write_vhdl: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1113.199 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder/jpeg.sim/sim_1/synth/func' 
+// Tcl Message: "xvhdl -m64 --relax -prj jpeg_testbench_vhdl.prj" 
+// [GUI Memory]: 76 MB (+98kb) [00:03:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 60 MB. Current time: 3/15/17 10:51:17 AM EDT
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1113.199 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '13' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder/jpeg.sim/sim_1/synth/func' 
+// Tcl Message: Vivado Simulator 2016.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto f1a030eb72f44efca035727241454eb7 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot jpeg_testbench_func_synth xil_defaultlib.jpeg_testbench -log elaborate.log -cc clang  Using 2 slave threads. Starting static elaboration 
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 60 MB. Current time: 3/15/17 10:51:31 AM EDT
+// [Engine Memory]: 942 MB (+1651kb) [00:03:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 963 MB. GUI used memory: 60 MB. Current time: 3/15/17 10:51:46 AM EDT
+// [Engine Memory]: 1,008 MB (+20101kb) [00:04:13]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,072 MB. GUI used memory: 60 MB. Current time: 3/15/17 10:52:02 AM EDT
+// [Engine Memory]: 1,100 MB (+43693kb) [00:04:23]
+// Tcl Message: Starting simulation data flow analysis 
+// [Engine Memory]: 1,255 MB (+104822kb) [00:04:28]
+// RouteApi::initDelayMediator elapsed time: 70.7s
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Time Resolution for simulation is 1ps Compiling package std.standard Compiling package ieee.std_logic_1164 Compiling package ieee.std_logic_arith Compiling package ieee.std_logic_unsigned Compiling package std.textio Compiling package unisim.vcomponents Compiling package ieee.vital_timing Compiling package ieee.vital_primitives 
+// [GUI Memory]: 80 MB (+283kb) [00:04:49]
+// Tcl Message: Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111110000...] 
+// Tcl Message: Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010100000000100000...] Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000010000100000000...] Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010100001000000000...] Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...] Compiling architecture structure of entity xil_defaultlib.jpeg_upsampling [jpeg_upsampling_default] Compiling architecture structure of entity xil_defaultlib.jpeg [jpeg_default] Compiling architecture test of entity xil_defaultlib.jpeg_testbench 
+// Tcl Message: Waiting for 7 sub-compilation(s) to finish... 
+// Tcl Message: Built simulation snapshot jpeg_testbench_func_synth 
+// Tcl Message:  ****** Webtalk v2016.2 (64-bit)   **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder/jpeg.sim/sim_1/synth/func/xsim.dir/jpeg_testbench_func_synth/webtalk/xsim_webtalk.tcl -notrace 
+// Tcl Message: INFO: [Common 17-206] Exiting Webtalk at Wed Mar 15 10:56:37 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:49 ; elapsed = 00:05:22 . Memory (MB): peak = 1450.102 ; gain = 336.902 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '322' seconds 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder/jpeg.sim/sim_1/synth/func' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "jpeg_testbench_func_synth -key {Post-Synthesis:sim_1:Functional:jpeg_testbench} -tclbatch {jpeg_testbench.tcl} -view {C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder/jpeg_testbench_func_synth.wcfg} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Vivado Simulator 2016.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 84 MB (+59kb) [00:09:25]
+// Tcl Message: open_wave_config C:/Users/Neil/Documents/Neil/EngSci/year_4_winter/ECE532/GrandTheftAuto/mjpeg/jpeg_decoder/jpeg_testbench_func_synth.wcfg 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: source jpeg_testbench.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 64 MB. Current time: 3/15/17 10:57:14 AM EDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 1482.406 ; gain = 20.227 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'jpeg_testbench_func_synth' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:02:47 ; elapsed = 00:07:27 . Memory (MB): peak = 1482.406 ; gain = 738.609 
+// a:a (cv:JFrame): Critical Messages: addNotify
+// 'e' command handler elapsed time: 447 seconds
+// Elapsed time: 448 seconds
+dismissDialog("Run Simulation"); // f:bL (cv:JFrame)
+// [GUI Memory]: 89 MB (+1369kb) [00:09:56]
+// Elapsed time: 59 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+// [GUI Memory]: 97 MB (+2857kb) [00:10:37]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 64 MB. Current time: 3/15/17 10:58:18 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, "jpeg_decoder ; jpeg(STRUCTURE) ; VHDL Entity", 1, "jpeg_decoder", 0, true); // d:as (JViewport:JComponent, cv:JFrame) - Node
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 10:58:28 AM EDT
+selectButton((HResource) null, "Objects_Variable"); // s:JideToggleButton (CommandBar:DockableBar, cv:JFrame): FALSE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton((HResource) null, "Objects_Constant"); // s:JideToggleButton (CommandBar:DockableBar, cv:JFrame): FALSE
+selectButton((HResource) null, "Objects_Internal Signal"); // s:JideToggleButton (CommandBar:DockableBar, cv:JFrame): FALSE
+selectButton((HResource) null, "Objects_Output"); // s:JideToggleButton (CommandBar:DockableBar, cv:JFrame): FALSE
+selectButton((HResource) null, "Objects_Inout"); // s:JideToggleButton (CommandBar:DockableBar, cv:JFrame): FALSE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 10:58:35 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 10:58:36 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 10:58:47 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 10:58:48 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "jpeg_testbench_func_synth.wcfg", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 10:59:06 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 10:59:07 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 64 MB. Current time: 3/15/17 10:59:07 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 10:59:09 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "Clk ; 1 ; Logic", 0, "Clk", 0, false); // l:as (JViewport:JComponent, cv:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 78 MB. Current time: 3/15/17 10:59:12 AM EDT
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "reset_i ; 0 ; Logic", 2, "reset_i", 0, false); // l:as (JViewport:JComponent, cv:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "data_i[31:0] ; 00000000 ; Array", 1, "data_i[31:0]", 0, true); // l:as (JViewport:JComponent, cv:JFrame) - Node
+selectButton((HResource) null, "Objects_Output"); // s:JideToggleButton (CommandBar:DockableBar, cv:JFrame): TRUE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "ready_o ; 1 ; Logic", 15, "ready_o", 0, false); // l:as (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ready_o]", 11, false); // a:k (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ready_o]", 11, false, false, false, false, true, false); // a:k (JViewport:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem((HResource) null, "Delete"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 10:59:39 AM EDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, datavalid_i]", 8, false); // a:k (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [GUI Memory]: 105 MB (+3550kb) [00:12:30]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 11:00:13 AM EDT
+// Elapsed time: 37 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 449, 116); // n:a (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:03 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:04 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 11:02:05 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 68 MB. Current time: 3/15/17 11:02:05 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 109 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, Clk]", 9, false); // a:k (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ready_i]", 9, false); // a:k (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:13 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, jpeg_file_name[1:11]]", 10, true); // a:k (JViewport:JComponent, cv:JFrame) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, jpeg_file_name[1:11]]", 10, true, false, false, false, true, false); // a:k (JViewport:JComponent, cv:JFrame) - Popup Trigger - Node
+selectMenuItem((HResource) null, "Delete"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:17 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, datavalid_i]", 9, false); // a:k (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:35 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 19 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ready_o]", 5, false); // a:k (JViewport:JComponent, cv:JFrame)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:45 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 11:02:45 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:46 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:47 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:47 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:48 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:50 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:50 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:02:50 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 65 MB. Current time: 3/15/17 11:02:52 AM EDT
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 67 MB. Current time: 3/15/17 11:03:00 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 67 MB. Current time: 3/15/17 11:03:48 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,257 MB. GUI used memory: 66 MB. Current time: 3/15/17 11:03:48 AM EDT

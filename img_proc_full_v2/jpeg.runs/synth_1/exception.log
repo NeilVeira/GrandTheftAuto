@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\Neil\Documents\Neil\EngSci\year_4_winter\ECE532\GrandTheftAuto\img_proc_full_v2\jpeg.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied
