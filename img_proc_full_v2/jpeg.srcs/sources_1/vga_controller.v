@@ -73,8 +73,8 @@ module vga_controller (
     wire r1, g1, b1;
     VGAdrive vgadriver_inst (
         .clk(clk_25),
-        .red(mem_doutb[0]),
-        .green(mem_doutb[1]),
+        .red(in_range ? mem_doutb[0] : 0),
+        .green(in_range ? mem_doutb[1] : 0),
         .blue(0),
         .row(row),
         .column(column),
@@ -86,8 +86,8 @@ module vga_controller (
         .V(V)
     );
 
-    assign R = in_range ? {r1,r1,r1,r1} : 4'b0000;
-    assign G = in_range ? {g1,g1,g1,g1} : 4'b0000;
-    assign B = in_range ? {b1,b1,b1,b1} : 4'b0000;
+	assign R = {r1,r1,r1,r1};
+	assign G = {g1,g1,g1,g1};
+	assign B = {b1,b1,b1,b1};
   
 endmodule

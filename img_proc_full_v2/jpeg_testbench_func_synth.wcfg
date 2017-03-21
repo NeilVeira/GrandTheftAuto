@@ -10,28 +10,14 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="656000001fs"></ZoomEndTime>
-      <Cursor1Time time="390000000fs"></Cursor1Time>
+      <ZoomStartTime time="1040349292400fs"></ZoomStartTime>
+      <ZoomEndTime time="1109949292401fs"></ZoomEndTime>
+      <Cursor1Time time="1003028840000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="33" />
-   <wvobject fp_name="/jpeg_testbench/data" type="array">
-      <obj_property name="ElementShortName">data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">data[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/jpeg_testbench/wea" type="logic">
-      <obj_property name="ElementShortName">wea</obj_property>
-      <obj_property name="ObjectShortName">wea</obj_property>
-   </wvobject>
-   <wvobject fp_name="/jpeg_testbench/jpeg_ready" type="logic">
-      <obj_property name="ElementShortName">jpeg_ready</obj_property>
-      <obj_property name="ObjectShortName">jpeg_ready</obj_property>
-   </wvobject>
-   <wvobject type="divider" fp_name="divider108">
-      <obj_property name="label">Reading data</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-   </wvobject>
+   <WVObjectSize size="46" />
+   <wave_markers>
+      <marker time="61560072000" label="" />
+   </wave_markers>
    <wvobject fp_name="/jpeg_testbench/jpeg_decoder/s00_axis_aclk" type="logic">
       <obj_property name="ElementShortName">s00_axis_aclk</obj_property>
       <obj_property name="ObjectShortName">s00_axis_aclk</obj_property>
@@ -47,7 +33,6 @@
    <wvobject fp_name="/jpeg_testbench/jpeg_decoder/s00_axis_tdata" type="array">
       <obj_property name="ElementShortName">s00_axis_tdata[31:0]</obj_property>
       <obj_property name="ObjectShortName">s00_axis_tdata[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/jpeg_testbench/jpeg_decoder/s00_axis_tstrb" type="array">
       <obj_property name="ElementShortName">s00_axis_tstrb[3:0]</obj_property>
@@ -65,26 +50,39 @@
       <obj_property name="ElementShortName">state[1:0]</obj_property>
       <obj_property name="ObjectShortName">state[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/error_o" type="logic">
-      <obj_property name="ElementShortName">error_o</obj_property>
-      <obj_property name="ObjectShortName">error_o</obj_property>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
    </wvobject>
-   <wvobject type="divider" fp_name="divider112">
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/dout" type="array">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/data_reg" type="array">
+      <obj_property name="ElementShortName">data_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/datavalid_i" type="logic">
+      <obj_property name="ElementShortName">datavalid_i</obj_property>
+      <obj_property name="ObjectShortName">datavalid_i</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider75">
       <obj_property name="label">Fifo</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-   </wvobject>
-   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/image_data/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/jpeg_testbench/reset" type="logic">
-      <obj_property name="ElementShortName">reset</obj_property>
-      <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
    <wvobject fp_name="/jpeg_testbench/jpeg_decoder/image_data/din" type="array">
       <obj_property name="ElementShortName">din[31:0]</obj_property>
       <obj_property name="ObjectShortName">din[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/jpeg_testbench/jpeg_decoder/image_data/wr_en" type="logic">
       <obj_property name="ElementShortName">wr_en</obj_property>
@@ -114,37 +112,132 @@
       <obj_property name="label">Image Processor</obj_property>
       <obj_property name="DisplayName">label</obj_property>
    </wvobject>
-   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/data_i" type="array">
-      <obj_property name="ElementShortName">data_i[31:0]</obj_property>
-      <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/datavalid_i" type="logic">
-      <obj_property name="ElementShortName">datavalid_i</obj_property>
-      <obj_property name="ObjectShortName">datavalid_i</obj_property>
-   </wvobject>
-   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/ready_i" type="logic">
-      <obj_property name="ElementShortName">ready_i</obj_property>
-      <obj_property name="ObjectShortName">ready_i</obj_property>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/error_o" type="logic">
+      <obj_property name="ElementShortName">error_o</obj_property>
+      <obj_property name="ObjectShortName">error_o</obj_property>
    </wvobject>
    <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/ready_o" type="logic">
       <obj_property name="ElementShortName">ready_o</obj_property>
       <obj_property name="ObjectShortName">ready_o</obj_property>
    </wvobject>
-   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/red_o" type="array">
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/data_i" type="array">
+      <obj_property name="ElementShortName">data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/datavalid_i" type="logic">
+      <obj_property name="ElementShortName">datavalid_i</obj_property>
+      <obj_property name="ObjectShortName">datavalid_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/jpeg_inst/red_o" type="array">
       <obj_property name="ElementShortName">red_o[7:0]</obj_property>
       <obj_property name="ObjectShortName">red_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/green_o" type="array">
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/jpeg_inst/green_o" type="array">
       <obj_property name="ElementShortName">green_o[7:0]</obj_property>
       <obj_property name="ObjectShortName">green_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
-   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/blue_o" type="array">
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/jpeg_inst/blue_o" type="array">
       <obj_property name="ElementShortName">blue_o[7:0]</obj_property>
       <obj_property name="ObjectShortName">blue_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/jpeg_inst/width_o" type="array">
+      <obj_property name="ElementShortName">width_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">width_o[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/jpeg_inst/height_o" type="array">
+      <obj_property name="ElementShortName">height_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">height_o[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/jpeg_inst/datavalid_o" type="logic">
+      <obj_property name="ElementShortName">datavalid_o</obj_property>
+      <obj_property name="ObjectShortName">datavalid_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/x" type="array">
+      <obj_property name="ElementShortName">x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">x[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/y" type="array">
+      <obj_property name="ElementShortName">y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">y[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/ed_x" type="array">
+      <obj_property name="ElementShortName">ed_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ed_x[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/ed_y" type="array">
+      <obj_property name="ElementShortName">ed_y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ed_y[9:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="divider" fp_name="divider387">
       <obj_property name="label">VGA</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/vga_controller_inst/edge_valid" type="logic">
+      <obj_property name="ElementShortName">edge_valid</obj_property>
+      <obj_property name="ObjectShortName">edge_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/vga_controller_inst/ed_go" type="logic">
+      <obj_property name="ElementShortName">ed_go</obj_property>
+      <obj_property name="ObjectShortName">ed_go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/vga_controller_inst/colour" type="logic">
+      <obj_property name="ElementShortName">colour</obj_property>
+      <obj_property name="ObjectShortName">colour</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/vga_controller_inst/R" type="array">
+      <obj_property name="ElementShortName">R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/vga_controller_inst/G" type="array">
+      <obj_property name="ElementShortName">G[3:0]</obj_property>
+      <obj_property name="ObjectShortName">G[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/vga_controller_inst/B" type="array">
+      <obj_property name="ElementShortName">B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/vga_controller_inst/vgadriver_inst/row" type="array">
+      <obj_property name="ElementShortName">row[9:0]</obj_property>
+      <obj_property name="ObjectShortName">row[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder/img_proc_inst/vga_controller_inst/vgadriver_inst/column" type="array">
+      <obj_property name="ElementShortName">column[9:0]</obj_property>
+      <obj_property name="ObjectShortName">column[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="divider" fp_name="divider112">
       <obj_property name="label">Input FIFO</obj_property>

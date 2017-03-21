@@ -62,10 +62,11 @@
     (* dont_touch = "true" *) wire [31:0] dout;
     (* dont_touch = "true" *) wire full, almost_full, empty;
     (* dont_touch = "true" *) wire ready;    
+    (* dont_touch = "true" *) wire datavalid_i;  
     
     fifo_generator_0 image_data (
         .clk(s00_axis_aclk),                  // input wire clk
-        //.rst(~s00_axis_aresetn),                // input wire srst
+        //.srst(~s00_axis_aresetn),                // input wire srst
         .din(s00_axis_tdata),                  // input wire [31 : 0] din
         .wr_en(s00_axis_tvalid),              // input wire wr_en
         .rd_en(rd_en),              // input wire rd_en
@@ -85,9 +86,7 @@
             else 
                 next_state = WAITING_FOR_DATA;
         SENDING_DATA:
-            if (~s00_axis_tready) 
-                next_state = WAITING_FOR_READY;
-            else if (empty)
+            if (~ready || empty) 
                 next_state = WAITING_FOR_DATA;
             else 
                 next_state = SENDING_DATA;
@@ -102,13 +101,14 @@
     
     assign rd_en = (state == SENDING_DATA) && ~empty;
     assign s00_axis_tready = ~full;
+	assign datavalid_i = rd_en & ready;
 	
     image_processor img_proc_inst(
         .Clk(s00_axis_aclk),
         .clk_25(clk_25),
         .data_i(dout),
         .reset_i(~s00_axis_aresetn),
-        .datavalid_i(rden && ready),
+        .datavalid_i(datavalid_i),
         .ready_i(1'b1),
         .ready_o(ready), 
         .calibrate(calibrate), 
