@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="PmodWIFI_pmod_bridge_0_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1489894691">
+  <File Type="PA-TCL" Name="PmodWIFI_pmod_bridge_0_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="PmodWIFI_pmod_bridge_0_0_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="PmodWIFI_pmod_bridge_0_0.vds"/>
+  <File Type="RDS-UTIL" Name="PmodWIFI_pmod_bridge_0_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="PmodWIFI_pmod_bridge_0_0_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="PmodWIFI_pmod_bridge_0_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PmodWIFI_pmod_bridge_0_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="PmodWIFI_pmod_bridge_0_0_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/PmodWIFI_pmod_bridge_0_0">
+    <File Path="$PSRCDIR/sources_1/ip/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/vivado-library-master/ip/Pmods/PmodWIFI_v1_0/src/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0.xci"/>
+        <Attr Name="ImportTime" Val="1487265481"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="PmodWIFI_pmod_bridge_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/PmodWIFI_pmod_bridge_0_0">
+    <File Path="$PSRCDIR/sources_1/ip/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/vivado-library-master/ip/Pmods/PmodWIFI_v1_0/src/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0.xci"/>
+        <Attr Name="ImportTime" Val="1487265481"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="PmodWIFI_pmod_bridge_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

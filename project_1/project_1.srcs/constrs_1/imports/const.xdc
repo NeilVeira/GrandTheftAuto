@@ -1,0 +1,30 @@
+#set_property PACKAGE_PIN D14 [get_ports pmod_out_pin1_io]
+#set_property PACKAGE_PIN F16 [get_ports pmod_out_pin2_io]
+#set_property PACKAGE_PIN G16 [get_ports pmod_out_pin3_io]
+#set_property PACKAGE_PIN H14 [get_ports pmod_out_pin4_io]
+#set_property PACKAGE_PIN E16 [get_ports pmod_out_pin7_io]
+#set_property PACKAGE_PIN F13 [get_ports pmod_out_pin8_io]
+#set_property PACKAGE_PIN G13 [get_ports pmod_out_pin9_io]
+#set_property PACKAGE_PIN H16 [get_ports pmod_out_pin10_io]
+#set_property IOSTANDARD LVCMOS33 [get_ports pmod_out_pin1_io]
+#set_property IOSTANDARD LVCMOS33 [get_ports pmod_out_pin2_io]
+#set_property IOSTANDARD LVCMOS33 [get_ports pmod_out_pin3_io]
+#set_property IOSTANDARD LVCMOS33 [get_ports pmod_out_pin4_io]
+#set_property IOSTANDARD LVCMOS33 [get_ports pmod_out_pin7_io]
+#set_property IOSTANDARD LVCMOS33 [get_ports pmod_out_pin8_io]
+#set_property IOSTANDARD LVCMOS33 [get_ports pmod_out_pin9_io]
+#set_property IOSTANDARD LVCMOS33 [get_ports pmod_out_pin10_io]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_clock]
+set_property PACKAGE_PIN E3 [get_ports sys_clock]
+create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports sys_clock]
+
+
+connect_debug_port u_ila_0/probe1 [get_nets [list design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/im_proc/jpeg_inst_n_123]]
+connect_debug_port u_ila_0/probe4 [get_nets [list design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/im_proc/ready]]
+connect_debug_port u_ila_0/probe5 [get_nets [list design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/im_proc/s00_axis_tready]]
+connect_debug_port u_ila_0/probe6 [get_nets [list design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/im_proc/jpeg_inst/s00_axis_aresetn]]
+
+
+connect_debug_port u_ila_0/probe4 [get_nets [list design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/im_proc/jpeg_inst/jpeg_dezigzag_p/ready_o]]
+connect_debug_port u_ila_0/probe5 [get_nets [list design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/im_proc/jpeg_inst/jpeg_huffman_p/ready_o]]
+

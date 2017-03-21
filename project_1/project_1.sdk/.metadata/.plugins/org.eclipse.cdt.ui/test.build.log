@@ -1,0 +1,21 @@
+11:39:15 **** Auto Build of configuration Debug for project test ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: test.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -o "test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: test.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test.elf  |tee "test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 271420	   8048	  19180	 298648	  48e98	test.elf
+'Finished building: test.elf.size'
+' '
+
+11:39:18 Build Finished (took 2s.946ms)
+

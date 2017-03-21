@@ -1,0 +1,1281 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Mon Mar 20 18:45:46 2017
+| Host         : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0) from (Rev. 10) to (Rev. 19)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'calibrate'
+
+-Upgrade has added port 'edge_ram_addr'
+
+-Upgrade has added port 'edge_ram_din'
+
+-Upgrade has added port 'edge_ram_wren'
+
+-Upgrade has added port 'img_proc_write'
+
+-Upgrade has added port 'microblaze_read'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sun Mar 19 10:56:39 2017
+| Host         : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sun Mar 19 09:05:38 2017
+| Host         : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0) from (Rev. 7) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 22:16:29 2017
+| Host         : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 22:10:18 2017
+| Host         : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0) from (Rev. 7) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_rst_mig_7series_0_81M_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_rst_mig_7series_0_81M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 9)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_rst_clk_wiz_1_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_rst_clk_wiz_1_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 9)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mig_7series_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_mig_7series_0_0 (xilinx.com:ip:mig_7series:4.0) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_clk_wiz_1_0 (xilinx.com:ip:clk_wiz:5.3 (Rev. 1)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 13)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_PmodWIFI_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_PmodWIFI_1_0 (digilentinc.com:IP:PmodWIFI:1.0 (Rev. 25)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:41 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PmodWIFI_pmod_bridge_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PmodWIFI_pmod_bridge_0_0 (digilentinc.com:ip:pmod_bridge:1.0 (Rev. 7)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:41 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PmodWIFI_axi_quad_spi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PmodWIFI_axi_quad_spi_0_0 (xilinx.com:ip:axi_quad_spi:3.2 (Rev. 8)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:40 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PmodWIFI_axi_gpio_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PmodWIFI_axi_gpio_1_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 11)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:50:39 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PmodWIFI_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PmodWIFI_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 11)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:43:41 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:27:51 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0) from (Rev. 7) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_rst_mig_7series_0_81M_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_rst_mig_7series_0_81M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 9)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_rst_clk_wiz_1_100M_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of design_1_rst_clk_wiz_1_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 9)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Customization warnings
+-------------------------
+
+Value 'reset' is out of the range for parameter 'RESET BOARD INTERFACE(RESET_BOARD_INTERFACE)' for BD Cell 'rst_clk_wiz_1_100M' . Valid values are - Custom
+
+Customization errors found on 'rst_clk_wiz_1_100M'. Restoring to previous valid configuration.
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 -user_name design_1_rst_clk_wiz_1_100M_0
+set_property -dict "\
+  CONFIG.C_AUX_RESET_HIGH 0 \
+  CONFIG.C_AUX_RST_WIDTH 4 \
+  CONFIG.C_EXT_RESET_HIGH 0 \
+  CONFIG.C_EXT_RST_WIDTH 4 \
+  CONFIG.C_NUM_BUS_RST 1 \
+  CONFIG.C_NUM_INTERCONNECT_ARESETN 1 \
+  CONFIG.C_NUM_PERP_ARESETN 1 \
+  CONFIG.C_NUM_PERP_RST 1 \
+  CONFIG.Component_Name design_1_rst_clk_wiz_1_100M_0 \
+  CONFIG.RESET_BOARD_INTERFACE reset \
+  CONFIG.USE_BOARD_FLOW true \
+  CONFIG.clock.FREQ_HZ 80000000 " [get_ips design_1_rst_clk_wiz_1_100M_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mig_7series_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of design_1_mig_7series_0_0 (xilinx.com:ip:mig_7series:4.0) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_mig_7series_0_0'.
+
+
+-Upgrade has removed interface 'CLOCK'
+
+-Upgrade has removed interface 'DDR2'
+
+-Upgrade has removed interface 'DDR2_RESET'
+
+-Upgrade has removed interface 'DDR3_RESET'
+
+-Upgrade has removed interface 'LPDDR2_RESET'
+
+-Upgrade has removed interface 'MMCM_CLKOUT0'
+
+-Upgrade has removed interface 'MMCM_CLKOUT1'
+
+-Upgrade has removed interface 'MMCM_CLKOUT2'
+
+-Upgrade has removed interface 'MMCM_CLKOUT3'
+
+-Upgrade has removed interface 'MMCM_CLKOUT4'
+
+-Upgrade has removed interface 'QDRIIP_RESET'
+
+-Upgrade has removed interface 'RESET'
+
+-Upgrade has removed interface 'RLDIII_RESET'
+
+-Upgrade has removed interface 'RLDII_RESET'
+
+-Upgrade has removed interface 'SYS_CLK_I'
+
+-Upgrade has removed interface 'S_AXI'
+
+-Upgrade has added interface 'CLK_REF' (xilinx.com:interface:diff_clock:1.0)
+
+
+4. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_mig_7series_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'aresetn'
+
+-Upgrade has removed port 'ddr2_addr'
+
+-Upgrade has removed port 'ddr2_ba'
+
+-Upgrade has removed port 'ddr2_cas_n'
+
+-Upgrade has removed port 'ddr2_ck_n'
+
+-Upgrade has removed port 'ddr2_ck_p'
+
+-Upgrade has removed port 'ddr2_cke'
+
+-Upgrade has removed port 'ddr2_cs_n'
+
+-Upgrade has removed port 'ddr2_dm'
+
+-Upgrade has removed port 'ddr2_dq'
+
+-Upgrade has removed port 'ddr2_dqs_n'
+
+-Upgrade has removed port 'ddr2_dqs_p'
+
+-Upgrade has removed port 'ddr2_odt'
+
+-Upgrade has removed port 'ddr2_ras_n'
+
+-Upgrade has removed port 'ddr2_we_n'
+
+-Upgrade has removed port 'init_calib_complete'
+
+-Upgrade has removed port 'mmcm_locked'
+
+-Upgrade has removed port 's_axi_araddr'
+
+-Upgrade has removed port 's_axi_arburst'
+
+-Upgrade has removed port 's_axi_arcache'
+
+-Upgrade has removed port 's_axi_arid'
+
+-Upgrade has removed port 's_axi_arlen'
+
+-Upgrade has removed port 's_axi_arlock'
+
+-Upgrade has removed port 's_axi_arprot'
+
+-Upgrade has removed port 's_axi_arqos'
+
+-Upgrade has removed port 's_axi_arready'
+
+-Upgrade has removed port 's_axi_arsize'
+
+-Upgrade has removed port 's_axi_arvalid'
+
+-Upgrade has removed port 's_axi_awaddr'
+
+-Upgrade has removed port 's_axi_awburst'
+
+-Upgrade has removed port 's_axi_awcache'
+
+-Upgrade has removed port 's_axi_awid'
+
+-Upgrade has removed port 's_axi_awlen'
+
+-Upgrade has removed port 's_axi_awlock'
+
+-Upgrade has removed port 's_axi_awprot'
+
+-Upgrade has removed port 's_axi_awqos'
+
+-Upgrade has removed port 's_axi_awready'
+
+-Upgrade has removed port 's_axi_awsize'
+
+-Upgrade has removed port 's_axi_awvalid'
+
+-Upgrade has removed port 's_axi_bid'
+
+-Upgrade has removed port 's_axi_bready'
+
+-Upgrade has removed port 's_axi_bresp'
+
+-Upgrade has removed port 's_axi_bvalid'
+
+-Upgrade has removed port 's_axi_rdata'
+
+-Upgrade has removed port 's_axi_rid'
+
+-Upgrade has removed port 's_axi_rlast'
+
+-Upgrade has removed port 's_axi_rready'
+
+-Upgrade has removed port 's_axi_rresp'
+
+-Upgrade has removed port 's_axi_rvalid'
+
+-Upgrade has removed port 's_axi_wdata'
+
+-Upgrade has removed port 's_axi_wlast'
+
+-Upgrade has removed port 's_axi_wready'
+
+-Upgrade has removed port 's_axi_wstrb'
+
+-Upgrade has removed port 's_axi_wvalid'
+
+-Upgrade has removed port 'sys_clk_i'
+
+-Upgrade has removed port 'ui_addn_clk_0'
+
+-Upgrade has removed port 'ui_clk'
+
+-Upgrade has removed port 'ui_clk_sync_rst'
+
+-Upgrade has added port 'clk_ref_n'
+
+-Upgrade has added port 'clk_ref_p'
+
+
+5. Customization warnings
+-------------------------
+
+Value 'reset' is out of the range for parameter 'RESET_BOARD_INTERFACE(RESET_BOARD_INTERFACE)' for BD Cell 'mig_7series_0' . Valid values are - Custom
+
+Customization errors found on 'mig_7series_0'. Restoring to previous valid configuration.
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:mig_7series:4.0 -user_name design_1_mig_7series_0_0
+set_property -dict "\
+  CONFIG.BOARD_MIG_PARAM Custom \
+  CONFIG.Component_Name design_1_mig_7series_0_0 \
+  CONFIG.MIG_DONT_TOUCH_PARAM Custom \
+  CONFIG.RESET_BOARD_INTERFACE reset \
+  CONFIG.XML_INPUT_FILE board.prj " [get_ips design_1_mig_7series_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of design_1_clk_wiz_1_0 (xilinx.com:ip:clk_wiz:5.3 (Rev. 1)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_clk_wiz_1_0'.
+
+
+-Upgrade has removed interface 'clock_CLK_OUT2'
+
+-Upgrade has removed interface 'clock_CLK_OUT3'
+
+-Upgrade has removed interface 'resetn'
+
+-Upgrade has added interface 'reset' (xilinx.com:signal:reset:1.0)
+
+
+4. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_clk_wiz_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'clk_out2'
+
+-Upgrade has removed port 'clk_out3'
+
+-Upgrade has removed port 'resetn'
+
+-Upgrade has added port 'reset'
+
+
+5. Customization warnings
+-------------------------
+
+Value 'reset' is out of the range for parameter 'RESET BOARD INTERFACE(RESET_BOARD_INTERFACE)' for BD Cell 'clk_wiz_1' . Valid values are - Custom
+
+Customization errors found on 'clk_wiz_1'. Restoring to previous valid configuration.
+
+An attempt to modify the value of disabled parameter 'CLKOUT2_REQUESTED_OUT_FREQ' from '200.000' to '100.000' has been ignored for IP 'clk_wiz_1'
+
+An attempt to modify the value of disabled parameter 'CLKOUT3_REQUESTED_OUT_FREQ' from '25' to '100.000' has been ignored for IP 'clk_wiz_1'
+
+
+6. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:clk_wiz:5.3 -user_name design_1_clk_wiz_1_0
+set_property -dict "\
+  CONFIG.AXI_DRP false \
+  CONFIG.CALC_DONE empty \
+  CONFIG.CDDCDONE_PORT cddcdone \
+  CONFIG.CDDCREQ_PORT cddcreq \
+  CONFIG.CLKFB_IN_N_PORT clkfb_in_n \
+  CONFIG.CLKFB_IN_PORT clkfb_in \
+  CONFIG.CLKFB_IN_P_PORT clkfb_in_p \
+  CONFIG.CLKFB_IN_SIGNALING SINGLE \
+  CONFIG.CLKFB_OUT_N_PORT clkfb_out_n \
+  CONFIG.CLKFB_OUT_PORT clkfb_out \
+  CONFIG.CLKFB_OUT_P_PORT clkfb_out_p \
+  CONFIG.CLKFB_STOPPED_PORT clkfb_stopped \
+  CONFIG.CLKIN1_JITTER_PS 100.0 \
+  CONFIG.CLKIN1_UI_JITTER 0.010 \
+  CONFIG.CLKIN2_JITTER_PS 100.0 \
+  CONFIG.CLKIN2_UI_JITTER 0.010 \
+  CONFIG.CLKOUT1_DRIVES BUFG \
+  CONFIG.CLKOUT1_JITTER 137.143 \
+  CONFIG.CLKOUT1_PHASE_ERROR 98.575 \
+  CONFIG.CLKOUT1_REQUESTED_DUTY_CYCLE 50.000 \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ 80.000 \
+  CONFIG.CLKOUT1_REQUESTED_PHASE 0.000 \
+  CONFIG.CLKOUT1_SEQUENCE_NUMBER 1 \
+  CONFIG.CLKOUT1_USED true \
+  CONFIG.CLKOUT2_DRIVES BUFG \
+  CONFIG.CLKOUT2_JITTER 114.829 \
+  CONFIG.CLKOUT2_PHASE_ERROR 98.575 \
+  CONFIG.CLKOUT2_REQUESTED_DUTY_CYCLE 50.000 \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ 200.000 \
+  CONFIG.CLKOUT2_REQUESTED_PHASE 0.000 \
+  CONFIG.CLKOUT2_SEQUENCE_NUMBER 1 \
+  CONFIG.CLKOUT2_USED true \
+  CONFIG.CLKOUT3_DRIVES BUFG \
+  CONFIG.CLKOUT3_JITTER 175.402 \
+  CONFIG.CLKOUT3_PHASE_ERROR 98.575 \
+  CONFIG.CLKOUT3_REQUESTED_DUTY_CYCLE 50.000 \
+  CONFIG.CLKOUT3_REQUESTED_OUT_FREQ 25 \
+  CONFIG.CLKOUT3_REQUESTED_PHASE 0.000 \
+  CONFIG.CLKOUT3_SEQUENCE_NUMBER 1 \
+  CONFIG.CLKOUT3_USED true \
+  CONFIG.CLKOUT4_DRIVES BUFG \
+  CONFIG.CLKOUT4_JITTER 0.0 \
+  CONFIG.CLKOUT4_PHASE_ERROR 0.0 \
+  CONFIG.CLKOUT4_REQUESTED_DUTY_CYCLE 50.000 \
+  CONFIG.CLKOUT4_REQUESTED_OUT_FREQ 100.000 \
+  CONFIG.CLKOUT4_REQUESTED_PHASE 0.000 \
+  CONFIG.CLKOUT4_SEQUENCE_NUMBER 1 \
+  CONFIG.CLKOUT4_USED false \
+  CONFIG.CLKOUT5_DRIVES BUFG \
+  CONFIG.CLKOUT5_JITTER 0.0 \
+  CONFIG.CLKOUT5_PHASE_ERROR 0.0 \
+  CONFIG.CLKOUT5_REQUESTED_DUTY_CYCLE 50.000 \
+  CONFIG.CLKOUT5_REQUESTED_OUT_FREQ 100.000 \
+  CONFIG.CLKOUT5_REQUESTED_PHASE 0.000 \
+  CONFIG.CLKOUT5_SEQUENCE_NUMBER 1 \
+  CONFIG.CLKOUT5_USED false \
+  CONFIG.CLKOUT6_DRIVES BUFG \
+  CONFIG.CLKOUT6_JITTER 0.0 \
+  CONFIG.CLKOUT6_PHASE_ERROR 0.0 \
+  CONFIG.CLKOUT6_REQUESTED_DUTY_CYCLE 50.000 \
+  CONFIG.CLKOUT6_REQUESTED_OUT_FREQ 100.000 \
+  CONFIG.CLKOUT6_REQUESTED_PHASE 0.000 \
+  CONFIG.CLKOUT6_SEQUENCE_NUMBER 1 \
+  CONFIG.CLKOUT6_USED false \
+  CONFIG.CLKOUT7_DRIVES BUFG \
+  CONFIG.CLKOUT7_JITTER 0.0 \
+  CONFIG.CLKOUT7_PHASE_ERROR 0.0 \
+  CONFIG.CLKOUT7_REQUESTED_DUTY_CYCLE 50.000 \
+  CONFIG.CLKOUT7_REQUESTED_OUT_FREQ 100.000 \
+  CONFIG.CLKOUT7_REQUESTED_PHASE 0.000 \
+  CONFIG.CLKOUT7_SEQUENCE_NUMBER 1 \
+  CONFIG.CLKOUT7_USED false \
+  CONFIG.CLKOUTPHY_REQUESTED_FREQ 600.000 \
+  CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock \
+  CONFIG.CLK_IN2_BOARD_INTERFACE Custom \
+  CONFIG.CLK_IN_SEL_PORT clk_in_sel \
+  CONFIG.CLK_OUT1_PORT clk_out1 \
+  CONFIG.CLK_OUT1_USE_FINE_PS_GUI false \
+  CONFIG.CLK_OUT2_PORT clk_out2 \
+  CONFIG.CLK_OUT2_USE_FINE_PS_GUI false \
+  CONFIG.CLK_OUT3_PORT clk_out3 \
+  CONFIG.CLK_OUT3_USE_FINE_PS_GUI false \
+  CONFIG.CLK_OUT4_PORT clk_out4 \
+  CONFIG.CLK_OUT4_USE_FINE_PS_GUI false \
+  CONFIG.CLK_OUT5_PORT clk_out5 \
+  CONFIG.CLK_OUT5_USE_FINE_PS_GUI false \
+  CONFIG.CLK_OUT6_PORT clk_out6 \
+  CONFIG.CLK_OUT6_USE_FINE_PS_GUI false \
+  CONFIG.CLK_OUT7_PORT clk_out7 \
+  CONFIG.CLK_OUT7_USE_FINE_PS_GUI false \
+  CONFIG.CLK_VALID_PORT CLK_VALID \
+  CONFIG.CLOCK_MGR_TYPE auto \
+  CONFIG.Component_Name design_1_clk_wiz_1_0 \
+  CONFIG.DADDR_PORT daddr \
+  CONFIG.DCLK_PORT dclk \
+  CONFIG.DEN_PORT den \
+  CONFIG.DIFF_CLK_IN1_BOARD_INTERFACE Custom \
+  CONFIG.DIFF_CLK_IN2_BOARD_INTERFACE Custom \
+  CONFIG.DIN_PORT din \
+  CONFIG.DOUT_PORT dout \
+  CONFIG.DRDY_PORT drdy \
+  CONFIG.DWE_PORT dwe \
+  CONFIG.ENABLE_CDDC false \
+  CONFIG.ENABLE_CLKOUTPHY false \
+  CONFIG.ENABLE_CLOCK_MONITOR false \
+  CONFIG.ENABLE_USER_CLOCK0 false \
+  CONFIG.ENABLE_USER_CLOCK1 false \
+  CONFIG.ENABLE_USER_CLOCK2 false \
+  CONFIG.ENABLE_USER_CLOCK3 false \
+  CONFIG.Enable_PLL0 false \
+  CONFIG.Enable_PLL1 false \
+  CONFIG.FEEDBACK_SOURCE FDBK_AUTO \
+  CONFIG.INPUT_CLK_STOPPED_PORT input_clk_stopped \
+  CONFIG.INPUT_MODE frequency \
+  CONFIG.INTERFACE_SELECTION Enable_AXI \
+  CONFIG.IN_FREQ_UNITS Units_MHz \
+  CONFIG.IN_JITTER_UNITS Units_UI \
+  CONFIG.JITTER_OPTIONS UI \
+  CONFIG.JITTER_SEL No_Jitter \
+  CONFIG.LOCKED_PORT locked \
+  CONFIG.MMCM_BANDWIDTH OPTIMIZED \
+  CONFIG.MMCM_CLKFBOUT_MULT_F 10.000 \
+  CONFIG.MMCM_CLKFBOUT_PHASE 0.000 \
+  CONFIG.MMCM_CLKFBOUT_USE_FINE_PS false \
+  CONFIG.MMCM_CLKIN1_PERIOD 10.0 \
+  CONFIG.MMCM_CLKIN2_PERIOD 10.0 \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F 12.500 \
+  CONFIG.MMCM_CLKOUT0_DUTY_CYCLE 0.500 \
+  CONFIG.MMCM_CLKOUT0_PHASE 0.000 \
+  CONFIG.MMCM_CLKOUT0_USE_FINE_PS false \
+  CONFIG.MMCM_CLKOUT1_DIVIDE 5 \
+  CONFIG.MMCM_CLKOUT1_DUTY_CYCLE 0.500 \
+  CONFIG.MMCM_CLKOUT1_PHASE 0.000 \
+  CONFIG.MMCM_CLKOUT1_USE_FINE_PS false \
+  CONFIG.MMCM_CLKOUT2_DIVIDE 40 \
+  CONFIG.MMCM_CLKOUT2_DUTY_CYCLE 0.500 \
+  CONFIG.MMCM_CLKOUT2_PHASE 0.000 \
+  CONFIG.MMCM_CLKOUT2_USE_FINE_PS false \
+  CONFIG.MMCM_CLKOUT3_DIVIDE 1 \
+  CONFIG.MMCM_CLKOUT3_DUTY_CYCLE 0.500 \
+  CONFIG.MMCM_CLKOUT3_PHASE 0.000 \
+  CONFIG.MMCM_CLKOUT3_USE_FINE_PS false \
+  CONFIG.MMCM_CLKOUT4_CASCADE false \
+  CONFIG.MMCM_CLKOUT4_DIVIDE 1 \
+  CONFIG.MMCM_CLKOUT4_DUTY_CYCLE 0.500 \
+  CONFIG.MMCM_CLKOUT4_PHASE 0.000 \
+  CONFIG.MMCM_CLKOUT4_USE_FINE_PS false \
+  CONFIG.MMCM_CLKOUT5_DIVIDE 1 \
+  CONFIG.MMCM_CLKOUT5_DUTY_CYCLE 0.500 \
+  CONFIG.MMCM_CLKOUT5_PHASE 0.000 \
+  CONFIG.MMCM_CLKOUT5_USE_FINE_PS false \
+  CONFIG.MMCM_CLKOUT6_DIVIDE 1 \
+  CONFIG.MMCM_CLKOUT6_DUTY_CYCLE 0.500 \
+  CONFIG.MMCM_CLKOUT6_PHASE 0.000 \
+  CONFIG.MMCM_CLKOUT6_USE_FINE_PS false \
+  CONFIG.MMCM_CLOCK_HOLD false \
+  CONFIG.MMCM_COMPENSATION ZHOLD \
+  CONFIG.MMCM_DIVCLK_DIVIDE 1 \
+  CONFIG.MMCM_NOTES None \
+  CONFIG.MMCM_REF_JITTER1 0.010 \
+  CONFIG.MMCM_REF_JITTER2 0.010 \
+  CONFIG.MMCM_STARTUP_WAIT false \
+  CONFIG.NUM_OUT_CLKS 3 \
+  CONFIG.OVERRIDE_MMCM false \
+  CONFIG.OVERRIDE_PLL false \
+  CONFIG.PHASE_DUTY_CONFIG false \
+  CONFIG.PLATFORM UNKNOWN \
+  CONFIG.PLL_BANDWIDTH OPTIMIZED \
+  CONFIG.PLL_CLKFBOUT_MULT 4 \
+  CONFIG.PLL_CLKFBOUT_PHASE 0.000 \
+  CONFIG.PLL_CLKIN_PERIOD 10.000 \
+  CONFIG.PLL_CLKOUT0_DIVIDE 1 \
+  CONFIG.PLL_CLKOUT0_DUTY_CYCLE 0.500 \
+  CONFIG.PLL_CLKOUT0_PHASE 0.000 \
+  CONFIG.PLL_CLKOUT1_DIVIDE 1 \
+  CONFIG.PLL_CLKOUT1_DUTY_CYCLE 0.500 \
+  CONFIG.PLL_CLKOUT1_PHASE 0.000 \
+  CONFIG.PLL_CLKOUT2_DIVIDE 1 \
+  CONFIG.PLL_CLKOUT2_DUTY_CYCLE 0.500 \
+  CONFIG.PLL_CLKOUT2_PHASE 0.000 \
+  CONFIG.PLL_CLKOUT3_DIVIDE 1 \
+  CONFIG.PLL_CLKOUT3_DUTY_CYCLE 0.500 \
+  CONFIG.PLL_CLKOUT3_PHASE 0.000 \
+  CONFIG.PLL_CLKOUT4_DIVIDE 1 \
+  CONFIG.PLL_CLKOUT4_DUTY_CYCLE 0.500 \
+  CONFIG.PLL_CLKOUT4_PHASE 0.000 \
+  CONFIG.PLL_CLKOUT5_DIVIDE 1 \
+  CONFIG.PLL_CLKOUT5_DUTY_CYCLE 0.500 \
+  CONFIG.PLL_CLKOUT5_PHASE 0.000 \
+  CONFIG.PLL_CLK_FEEDBACK CLKFBOUT \
+  CONFIG.PLL_COMPENSATION SYSTEM_SYNCHRONOUS \
+  CONFIG.PLL_DIVCLK_DIVIDE 1 \
+  CONFIG.PLL_NOTES None \
+  CONFIG.PLL_REF_JITTER 0.010 \
+  CONFIG.POWER_DOWN_PORT power_down \
+  CONFIG.PRECISION 1 \
+  CONFIG.PRIMARY_PORT clk_in1 \
+  CONFIG.PRIMITIVE MMCM \
+  CONFIG.PRIMTYPE_SEL mmcm_adv \
+  CONFIG.PRIM_IN_FREQ 100.000 \
+  CONFIG.PRIM_IN_JITTER 0.010 \
+  CONFIG.PRIM_IN_TIMEPERIOD 10.000 \
+  CONFIG.PRIM_SOURCE Single_ended_clock_capable_pin \
+  CONFIG.PSCLK_PORT psclk \
+  CONFIG.PSDONE_PORT psdone \
+  CONFIG.PSEN_PORT psen \
+  CONFIG.PSINCDEC_PORT psincdec \
+  CONFIG.REF_CLK_FREQ 100.0 \
+  CONFIG.RELATIVE_INCLK REL_PRIMARY \
+  CONFIG.RESET_BOARD_INTERFACE reset \
+  CONFIG.RESET_PORT resetn \
+  CONFIG.RESET_TYPE ACTIVE_LOW \
+  CONFIG.SECONDARY_IN_FREQ 100.000 \
+  CONFIG.SECONDARY_IN_JITTER 0.010 \
+  CONFIG.SECONDARY_IN_TIMEPERIOD 10.000 \
+  CONFIG.SECONDARY_PORT clk_in2 \
+  CONFIG.SECONDARY_SOURCE Single_ended_clock_capable_pin \
+  CONFIG.SS_MODE CENTER_HIGH \
+  CONFIG.SS_MOD_FREQ 250 \
+  CONFIG.SS_MOD_TIME 0.004 \
+  CONFIG.STATUS_PORT STATUS \
+  CONFIG.SUMMARY_STRINGS empty \
+  CONFIG.USER_CLK_FREQ0 100.0 \
+  CONFIG.USER_CLK_FREQ1 100.0 \
+  CONFIG.USER_CLK_FREQ2 100.0 \
+  CONFIG.USER_CLK_FREQ3 100.0 \
+  CONFIG.USE_BOARD_FLOW true \
+  CONFIG.USE_CLKFB_STOPPED false \
+  CONFIG.USE_CLK_VALID false \
+  CONFIG.USE_CLOCK_SEQUENCING false \
+  CONFIG.USE_DYN_PHASE_SHIFT false \
+  CONFIG.USE_DYN_RECONFIG false \
+  CONFIG.USE_FREEZE false \
+  CONFIG.USE_FREQ_SYNTH true \
+  CONFIG.USE_INCLK_STOPPED false \
+  CONFIG.USE_INCLK_SWITCHOVER false \
+  CONFIG.USE_LOCKED true \
+  CONFIG.USE_MAX_I_JITTER false \
+  CONFIG.USE_MIN_O_JITTER false \
+  CONFIG.USE_MIN_POWER false \
+  CONFIG.USE_PHASE_ALIGNMENT true \
+  CONFIG.USE_POWER_DOWN false \
+  CONFIG.USE_RESET true \
+  CONFIG.USE_SAFE_CLOCK_STARTUP false \
+  CONFIG.USE_SPREAD_SPECTRUM false \
+  CONFIG.USE_STATUS false " [get_ips design_1_clk_wiz_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of design_1_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 13)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Customization warnings
+-------------------------
+
+Value 'usb_uart' is out of the range for parameter 'UARTLITE BOARD INTERFACE(UARTLITE_BOARD_INTERFACE)' for BD Cell 'axi_uartlite_0' . Valid values are - Custom
+
+Customization errors found on 'axi_uartlite_0'. Restoring to previous valid configuration.
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_uartlite:2.0 -user_name design_1_axi_uartlite_0_0
+set_property -dict "\
+  CONFIG.C_BAUDRATE 9600 \
+  CONFIG.C_DATA_BITS 8 \
+  CONFIG.C_ODD_PARITY 0 \
+  CONFIG.C_S_AXI_ACLK_FREQ_HZ 80000000 \
+  CONFIG.C_S_AXI_ACLK_FREQ_HZ_d 80.0 \
+  CONFIG.C_USE_PARITY 0 \
+  CONFIG.Component_Name design_1_axi_uartlite_0_0 \
+  CONFIG.PARITY No_Parity \
+  CONFIG.UARTLITE_BOARD_INTERFACE usb_uart \
+  CONFIG.USE_BOARD_FLOW true " [get_ips design_1_axi_uartlite_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:54 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_PmodWIFI_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of design_1_PmodWIFI_1_0 (digilentinc.com:IP:PmodWIFI:1.0 (Rev. 25)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration . Attempting partial upgrade.
+This process will attempt to set as many user parameters as possible.Please check the parameters whose values were not applied
+
+Unable to set the value 'jb' on parameter 'Pmod' due to the following failure - 
+Value 'jb' is out of the range for parameter 'Pmod(PMOD)' for BD Cell 'PmodWIFI_1' . Valid values are - Custom
+.Restoring to an old valid value of 'Custom'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv digilentinc.com:IP:PmodWIFI:1.0 -user_name design_1_PmodWIFI_1_0
+set_property -dict "\
+  CONFIG.AXI_LITE_SPI_BASEADDR 0xFFFFFFFF \
+  CONFIG.AXI_LITE_SPI_HIGHADDR 0x00000000 \
+  CONFIG.AXI_LITE_WFCS_BASEADDR 0xFFFFFFFF \
+  CONFIG.AXI_LITE_WFCS_HIGHADDR 0x00000000 \
+  CONFIG.AXI_LITE_WFGPIO_BASEADDR 0xFFFFFFFF \
+  CONFIG.AXI_LITE_WFGPIO_HIGHADDR 0x00000000 \
+  CONFIG.Component_Name design_1_PmodWIFI_1_0 \
+  CONFIG.PMOD jb \
+  CONFIG.S_AXI_TIMER_BASEADDR 0xFFFFFFFF \
+  CONFIG.S_AXI_TIMER_HIGHADDR 0x00000000 \
+  CONFIG.USE_BOARD_FLOW true " [get_ips design_1_PmodWIFI_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:21 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PmodWIFI_pmod_bridge_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of PmodWIFI_pmod_bridge_0_0 (digilentinc.com:ip:pmod_bridge:1.0 (Rev. 7)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:21 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PmodWIFI_axi_timer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PmodWIFI_axi_timer_0_0 (xilinx.com:ip:axi_timer:2.0) from (Rev. 13) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:20 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PmodWIFI_axi_quad_spi_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PmodWIFI_axi_quad_spi_0_0 (xilinx.com:ip:axi_quad_spi:3.2) from (Rev. 10) to (Rev. 8)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'C_DUAL_QUAD_MODE' is no longer present on the upgraded IP 'PmodWIFI_axi_quad_spi_0_0', and cannot be set to '0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 -user_name PmodWIFI_axi_quad_spi_0_0
+set_property -dict "\
+  CONFIG.Async_Clk 0 \
+  CONFIG.C_FAMILY artix7 \
+  CONFIG.C_FIFO_DEPTH 16 \
+  CONFIG.C_INSTANCE axi_quad_spi_inst \
+  CONFIG.C_NUM_SS_BITS 1 \
+  CONFIG.C_NUM_TRANSFER_BITS 8 \
+  CONFIG.C_SCK_RATIO 8 \
+  CONFIG.C_SCK_RATIO1 1 \
+  CONFIG.C_SELECT_XPM 0 \
+  CONFIG.C_SHARED_STARTUP 0 \
+  CONFIG.C_SPI_MEMORY 1 \
+  CONFIG.C_SPI_MEM_ADDR_BITS 24 \
+  CONFIG.C_SPI_MODE 0 \
+  CONFIG.C_SUB_FAMILY artix7 \
+  CONFIG.C_S_AXI4_BASEADDR 0xFFFFFFFF \
+  CONFIG.C_S_AXI4_HIGHADDR 0x00000000 \
+  CONFIG.C_S_AXI4_ID_WIDTH 0 \
+  CONFIG.C_TYPE_OF_AXI4_INTERFACE 0 \
+  CONFIG.C_USE_STARTUP 0 \
+  CONFIG.C_USE_STARTUP_INT 0 \
+  CONFIG.C_XIP_MODE 0 \
+  CONFIG.Component_Name PmodWIFI_axi_quad_spi_0_0 \
+  CONFIG.FIFO_INCLUDED 1 \
+  CONFIG.Master_mode 1 \
+  CONFIG.Multiples16 1 \
+  CONFIG.QSPI_BOARD_INTERFACE Custom \
+  CONFIG.UC_FAMILY 0 \
+  CONFIG.USE_BOARD_FLOW false " [get_ips PmodWIFI_axi_quad_spi_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:19 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PmodWIFI_axi_gpio_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PmodWIFI_axi_gpio_1_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 13) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Mar 18 20:20:19 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PmodWIFI_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of PmodWIFI_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 13) to (Rev. 11)
+

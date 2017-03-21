@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "tb_top_func_impl.v" --include "../../../../project_1.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog" --include "../../../../project_1.ip_user_files/ipstatic/clk_wiz_v5_3"
+verilog xil_defaultlib  "../../../../project_1.srcs/sim_1/imports/tb_top.v" --include "../../../../project_1.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog" --include "../../../../project_1.ip_user_files/ipstatic/clk_wiz_v5_3"
+
+# Do not sort compile order
+nosort

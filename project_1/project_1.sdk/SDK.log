@@ -1,0 +1,7 @@
+10:03:46 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\IBM_ADMIN\Desktop\yy\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+10:03:50 INFO  : XSDB server has started successfully.
+10:03:54 INFO  : Processing command line option -hwspec C:/Users/IBM_ADMIN/Desktop/yy/project_1/project_1.sdk/design_1_wrapper.hdf.
+11:36:14 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\IBM_ADMIN\Desktop\yy\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+11:36:16 INFO  : XSDB server has started successfully.
+11:36:17 INFO  : Processing command line option -hwspec C:/Users/IBM_ADMIN/Desktop/yy/project_1/project_1.sdk/design_1_wrapper.hdf.
+11:36:17 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
