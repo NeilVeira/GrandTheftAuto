@@ -18,6 +18,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==clk_wiz_0 || OR
 # IP: ip/blk_mem_gen_4/blk_mem_gen_4.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blk_mem_gen_4 || ORIG_REF_NAME==blk_mem_gen_4}]
 
+# IP: ip/fifo_generator_0/fifo_generator_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0}]
+
 # XDC: ip/blk_mem_gen_3/blk_mem_gen_3_ooc.xdc
 
 # XDC: ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc
@@ -33,3 +36,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: ip/clk_wiz_0/clk_wiz_0_ooc.xdc
 
 # XDC: ip/blk_mem_gen_4/blk_mem_gen_4_ooc.xdc
+
+# XDC: ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==fifo_generator_0 || ORIG_REF_NAME==fifo_generator_0}] {/U0 }]/U0 ]]

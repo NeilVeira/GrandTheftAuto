@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sun Mar 19 21:32:50 2017">
+<application name="pa" timeStamp="Tue Mar 21 13:38:54 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="dd31cf8da23b4441b8b178c5be29f13f" type="ProjectID"/>
-<property name="ProjectIteration" value="28" type="ProjectIteration"/>
+<property name="ProjectIteration" value="31" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,44 +17,91 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="15" type="JavaHandler"/>
-<property name="AutoConnectTarget" value="12" type="JavaHandler"/>
-<property name="CoreView" value="3" type="JavaHandler"/>
-<property name="CustomizeCore" value="2" type="JavaHandler"/>
-<property name="EditDelete" value="12" type="JavaHandler"/>
+<property name="AddSources" value="19" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="15" type="JavaHandler"/>
+<property name="CoreView" value="4" type="JavaHandler"/>
+<property name="CustomizeCore" value="3" type="JavaHandler"/>
+<property name="EditDelete" value="16" type="JavaHandler"/>
 <property name="FlipToViewTaskImplementation" value="1" type="JavaHandler"/>
 <property name="FlipToViewTaskSynthesis" value="6" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="16" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="19" type="JavaHandler"/>
 <property name="ManageCompositeTargets" value="2" type="JavaHandler"/>
 <property name="MoveSources" value="2" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="13" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="16" type="JavaHandler"/>
 <property name="OpenProject" value="4" type="JavaHandler"/>
-<property name="ProjectSettingsCmdHandler" value="32" type="JavaHandler"/>
-<property name="RecustomizeCore" value="20" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="33" type="JavaHandler"/>
+<property name="RecustomizeCore" value="28" type="JavaHandler"/>
 <property name="RefreshTarget" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="21" type="JavaHandler"/>
+<property name="RunBitgen" value="24" type="JavaHandler"/>
 <property name="RunImplementation" value="8" type="JavaHandler"/>
 <property name="RunSchematic" value="12" type="JavaHandler"/>
-<property name="RunSynthesis" value="44" type="JavaHandler"/>
+<property name="RunSynthesis" value="50" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
-<property name="SetSourceEnabled" value="12" type="JavaHandler"/>
-<property name="SetTopNode" value="10" type="JavaHandler"/>
+<property name="SetSourceEnabled" value="20" type="JavaHandler"/>
+<property name="SetTopNode" value="13" type="JavaHandler"/>
 <property name="ShowView" value="17" type="JavaHandler"/>
-<property name="SimulationBreak" value="42" type="JavaHandler"/>
-<property name="SimulationClose" value="17" type="JavaHandler"/>
-<property name="SimulationRestart" value="34" type="JavaHandler"/>
-<property name="SimulationRun" value="54" type="JavaHandler"/>
+<property name="SimulationBreak" value="60" type="JavaHandler"/>
+<property name="SimulationClose" value="22" type="JavaHandler"/>
+<property name="SimulationRestart" value="47" type="JavaHandler"/>
+<property name="SimulationRun" value="72" type="JavaHandler"/>
 <property name="SimulationRunAll" value="1" type="JavaHandler"/>
-<property name="SimulationRunForTime" value="99" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="119" type="JavaHandler"/>
 <property name="ToggleViewNavigator" value="1" type="JavaHandler"/>
-<property name="ViewTaskProjectManager" value="10" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="11" type="JavaHandler"/>
 <property name="ViewTaskRTLAnalysis" value="3" type="JavaHandler"/>
 <property name="ViewTaskSimulation" value="17" type="JavaHandler"/>
-<property name="WaveformSaveConfiguration" value="12" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="16" type="JavaHandler"/>
 <property name="ZoomFit" value="2" type="JavaHandler"/>
 <property name="ZoomIn" value="28" type="JavaHandler"/>
 <property name="ZoomOut" value="9" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="Empty Threshold Assert Value, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_RUN_SYNTHESIS, run_synthesis" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_BREAK, simulation_live_break" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, simulation_live_restart" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, simulation_live_run_for_time" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, Run Post-Synthesis Functional Simulation" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, stream_jpg_yy_nv_mn_v1_0 (stream_jpg_yy_nv_mn_v1_0.v" value="12" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, Generate" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, rst ; 0 ; Logic, 1, rst, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, s00_axis_aresetn ; 1 ; Logic, 1, s00_axis_aresetn, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, image_data ; fifo_generator_0(STRUCTURE" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, jpeg_decoder ; stream_jpg_yy_nv_mn_v1_0(STRUCTURE" value="5" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, jpeg_testbench ; jpeg_testbench(test" value="2" type="GuiResourceData"/>
+<property name="Programmable Empty Type (Programmable_Empty_Type" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="2" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_OUT, Waveform Viewer_zoom_out" value="2" type="GuiResourceData"/>
+<property name="RDIResource.ProgressDialog_BACKGROUND, Background" value="2" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 265, 126" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 28, 361" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 319, 269" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 352, 211" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 425, 242" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 594, 129" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 65, 2" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, datavalid_i], 12, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, din[31:0]], 3" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, wr_en], 4, false" value="1" type="GuiResourceData"/>
+<property name="jpeg_testbench.vhd, 184, 178" value="1" type="GuiResourceData"/>
+<property name="jpeg_testbench.vhd, 301, 215" value="1" type="GuiResourceData"/>
+<property name="jpeg_testbench.vhd, 387, 214" value="1" type="GuiResourceData"/>
+<property name="jpeg_testbench.vhd, 95, 136" value="1" type="GuiResourceData"/>
+<property name="jpeg_testbench.vhd, 99, 130" value="1" type="GuiResourceData"/>
+<property name="stream_jpg_yy_nv_mn_v1_0.v, 44, 165" value="1" type="GuiResourceData"/>
+<property name="stream_jpg_yy_nv_mn_v1_0.v, 44, 165, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="stream_jpg_yy_nv_mn_v1_0.v, 58, 197" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="103" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="79" type="TclMode"/>
 </item>
 </section>
 </application>

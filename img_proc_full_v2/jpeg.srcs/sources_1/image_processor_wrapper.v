@@ -11,7 +11,7 @@ module image_processor_wrapper (
     output V
     );
     
-    parameter MAX_ADDR = 8374;
+    parameter MAX_ADDR = 8004;
     
     (* dont_touch = "true" *) reg [1:0] microblaze_read;
     (* dont_touch = "true" *) wire [1:0] img_proc_write;

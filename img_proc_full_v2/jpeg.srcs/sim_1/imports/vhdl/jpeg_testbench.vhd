@@ -16,42 +16,67 @@ end entity jpeg_testbench;
 
 architecture test of jpeg_testbench is	
 
-	component image_processor is
-	port (
-    	Clk			:  in std_logic;
-        clk_25      :  in std_logic;
-		data_i		:  in std_logic_vector(31 downto 0);
-		reset_i		:  in std_logic;
-		
-		eoi_o		: out std_logic;
-		error_o		: out std_logic;
-		
-		context_o	: out std_logic_vector (3 downto 0);	
-		red_o		: out STD_LOGIC_VECTOR (7 downto 0);
-		green_o		: out STD_LOGIC_VECTOR (7 downto 0);
-		blue_o		: out STD_LOGIC_VECTOR (7 downto 0);
-		width_o		: out std_logic_vector(15 downto 0);
-		height_o	: out std_logic_vector(15 downto 0);	
-	
---		-- debug
---      LEDs			: out std_logic_vector(3 downto 0);
---		BUTTONs		:  in std_logic_vector(4 downto 0); -- 0:left, 1:right, 2:up, 3:down, 4:center
---		SWITCHEs		:  in std_logic_vector(3 downto 0);
+    component stream_jpg_yy_nv_mn_v1_0 is 
+    port (
+        s00_axis_aclk       : in std_logic;
+        s00_axis_aresetn    : in std_logic;
+        s00_axis_tready     : out std_logic;
+        s00_axis_tdata      : in std_logic_vector(31 downto 0);
+        s00_axis_tstrb      : in std_logic_vector(3 downto 0);
+        s00_axis_tlast      : in std_logic;
+        s00_axis_tvalid     : in std_logic;
+        clk_25              : in std_logic;
+        R                   : out std_logic_vector(3 downto 0);
+        G                   : out std_logic_vector(3 downto 0);
+        B                   : out std_logic_vector(3 downto 0);
+        H                   : out std_logic;
+        V                   : out std_logic;
+        calibrate           : in std_logic;
+        microblaze_read     : in std_logic_vector(1 downto 0);
+        img_proc_write      : out std_logic_vector(1 downto 0);
+        edge_ram_addr       : out std_logic_vector(12 downto 0);
+        edge_ram_din        : out std_logic_vector(19 downto 0);
+        edge_ram_wren       : out std_logic;
+        error_o             : out std_logic
+    );
+    end component stream_jpg_yy_nv_mn_v1_0;
 
-		-- flow controll
-		datavalid_i :  in std_logic;
-		datavalid_o : out std_logic;
-		ready_i		:  in std_logic;
-		ready_o		: out std_logic;
+	-- component image_processor is
+	-- port (
+    	-- Clk			:  in std_logic;
+        -- clk_25      :  in std_logic;
+		-- data_i		:  in std_logic_vector(31 downto 0);
+		-- reset_i		:  in std_logic;
+		
+		-- eoi_o		: out std_logic;
+		-- error_o		: out std_logic;
+		
+		-- context_o	: out std_logic_vector (3 downto 0);	
+		-- red_o		: out STD_LOGIC_VECTOR (7 downto 0);
+		-- green_o		: out STD_LOGIC_VECTOR (7 downto 0);
+		-- blue_o		: out STD_LOGIC_VECTOR (7 downto 0);
+		-- width_o		: out std_logic_vector(15 downto 0);
+		-- height_o	: out std_logic_vector(15 downto 0);	
+	
+-- --		-- debug
+-- --      LEDs			: out std_logic_vector(3 downto 0);
+-- --		BUTTONs		:  in std_logic_vector(4 downto 0); -- 0:left, 1:right, 2:up, 3:down, 4:center
+-- --		SWITCHEs		:  in std_logic_vector(3 downto 0);
+
+		-- -- flow controll
+		-- datavalid_i :  in std_logic;
+		-- datavalid_o : out std_logic;
+		-- ready_i		:  in std_logic;
+		-- ready_o		: out std_logic;
         
-        --vga driver signals
-        R           : out std_logic_vector(3 downto 0);
-        G           : out std_logic_vector(3 downto 0);
-        B           : out std_logic_vector(3 downto 0);
-        H           : out std_logic;
-        V           : out std_logic
-	);
-	end component image_processor;
+        -- --vga driver signals
+        -- R           : out std_logic_vector(3 downto 0);
+        -- G           : out std_logic_vector(3 downto 0);
+        -- B           : out std_logic_vector(3 downto 0);
+        -- H           : out std_logic;
+        -- V           : out std_logic
+	-- );
+	-- end component image_processor;
 
 
 
@@ -117,33 +142,48 @@ begin
 ------------------------------------------------------------
 -- JPEG - Decoder
 --------------------------------------------------------------
-jpeg_decoder:image_processor
-  port map
-    (	Clk			=> Clk,
-        clk_25      => clk_25,
-		data_i		=> data,
-		reset_i		=> reset,
+-- jpeg_decoder:image_processor
+  -- port map
+    -- (	Clk			=> Clk,
+        -- clk_25      => clk_25,
+		-- data_i		=> data,
+		-- reset_i		=> reset,
 		
-		eoi_o			=> jpeg_eoi,
-		error_o		=> jpeg_error,
+		-- eoi_o			=> jpeg_eoi,
+		-- error_o		=> jpeg_error,
 		
---		context_o	=>
-		red_o		=> fifo_sim32_data(23 downto 16),
-		green_o	=> fifo_sim32_data(15 downto 8),
-		blue_o	=> fifo_sim32_data(7 downto 0),
---		width_o	=>	,
---		height_o	=> ,
+		-- context_o	=>
+		-- red_o		=> fifo_sim32_data(23 downto 16),
+		-- green_o	=> fifo_sim32_data(15 downto 8),
+		-- blue_o	=> fifo_sim32_data(7 downto 0),
+		-- width_o	=>	,
+		-- height_o	=> ,
 
 		-- debug
---		LEDs			=> ,
---		BUTTONs		=> "11111",
---		SWITCHEs		=> "1111",
+		-- LEDs			=> ,
+		-- BUTTONs		=> "11111",
+		-- SWITCHEs		=> "1111",
 
-		datavalid_i => wea,
-	    datavalid_o	=> fifo_sim32_wea,
-		ready_i		=> ready,
-		ready_o		=> jpeg_ready        
-    );
+		-- datavalid_i => wea,
+	    -- datavalid_o	=> fifo_sim32_wea,
+		-- ready_i		=> ready,
+		-- ready_o		=> jpeg_ready        
+    -- );
+    
+jpeg_decoder : stream_jpg_yy_nv_mn_v1_0
+port map (
+        s00_axis_aclk       => Clk,
+        clk_25              => clk_25,
+        s00_axis_aresetn    => not reset,
+        s00_axis_tready     => jpeg_ready,
+        s00_axis_tdata      => data,
+        s00_axis_tvalid     => wea,
+        calibrate           => '0',
+        microblaze_read     => (others=>'0'),
+        s00_axis_tstrb      => (others=>'0'),
+        s00_axis_tlast      => '0'
+); 
+    
 --------------------------------------------------------------
 
 
@@ -174,7 +214,7 @@ fifo_sim32_notfull <= not fifo_sim32_full;
 -- **********************************************************************************************
 
 --wea	<= '0', '1' after 58 ns;
-reset	<= '1', '0' after 13 ns; --, '1' after 50 us, '0' after 51 us; 
+reset	<= '0', '1' after 20 ns, '0' after 200 ns; --, '0' after 51 us; 
 
 
 
@@ -226,7 +266,7 @@ file_input: process
 	variable b4: Byte;
 begin
  	wea <= '0'; 
-	wait for 20 ns;
+	wait for 200 ns;
  	
 	-- read from file
 	file_open(jpeg_file, jpeg_file_name, read_mode);
@@ -265,17 +305,19 @@ begin
 			if not(endfile(jpeg_file)) then 
 				read(jpeg_file,b4);
 			 end if;
+            wea <= '1';
 		end if;
-
-		wait for 8 ns;
 	
-		wea <= '1';
 		data(31 downto 24) <= to_stdlogicvector(int2bit_vec(ByteT'pos(b1),8));
 		data(23 downto 16) <= to_stdlogicvector(int2bit_vec(ByteT'pos(b2),8));
 		data(15 downto 8 ) <= to_stdlogicvector(int2bit_vec(ByteT'pos(b3),8));
 		data( 7 downto 0 ) <= to_stdlogicvector(int2bit_vec(ByteT'pos(b4),8));
 
-		wait until CLK='1';
+		--hold datavalid_i for only 1 cycle, and then set it low for a long time
+		--to simulate how the microblaze sends data
+        wait for 10 ns;
+		wea <= '0';
+		wait for 50 ns;
 
 	end loop;
 

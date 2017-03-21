@@ -4,6 +4,8 @@ set_property PACKAGE_PIN J15 [get_ports {reset}]
 set_property IOSTANDARD LVCMOS33 [get_ports {reset}]
 set_property PACKAGE_PIN L16 [get_ports {calibrate}]
 set_property IOSTANDARD LVCMOS33 [get_ports {calibrate}]
+set_property PACKAGE_PIN V11 [get_ports {error_o}]
+set_property IOSTANDARD LVCMOS33 [get_ports {error_o}]
 
 set_property PACKAGE_PIN A3 [get_ports {R[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {R[0]}]

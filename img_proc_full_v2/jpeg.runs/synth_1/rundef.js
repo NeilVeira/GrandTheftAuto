@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log image_processor_wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source image_processor_wrapper.tcl" );
+         "-log stream_jpg_yy_nv_mn_v1_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source stream_jpg_yy_nv_mn_v1_0.tcl" );
 
 
 

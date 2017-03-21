@@ -27,7 +27,7 @@ module wrapper_tb
         calibrate = 1;
 		#20 
 		reset = 0;
-        #10000000
+        #1000000
         calibrate = 0;
 	end
 
