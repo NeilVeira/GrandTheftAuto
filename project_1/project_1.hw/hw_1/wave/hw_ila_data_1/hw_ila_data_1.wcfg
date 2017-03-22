@@ -13,7 +13,7 @@
       <ZoomEndTime time="1024001fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="11" />
+   <WVObjectSize size="22" />
    <wave_markers>
    </wave_markers>
    <wvobject fp_name="u_ila_0_microblaze_0_M0_AXIS_TVALID" type="logic">
@@ -28,19 +28,6 @@
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="ElementShortName">u_ila_0_rst_clk_wiz_1_100M_peripheral_aresetn</obj_property>
       <obj_property name="ObjectShortName">u_ila_0_rst_clk_wiz_1_100M_peripheral_aresetn</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/yy_ready_o" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/yy_ready_o</obj_property>
-      <obj_property name="ObjectShortName">yy_ready_o</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/yy_ready_o" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/yy_ready_o</obj_property>
-      <obj_property name="ObjectShortName">yy_ready_o</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
    <wvobject fp_name="u_ila_0_microblaze_0_M0_AXIS_TVALID" type="logic">
@@ -73,17 +60,97 @@
       <obj_property name="ObjectShortName">u_ila_0_microblaze_0_M0_AXIS_TVALID_1</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>
+   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/almost_full" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/almost_full</obj_property>
+      <obj_property name="ObjectShortName">almost_full</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/datavalid_i" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/datavalid_i</obj_property>
+      <obj_property name="ObjectShortName">datavalid_i</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/dout" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/empty" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/full" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/next_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/rd_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/ready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/stream_jpg_yy_nv_mn_v1_0_wed2_0/inst/state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_microblaze_0_M0_AXIS_TREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_microblaze_0_M0_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_microblaze_0_M0_AXIS_TREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_microblaze_0_M0_AXIS_TREADY_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_microblaze_0_M0_AXIS_TREADY_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_microblaze_0_M0_AXIS_TREADY_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_microblaze_0_M0_AXIS_TVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_microblaze_0_M0_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_microblaze_0_M0_AXIS_TVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_microblaze_0_M0_AXIS_TVALID_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_microblaze_0_M0_AXIS_TVALID_1</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_microblaze_0_M0_AXIS_TVALID_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_rst_clk_wiz_1_100M_peripheral_aresetn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_rst_clk_wiz_1_100M_peripheral_aresetn</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_rst_clk_wiz_1_100M_peripheral_aresetn</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
    <wvobject fp_name="u_ila_0_s00_axis_tdata" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">u_ila_0_s00_axis_tdata[31:0]</obj_property>
       <obj_property name="ObjectShortName">u_ila_0_s00_axis_tdata[31:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-   </wvobject>
-   <wvobject fp_name="u_ila_0_s00_axis_tdata_1" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">u_ila_0_s00_axis_tdata_1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">u_ila_0_s00_axis_tdata_1[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
    </wvobject>

@@ -1,6 +1,70 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Wed Mar 22 10:48:52 2017
+| Host         : SFB520WS02 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0) from (Rev. 20) to (Rev. 21)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'slow_clock'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Tue Mar 21 19:07:25 2017
+| Host         : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0) from (Rev. 19) to (Rev. 20)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'error_o'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
 | Date         : Mon Mar 20 18:45:46 2017
 | Host         : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
 | Command      : upgrade_ip

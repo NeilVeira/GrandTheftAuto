@@ -41,12 +41,6 @@
   "../../../bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd" \
   "../../../bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd" \
 -endlib
--makelib ies/blk_mem_gen_v8_3_3 \
-  "../../../ipstatic/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" \
--endlib
--makelib ies/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
--endlib
 -makelib ies/axi_lite_ipif_v3_0_4 \
   "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/ipif_pkg.vhd" \
   "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd" \
@@ -198,6 +192,39 @@
   "../../../bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig_sim.v" \
   "../../../bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0.v" \
 -endlib
+-makelib ies/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/sim/design_1_rst_mig_7series_0_81M_0.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling_buffer.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct_core_12.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman_input_sr.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_tables.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_nr_of_symbols.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequant_multiplier.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/coregen/ht_tables/jpeg_ht_tables.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_YCbCr2RGB.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_input_fifo.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_header.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_check_FF.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_checkff_fifo.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/vga_driver.vhd" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd" \
+-endlib
+-makelib ies/xil_defaultlib \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/edge_detector.v" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/vga_controller.v" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/image_processor.v" \
+  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/stream_jpg_yy_nv_mn_v1_0.v" \
+  "../../../bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/sim/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0.v" \
+  "../../../bd/design_1/hdl/design_1.v" \
+-endlib
 -makelib ies/generic_baseblocks_v2_1_0 \
   "../../../ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" \
   "../../../ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v" \
@@ -258,42 +285,15 @@
   "../../../ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v" \
 -endlib
 -makelib ies/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+  "../../../bd/design_1/ip/design_1_xbar_1/sim/design_1_xbar_1.v" \
+-endlib
+-makelib ies/blk_mem_gen_v8_3_3 \
+  "../../../ipstatic/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v" \
 -endlib
 -makelib ies/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/sim/design_1_rst_mig_7series_0_81M_0.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling_buffer.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct_core_12.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman_input_sr.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_tables.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_nr_of_symbols.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequant_multiplier.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/coregen/ht_tables/jpeg_ht_tables.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_YCbCr2RGB.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_input_fifo.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_header.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_check_FF.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_checkff_fifo.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/vga_driver.vhd" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd" \
--endlib
--makelib ies/xil_defaultlib \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/edge_detector.v" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/vga_controller.v" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/image_processor.v" \
-  "../../../bd/design_1/ipshared/user/stream_jpg_yy_nv_mn_v1_0_wed2_v1_0/jpeg.srcs/sources_1/stream_jpg_yy_nv_mn_v1_0.v" \
-  "../../../bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/sim/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0.v" \
-  "../../../bd/design_1/hdl/design_1.v" \
-  "../../../../project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_2/ipshared/digilentinc.com/pmod_bridge_v1_0/src/pmod_concat.v" \
-  "../../../bd/design_1/ip/design_1_PmodWIFI_0_2/src/PmodWIFI_pmod_bridge_0_0/sim/PmodWIFI_pmod_bridge_0_0.v" \
+  "../../../bd/design_1/ip/design_1_lmb_bram_1/sim/design_1_lmb_bram_1.v" \
+  "../../../../project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/ipshared/digilentinc.com/pmod_bridge_v1_0/src/pmod_concat.v" \
+  "../../../bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_pmod_bridge_0_0/sim/PmodWIFI_pmod_bridge_0_0.v" \
 -endlib
 -makelib ies/dist_mem_gen_v8_0_10 \
   "../../../ipstatic/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" \
@@ -339,13 +339,13 @@
   "../../../ipstatic/axi_quad_spi_v3_2/hdl/src/vhdl/axi_qspi_xip_if.vhd" \
   "../../../ipstatic/axi_quad_spi_v3_2/hdl/src/vhdl/axi_qspi_enhanced_mode.vhd" \
   "../../../ipstatic/axi_quad_spi_v3_2/hdl/src/vhdl/axi_quad_spi.vhd" \
-  "../../../bd/design_1/ip/design_1_PmodWIFI_0_2/src/PmodWIFI_axi_quad_spi_0_0/sim/PmodWIFI_axi_quad_spi_0_0.vhd" \
+  "../../../bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/sim/PmodWIFI_axi_quad_spi_0_0.vhd" \
 -endlib
 -makelib ies/axi_gpio_v2_0_11 \
   "../../../ipstatic/axi_gpio_v2_0/hdl/src/vhdl/gpio_core.vhd" \
   "../../../ipstatic/axi_gpio_v2_0/hdl/src/vhdl/axi_gpio.vhd" \
-  "../../../bd/design_1/ip/design_1_PmodWIFI_0_2/src/PmodWIFI_axi_gpio_0_0/sim/PmodWIFI_axi_gpio_0_0.vhd" \
-  "../../../bd/design_1/ip/design_1_PmodWIFI_0_2/src/PmodWIFI_axi_gpio_1_0/sim/PmodWIFI_axi_gpio_1_0.vhd" \
+  "../../../bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_0_0/sim/PmodWIFI_axi_gpio_0_0.vhd" \
+  "../../../bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_1_0/sim/PmodWIFI_axi_gpio_1_0.vhd" \
 -endlib
 -makelib ies/axi_timer_v2_0_11 \
   "../../../ipstatic/axi_timer_v2_0/hdl/src/vhdl/counter_f.vhd" \
@@ -355,11 +355,11 @@
   "../../../ipstatic/axi_timer_v2_0/hdl/src/vhdl/count_module.vhd" \
   "../../../ipstatic/axi_timer_v2_0/hdl/src/vhdl/tc_core.vhd" \
   "../../../ipstatic/axi_timer_v2_0/hdl/src/vhdl/axi_timer.vhd" \
-  "../../../bd/design_1/ip/design_1_PmodWIFI_0_2/src/PmodWIFI_axi_timer_0_0/sim/PmodWIFI_axi_timer_0_0.vhd" \
+  "../../../bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_timer_0_0/sim/PmodWIFI_axi_timer_0_0.vhd" \
 -endlib
 -makelib ies/xil_defaultlib \
   "../../../bd/design_1/ipshared/digilentinc.com/pmodwifi_v1_0/src/PmodWIFI.v" \
-  "../../../bd/design_1/ip/design_1_PmodWIFI_0_2/sim/design_1_PmodWIFI_0_2.v" \
+  "../../../bd/design_1/ip/design_1_PmodWIFI_0_0/sim/design_1_PmodWIFI_0_0.v" \
 -endlib
 -makelib ies/axi_uartlite_v2_0_13 \
   "../../../ipstatic/axi_uartlite_v2_0/hdl/src/vhdl/dynshreg_i_f.vhd" \

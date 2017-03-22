@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu Mar 16 09:02:58 2017
+# Process ID: 6516
+# Current directory: C:/Users/yy/Desktop/ece532_debug/img_proc_full/ip
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6728 C:\Users\yy\Desktop\ece532_debug\img_proc_full\ip\ip.xpr
+# Log file: C:/Users/yy/Desktop/ece532_debug/img_proc_full/ip/vivado.log
+# Journal file: C:/Users/yy/Desktop/ece532_debug/img_proc_full/ip\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yy/Desktop/ece532_debug/img_proc_full/ip/ip.xpr
+ipx::open_ipxact_file C:/users/yy/desktop/ece532_debug/img_proc_full/component.xml
+set_property taxonomy {/Embedded_Processing/AXI_Peripheral /UserIP} [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]

@@ -1,0 +1,256 @@
+/************************************************************************/
+/*                                                                      */
+/*      TCPEchoClient                                                   */
+/*                                                                      */
+/*        A DEIPcK TCP Client application to                    	*/
+/*        demonstrate how to use the TcpClient Class.                   */
+/*        This can be used in conjunction with TCPEchoServer            */
+/*                                                                      */
+/************************************************************************/
+/*       Author:        Keith Vogel                                     */
+/*       Copyright 2014, Digilent Inc.                                  */
+/************************************************************************/
+/*
+*
+* Copyright (c) 2013-2014, Digilent <www.digilentinc.com>
+* Contact Digilent for the latest version.
+*
+* This program is free software; distributed under the terms of
+* BSD 3-clause license ("Revised BSD License", "New BSD License", or "Modified BSD License")
+*
+* Redistribution and use in source and binary forms, with or without modification,
+* are permitted provided that the following conditions are met:
+*
+* 1.    Redistributions of source code must retain the above copyright notice, this
+*        list of conditions and the following disclaimer.
+* 2.    Redistributions in binary form must reproduce the above copyright notice,
+*        this list of conditions and the following disclaimer in the documentation
+*        and/or other materials provided with the distribution.
+* 3.    Neither the name(s) of the above-listed copyright holder(s) nor the names
+*        of its contributors may be used to endorse or promote products derived
+*        from this software without specific prior written permission.
+*
+* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+* ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+* IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+* INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+* BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+* DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+* LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+* OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+* OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+/************************************************************************/
+/*  Revision History:                                                   */
+/*                                                                      */
+/*       5/14/2014 (KeithV): Created                                    */
+/*	 8/09/2016 (TommyK): Modified to use Microblaze/Zynq	*/
+/*                                                                      */
+/************************************************************************/
+
+#include "PmodWIFI.h"
+#include "xil_cache.h"
+#include "fsl.h"
+
+#ifdef __MICROBLAZE__
+#define PMODWIFI_VEC_ID XPAR_INTC_0_PMODWIFI_0_VEC_ID
+#else
+#define PMODWIFI_VEC_ID XPAR_FABRIC_PMODWIFI_0_WF_INTERRUPT_INTR
+#endif
+
+
+/************************************************************************/
+/*                                                                      */
+/*              SET THESE VALUES FOR YOUR NETWORK                       */
+/*                                                                      */
+/************************************************************************/
+
+const char * szIPServer = "192.168.43.1";//"192.168.1.140";    // server to connect to
+uint16_t portServer = 8080;//DEIPcK::iPersonalPorts44 + 300;     // port 44300
+
+// Specify the SSID
+const char * szSsid = "yy_cell";
+
+// select 1 for the security you want, or none for no security
+#define USE_WPA2_PASSPHRASE
+//#define USE_WPA2_KEY
+//#define USE_WEP40
+//#define USE_WEP104
+//#define USE_WF_CONFIG_H
+
+// modify the security key to what you have.
+#if defined(USE_WPA2_PASSPHRASE)
+
+    const char * szPassPhrase = "yymilwid";
+    #define WiFiConnectMacro() deIPcK.wfConnect(szSsid, szPassPhrase, &status)
+#endif
+
+
+
+
+
+//******************************************************************************************
+//******************************************************************************************
+//***************************** END OF CONFIGURATION ***************************************
+//******************************************************************************************
+//******************************************************************************************
+
+    typedef enum
+    {
+        NONE = 0,
+        CONNECT,
+        TCPCONNECT,
+        WRITE,
+        READ,
+        CLOSE,
+        DONE,
+    } STATE;
+
+STATE state = CONNECT;
+
+unsigned tStart = 0;
+unsigned tWait = 700;
+
+TCPSocket tcpSocket;
+byte rgbRead[1024];
+
+// this is for Print.write to print
+byte rgbWrite[] = {'G','E','T',' ','/','s', 'h','o','t','.','j','p','g',' ','H','T','T','P','/','1','.','1',0x0d,0x0a,'H','o','s','t',':',' ','1','9','2','.','1','6','8','.','4','3','.','1',':','8','0','8','0','\r','\n','\r','\n'};
+int cbWrite = sizeof(rgbWrite);
+
+// this is for tcpSocket.writeStream to print
+byte rgbWriteStream[] = {'G','E','T',' ','/','s', 'h','o','t','.','j','p','g',' ','H','T','T','P','/','1','.','1',0x0d,0x0a,'H','o','s','t',':',' ','1','9','2','.','1','6','8','.','4','3','.','1',':','8','0','8','0','\r','\n','\r','\n'};
+int cbWriteStream = sizeof(rgbWriteStream);
+
+void DemoInitialize();
+void DemoRun();
+
+
+int main(void)
+{
+	Xil_ICacheEnable();
+	Xil_DCacheEnable();
+
+	xil_printf("WiFiTCPEchoClient 3.0\r\nConnecting to network...\r\n");
+	DemoInitialize();
+	DemoRun();
+	return 0;
+}
+
+void DemoInitialize()
+{
+	setPmodWifiAddresses(XPAR_PMODWIFI_0_AXI_LITE_SPI_BASEADDR, XPAR_PMODWIFI_0_AXI_LITE_WFGPIO_BASEADDR, XPAR_PMODWIFI_0_AXI_LITE_WFCS_BASEADDR, XPAR_PMODWIFI_0_S_AXI_TIMER_BASEADDR);
+	setPmodWifiIntVector(PMODWIFI_VEC_ID);
+}
+
+
+void DemoRun()
+{
+	IPSTATUS status;
+	int cbRead=0;
+	int skip =0;
+	int started =0;
+	int last_1=0;int last_2=0; int last_3=0;
+	while (1){
+		switch(state){
+			case CONNECT:
+				if(WiFiConnectMacro())
+				{
+					xil_printf("WiFi connected\r\n");
+					deIPcK.begin();
+					state = TCPCONNECT;
+				}
+				else if(IsIPStatusAnError(status))
+				{
+					xil_printf("Unable to connect, status: %d\r\n", status);
+					state = CLOSE;
+				}
+				break;
+
+			case TCPCONNECT:
+				if(deIPcK.tcpConnect(szIPServer, portServer, tcpSocket))
+				{
+					xil_printf("Connected to server.\r\n");
+					state = WRITE;
+					skip=267;
+					started =0;
+				}
+				break;
+
+			// write out the strings
+			case WRITE:
+				if(tcpSocket.isEstablished())
+					{
+					tcpSocket.writeStream(rgbWriteStream, cbWriteStream);
+
+					//xil_printf("Bytes Read Back:\r\n");
+					state = READ;
+					}
+				break;
+
+				// look for the echo back
+			case READ:
+				// see if we got anything to read
+				if((cbRead = tcpSocket.available()) > 0)
+				{
+					cbRead = cbRead < (int) sizeof(rgbRead) ? cbRead : sizeof(rgbRead);
+					cbRead = tcpSocket.readStream(rgbRead, cbRead);
+					if (cbRead<skip)
+					skip -=cbRead;
+					else{
+						byte * to_read = rgbRead+skip;
+						while (*to_read !=0xFF && started == 0){
+							to_read++;
+						}
+						started = 1;
+						int to_read_i;
+						////Write rgbRead to FIFO QUEUE*/
+						xil_printf("about_to_write\n");
+						for (int q =0; q<cbRead-skip; q+=4){
+							if (state != CLOSE){
+								to_read_i = (to_read[q]<<24)|(to_read[q+1]<<16)|(to_read[q+2]<<8)|(to_read[q+3]);
+								xil_printf("%x\n", to_read_i);
+								putfslx(to_read_i, 0,FSL_DEFAULT);
+								if(((0xFFFF00000&to_read_i)==0xFFD90000) ||
+									((0x0FFFF0000&to_read_i)==0x0FFD9000) ||
+									((0x00FFFF000&to_read_i)==0x00FFD900) ||
+									((0x000FFFF00&to_read_i)==0x000FFD90) ||
+									((0x00000FFFF&to_read_i)==0x0000FFD9) ||
+									(last_1 &&(0xF00000000&to_read_i)==0x90000000) ||
+									(last_2 &&(0xFF0000000&to_read_i)==0xD9000000) ||
+									(last_3 &&(0xFFF000000&to_read_i)==0xFD900000))
+								{
+									xil_printf("closing\n");
+									state = CLOSE;
+									break;
+
+								}
+								last_1 = (0x000000FFF&to_read_i)==0x00000FFD;
+								last_2 = (0x0000000FF&to_read_i)==0x000000FF;
+								last_3 = (0x00000000F&to_read_i)==0x0000000F;
+							}
+						}
+						skip=0;
+					}
+				}
+			break;
+
+			// done, so close up the tcpSocket
+			case CLOSE:
+				tcpSocket.close();
+				xil_printf("Closing TcpClient, Done with sketch.\r\n");
+				last_1=0; last_2=0, last_3=0;
+				state = DONE;
+				break;
+
+			case DONE:
+				state = TCPCONNECT;
+				default:
+				break;
+		}
+
+	    // keep the stack alive each pass through the loop()
+	    DEIPcK::periodicTasks();
+	}
+}

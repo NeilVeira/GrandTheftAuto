@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0
-// IP Revision: 19
+// IP Revision: 21
 
 `timescale 1ns/1ps
 
@@ -56,6 +56,7 @@
 module design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (
   s00_axis_aclk,
   s00_axis_aresetn,
+  slow_clock,
   s00_axis_tready,
   s00_axis_tdata,
   s00_axis_tstrb,
@@ -72,13 +73,15 @@ module design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (
   img_proc_write,
   edge_ram_addr,
   edge_ram_din,
-  edge_ram_wren
+  edge_ram_wren,
+  error_o
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 s00_axis_aclk CLK" *)
 input wire s00_axis_aclk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 s00_axis_aresetn RST" *)
 input wire s00_axis_aresetn;
+input wire slow_clock;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s00_axis TREADY" *)
 output wire s00_axis_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s00_axis TDATA" *)
@@ -101,12 +104,14 @@ output wire [1 : 0] img_proc_write;
 output wire [12 : 0] edge_ram_addr;
 output wire [19 : 0] edge_ram_din;
 output wire edge_ram_wren;
+output wire error_o;
 
   stream_jpg_yy_nv_mn_v1_0 #(
     .C_S00_AXIS_TDATA_WIDTH(32)
   ) inst (
     .s00_axis_aclk(s00_axis_aclk),
     .s00_axis_aresetn(s00_axis_aresetn),
+    .slow_clock(slow_clock),
     .s00_axis_tready(s00_axis_tready),
     .s00_axis_tdata(s00_axis_tdata),
     .s00_axis_tstrb(s00_axis_tstrb),
@@ -123,6 +128,7 @@ output wire edge_ram_wren;
     .img_proc_write(img_proc_write),
     .edge_ram_addr(edge_ram_addr),
     .edge_ram_din(edge_ram_din),
-    .edge_ram_wren(edge_ram_wren)
+    .edge_ram_wren(edge_ram_wren),
+    .error_o(error_o)
   );
 endmodule

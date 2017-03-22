@@ -32,6 +32,7 @@ module image_processor (
     input ready_i,
     output ready_o,
     input calibrate,
+    output error_o,
     //vga output signals
     output [3:0] R,
     output [3:0] G,
@@ -59,7 +60,7 @@ module image_processor (
         .data_i(data_i),
         .reset_i(reset_i),
         .eoi_o(),
-        .error_o(),
+        .error_o(error_o),
         .context_o(),
         .red_o(red_o),
         .green_o(green_o),
@@ -329,11 +330,7 @@ module image_processor (
         .G(G),
         .B(B),
         .H(H),
-        .V(V),
-        .calibrate(calibrate),
-        .target_r(target_r),
-        .target_g(target_g),
-        .target_b(target_b)
+        .V(V)
     );
 
 endmodule

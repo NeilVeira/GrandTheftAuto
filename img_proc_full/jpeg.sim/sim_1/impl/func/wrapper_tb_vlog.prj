@@ -1,8 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  "../../../../jpeg.srcs/sim_1/wrapper_tb.v" --include "../../../../jpeg.ip_user_files/ipstatic/clk_wiz_v5_3_1"
-
-# compile glbl module
-verilog xil_defaultlib "glbl.v"
-
-# Do not sort compile order
-nosort

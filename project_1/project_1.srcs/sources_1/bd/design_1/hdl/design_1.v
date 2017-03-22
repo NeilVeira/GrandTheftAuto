@@ -1,15 +1,15 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-//Date        : Mon Mar 20 20:34:33 2017
-//Host        : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
+//Date        : Wed Mar 22 10:51:45 2017
+//Host        : SFB520WS02 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=38,numReposBlks=27,numNonXlnxBlks=2,numHierBlks=11,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=17,da_board_cnt=8,da_mb_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=38,numReposBlks=27,numNonXlnxBlks=2,numHierBlks=11,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=23,da_board_cnt=11,da_mb_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (B,
     DDR2_addr,
@@ -28,32 +28,34 @@ module design_1
     DDR2_we_n,
     G,
     H,
+    Pmod_out_pin10_i,
+    Pmod_out_pin10_o,
+    Pmod_out_pin10_t,
+    Pmod_out_pin1_i,
+    Pmod_out_pin1_o,
+    Pmod_out_pin1_t,
+    Pmod_out_pin2_i,
+    Pmod_out_pin2_o,
+    Pmod_out_pin2_t,
+    Pmod_out_pin3_i,
+    Pmod_out_pin3_o,
+    Pmod_out_pin3_t,
+    Pmod_out_pin4_i,
+    Pmod_out_pin4_o,
+    Pmod_out_pin4_t,
+    Pmod_out_pin7_i,
+    Pmod_out_pin7_o,
+    Pmod_out_pin7_t,
+    Pmod_out_pin8_i,
+    Pmod_out_pin8_o,
+    Pmod_out_pin8_t,
+    Pmod_out_pin9_i,
+    Pmod_out_pin9_o,
+    Pmod_out_pin9_t,
     R,
     V,
-    jb_0_pin10_i,
-    jb_0_pin10_o,
-    jb_0_pin10_t,
-    jb_0_pin1_i,
-    jb_0_pin1_o,
-    jb_0_pin1_t,
-    jb_0_pin2_i,
-    jb_0_pin2_o,
-    jb_0_pin2_t,
-    jb_0_pin3_i,
-    jb_0_pin3_o,
-    jb_0_pin3_t,
-    jb_0_pin4_i,
-    jb_0_pin4_o,
-    jb_0_pin4_t,
-    jb_0_pin7_i,
-    jb_0_pin7_o,
-    jb_0_pin7_t,
-    jb_0_pin8_i,
-    jb_0_pin8_o,
-    jb_0_pin8_t,
-    jb_0_pin9_i,
-    jb_0_pin9_o,
-    jb_0_pin9_t,
+    calibrate,
+    error_o,
     reset,
     sys_clock,
     usb_uart_rxd,
@@ -75,32 +77,34 @@ module design_1
   output DDR2_we_n;
   output [3:0]G;
   output H;
+  input Pmod_out_pin10_i;
+  output Pmod_out_pin10_o;
+  output Pmod_out_pin10_t;
+  input Pmod_out_pin1_i;
+  output Pmod_out_pin1_o;
+  output Pmod_out_pin1_t;
+  input Pmod_out_pin2_i;
+  output Pmod_out_pin2_o;
+  output Pmod_out_pin2_t;
+  input Pmod_out_pin3_i;
+  output Pmod_out_pin3_o;
+  output Pmod_out_pin3_t;
+  input Pmod_out_pin4_i;
+  output Pmod_out_pin4_o;
+  output Pmod_out_pin4_t;
+  input Pmod_out_pin7_i;
+  output Pmod_out_pin7_o;
+  output Pmod_out_pin7_t;
+  input Pmod_out_pin8_i;
+  output Pmod_out_pin8_o;
+  output Pmod_out_pin8_t;
+  input Pmod_out_pin9_i;
+  output Pmod_out_pin9_o;
+  output Pmod_out_pin9_t;
   output [3:0]R;
   output V;
-  input jb_0_pin10_i;
-  output jb_0_pin10_o;
-  output jb_0_pin10_t;
-  input jb_0_pin1_i;
-  output jb_0_pin1_o;
-  output jb_0_pin1_t;
-  input jb_0_pin2_i;
-  output jb_0_pin2_o;
-  output jb_0_pin2_t;
-  input jb_0_pin3_i;
-  output jb_0_pin3_o;
-  output jb_0_pin3_t;
-  input jb_0_pin4_i;
-  output jb_0_pin4_o;
-  output jb_0_pin4_t;
-  input jb_0_pin7_i;
-  output jb_0_pin7_o;
-  output jb_0_pin7_t;
-  input jb_0_pin8_i;
-  output jb_0_pin8_o;
-  output jb_0_pin8_t;
-  input jb_0_pin9_i;
-  output jb_0_pin9_o;
-  output jb_0_pin9_t;
+  input calibrate;
+  output error_o;
   input reset;
   input sys_clock;
   input usb_uart_rxd;
@@ -134,8 +138,10 @@ module design_1
   wire axi_uartlite_0_UART_RxD;
   wire axi_uartlite_0_UART_TxD;
   wire axi_uartlite_0_interrupt;
+  wire calibrate_1;
   wire clk_wiz_1_clk_out2;
   wire clk_wiz_1_clk_out3;
+  wire clk_wiz_1_clk_out4;
   wire clk_wiz_1_locked;
   wire mdm_1_debug_sys_rst;
   wire microblaze_0_Clk;
@@ -364,6 +370,7 @@ module design_1
   wire stream_jpg_yy_nv_mn_v1_0_wed2_0_H;
   wire [3:0]stream_jpg_yy_nv_mn_v1_0_wed2_0_R;
   wire stream_jpg_yy_nv_mn_v1_0_wed2_0_V;
+  wire stream_jpg_yy_nv_mn_v1_0_wed2_0_error_o;
   wire sys_clock_1;
 
   assign B[3:0] = stream_jpg_yy_nv_mn_v1_0_wed2_0_B;
@@ -380,37 +387,39 @@ module design_1
   assign DDR2_we_n = mig_7series_0_DDR2_WE_N;
   assign G[3:0] = stream_jpg_yy_nv_mn_v1_0_wed2_0_G;
   assign H = stream_jpg_yy_nv_mn_v1_0_wed2_0_H;
-  assign PmodWIFI_0_Pmod_out_PIN10_I = jb_0_pin10_i;
-  assign PmodWIFI_0_Pmod_out_PIN1_I = jb_0_pin1_i;
-  assign PmodWIFI_0_Pmod_out_PIN2_I = jb_0_pin2_i;
-  assign PmodWIFI_0_Pmod_out_PIN3_I = jb_0_pin3_i;
-  assign PmodWIFI_0_Pmod_out_PIN4_I = jb_0_pin4_i;
-  assign PmodWIFI_0_Pmod_out_PIN7_I = jb_0_pin7_i;
-  assign PmodWIFI_0_Pmod_out_PIN8_I = jb_0_pin8_i;
-  assign PmodWIFI_0_Pmod_out_PIN9_I = jb_0_pin9_i;
+  assign PmodWIFI_0_Pmod_out_PIN10_I = Pmod_out_pin10_i;
+  assign PmodWIFI_0_Pmod_out_PIN1_I = Pmod_out_pin1_i;
+  assign PmodWIFI_0_Pmod_out_PIN2_I = Pmod_out_pin2_i;
+  assign PmodWIFI_0_Pmod_out_PIN3_I = Pmod_out_pin3_i;
+  assign PmodWIFI_0_Pmod_out_PIN4_I = Pmod_out_pin4_i;
+  assign PmodWIFI_0_Pmod_out_PIN7_I = Pmod_out_pin7_i;
+  assign PmodWIFI_0_Pmod_out_PIN8_I = Pmod_out_pin8_i;
+  assign PmodWIFI_0_Pmod_out_PIN9_I = Pmod_out_pin9_i;
+  assign Pmod_out_pin10_o = PmodWIFI_0_Pmod_out_PIN10_O;
+  assign Pmod_out_pin10_t = PmodWIFI_0_Pmod_out_PIN10_T;
+  assign Pmod_out_pin1_o = PmodWIFI_0_Pmod_out_PIN1_O;
+  assign Pmod_out_pin1_t = PmodWIFI_0_Pmod_out_PIN1_T;
+  assign Pmod_out_pin2_o = PmodWIFI_0_Pmod_out_PIN2_O;
+  assign Pmod_out_pin2_t = PmodWIFI_0_Pmod_out_PIN2_T;
+  assign Pmod_out_pin3_o = PmodWIFI_0_Pmod_out_PIN3_O;
+  assign Pmod_out_pin3_t = PmodWIFI_0_Pmod_out_PIN3_T;
+  assign Pmod_out_pin4_o = PmodWIFI_0_Pmod_out_PIN4_O;
+  assign Pmod_out_pin4_t = PmodWIFI_0_Pmod_out_PIN4_T;
+  assign Pmod_out_pin7_o = PmodWIFI_0_Pmod_out_PIN7_O;
+  assign Pmod_out_pin7_t = PmodWIFI_0_Pmod_out_PIN7_T;
+  assign Pmod_out_pin8_o = PmodWIFI_0_Pmod_out_PIN8_O;
+  assign Pmod_out_pin8_t = PmodWIFI_0_Pmod_out_PIN8_T;
+  assign Pmod_out_pin9_o = PmodWIFI_0_Pmod_out_PIN9_O;
+  assign Pmod_out_pin9_t = PmodWIFI_0_Pmod_out_PIN9_T;
   assign R[3:0] = stream_jpg_yy_nv_mn_v1_0_wed2_0_R;
   assign V = stream_jpg_yy_nv_mn_v1_0_wed2_0_V;
   assign axi_uartlite_0_UART_RxD = usb_uart_rxd;
-  assign jb_0_pin10_o = PmodWIFI_0_Pmod_out_PIN10_O;
-  assign jb_0_pin10_t = PmodWIFI_0_Pmod_out_PIN10_T;
-  assign jb_0_pin1_o = PmodWIFI_0_Pmod_out_PIN1_O;
-  assign jb_0_pin1_t = PmodWIFI_0_Pmod_out_PIN1_T;
-  assign jb_0_pin2_o = PmodWIFI_0_Pmod_out_PIN2_O;
-  assign jb_0_pin2_t = PmodWIFI_0_Pmod_out_PIN2_T;
-  assign jb_0_pin3_o = PmodWIFI_0_Pmod_out_PIN3_O;
-  assign jb_0_pin3_t = PmodWIFI_0_Pmod_out_PIN3_T;
-  assign jb_0_pin4_o = PmodWIFI_0_Pmod_out_PIN4_O;
-  assign jb_0_pin4_t = PmodWIFI_0_Pmod_out_PIN4_T;
-  assign jb_0_pin7_o = PmodWIFI_0_Pmod_out_PIN7_O;
-  assign jb_0_pin7_t = PmodWIFI_0_Pmod_out_PIN7_T;
-  assign jb_0_pin8_o = PmodWIFI_0_Pmod_out_PIN8_O;
-  assign jb_0_pin8_t = PmodWIFI_0_Pmod_out_PIN8_T;
-  assign jb_0_pin9_o = PmodWIFI_0_Pmod_out_PIN9_O;
-  assign jb_0_pin9_t = PmodWIFI_0_Pmod_out_PIN9_T;
+  assign calibrate_1 = calibrate;
+  assign error_o = stream_jpg_yy_nv_mn_v1_0_wed2_0_error_o;
   assign reset_1 = reset;
   assign sys_clock_1 = sys_clock;
   assign usb_uart_txd = axi_uartlite_0_UART_TxD;
-  design_1_PmodWIFI_0_2 PmodWIFI_0
+  design_1_PmodWIFI_0_0 PmodWIFI_0
        (.AXI_LITE_GPIO_WFCS_araddr(microblaze_0_axi_periph_M04_AXI_ARADDR[8:0]),
         .AXI_LITE_GPIO_WFCS_arready(microblaze_0_axi_periph_M04_AXI_ARREADY),
         .AXI_LITE_GPIO_WFCS_arvalid(microblaze_0_axi_periph_M04_AXI_ARVALID),
@@ -534,6 +543,7 @@ module design_1
         .clk_out1(microblaze_0_Clk),
         .clk_out2(clk_wiz_1_clk_out2),
         .clk_out3(clk_wiz_1_clk_out3),
+        .clk_out4(clk_wiz_1_clk_out4),
         .locked(clk_wiz_1_locked),
         .resetn(reset_1));
   design_1_mdm_1_0 mdm_1
@@ -933,8 +943,9 @@ module design_1
         .H(stream_jpg_yy_nv_mn_v1_0_wed2_0_H),
         .R(stream_jpg_yy_nv_mn_v1_0_wed2_0_R),
         .V(stream_jpg_yy_nv_mn_v1_0_wed2_0_V),
-        .calibrate(1'b0),
+        .calibrate(calibrate_1),
         .clk_25(clk_wiz_1_clk_out3),
+        .error_o(stream_jpg_yy_nv_mn_v1_0_wed2_0_error_o),
         .microblaze_read({1'b0,1'b0}),
         .s00_axis_aclk(microblaze_0_Clk),
         .s00_axis_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
@@ -942,7 +953,8 @@ module design_1
         .s00_axis_tlast(microblaze_0_M0_AXIS_TLAST),
         .s00_axis_tready(microblaze_0_M0_AXIS_TREADY),
         .s00_axis_tstrb({1'b0,1'b0,1'b0,1'b0}),
-        .s00_axis_tvalid(microblaze_0_M0_AXIS_TVALID));
+        .s00_axis_tvalid(microblaze_0_M0_AXIS_TVALID),
+        .slow_clock(clk_wiz_1_clk_out4));
 endmodule
 
 module design_1_microblaze_0_axi_periph_0
@@ -2203,7 +2215,7 @@ module design_1_microblaze_0_axi_periph_0
         .S_AXI_rready(microblaze_0_axi_periph_to_s01_couplers_RREADY),
         .S_AXI_rresp(microblaze_0_axi_periph_to_s01_couplers_RRESP),
         .S_AXI_rvalid(microblaze_0_axi_periph_to_s01_couplers_RVALID));
-  design_1_xbar_0 xbar
+  design_1_xbar_1 xbar
        (.aclk(microblaze_0_axi_periph_ACLK_net),
         .aresetn(microblaze_0_axi_periph_ARESETN_net),
         .m_axi_araddr({xbar_to_m06_couplers_ARADDR,xbar_to_m05_couplers_ARADDR,xbar_to_m04_couplers_ARADDR,xbar_to_m03_couplers_ARADDR,xbar_to_m02_couplers_ARADDR,xbar_to_m01_couplers_ARADDR,xbar_to_m00_couplers_ARADDR}),
@@ -4009,7 +4021,7 @@ module microblaze_0_local_memory_imp_1K0VQXK
         .Sl_Ready(microblaze_0_ilmb_bus_READY),
         .Sl_UE(microblaze_0_ilmb_bus_UE),
         .Sl_Wait(microblaze_0_ilmb_bus_WAIT));
-  design_1_lmb_bram_0 lmb_bram
+  design_1_lmb_bram_1 lmb_bram
        (.addra({microblaze_0_dlmb_cntlr_ADDR[0],microblaze_0_dlmb_cntlr_ADDR[1],microblaze_0_dlmb_cntlr_ADDR[2],microblaze_0_dlmb_cntlr_ADDR[3],microblaze_0_dlmb_cntlr_ADDR[4],microblaze_0_dlmb_cntlr_ADDR[5],microblaze_0_dlmb_cntlr_ADDR[6],microblaze_0_dlmb_cntlr_ADDR[7],microblaze_0_dlmb_cntlr_ADDR[8],microblaze_0_dlmb_cntlr_ADDR[9],microblaze_0_dlmb_cntlr_ADDR[10],microblaze_0_dlmb_cntlr_ADDR[11],microblaze_0_dlmb_cntlr_ADDR[12],microblaze_0_dlmb_cntlr_ADDR[13],microblaze_0_dlmb_cntlr_ADDR[14],microblaze_0_dlmb_cntlr_ADDR[15],microblaze_0_dlmb_cntlr_ADDR[16],microblaze_0_dlmb_cntlr_ADDR[17],microblaze_0_dlmb_cntlr_ADDR[18],microblaze_0_dlmb_cntlr_ADDR[19],microblaze_0_dlmb_cntlr_ADDR[20],microblaze_0_dlmb_cntlr_ADDR[21],microblaze_0_dlmb_cntlr_ADDR[22],microblaze_0_dlmb_cntlr_ADDR[23],microblaze_0_dlmb_cntlr_ADDR[24],microblaze_0_dlmb_cntlr_ADDR[25],microblaze_0_dlmb_cntlr_ADDR[26],microblaze_0_dlmb_cntlr_ADDR[27],microblaze_0_dlmb_cntlr_ADDR[28],microblaze_0_dlmb_cntlr_ADDR[29],microblaze_0_dlmb_cntlr_ADDR[30],microblaze_0_dlmb_cntlr_ADDR[31]}),
         .addrb({microblaze_0_ilmb_cntlr_ADDR[0],microblaze_0_ilmb_cntlr_ADDR[1],microblaze_0_ilmb_cntlr_ADDR[2],microblaze_0_ilmb_cntlr_ADDR[3],microblaze_0_ilmb_cntlr_ADDR[4],microblaze_0_ilmb_cntlr_ADDR[5],microblaze_0_ilmb_cntlr_ADDR[6],microblaze_0_ilmb_cntlr_ADDR[7],microblaze_0_ilmb_cntlr_ADDR[8],microblaze_0_ilmb_cntlr_ADDR[9],microblaze_0_ilmb_cntlr_ADDR[10],microblaze_0_ilmb_cntlr_ADDR[11],microblaze_0_ilmb_cntlr_ADDR[12],microblaze_0_ilmb_cntlr_ADDR[13],microblaze_0_ilmb_cntlr_ADDR[14],microblaze_0_ilmb_cntlr_ADDR[15],microblaze_0_ilmb_cntlr_ADDR[16],microblaze_0_ilmb_cntlr_ADDR[17],microblaze_0_ilmb_cntlr_ADDR[18],microblaze_0_ilmb_cntlr_ADDR[19],microblaze_0_ilmb_cntlr_ADDR[20],microblaze_0_ilmb_cntlr_ADDR[21],microblaze_0_ilmb_cntlr_ADDR[22],microblaze_0_ilmb_cntlr_ADDR[23],microblaze_0_ilmb_cntlr_ADDR[24],microblaze_0_ilmb_cntlr_ADDR[25],microblaze_0_ilmb_cntlr_ADDR[26],microblaze_0_ilmb_cntlr_ADDR[27],microblaze_0_ilmb_cntlr_ADDR[28],microblaze_0_ilmb_cntlr_ADDR[29],microblaze_0_ilmb_cntlr_ADDR[30],microblaze_0_ilmb_cntlr_ADDR[31]}),
         .clka(microblaze_0_dlmb_cntlr_CLK),

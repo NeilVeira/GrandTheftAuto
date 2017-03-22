@@ -39,11 +39,7 @@ module vga_controller (
     output [3:0] G,
     output [3:0] B,
     output H,
-    output V,
-    input calibrate,
-    input [7:0] target_r,
-    input [7:0] target_g,
-    input [7:0] target_b
+    output V
     );
 
     (* dont_touch = "true" *) wire [9:0] row;
@@ -77,8 +73,8 @@ module vga_controller (
     wire r1, g1, b1;
     VGAdrive vgadriver_inst (
         .clk(clk_25),
-        .red(mem_doutb[0]),
-        .green(mem_doutb[1]),
+        .red(in_range ? mem_doutb[0] : 0),
+        .green(in_range ? mem_doutb[1] : 0),
         .blue(0),
         .row(row),
         .column(column),
@@ -90,9 +86,8 @@ module vga_controller (
         .V(V)
     );
 
-    //output target colour in calibrate mode
-    assign R = in_range ? (calibrate ? target_r[7:4] : {r1,r1,r1,r1}) : 4'b0000;
-    assign G = in_range ? (calibrate ? target_g[7:4] : {g1,g1,g1,g1}) : 4'b0000;
-    assign B = in_range ? (calibrate ? target_b[7:4] : {b1,b1,b1,b1}) : 4'b0000;
+	assign R = {r1,r1,r1,r1};
+	assign G = {g1,g1,g1,g1};
+	assign B = {b1,b1,b1,b1};
   
 endmodule

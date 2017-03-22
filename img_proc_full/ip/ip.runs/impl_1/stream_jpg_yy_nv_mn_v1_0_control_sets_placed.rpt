@@ -1,0 +1,186 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Wed Mar 15 16:56:12 2017
+| Host         : yy_ideapad running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file stream_jpg_yy_nv_mn_v1_0_control_sets_placed.rpt
+| Design       : stream_jpg_yy_nv_mn_v1_0
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   115 |
+| Unused register locations in slices containing registers |   280 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1576 |          444 |
+| No           | No                    | Yes                    |            1322 |          309 |
+| No           | Yes                   | No                     |             615 |          180 |
+| Yes          | No                    | No                     |             142 |           51 |
+| Yes          | No                    | Yes                    |             445 |          104 |
+| Yes          | Yes                   | No                     |            2020 |          435 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+
+|                   Clock Signal                  |                                         Enable Signal                                        |                                   Set/Reset Signal                                   | Slice Load Count | Bel Load Count |
++-------------------------------------------------+----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]         | s00_axis_aresetn_IBUF                                                                |                1 |              1 |
+|  clk_25_IBUF_BUFG                               |                                                                                              | im_proc/vga_controller_inst/vgadriver_inst/V0                                        |                1 |              1 |
+|  clk_25_IBUF_BUFG                               |                                                                                              | im_proc/vga_controller_inst/vgadriver_inst/H0                                        |                1 |              1 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb             | s00_axis_aresetn_IBUF                                                                |                1 |              1 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]           | im_proc/jpeg_inst/input_fifo_reset                                                   |                1 |              1 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/rpremod/_not0001      | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0] |                1 |              1 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/thrmod/aflogic/FULL_inv | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb       |                1 |              1 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/rpremod/_not0001        | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]   |                1 |              1 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb               | im_proc/jpeg_inst/input_fifo_reset                                                   |                1 |              1 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | im_proc/jpeg_inst/input_fifo_reset                                                   |                2 |              2 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32608                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                2 |              4 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N95                                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N101                               |                1 |              4 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N292                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                1 |              4 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/ht_nr_of_symbols_address                                    | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                2 |              4 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/state                                                       | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                3 |              4 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/ce22_out                                                    | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                4 |              5 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/bram_addrin_i_1_n_0                                                                  | im_proc/x_base0                                                                      |                2 |              5 |
+| ~im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/datavalid_o |                                                                                              | im_proc/x_base0                                                                      |                3 |              6 |
+| ~im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/datavalid_o | im_proc/load                                                                                 | im_proc/x_base0                                                                      |                2 |              6 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_dequantize_p/ce50_out                                                 | s00_axis_aresetn_IBUF                                                                |                2 |              6 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/zeros_counter                                               | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                4 |              6 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/FSM_sequential_state[5]_i_1_n_0                              | s00_axis_aresetn_IBUF                                                                |                6 |              6 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/ac_dc_counter                                               | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                4 |              6 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N21                                        | s00_axis_aresetn_IBUF                                                                |                2 |              7 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N103                                       | s00_axis_aresetn_IBUF                                                                |                2 |              7 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/nr_of_ht0_codes_dc[7]_i_1_n_0                                | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/nr_of_ht0_codes_ac[7]_i_1_n_0                                | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_upsampling_p/counter_out[7]_i_1_n_0                                   | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/next_comp3_sampl_factor                                      | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/RDY                                        | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/width[7]_i_1_n_0                                             | s00_axis_aresetn_IBUF                                                                |                2 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/next_comp2_sampl_factor                                      | s00_axis_aresetn_IBUF                                                                |                2 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/next_comp1_sampl_factor                                      | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/height[7]_i_1_n_0                                            | s00_axis_aresetn_IBUF                                                                |                4 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/width[15]_i_1_n_0                                            | s00_axis_aresetn_IBUF                                                                |                2 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/otherlength[7]_i_1_n_0                                       | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/height[15]_i_1_n_0                                           | s00_axis_aresetn_IBUF                                                                |                2 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/ram_regout_en                         | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]   |                1 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/otherlength[15]_i_1_n_0                                      | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/nr_of_ht3_codes_dc[7]_i_1_n_0                                | s00_axis_aresetn_IBUF                                                                |                2 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/nr_of_ht3_codes_ac[7]_i_1_n_0                                | s00_axis_aresetn_IBUF                                                                |                2 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/components[7]_i_1_n_0                                        | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/nr_of_ht2_codes_dc[7]_i_1_n_0                                | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/counter2[15]_i_1_n_0                                         | s00_axis_aresetn_IBUF                                                                |                2 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/nr_of_ht1_codes_ac[7]_i_1_n_0                                | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/nr_of_ht2_codes_ac[7]_i_1_n_0                                | s00_axis_aresetn_IBUF                                                                |                4 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/ht_tables_address                                           | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/counter2[7]_i_1_n_0                                          | s00_axis_aresetn_IBUF                                                                |                3 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/symbols                                                     | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                4 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/nr_of_ht1_codes_dc[7]_i_1_n_0                                | s00_axis_aresetn_IBUF                                                                |                4 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/sr_ce                                                       | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                2 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/in_counter0                                                    | s00_axis_aresetn_IBUF                                                                |                2 |              8 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_upsampling_p/ce_in9_out                                               | im_proc/jpeg_inst/jpeg_upsampling_p/counter_in[8]_i_1_n_0                            |                2 |              9 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/ed_go                                                                                | s00_axis_aresetn_IBUF                                                                |                4 |              9 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_check_FF_p/ready_o                                                    | s00_axis_aresetn_IBUF                                                                |                3 |             10 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | im_proc/x_base0                                                                      |                6 |             10 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/ram_regout_en                       | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0] |                2 |             10 |
+|  clk_25_IBUF_BUFG                               |                                                                                              | im_proc/vga_controller_inst/vgadriver_inst/horizontal[9]_i_1_n_0                     |                4 |             10 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/edge_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/RAM_WR_EN    |                                                                                      |                2 |             10 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/ed_x                                                                                 | im_proc/bram_addrout_i_3_n_0                                                         |                3 |             10 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/bram_addrout_i_1_n_0                                                                 | im_proc/x_base0                                                                      |                5 |             10 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N280                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N281                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N282                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N283                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N285                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N284                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_dezigzag_p/do_copy                                                    | im_proc/jpeg_inst/jpeg_dezigzag_p/sr_out[63][11]_i_1_n_0                             |                6 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N278                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N279                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                2 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/data[15]_i_1_n_0                                            |                                                                                      |                6 |             12 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32594                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                2 |             15 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32599                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                2 |             15 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32600                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                2 |             15 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32601                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                3 |             15 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32598                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                4 |             15 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32596                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                2 |             15 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32597                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                2 |             15 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                8 |             15 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32595                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                4 |             15 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/counter1[7]_i_1_n_0                                          | s00_axis_aresetn_IBUF                                                                |                4 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/last_dc_Cb0                                                 | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                6 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/last_dc_Y0                                                  | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                5 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/last_dc_Cr0                                                 | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                7 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/ht_nr_of_symbols/N48                                        |                                                                                      |                4 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/ht_nr_of_symbols/N51                                        |                                                                                      |                4 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/ht_nr_of_symbols/N50                                        |                                                                                      |                4 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/ht_nr_of_symbols/N49                                        |                                                                                      |                4 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/code_read                                                   | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |                7 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_huffman_p/code_build                                                  | im_proc/jpeg_inst/jpeg_huffman_p/reset                                               |               10 |             16 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_dezigzag_p/datavalid_o                                                | s00_axis_aresetn_IBUF                                                                |                7 |             18 |
+|  clk_25_IBUF_BUFG                               |                                                                                              |                                                                                      |                7 |             20 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/rpremod/RAM_RD_EN1_1    | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]   |                7 |             22 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.flblk/rpremod/RAM_RD_EN1_1  | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0] |                6 |             22 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/R_o[7]_i_1_n_0                                            |                                                                                      |               11 |             24 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N353                                       | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |                6 |             30 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/DEBUG_RAM_WR_EN                     | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb     |               10 |             33 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32676                                     | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |                6 |             33 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/DEBUG_RAM_WR_EN                       | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb       |               13 |             36 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb       |                9 |             37 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_header_p/header_select_o                                              | s00_axis_aresetn_IBUF                                                                |               16 |             37 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/width[15]_i_1_n_0                                                          | s00_axis_aresetn_IBUF                                                                |               12 |             37 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | im_proc/jpeg_inst/jpeg_input_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0]   |               12 |             39 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/wr_rst_fb     |               10 |             45 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | im_proc/jpeg_inst/jpeg_checkff_fifo_p/BU2/U0/gen_as.fgas/normgen.inblk/rd_rst_int[0] |               13 |             46 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_dequantize_p/qt0_1_ce                                                 |                                                                                      |               17 |             56 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_dequantize_p/qt0_0_ce                                                 |                                                                                      |               17 |             56 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_dequantize_p/qt1_0_ce                                                 |                                                                                      |               17 |             56 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_dequantize_p/qt1_1_ce                                                 |                                                                                      |               17 |             56 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | s00_axis_aresetn_IBUF                                                                |               34 |             61 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_dezigzag_p/sr_out[62]                                                 | s00_axis_aresetn_IBUF                                                                |              106 |            744 |
+|  s00_axis_aclk_IBUF_BUFG                        | im_proc/jpeg_inst/jpeg_dezigzag_p/sr_in[63][11]_i_1_n_0                                      | s00_axis_aresetn_IBUF                                                                |              131 |            774 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N269                               |              178 |            817 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              | im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p/N32577                             |              208 |            847 |
+|  s00_axis_aclk_IBUF_BUFG                        |                                                                                              |                                                                                      |              437 |           1556 |
++-------------------------------------------------+----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     9 |
+| 2      |                     1 |
+| 4      |                     5 |
+| 5      |                     2 |
+| 6      |                     6 |
+| 7      |                     2 |
+| 8      |                    27 |
+| 9      |                     2 |
+| 10     |                     7 |
+| 12     |                    10 |
+| 15     |                     9 |
+| 16+    |                    35 |
++--------+-----------------------+
+
+

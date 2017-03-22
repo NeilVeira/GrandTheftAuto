@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-//Date        : Mon Mar 20 20:34:33 2017
-//Host        : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
+//Date        : Wed Mar 22 10:51:45 2017
+//Host        : SFB520WS02 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -29,14 +29,16 @@ module design_1_wrapper
     H,
     R,
     V,
-    jb_0_pin10_io,
-    jb_0_pin1_io,
-    jb_0_pin2_io,
-    jb_0_pin3_io,
-    jb_0_pin4_io,
-    jb_0_pin7_io,
-    jb_0_pin8_io,
-    jb_0_pin9_io,
+    calibrate,
+    error_o,
+    pmod_out_pin10_io,
+    pmod_out_pin1_io,
+    pmod_out_pin2_io,
+    pmod_out_pin3_io,
+    pmod_out_pin4_io,
+    pmod_out_pin7_io,
+    pmod_out_pin8_io,
+    pmod_out_pin9_io,
     reset,
     sys_clock,
     usb_uart_rxd,
@@ -60,14 +62,16 @@ module design_1_wrapper
   output H;
   output [3:0]R;
   output V;
-  inout jb_0_pin10_io;
-  inout jb_0_pin1_io;
-  inout jb_0_pin2_io;
-  inout jb_0_pin3_io;
-  inout jb_0_pin4_io;
-  inout jb_0_pin7_io;
-  inout jb_0_pin8_io;
-  inout jb_0_pin9_io;
+  input calibrate;
+  output error_o;
+  inout pmod_out_pin10_io;
+  inout pmod_out_pin1_io;
+  inout pmod_out_pin2_io;
+  inout pmod_out_pin3_io;
+  inout pmod_out_pin4_io;
+  inout pmod_out_pin7_io;
+  inout pmod_out_pin8_io;
+  inout pmod_out_pin9_io;
   input reset;
   input sys_clock;
   input usb_uart_rxd;
@@ -92,38 +96,40 @@ module design_1_wrapper
   wire H;
   wire [3:0]R;
   wire V;
-  wire jb_0_pin10_i;
-  wire jb_0_pin10_io;
-  wire jb_0_pin10_o;
-  wire jb_0_pin10_t;
-  wire jb_0_pin1_i;
-  wire jb_0_pin1_io;
-  wire jb_0_pin1_o;
-  wire jb_0_pin1_t;
-  wire jb_0_pin2_i;
-  wire jb_0_pin2_io;
-  wire jb_0_pin2_o;
-  wire jb_0_pin2_t;
-  wire jb_0_pin3_i;
-  wire jb_0_pin3_io;
-  wire jb_0_pin3_o;
-  wire jb_0_pin3_t;
-  wire jb_0_pin4_i;
-  wire jb_0_pin4_io;
-  wire jb_0_pin4_o;
-  wire jb_0_pin4_t;
-  wire jb_0_pin7_i;
-  wire jb_0_pin7_io;
-  wire jb_0_pin7_o;
-  wire jb_0_pin7_t;
-  wire jb_0_pin8_i;
-  wire jb_0_pin8_io;
-  wire jb_0_pin8_o;
-  wire jb_0_pin8_t;
-  wire jb_0_pin9_i;
-  wire jb_0_pin9_io;
-  wire jb_0_pin9_o;
-  wire jb_0_pin9_t;
+  wire calibrate;
+  wire error_o;
+  wire pmod_out_pin10_i;
+  wire pmod_out_pin10_io;
+  wire pmod_out_pin10_o;
+  wire pmod_out_pin10_t;
+  wire pmod_out_pin1_i;
+  wire pmod_out_pin1_io;
+  wire pmod_out_pin1_o;
+  wire pmod_out_pin1_t;
+  wire pmod_out_pin2_i;
+  wire pmod_out_pin2_io;
+  wire pmod_out_pin2_o;
+  wire pmod_out_pin2_t;
+  wire pmod_out_pin3_i;
+  wire pmod_out_pin3_io;
+  wire pmod_out_pin3_o;
+  wire pmod_out_pin3_t;
+  wire pmod_out_pin4_i;
+  wire pmod_out_pin4_io;
+  wire pmod_out_pin4_o;
+  wire pmod_out_pin4_t;
+  wire pmod_out_pin7_i;
+  wire pmod_out_pin7_io;
+  wire pmod_out_pin7_o;
+  wire pmod_out_pin7_t;
+  wire pmod_out_pin8_i;
+  wire pmod_out_pin8_io;
+  wire pmod_out_pin8_o;
+  wire pmod_out_pin8_t;
+  wire pmod_out_pin9_i;
+  wire pmod_out_pin9_io;
+  wire pmod_out_pin9_o;
+  wire pmod_out_pin9_t;
   wire reset;
   wire sys_clock;
   wire usb_uart_rxd;
@@ -147,74 +153,76 @@ module design_1_wrapper
         .DDR2_we_n(DDR2_we_n),
         .G(G),
         .H(H),
+        .Pmod_out_pin10_i(pmod_out_pin10_i),
+        .Pmod_out_pin10_o(pmod_out_pin10_o),
+        .Pmod_out_pin10_t(pmod_out_pin10_t),
+        .Pmod_out_pin1_i(pmod_out_pin1_i),
+        .Pmod_out_pin1_o(pmod_out_pin1_o),
+        .Pmod_out_pin1_t(pmod_out_pin1_t),
+        .Pmod_out_pin2_i(pmod_out_pin2_i),
+        .Pmod_out_pin2_o(pmod_out_pin2_o),
+        .Pmod_out_pin2_t(pmod_out_pin2_t),
+        .Pmod_out_pin3_i(pmod_out_pin3_i),
+        .Pmod_out_pin3_o(pmod_out_pin3_o),
+        .Pmod_out_pin3_t(pmod_out_pin3_t),
+        .Pmod_out_pin4_i(pmod_out_pin4_i),
+        .Pmod_out_pin4_o(pmod_out_pin4_o),
+        .Pmod_out_pin4_t(pmod_out_pin4_t),
+        .Pmod_out_pin7_i(pmod_out_pin7_i),
+        .Pmod_out_pin7_o(pmod_out_pin7_o),
+        .Pmod_out_pin7_t(pmod_out_pin7_t),
+        .Pmod_out_pin8_i(pmod_out_pin8_i),
+        .Pmod_out_pin8_o(pmod_out_pin8_o),
+        .Pmod_out_pin8_t(pmod_out_pin8_t),
+        .Pmod_out_pin9_i(pmod_out_pin9_i),
+        .Pmod_out_pin9_o(pmod_out_pin9_o),
+        .Pmod_out_pin9_t(pmod_out_pin9_t),
         .R(R),
         .V(V),
-        .jb_0_pin10_i(jb_0_pin10_i),
-        .jb_0_pin10_o(jb_0_pin10_o),
-        .jb_0_pin10_t(jb_0_pin10_t),
-        .jb_0_pin1_i(jb_0_pin1_i),
-        .jb_0_pin1_o(jb_0_pin1_o),
-        .jb_0_pin1_t(jb_0_pin1_t),
-        .jb_0_pin2_i(jb_0_pin2_i),
-        .jb_0_pin2_o(jb_0_pin2_o),
-        .jb_0_pin2_t(jb_0_pin2_t),
-        .jb_0_pin3_i(jb_0_pin3_i),
-        .jb_0_pin3_o(jb_0_pin3_o),
-        .jb_0_pin3_t(jb_0_pin3_t),
-        .jb_0_pin4_i(jb_0_pin4_i),
-        .jb_0_pin4_o(jb_0_pin4_o),
-        .jb_0_pin4_t(jb_0_pin4_t),
-        .jb_0_pin7_i(jb_0_pin7_i),
-        .jb_0_pin7_o(jb_0_pin7_o),
-        .jb_0_pin7_t(jb_0_pin7_t),
-        .jb_0_pin8_i(jb_0_pin8_i),
-        .jb_0_pin8_o(jb_0_pin8_o),
-        .jb_0_pin8_t(jb_0_pin8_t),
-        .jb_0_pin9_i(jb_0_pin9_i),
-        .jb_0_pin9_o(jb_0_pin9_o),
-        .jb_0_pin9_t(jb_0_pin9_t),
+        .calibrate(calibrate),
+        .error_o(error_o),
         .reset(reset),
         .sys_clock(sys_clock),
         .usb_uart_rxd(usb_uart_rxd),
         .usb_uart_txd(usb_uart_txd));
-  IOBUF jb_0_pin10_iobuf
-       (.I(jb_0_pin10_o),
-        .IO(jb_0_pin10_io),
-        .O(jb_0_pin10_i),
-        .T(jb_0_pin10_t));
-  IOBUF jb_0_pin1_iobuf
-       (.I(jb_0_pin1_o),
-        .IO(jb_0_pin1_io),
-        .O(jb_0_pin1_i),
-        .T(jb_0_pin1_t));
-  IOBUF jb_0_pin2_iobuf
-       (.I(jb_0_pin2_o),
-        .IO(jb_0_pin2_io),
-        .O(jb_0_pin2_i),
-        .T(jb_0_pin2_t));
-  IOBUF jb_0_pin3_iobuf
-       (.I(jb_0_pin3_o),
-        .IO(jb_0_pin3_io),
-        .O(jb_0_pin3_i),
-        .T(jb_0_pin3_t));
-  IOBUF jb_0_pin4_iobuf
-       (.I(jb_0_pin4_o),
-        .IO(jb_0_pin4_io),
-        .O(jb_0_pin4_i),
-        .T(jb_0_pin4_t));
-  IOBUF jb_0_pin7_iobuf
-       (.I(jb_0_pin7_o),
-        .IO(jb_0_pin7_io),
-        .O(jb_0_pin7_i),
-        .T(jb_0_pin7_t));
-  IOBUF jb_0_pin8_iobuf
-       (.I(jb_0_pin8_o),
-        .IO(jb_0_pin8_io),
-        .O(jb_0_pin8_i),
-        .T(jb_0_pin8_t));
-  IOBUF jb_0_pin9_iobuf
-       (.I(jb_0_pin9_o),
-        .IO(jb_0_pin9_io),
-        .O(jb_0_pin9_i),
-        .T(jb_0_pin9_t));
+  IOBUF pmod_out_pin10_iobuf
+       (.I(pmod_out_pin10_o),
+        .IO(pmod_out_pin10_io),
+        .O(pmod_out_pin10_i),
+        .T(pmod_out_pin10_t));
+  IOBUF pmod_out_pin1_iobuf
+       (.I(pmod_out_pin1_o),
+        .IO(pmod_out_pin1_io),
+        .O(pmod_out_pin1_i),
+        .T(pmod_out_pin1_t));
+  IOBUF pmod_out_pin2_iobuf
+       (.I(pmod_out_pin2_o),
+        .IO(pmod_out_pin2_io),
+        .O(pmod_out_pin2_i),
+        .T(pmod_out_pin2_t));
+  IOBUF pmod_out_pin3_iobuf
+       (.I(pmod_out_pin3_o),
+        .IO(pmod_out_pin3_io),
+        .O(pmod_out_pin3_i),
+        .T(pmod_out_pin3_t));
+  IOBUF pmod_out_pin4_iobuf
+       (.I(pmod_out_pin4_o),
+        .IO(pmod_out_pin4_io),
+        .O(pmod_out_pin4_i),
+        .T(pmod_out_pin4_t));
+  IOBUF pmod_out_pin7_iobuf
+       (.I(pmod_out_pin7_o),
+        .IO(pmod_out_pin7_io),
+        .O(pmod_out_pin7_i),
+        .T(pmod_out_pin7_t));
+  IOBUF pmod_out_pin8_iobuf
+       (.I(pmod_out_pin8_o),
+        .IO(pmod_out_pin8_io),
+        .O(pmod_out_pin8_i),
+        .T(pmod_out_pin8_t));
+  IOBUF pmod_out_pin9_iobuf
+       (.I(pmod_out_pin9_o),
+        .IO(pmod_out_pin9_io),
+        .O(pmod_out_pin9_i),
+        .T(pmod_out_pin9_t));
 endmodule

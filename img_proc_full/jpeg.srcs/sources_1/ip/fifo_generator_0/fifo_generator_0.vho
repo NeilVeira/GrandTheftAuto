@@ -55,11 +55,12 @@
 COMPONENT fifo_generator_0
   PORT (
     clk : IN STD_LOGIC;
-    din : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+    din : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     wr_en : IN STD_LOGIC;
     rd_en : IN STD_LOGIC;
-    dout : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
+    dout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     full : OUT STD_LOGIC;
+    almost_full : OUT STD_LOGIC;
     empty : OUT STD_LOGIC
   );
 END COMPONENT;
@@ -77,6 +78,7 @@ your_instance_name : fifo_generator_0
     rd_en => rd_en,
     dout => dout,
     full => full,
+    almost_full => almost_full,
     empty => empty
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------

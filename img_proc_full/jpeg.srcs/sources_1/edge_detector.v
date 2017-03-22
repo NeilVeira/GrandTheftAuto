@@ -22,9 +22,9 @@
 
 module edge_detector #(
     //parameters for colour detection
-    parameter integer target_r = 180, 
-    parameter integer target_g = 45,
-    parameter integer target_b = 60,
+    //parameter integer target_r = 180, 
+    //parameter integer target_g = 45,
+    //parameter integer target_b = 60,
     parameter integer error_threshold = 3500,
     
     //dimensions of all images
@@ -40,15 +40,19 @@ module edge_detector #(
     input [7:0] r,
     input [7:0] g,
     input [7:0] b,
+    input [7:0] target_r,
+    input [7:0] target_g,
+    input [7:0] target_b,   
     input go,
     input clk,
     input rst, //active low
     input [9:0] x,
     input [9:0] y,
     input [15:0] W,
+    input calibrate,
     
-    //fifo ports
-    output wire wren,
+    //detected edges and colours
+    output wire edge_valid,
     output wire [19:0] edge_out,
     output wire colour
     );
@@ -118,8 +122,8 @@ module edge_detector #(
     localparam integer max_sum = HIGH*(2*K+1)*(2*K+1);
 
     //fifo stuff
-    assign wren = (go && 
-                        y >= 2*K && x >= 2*K && //need to have processed a full window to be valid
+    assign edge_valid = (go && 
+                        y >= 2*K && x >= 2*K && //need to have processed a full window to be edge_valid
                         min_sum <= sum && sum <= max_sum) ? 1 : 0;
     assign edge_out[19:10] = y - K;
     assign edge_out[9:0] = x - K; //-3 for some constant offset due to timing

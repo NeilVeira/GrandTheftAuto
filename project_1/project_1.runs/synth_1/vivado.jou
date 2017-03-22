@@ -2,11 +2,11 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Mon Mar 20 20:40:17 2017
-# Process ID: 8260
-# Current directory: C:/Users/IBM_ADMIN/Desktop/yy/project_1/project_1.runs/synth_1
+# Start of session at: Wed Mar 22 10:54:34 2017
+# Process ID: 4572
+# Current directory: D:/yy/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
-# Log file: C:/Users/IBM_ADMIN/Desktop/yy/project_1/project_1.runs/synth_1/design_1_wrapper.vds
-# Journal file: C:/Users/IBM_ADMIN/Desktop/yy/project_1/project_1.runs/synth_1\vivado.jou
+# Log file: D:/yy/project_1/project_1.runs/synth_1/design_1_wrapper.vds
+# Journal file: D:/yy/project_1/project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

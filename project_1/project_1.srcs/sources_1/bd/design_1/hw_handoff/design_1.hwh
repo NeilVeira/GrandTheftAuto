@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 20 20:35:30 2017" VIVADOVERSION="2016.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar 22 10:52:39 2017" VIVADOVERSION="2016.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys4_ddr:part0:1.1" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -18,30 +18,30 @@
     <PORT DIR="O" LEFT="0" NAME="DDR2_cs_n" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="O" LEFT="1" NAME="DDR2_dm" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="O" LEFT="0" NAME="DDR2_odt" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin1_o" SIGIS="undef"/>
-    <PORT DIR="I" NAME="jb_0_pin7_i" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin2_o" SIGIS="undef"/>
-    <PORT DIR="I" NAME="jb_0_pin8_i" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin3_o" SIGIS="undef"/>
-    <PORT DIR="I" NAME="jb_0_pin9_i" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin10_o" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin4_o" SIGIS="undef"/>
-    <PORT DIR="I" NAME="jb_0_pin3_i" SIGIS="undef"/>
-    <PORT DIR="I" NAME="jb_0_pin4_i" SIGIS="undef"/>
-    <PORT DIR="I" NAME="jb_0_pin1_i" SIGIS="undef"/>
-    <PORT DIR="I" NAME="jb_0_pin2_i" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin10_t" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin8_t" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin9_t" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin4_t" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin9_o" SIGIS="undef"/>
-    <PORT DIR="I" NAME="jb_0_pin10_i" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin7_t" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin1_t" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin2_t" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin7_o" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin3_t" SIGIS="undef"/>
-    <PORT DIR="O" NAME="jb_0_pin8_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin1_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Pmod_out_pin7_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin2_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Pmod_out_pin8_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin3_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Pmod_out_pin9_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin10_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin4_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Pmod_out_pin3_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Pmod_out_pin4_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Pmod_out_pin1_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Pmod_out_pin2_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin10_t" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin8_t" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin9_t" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin4_t" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin9_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="Pmod_out_pin10_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin7_t" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin1_t" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin2_t" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin7_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin3_t" SIGIS="undef"/>
+    <PORT DIR="O" NAME="Pmod_out_pin8_o" SIGIS="undef"/>
     <PORT DIR="I" NAME="usb_uart_rxd" SIGIS="undef"/>
     <PORT DIR="O" NAME="usb_uart_txd" SIGIS="undef"/>
     <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
@@ -81,6 +81,16 @@
         <CONNECTION INSTANCE="stream_jpg_yy_nv_mn_v1_0_wed2_0" PORT="R"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" NAME="calibrate" SIGIS="undef" SIGNAME="External_Ports_calibrate">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="stream_jpg_yy_nv_mn_v1_0_wed2_0" PORT="calibrate"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="error_o" SIGIS="undef" SIGNAME="stream_jpg_yy_nv_mn_v1_0_wed2_0_error_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="stream_jpg_yy_nv_mn_v1_0_wed2_0" PORT="error_o"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -115,32 +125,32 @@
         <PORTMAP LOGICAL="ODT" PHYSICAL="DDR2_odt"/>
       </PORTMAPS>
     </BUSINTERFACE>
-    <BUSINTERFACE BUSNAME="PmodWIFI_0_Pmod_out" NAME="jb_0" TYPE="INITIATOR">
+    <BUSINTERFACE BUSNAME="PmodWIFI_0_Pmod_out" NAME="Pmod_out" TYPE="INITIATOR">
       <PORTMAPS>
-        <PORTMAP LOGICAL="PIN1_O" PHYSICAL="jb_0_pin1_o"/>
-        <PORTMAP LOGICAL="PIN7_I" PHYSICAL="jb_0_pin7_i"/>
-        <PORTMAP LOGICAL="PIN2_O" PHYSICAL="jb_0_pin2_o"/>
-        <PORTMAP LOGICAL="PIN8_I" PHYSICAL="jb_0_pin8_i"/>
-        <PORTMAP LOGICAL="PIN3_O" PHYSICAL="jb_0_pin3_o"/>
-        <PORTMAP LOGICAL="PIN9_I" PHYSICAL="jb_0_pin9_i"/>
-        <PORTMAP LOGICAL="PIN10_O" PHYSICAL="jb_0_pin10_o"/>
-        <PORTMAP LOGICAL="PIN4_O" PHYSICAL="jb_0_pin4_o"/>
-        <PORTMAP LOGICAL="PIN3_I" PHYSICAL="jb_0_pin3_i"/>
-        <PORTMAP LOGICAL="PIN4_I" PHYSICAL="jb_0_pin4_i"/>
-        <PORTMAP LOGICAL="PIN1_I" PHYSICAL="jb_0_pin1_i"/>
-        <PORTMAP LOGICAL="PIN2_I" PHYSICAL="jb_0_pin2_i"/>
-        <PORTMAP LOGICAL="PIN10_T" PHYSICAL="jb_0_pin10_t"/>
-        <PORTMAP LOGICAL="PIN8_T" PHYSICAL="jb_0_pin8_t"/>
-        <PORTMAP LOGICAL="PIN9_T" PHYSICAL="jb_0_pin9_t"/>
-        <PORTMAP LOGICAL="PIN4_T" PHYSICAL="jb_0_pin4_t"/>
-        <PORTMAP LOGICAL="PIN9_O" PHYSICAL="jb_0_pin9_o"/>
-        <PORTMAP LOGICAL="PIN10_I" PHYSICAL="jb_0_pin10_i"/>
-        <PORTMAP LOGICAL="PIN7_T" PHYSICAL="jb_0_pin7_t"/>
-        <PORTMAP LOGICAL="PIN1_T" PHYSICAL="jb_0_pin1_t"/>
-        <PORTMAP LOGICAL="PIN2_T" PHYSICAL="jb_0_pin2_t"/>
-        <PORTMAP LOGICAL="PIN7_O" PHYSICAL="jb_0_pin7_o"/>
-        <PORTMAP LOGICAL="PIN3_T" PHYSICAL="jb_0_pin3_t"/>
-        <PORTMAP LOGICAL="PIN8_O" PHYSICAL="jb_0_pin8_o"/>
+        <PORTMAP LOGICAL="PIN1_O" PHYSICAL="Pmod_out_pin1_o"/>
+        <PORTMAP LOGICAL="PIN7_I" PHYSICAL="Pmod_out_pin7_i"/>
+        <PORTMAP LOGICAL="PIN2_O" PHYSICAL="Pmod_out_pin2_o"/>
+        <PORTMAP LOGICAL="PIN8_I" PHYSICAL="Pmod_out_pin8_i"/>
+        <PORTMAP LOGICAL="PIN3_O" PHYSICAL="Pmod_out_pin3_o"/>
+        <PORTMAP LOGICAL="PIN9_I" PHYSICAL="Pmod_out_pin9_i"/>
+        <PORTMAP LOGICAL="PIN10_O" PHYSICAL="Pmod_out_pin10_o"/>
+        <PORTMAP LOGICAL="PIN4_O" PHYSICAL="Pmod_out_pin4_o"/>
+        <PORTMAP LOGICAL="PIN3_I" PHYSICAL="Pmod_out_pin3_i"/>
+        <PORTMAP LOGICAL="PIN4_I" PHYSICAL="Pmod_out_pin4_i"/>
+        <PORTMAP LOGICAL="PIN1_I" PHYSICAL="Pmod_out_pin1_i"/>
+        <PORTMAP LOGICAL="PIN2_I" PHYSICAL="Pmod_out_pin2_i"/>
+        <PORTMAP LOGICAL="PIN10_T" PHYSICAL="Pmod_out_pin10_t"/>
+        <PORTMAP LOGICAL="PIN8_T" PHYSICAL="Pmod_out_pin8_t"/>
+        <PORTMAP LOGICAL="PIN9_T" PHYSICAL="Pmod_out_pin9_t"/>
+        <PORTMAP LOGICAL="PIN4_T" PHYSICAL="Pmod_out_pin4_t"/>
+        <PORTMAP LOGICAL="PIN9_O" PHYSICAL="Pmod_out_pin9_o"/>
+        <PORTMAP LOGICAL="PIN10_I" PHYSICAL="Pmod_out_pin10_i"/>
+        <PORTMAP LOGICAL="PIN7_T" PHYSICAL="Pmod_out_pin7_t"/>
+        <PORTMAP LOGICAL="PIN1_T" PHYSICAL="Pmod_out_pin1_t"/>
+        <PORTMAP LOGICAL="PIN2_T" PHYSICAL="Pmod_out_pin2_t"/>
+        <PORTMAP LOGICAL="PIN7_O" PHYSICAL="Pmod_out_pin7_o"/>
+        <PORTMAP LOGICAL="PIN3_T" PHYSICAL="Pmod_out_pin3_t"/>
+        <PORTMAP LOGICAL="PIN8_O" PHYSICAL="Pmod_out_pin8_o"/>
       </PORTMAPS>
     </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="axi_uartlite_0_UART" NAME="usb_uart" TYPE="INITIATOR">
@@ -167,9 +177,9 @@
         <ADDRESSBLOCK ACCESS="" INTERFACE="AXI_LITE_SPI" NAME="Reg0" RANGE="0x00010000" USAGE="register"/>
       </ADDRESSBLOCKS>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_PmodWIFI_0_2"/>
-        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="true"/>
-        <PARAMETER NAME="PMOD" VALUE="jb"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_PmodWIFI_0_0"/>
+        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
+        <PARAMETER NAME="PMOD" VALUE="Custom"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="AXI_LITE_SPI_BASEADDR" VALUE="0x44A00000"/>
         <PARAMETER NAME="AXI_LITE_SPI_HIGHADDR" VALUE="0x44A0FFFF"/>
@@ -1105,8 +1115,8 @@
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
           <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
-          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
-          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="/clk_wiz_1_clk_out1"/>
@@ -1158,7 +1168,7 @@
         <PARAMETER NAME="C_REF_CLK_FREQ" VALUE="100.0"/>
         <PARAMETER NAME="C_PRECISION" VALUE="1"/>
         <PARAMETER NAME="C_CLKOUT3_USED" VALUE="1"/>
-        <PARAMETER NAME="C_CLKOUT4_USED" VALUE="0"/>
+        <PARAMETER NAME="C_CLKOUT4_USED" VALUE="1"/>
         <PARAMETER NAME="C_CLKOUT5_USED" VALUE="0"/>
         <PARAMETER NAME="C_CLKOUT6_USED" VALUE="0"/>
         <PARAMETER NAME="C_CLKOUT7_USED" VALUE="0"/>
@@ -1200,7 +1210,7 @@
         <PARAMETER NAME="C_USE_POWER_DOWN" VALUE="0"/>
         <PARAMETER NAME="C_USE_STATUS" VALUE="0"/>
         <PARAMETER NAME="C_USE_FREEZE" VALUE="0"/>
-        <PARAMETER NAME="C_NUM_OUT_CLKS" VALUE="3"/>
+        <PARAMETER NAME="C_NUM_OUT_CLKS" VALUE="4"/>
         <PARAMETER NAME="C_CLKOUT1_DRIVES" VALUE="BUFG"/>
         <PARAMETER NAME="C_CLKOUT2_DRIVES" VALUE="BUFG"/>
         <PARAMETER NAME="C_CLKOUT3_DRIVES" VALUE="BUFG"/>
@@ -1216,14 +1226,14 @@
         <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="clk_out1___100.000______0.000______50.0______130.958_____98.575"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW2" VALUE="clk_out2___200.000______0.000______50.0______114.829_____98.575"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW3" VALUE="clk_out3____25.000______0.000______50.0______175.402_____98.575"/>
-        <PARAMETER NAME="C_OUTCLK_SUM_ROW4" VALUE="no_CLK_OUT4_output"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW4" VALUE="clk_out4____50.000______0.000______50.0______151.636_____98.575"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW5" VALUE="no_CLK_OUT5_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW6" VALUE="no_CLK_OUT6_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW7" VALUE="no_CLK_OUT7_output"/>
         <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT2_REQUESTED_OUT_FREQ" VALUE="200.000"/>
         <PARAMETER NAME="C_CLKOUT3_REQUESTED_OUT_FREQ" VALUE="25"/>
-        <PARAMETER NAME="C_CLKOUT4_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT4_REQUESTED_OUT_FREQ" VALUE="50"/>
         <PARAMETER NAME="C_CLKOUT5_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT6_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT7_REQUESTED_OUT_FREQ" VALUE="100.000"/>
@@ -1244,7 +1254,7 @@
         <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT2_OUT_FREQ" VALUE="200.000"/>
         <PARAMETER NAME="C_CLKOUT3_OUT_FREQ" VALUE="25.000"/>
-        <PARAMETER NAME="C_CLKOUT4_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT4_OUT_FREQ" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT5_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT6_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT7_OUT_FREQ" VALUE="100.000"/>
@@ -1258,7 +1268,7 @@
         <PARAMETER NAME="C_CLKOUT1_DUTY_CYCLE" VALUE="50.0"/>
         <PARAMETER NAME="C_CLKOUT2_DUTY_CYCLE" VALUE="50.0"/>
         <PARAMETER NAME="C_CLKOUT3_DUTY_CYCLE" VALUE="50.0"/>
-        <PARAMETER NAME="C_CLKOUT4_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT4_DUTY_CYCLE" VALUE="50.0"/>
         <PARAMETER NAME="C_CLKOUT5_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT6_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT7_DUTY_CYCLE" VALUE="50.000"/>
@@ -1286,7 +1296,7 @@
         <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="10.000"/>
         <PARAMETER NAME="C_MMCM_CLKOUT1_DIVIDE" VALUE="5"/>
         <PARAMETER NAME="C_MMCM_CLKOUT2_DIVIDE" VALUE="40"/>
-        <PARAMETER NAME="C_MMCM_CLKOUT3_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT3_DIVIDE" VALUE="20"/>
         <PARAMETER NAME="C_MMCM_CLKOUT4_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT5_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT6_DIVIDE" VALUE="1"/>
@@ -1398,8 +1408,8 @@
         <PARAMETER NAME="C_CLKOUT1_2" VALUE="0080"/>
         <PARAMETER NAME="C_CLKOUT2_1" VALUE="1514"/>
         <PARAMETER NAME="C_CLKOUT2_2" VALUE="0000"/>
-        <PARAMETER NAME="C_CLKOUT3_1" VALUE="1041"/>
-        <PARAMETER NAME="C_CLKOUT3_2" VALUE="00c0"/>
+        <PARAMETER NAME="C_CLKOUT3_1" VALUE="128a"/>
+        <PARAMETER NAME="C_CLKOUT3_2" VALUE="0000"/>
         <PARAMETER NAME="C_CLKOUT4_1" VALUE="1041"/>
         <PARAMETER NAME="C_CLKOUT4_2" VALUE="00c0"/>
         <PARAMETER NAME="C_CLKOUT5_1" VALUE="1041"/>
@@ -1458,11 +1468,11 @@
         <PARAMETER NAME="CLKOUT1_USED" VALUE="true"/>
         <PARAMETER NAME="CLKOUT2_USED" VALUE="true"/>
         <PARAMETER NAME="CLKOUT3_USED" VALUE="true"/>
-        <PARAMETER NAME="CLKOUT4_USED" VALUE="false"/>
+        <PARAMETER NAME="CLKOUT4_USED" VALUE="true"/>
         <PARAMETER NAME="CLKOUT5_USED" VALUE="false"/>
         <PARAMETER NAME="CLKOUT6_USED" VALUE="false"/>
         <PARAMETER NAME="CLKOUT7_USED" VALUE="false"/>
-        <PARAMETER NAME="NUM_OUT_CLKS" VALUE="3"/>
+        <PARAMETER NAME="NUM_OUT_CLKS" VALUE="4"/>
         <PARAMETER NAME="CLK_OUT1_USE_FINE_PS_GUI" VALUE="false"/>
         <PARAMETER NAME="CLK_OUT2_USE_FINE_PS_GUI" VALUE="false"/>
         <PARAMETER NAME="CLK_OUT3_USE_FINE_PS_GUI" VALUE="false"/>
@@ -1498,7 +1508,7 @@
         <PARAMETER NAME="CLKOUT3_REQUESTED_OUT_FREQ" VALUE="25"/>
         <PARAMETER NAME="CLKOUT3_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="CLKOUT3_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
-        <PARAMETER NAME="CLKOUT4_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="CLKOUT4_REQUESTED_OUT_FREQ" VALUE="50"/>
         <PARAMETER NAME="CLKOUT4_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="CLKOUT4_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="CLKOUT5_REQUESTED_OUT_FREQ" VALUE="100.000"/>
@@ -1577,7 +1587,7 @@
         <PARAMETER NAME="MMCM_CLKOUT2_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT2_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT2_USE_FINE_PS" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT3_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="MMCM_CLKOUT3_DIVIDE" VALUE="20"/>
         <PARAMETER NAME="MMCM_CLKOUT3_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT3_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT3_USE_FINE_PS" VALUE="false"/>
@@ -1648,8 +1658,8 @@
         <PARAMETER NAME="CLKOUT2_PHASE_ERROR" VALUE="98.575"/>
         <PARAMETER NAME="CLKOUT3_JITTER" VALUE="175.402"/>
         <PARAMETER NAME="CLKOUT3_PHASE_ERROR" VALUE="98.575"/>
-        <PARAMETER NAME="CLKOUT4_JITTER" VALUE="0.0"/>
-        <PARAMETER NAME="CLKOUT4_PHASE_ERROR" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT4_JITTER" VALUE="151.636"/>
+        <PARAMETER NAME="CLKOUT4_PHASE_ERROR" VALUE="98.575"/>
         <PARAMETER NAME="CLKOUT5_JITTER" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT5_PHASE_ERROR" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT6_JITTER" VALUE="0.0"/>
@@ -1680,6 +1690,7 @@
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="processor_clk"/>
             <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="PmodWIFI_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="stream_jpg_yy_nv_mn_v1_0_wed2_0" PORT="s00_axis_aclk"/>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="S00_ACLK"/>
@@ -1694,7 +1705,6 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M05_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="S01_ACLK"/>
-            <CONNECTION INSTANCE="stream_jpg_yy_nv_mn_v1_0_wed2_0" PORT="s00_axis_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="200000000" DIR="O" NAME="clk_out2" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out2">
@@ -1705,6 +1715,11 @@
         <PORT CLKFREQUENCY="25000000" DIR="O" NAME="clk_out3" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out3">
           <CONNECTIONS>
             <CONNECTION INSTANCE="stream_jpg_yy_nv_mn_v1_0_wed2_0" PORT="clk_25"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="50000000" DIR="O" NAME="clk_out4" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="stream_jpg_yy_nv_mn_v1_0_wed2_0" PORT="slow_clock"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_1_locked">
@@ -3676,8 +3691,8 @@
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
           <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
-          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
-          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
           <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="/clk_wiz_1_clk_out1"/>
@@ -5946,7 +5961,7 @@
         <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
         <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="0"/>
         <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="no_coe_file_loaded"/>
-        <PARAMETER NAME="C_INIT_FILE" VALUE="design_1_lmb_bram_0.mem"/>
+        <PARAMETER NAME="C_INIT_FILE" VALUE="design_1_lmb_bram_1.mem"/>
         <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="0"/>
         <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
         <PARAMETER NAME="C_HAS_RSTA" VALUE="1"/>
@@ -6002,7 +6017,7 @@
         <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="16"/>
         <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="0"/>
         <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     20.388 mW"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_lmb_bram_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_lmb_bram_1"/>
         <PARAMETER NAME="Interface_Type" VALUE="Native"/>
         <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
         <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
@@ -6069,7 +6084,7 @@
         <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
         <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
         <PARAMETER NAME="use_bram_block" VALUE="BRAM_Controller"/>
-        <PARAMETER NAME="MEM_FILE" VALUE="design_1_lmb_bram_0.mem"/>
+        <PARAMETER NAME="MEM_FILE" VALUE="design_1_lmb_bram_1.mem"/>
         <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
         <PARAMETER NAME="EN_SAFETY_CKT" VALUE="false"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -7800,6 +7815,7 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_intc" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="PmodWIFI_0" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="stream_jpg_yy_nv_mn_v1_0_wed2_0" PORT="s00_axis_aresetn"/>
             <CONNECTION INSTANCE="axi_uartlite_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M00_ARESETN"/>
@@ -7809,7 +7825,6 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M04_ARESETN"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M05_ARESETN"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="S01_ARESETN"/>
-            <CONNECTION INSTANCE="stream_jpg_yy_nv_mn_v1_0_wed2_0" PORT="s00_axis_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -7883,6 +7898,11 @@
             <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="slow_clock" SIGIS="undef" SIGNAME="clk_wiz_1_clk_out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out4"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="s00_axis_tready" SIGIS="undef" SIGNAME="microblaze_0_M0_AXIS_TREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0" PORT="M0_AXIS_TREADY"/>
@@ -7934,12 +7954,21 @@
             <CONNECTION INSTANCE="External_Ports" PORT="V"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="calibrate" SIGIS="undef"/>
+        <PORT DIR="I" NAME="calibrate" SIGIS="undef" SIGNAME="External_Ports_calibrate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="calibrate"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" LEFT="1" NAME="microblaze_read" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="1" NAME="img_proc_write" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="12" NAME="edge_ram_addr" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="19" NAME="edge_ram_din" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="edge_ram_wren" SIGIS="undef"/>
+        <PORT DIR="O" NAME="error_o" SIGIS="undef" SIGNAME="stream_jpg_yy_nv_mn_v1_0_wed2_0_error_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="error_o"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="microblaze_0_M0_AXIS" NAME="s00_axis" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
