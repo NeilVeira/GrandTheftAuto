@@ -63,3 +63,43 @@
 11:34:14 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
 11:34:17 INFO  : Processor reset is completed for microblaze_0
 11:40:24 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:31:58 INFO  : Launching XSDB server: xsdb.bat -interactive D:\yy\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+16:32:02 INFO  : XSDB server has started successfully.
+16:32:07 INFO  : Processing command line option -hwspec D:/yy/project_1/project_1.sdk/design_1_wrapper.hdf.
+16:32:07 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_2.
+16:32:09 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490214615652,  Project:1490195492158
+16:32:09 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_2' is different from D:/yy/project_1/project_1.sdk/design_1_wrapper.hdf.
+16:32:09 INFO  : Copied contents of D:/yy/project_1/project_1.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_2\system.hdf.
+16:32:13 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:32:13 INFO  : Clearing existing target manager status.
+16:32:15 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+16:32:15 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+16:33:50 INFO  : Processor reset is completed for microblaze_0
+16:34:59 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:35:11 INFO  : Processor reset is completed for microblaze_0
+16:35:40 INFO  : Processor reset is completed for microblaze_0
+16:38:12 INFO  : Processor reset is completed for microblaze_0
+16:38:40 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:38:41 INFO  : Processor reset is completed for microblaze_0
+16:39:36 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:39:38 INFO  : Processor reset is completed for microblaze_0
+16:40:32 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:40:33 INFO  : Processor reset is completed for microblaze_0
+16:42:53 INFO  : Processor reset is completed for microblaze_0
+16:46:05 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:49:25 INFO  : Launching XSDB server: xsdb.bat -interactive D:\yy\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+16:49:26 INFO  : XSDB server has started successfully.
+16:49:26 INFO  : Processing command line option -hwspec D:/yy/project_1/project_1.sdk/design_1_wrapper.hdf.
+16:49:26 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_2.
+16:49:42 INFO  : Processor reset is completed for microblaze_0
+16:49:53 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:49:55 INFO  : Processor reset is completed for microblaze_0
+16:50:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0' command is executed.
+16:50:19 INFO  : FPGA configured successfully with bitstream "D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/download.bit"
+16:50:24 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:50:26 INFO  : Processor reset is completed for microblaze_0
+16:51:05 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:51:27 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:51:29 INFO  : Processor reset is completed for microblaze_0
+16:52:16 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

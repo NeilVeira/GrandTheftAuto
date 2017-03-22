@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0
-// IP Revision: 21
+// IP Revision: 23
 
 (* X_CORE_INFO = "stream_jpg_yy_nv_mn_v1_0,Vivado 2016.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0,stream_jpg_yy_nv_mn_v1_0,{}" *)
@@ -61,6 +61,7 @@ module design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 (
   s00_axis_tdata,
   s00_axis_tstrb,
   s00_axis_tlast,
+  reset_yy,
   s00_axis_tvalid,
   clk_25,
   R,
@@ -90,6 +91,7 @@ input wire [31 : 0] s00_axis_tdata;
 input wire [3 : 0] s00_axis_tstrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s00_axis TLAST" *)
 input wire s00_axis_tlast;
+input wire reset_yy;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s00_axis TVALID" *)
 input wire s00_axis_tvalid;
 input wire clk_25;
@@ -116,6 +118,7 @@ output wire error_o;
     .s00_axis_tdata(s00_axis_tdata),
     .s00_axis_tstrb(s00_axis_tstrb),
     .s00_axis_tlast(s00_axis_tlast),
+    .reset_yy(reset_yy),
     .s00_axis_tvalid(s00_axis_tvalid),
     .clk_25(clk_25),
     .R(R),

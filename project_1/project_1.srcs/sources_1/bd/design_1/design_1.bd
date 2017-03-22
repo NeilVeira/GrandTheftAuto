@@ -284,6 +284,12 @@
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
         </spirit:port>
+        <spirit:port>
+          <spirit:name>reset_yy</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
       </spirit:ports>
     </spirit:model>
   </spirit:component>
@@ -409,6 +415,15 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
+        <spirit:instanceName>axi_uartlite_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_uartlite" spirit:vendor="xilinx.com" spirit:version="2.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_uartlite_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="USE_BOARD_FLOW">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="UARTLITE_BOARD_INTERFACE">usb_uart</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
         <spirit:instanceName>PmodWIFI_0</spirit:instanceName>
         <spirit:componentRef spirit:library="IP" spirit:name="PmodWIFI" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -420,15 +435,6 @@
         <spirit:componentRef spirit:library="user" spirit:name="stream_jpg_yy_nv_mn_v1_0_wed2" spirit:vendor="user" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>axi_uartlite_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="axi_uartlite" spirit:vendor="xilinx.com" spirit:version="2.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_uartlite_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="USE_BOARD_FLOW">true</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="UARTLITE_BOARD_INTERFACE">usb_uart</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -517,9 +523,8 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="processor_clk"/>
         <spirit:internalPortReference spirit:componentRef="rst_clk_wiz_1_100M" spirit:portRef="slowest_sync_clk"/>
-        <spirit:internalPortReference spirit:componentRef="PmodWIFI_0" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="stream_jpg_yy_nv_mn_v1_0_wed2_0" spirit:portRef="s00_axis_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="PmodWIFI_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M00_ACLK"/>
@@ -530,6 +535,7 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M04_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M05_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S01_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="stream_jpg_yy_nv_mn_v1_0_wed2_0" spirit:portRef="s00_axis_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_1_locked</spirit:name>
@@ -550,9 +556,8 @@
         <spirit:name>rst_clk_wiz_1_100M_peripheral_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="rst_clk_wiz_1_100M" spirit:portRef="peripheral_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="PmodWIFI_0" spirit:portRef="s_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="stream_jpg_yy_nv_mn_v1_0_wed2_0" spirit:portRef="s00_axis_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="PmodWIFI_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M01_ARESETN"/>
@@ -561,6 +566,7 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M04_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M05_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S01_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="stream_jpg_yy_nv_mn_v1_0_wed2_0" spirit:portRef="s00_axis_aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mdm_1_debug_sys_rst</spirit:name>
@@ -666,6 +672,11 @@
         <spirit:name>axi_uartlite_0_interrupt</spirit:name>
         <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="interrupt"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_xlconcat" spirit:portRef="In1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>reset_yy_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="reset_yy"/>
+        <spirit:internalPortReference spirit:componentRef="stream_jpg_yy_nv_mn_v1_0_wed2_0" spirit:portRef="reset_yy"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -3897,15 +3908,15 @@
             <spirit:range>128M</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_PmodWIFI_0_Reg0</spirit:name>
-            <spirit:displayName>/PmodWIFI_0/AXI_LITE_SPI/Reg0</spirit:displayName>
-            <spirit:addressOffset>0x44A00000</spirit:addressOffset>
+            <spirit:name>SEG_axi_uartlite_0_Reg</spirit:name>
+            <spirit:displayName>/axi_uartlite_0/S_AXI/Reg</spirit:displayName>
+            <spirit:addressOffset>0x40600000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_PmodWIFI_0_Reg01</spirit:name>
-            <spirit:displayName>/PmodWIFI_0/S_AXI_TIMER/Reg0</spirit:displayName>
-            <spirit:addressOffset>0x44A10000</spirit:addressOffset>
+            <spirit:name>SEG_PmodWIFI_0_Reg0</spirit:name>
+            <spirit:displayName>/PmodWIFI_0/AXI_LITE_SPI/Reg0</spirit:displayName>
+            <spirit:addressOffset>0x44A00000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
@@ -3921,9 +3932,9 @@
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_axi_uartlite_0_Reg</spirit:name>
-            <spirit:displayName>/axi_uartlite_0/S_AXI/Reg</spirit:displayName>
-            <spirit:addressOffset>0x40600000</spirit:addressOffset>
+            <spirit:name>SEG_PmodWIFI_0_Reg01</spirit:name>
+            <spirit:displayName>/PmodWIFI_0/S_AXI_TIMER/Reg0</spirit:displayName>
+            <spirit:addressOffset>0x44A10000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>
@@ -3952,15 +3963,15 @@
             <spirit:range>128M</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_PmodWIFI_0_Reg0</spirit:name>
-            <spirit:displayName>/PmodWIFI_0/AXI_LITE_SPI/Reg0</spirit:displayName>
-            <spirit:addressOffset>0x44A00000</spirit:addressOffset>
+            <spirit:name>SEG_axi_uartlite_0_Reg</spirit:name>
+            <spirit:displayName>/axi_uartlite_0/S_AXI/Reg</spirit:displayName>
+            <spirit:addressOffset>0x40600000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_PmodWIFI_0_Reg03</spirit:name>
-            <spirit:displayName>/PmodWIFI_0/S_AXI_TIMER/Reg0</spirit:displayName>
-            <spirit:addressOffset>0x44A10000</spirit:addressOffset>
+            <spirit:name>SEG_PmodWIFI_0_Reg0</spirit:name>
+            <spirit:displayName>/PmodWIFI_0/AXI_LITE_SPI/Reg0</spirit:displayName>
+            <spirit:addressOffset>0x44A00000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
@@ -3976,9 +3987,9 @@
             <spirit:range>64K</spirit:range>
           </spirit:segment>
           <spirit:segment>
-            <spirit:name>SEG_axi_uartlite_0_Reg</spirit:name>
-            <spirit:displayName>/axi_uartlite_0/S_AXI/Reg</spirit:displayName>
-            <spirit:addressOffset>0x40600000</spirit:addressOffset>
+            <spirit:name>SEG_PmodWIFI_0_Reg03</spirit:name>
+            <spirit:displayName>/PmodWIFI_0/S_AXI_TIMER/Reg0</spirit:displayName>
+            <spirit:addressOffset>0x44A10000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>

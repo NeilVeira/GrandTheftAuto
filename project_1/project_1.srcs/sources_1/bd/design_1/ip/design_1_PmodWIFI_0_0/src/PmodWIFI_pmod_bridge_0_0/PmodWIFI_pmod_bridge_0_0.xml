@@ -883,7 +883,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 12:04:20 UTC 2017</spirit:value>
+            <spirit:value>Wed Mar 22 20:10:39 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -914,7 +914,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 12:04:20 UTC 2017</spirit:value>
+            <spirit:value>Wed Mar 22 20:10:39 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -944,7 +944,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 12:04:20 UTC 2017</spirit:value>
+            <spirit:value>Wed Mar 22 20:10:39 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -975,7 +975,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 12:04:20 UTC 2017</spirit:value>
+            <spirit:value>Wed Mar 22 20:10:39 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -1005,7 +1005,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 12:04:20 UTC 2017</spirit:value>
+            <spirit:value>Wed Mar 22 20:10:39 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -2356,10 +2356,6 @@
   </spirit:model>
   <spirit:choices>
     <spirit:choice>
-      <spirit:name>choice_list_ac75ef1e</spirit:name>
-      <spirit:enumeration>Custom</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_ca687e60</spirit:name>
       <spirit:enumeration>GPIO</spirit:enumeration>
       <spirit:enumeration>UART</spirit:enumeration>
@@ -2367,6 +2363,15 @@
       <spirit:enumeration>I2C</spirit:enumeration>
       <spirit:enumeration>None</spirit:enumeration>
       <spirit:enumeration>Disabled</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_d55d894a</spirit:name>
+      <spirit:enumeration>Custom</spirit:enumeration>
+      <spirit:enumeration>ja</spirit:enumeration>
+      <spirit:enumeration>jb</spirit:enumeration>
+      <spirit:enumeration>jc</spirit:enumeration>
+      <spirit:enumeration>jd</spirit:enumeration>
+      <spirit:enumeration>jxadc</spirit:enumeration>
     </spirit:choice>
   </spirit:choices>
   <spirit:fileSets>
@@ -2441,7 +2446,7 @@
     <spirit:parameter>
       <spirit:name>PMOD</spirit:name>
       <spirit:displayName>Pmod</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PMOD" spirit:choiceRef="choice_list_ac75ef1e">Custom</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.PMOD" spirit:choiceRef="choice_list_d55d894a">Custom</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>USE_BOARD_FLOW</spirit:name>

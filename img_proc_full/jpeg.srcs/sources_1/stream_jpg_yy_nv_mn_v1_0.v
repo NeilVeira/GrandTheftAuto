@@ -26,7 +26,7 @@
 		(*mark_debug = "true"*) output wire  s00_axis_tready,
 		(*mark_debug = "true"*)input wire [C_S00_AXIS_TDATA_WIDTH-1 : 0] s00_axis_tdata,
 		input wire [(C_S00_AXIS_TDATA_WIDTH/8)-1 : 0] s00_axis_tstrb,
-		input wire  s00_axis_tlast,
+		input wire  s00_axis_tlast,reset_yy,
 		(*mark_debug = "true"*)input wire  s00_axis_tvalid,
 		input wire clk_25,
 		output [3:0] R,
@@ -66,8 +66,9 @@
     (*mark_debug = "true"*)(* dont_touch = "true" *) wire datavalid_i;  
     
     fifo_generator_0 image_data (
-        .clk(s00_axis_aclk),                  // input wire clk
-        //.srst(~s00_axis_aresetn),                // input wire srst
+        .wr_clk(s00_axis_aclk),                  // input wire clk
+        .rst(reset_yy),                // input wire srst
+        .rd_clk(slow_clock),
         .din(s00_axis_tdata),                  // input wire [31 : 0] din
         .wr_en(s00_axis_tvalid),              // input wire wr_en
         .rd_en(rd_en),              // input wire rd_en
@@ -108,7 +109,7 @@
         .Clk(slow_clock),
         .clk_25(clk_25),
         .data_i(dout),
-        .reset_i(~s00_axis_aresetn),
+        .reset_i(reset_yy),
         .datavalid_i(datavalid_i),
         .ready_i(1'b1),
         .ready_o(ready), 

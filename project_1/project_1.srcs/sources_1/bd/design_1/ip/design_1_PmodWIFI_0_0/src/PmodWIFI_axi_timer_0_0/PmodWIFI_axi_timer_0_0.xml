@@ -780,7 +780,7 @@ Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 12:04:23 UTC 2017</spirit:value>
+            <spirit:value>Wed Mar 22 20:10:42 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -811,7 +811,7 @@ Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 12:04:23 UTC 2017</spirit:value>
+            <spirit:value>Wed Mar 22 20:10:42 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -851,7 +851,7 @@ Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 12:04:23 UTC 2017</spirit:value>
+            <spirit:value>Wed Mar 22 20:10:42 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -882,7 +882,7 @@ Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 12:04:23 UTC 2017</spirit:value>
+            <spirit:value>Wed Mar 22 20:10:42 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>

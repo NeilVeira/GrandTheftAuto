@@ -6084,3 +6084,458 @@ java.lang.NullPointerException
 	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
 	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
 	at java.lang.Thread.run(Thread.java:745)
+!SESSION 2017-03-22 16:31:30.096 -----------------------------------------------
+eclipse.buildId=2016.2
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/yy/project_1/project_1.sdk
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:02.604
+!MESSAGE XSDB Command: [::hsi::utils::init_repo], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:07.146
+!MESSAGE XSDB command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:07.249
+!MESSAGE XSDB Command: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:09.273
+!MESSAGE XSDB command with result: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:09.351
+!MESSAGE XSDB Command: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:11.417
+!MESSAGE XSDB command with result: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:11.417
+!MESSAGE XSDB Command: [::hsi::utils::closehw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:11.420
+!MESSAGE XSDB command with result: [::hsi::utils::closehw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:11.451
+!MESSAGE XSDB Command: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:12.816
+!MESSAGE XSDB command with result: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:12.846
+!MESSAGE XSDB Command: [::hsi::utils::openhw C:/Users/milwidya/AppData/Local/Temp/system2536746949384114392.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:32:13.724
+!MESSAGE XSDB command with result: [::hsi::utils::openhw C:/Users/milwidya/AppData/Local/Temp/system2536746949384114392.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:33:47.520
+!MESSAGE XSDB Command: [::hsi::utils::get_design_properties -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:33:47.520
+!MESSAGE XSDB command with result: [::hsi::utils::get_design_properties -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Tue Mar 21 19:08:54 2017",
+"vivado_version": "2016.2",
+}]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:33:49.671
+!MESSAGE XSDB Command: [::hsi::utils::get_all_periphs -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:33:49.681
+!MESSAGE XSDB command with result: [::hsi::utils::get_all_periphs -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"PmodWIFI_0": {"hier_name": "PmodWIFI_0",
+"type": "PmodWIFI",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "5.3",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "9.6",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.3",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"mig_7series_0": {"hier_name": "mig_7series_0",
+"type": "mig_7series",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_mig_7series_0_81M": {"hier_name": "rst_mig_7series_0_81M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"stream_jpg_yy_nv_mn_v1_0_wed2_0": {"hier_name": "stream_jpg_yy_nv_mn_v1_0_wed2_0",
+"type": "stream_jpg_yy_nv_mn_v1_0_wed2",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-4
+!SESSION 2017-03-22 16:49:19.797 -----------------------------------------------
+eclipse.buildId=2016.2
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/yy/project_1/project_1.sdk
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:26.335
+!MESSAGE XSDB Command: [::hsi::utils::init_repo], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:26.461
+!MESSAGE XSDB command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:26.492
+!MESSAGE XSDB Command: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:27.974
+!MESSAGE XSDB command with result: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:27.990
+!MESSAGE XSDB Command: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:29.409
+!MESSAGE XSDB command with result: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:33.403
+!MESSAGE XSDB Command: [::hsi::utils::get_design_properties -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:33.403
+!MESSAGE XSDB command with result: [::hsi::utils::get_design_properties -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Tue Mar 21 19:08:54 2017",
+"vivado_version": "2016.2",
+}]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:35.556
+!MESSAGE XSDB Command: [::hsi::utils::get_all_periphs -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:49:35.556
+!MESSAGE XSDB command with result: [::hsi::utils::get_all_periphs -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"PmodWIFI_0": {"hier_name": "PmodWIFI_0",
+"type": "PmodWIFI",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "5.3",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "9.6",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.3",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"mig_7series_0": {"hier_name": "mig_7series_0",
+"type": "mig_7series",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_mig_7series_0_81M": {"hier_name": "rst_mig_7series_0_81M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"stream_jpg_yy_nv_mn_v1_0_wed2_0": {"hier_name": "stream_jpg_yy_nv_mn_v1_0_wed2_0",
+"type": "stream_jpg_yy_nv_mn_v1_0_wed2",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:03.083
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_files_on_hw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf bit], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:03.098
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_files_on_hw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf bit], Result: [null, design_1_wrapper.bit]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:03.098
+!MESSAGE XSDB Command: [::hsi::utils::get_addr_tag_info -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:03.114
+!MESSAGE XSDB command with result: [::hsi::utils::get_addr_tag_info -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"microblaze_0": "design_1_i/microblaze_0:design_1_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:04.643
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_param_value D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:04.643
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_param_value D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:04.658
+!MESSAGE XSDB Command: [::hsi::utils::get_bram_blocks D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:04.689
+!MESSAGE XSDB command with result: [::hsi::utils::get_bram_blocks D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:04.721
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_param_value D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:04.721
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_param_value D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:17.174
+!MESSAGE XSDB Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:17.174
+!MESSAGE XSDB command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:17.253
+!MESSAGE XSDB Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:17.424
+!MESSAGE XSDB command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646030A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:17.424
+!MESSAGE XSDB Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:17.440
+!MESSAGE XSDB command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:17.455
+!MESSAGE XSDB Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:17.533
+!MESSAGE XSDB command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646030A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:17.549
+!MESSAGE XSDB Command: [fpga -file D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:19.766
+!MESSAGE XSDB command with result: [fpga -file D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:20.577
+!MESSAGE XSDB Command: [::hsi::utils::get_bram_blocks D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:50:20.577
+!MESSAGE XSDB command with result: [::hsi::utils::get_bram_blocks D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:54.842
+!MESSAGE XSDB Command: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_1/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:58.102
+!MESSAGE XSDB command with result: [::hsi::utils::openhw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_1/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:58.102
+!MESSAGE XSDB Command: [::hsi::utils::get_hw_files_on_hw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf bit], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:58.102
+!MESSAGE XSDB command with result: [::hsi::utils::get_hw_files_on_hw D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf bit], Result: [null, design_1_wrapper.bit]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:58.118
+!MESSAGE XSDB Command: [::hsi::utils::get_addr_tag_info -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:58.118
+!MESSAGE XSDB command with result: [::hsi::utils::get_addr_tag_info -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf ], Result: [null, {"microblaze_0": "design_1_i/microblaze_0:design_1_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:58.118
+!MESSAGE XSDB Command: [::hsi::utils::get_all_periphs -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:58.133
+!MESSAGE XSDB command with result: [::hsi::utils::get_all_periphs -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Result: [null, {"PmodWIFI_0": {"hier_name": "PmodWIFI_0",
+"type": "PmodWIFI",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "5.3",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "9.6",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.3",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"mig_7series_0": {"hier_name": "mig_7series_0",
+"type": "mig_7series",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_mig_7series_0_81M": {"hier_name": "rst_mig_7series_0_81M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"stream_jpg_yy_nv_mn_v1_0_wed2_0": {"hier_name": "stream_jpg_yy_nv_mn_v1_0_wed2_0",
+"type": "stream_jpg_yy_nv_mn_v1_0_wed2",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:58.133
+!MESSAGE XSDB Command: [::hsi::utils::get_design_properties -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-03-22 16:51:58.149
+!MESSAGE XSDB command with result: [::hsi::utils::get_design_properties -json D:/yy/project_1/project_1.sdk/design_1_wrapper_hw_platform_2/system.hdf], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Wed Mar 22 16:10:45 2017",
+"vivado_version": "2016.2",
+}]. Thread: main

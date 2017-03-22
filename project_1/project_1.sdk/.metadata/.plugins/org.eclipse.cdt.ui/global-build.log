@@ -623,3 +623,195 @@ mb-size test2.elf  |tee "test2.elf.size"
  260820	   8548	  20416	 289784	  46bf8	test2.elf
 'Finished building: test2.elf.size'
 ' '
+16:32:41 **** Auto Build of configuration Debug for project test2 ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test2_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: test2.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../test2_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -o "test2.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: test2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test2.elf  |tee "test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 555780	   8092	  19184	 583056	  8e590	test2.elf
+'Finished building: test2.elf.size'
+' '
+16:33:46 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:33:47 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:34:58 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:34:59 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:35:10 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:35:10 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:35:22 **** Auto Build of configuration Debug for project test2 ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test2_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: test2.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../test2_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -o "test2.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: test2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test2.elf  |tee "test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 555780	   8092	  19184	 583056	  8e590	test2.elf
+'Finished building: test2.elf.size'
+' '
+16:35:39 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:35:39 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:38:07 **** Auto Build of configuration Debug for project test2 ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test2_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: test2.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../test2_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -o "test2.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: test2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test2.elf  |tee "test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 555744	   8092	  19180	 583016	  8e568	test2.elf
+'Finished building: test2.elf.size'
+' '
+16:38:11 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:38:12 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:38:36 **** Auto Build of configuration Debug for project test2 ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test2_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: test2.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../test2_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -o "test2.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: test2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test2.elf  |tee "test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 555716	   8048	  19180	 582944	  8e520	test2.elf
+'Finished building: test2.elf.size'
+' '
+16:38:39 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:38:40 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:39:36 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:39:36 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:40:26 **** Auto Build of configuration Debug for project test2 ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test2_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: test2.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../test2_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -o "test2.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: test2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test2.elf  |tee "test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 555744	   8092	  19180	 583016	  8e568	test2.elf
+'Finished building: test2.elf.size'
+' '
+16:40:31 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:40:31 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:42:52 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:42:52 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:49:32 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:49:32 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:49:52 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:49:53 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:50:23 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:50:24 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:51:04 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:51:04 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:51:27 **** Incremental Build of configuration Debug for project test2 ****
+make all 
+make: Nothing to be done for `all'.
+16:51:27 **** Incremental Build of configuration Debug for project test ****
+make all 
+make: Nothing to be done for `all'.
+16:52:11 **** Auto Build of configuration Debug for project test2 ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../test2_bsp/microblaze_0/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: test2.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../test2_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v9.6 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -o "test2.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: test2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test2.elf  |tee "test2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 260820	   8548	  20416	 289784	  46bf8	test2.elf
+'Finished building: test2.elf.size'
+' '

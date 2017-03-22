@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-//Date        : Wed Mar 22 10:51:45 2017
-//Host        : SFB520WS02 running 64-bit Service Pack 1  (build 7601)
+//Date        : Wed Mar 22 16:45:59 2017
+//Host        : SFB520WS05 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -57,6 +57,7 @@ module design_1
     calibrate,
     error_o,
     reset,
+    reset_yy,
     sys_clock,
     usb_uart_rxd,
     usb_uart_txd);
@@ -106,6 +107,7 @@ module design_1
   input calibrate;
   output error_o;
   input reset;
+  input reset_yy;
   input sys_clock;
   input usb_uart_rxd;
   output usb_uart_txd;
@@ -360,6 +362,7 @@ module design_1
   wire mig_7series_0_ui_clk;
   wire mig_7series_0_ui_clk_sync_rst;
   wire reset_1;
+  wire reset_yy_1;
   wire [0:0]rst_clk_wiz_1_100M_bus_struct_reset;
   wire [0:0]rst_clk_wiz_1_100M_interconnect_aresetn;
   wire rst_clk_wiz_1_100M_mb_reset;
@@ -417,6 +420,7 @@ module design_1
   assign calibrate_1 = calibrate;
   assign error_o = stream_jpg_yy_nv_mn_v1_0_wed2_0_error_o;
   assign reset_1 = reset;
+  assign reset_yy_1 = reset_yy;
   assign sys_clock_1 = sys_clock;
   assign usb_uart_txd = axi_uartlite_0_UART_TxD;
   design_1_PmodWIFI_0_0 PmodWIFI_0
@@ -947,6 +951,7 @@ module design_1
         .clk_25(clk_wiz_1_clk_out3),
         .error_o(stream_jpg_yy_nv_mn_v1_0_wed2_0_error_o),
         .microblaze_read({1'b0,1'b0}),
+        .reset_yy(reset_yy_1),
         .s00_axis_aclk(microblaze_0_Clk),
         .s00_axis_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
         .s00_axis_tdata(microblaze_0_M0_AXIS_TDATA),

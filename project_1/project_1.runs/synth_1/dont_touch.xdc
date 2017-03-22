@@ -197,6 +197,9 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1_ooc.xdc
 
+# XDC: bd/design_1/ip/design_1_PmodWIFI_0_0/design_1_PmodWIFI_0_0_board.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_PmodWIFI_0_0 || ORIG_REF_NAME==design_1_PmodWIFI_0_0}] {/inst }]/inst ]]
+
 # XDC: bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0_board.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodWIFI_pmod_bridge_0_0 || ORIG_REF_NAME==PmodWIFI_pmod_bridge_0_0}] {/inst }]/inst ]]
 
@@ -233,9 +236,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==PmodWIFI_axi_timer_0_0 || ORIG_REF_NAME==PmodWIFI_axi_timer_0_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0_ooc.xdc
-
-# XDC: bd/design_1/ip/design_1_PmodWIFI_0_0/design_1_PmodWIFI_0_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_PmodWIFI_0_0 || ORIG_REF_NAME==design_1_PmodWIFI_0_0}] {/inst }]/inst ]]
 
 # XDC: bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_ooc.xdc
 

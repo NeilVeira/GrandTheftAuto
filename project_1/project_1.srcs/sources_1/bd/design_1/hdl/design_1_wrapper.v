@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-//Date        : Wed Mar 22 10:51:45 2017
-//Host        : SFB520WS02 running 64-bit Service Pack 1  (build 7601)
+//Date        : Wed Mar 22 16:45:59 2017
+//Host        : SFB520WS05 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -40,6 +40,7 @@ module design_1_wrapper
     pmod_out_pin8_io,
     pmod_out_pin9_io,
     reset,
+    reset_yy,
     sys_clock,
     usb_uart_rxd,
     usb_uart_txd);
@@ -73,6 +74,7 @@ module design_1_wrapper
   inout pmod_out_pin8_io;
   inout pmod_out_pin9_io;
   input reset;
+  input reset_yy;
   input sys_clock;
   input usb_uart_rxd;
   output usb_uart_txd;
@@ -131,6 +133,7 @@ module design_1_wrapper
   wire pmod_out_pin9_o;
   wire pmod_out_pin9_t;
   wire reset;
+  wire reset_yy;
   wire sys_clock;
   wire usb_uart_rxd;
   wire usb_uart_txd;
@@ -182,6 +185,7 @@ module design_1_wrapper
         .calibrate(calibrate),
         .error_o(error_o),
         .reset(reset),
+        .reset_yy(reset_yy),
         .sys_clock(sys_clock),
         .usb_uart_rxd(usb_uart_rxd),
         .usb_uart_txd(usb_uart_txd));

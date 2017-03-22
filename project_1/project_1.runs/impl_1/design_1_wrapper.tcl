@@ -128,6 +128,8 @@ set rc [catch {
   set_property processing_order EARLY [get_files d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0.xdc]
   read_xdc -ref design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0 -cells inst d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc
   set_property processing_order EARLY [get_files d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_1_PmodWIFI_0_0 -cells inst d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/design_1_PmodWIFI_0_0_board.xdc
+  set_property processing_order EARLY [get_files d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/design_1_PmodWIFI_0_0_board.xdc]
   read_xdc -prop_thru_buffers -ref PmodWIFI_pmod_bridge_0_0 -cells inst d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0_board.xdc
   set_property processing_order EARLY [get_files d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0_board.xdc]
   read_xdc -prop_thru_buffers -ref PmodWIFI_axi_quad_spi_0_0 -cells U0 d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_board.xdc
@@ -144,8 +146,6 @@ set rc [catch {
   set_property processing_order EARLY [get_files d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0.xdc]
   read_xdc -ref PmodWIFI_axi_timer_0_0 -cells U0 d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xdc
   set_property processing_order EARLY [get_files d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_1_PmodWIFI_0_0 -cells inst d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/design_1_PmodWIFI_0_0_board.xdc
-  set_property processing_order EARLY [get_files d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/design_1_PmodWIFI_0_0_board.xdc]
   read_xdc -prop_thru_buffers -ref design_1_axi_uartlite_0_0 -cells U0 d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc
   set_property processing_order EARLY [get_files d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc]
   read_xdc -ref design_1_axi_uartlite_0_0 -cells U0 d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc
