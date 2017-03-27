@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed Mar 22 16:52:18 2017">
+<application name="pa" timeStamp="Sun Mar 26 16:15:15 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="c9b0871a84df478d90245916ab83efc1" type="ProjectID"/>
-<property name="ProjectIteration" value="14" type="ProjectIteration"/>
+<property name="ProjectIteration" value="26" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -19,81 +19,66 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Java Command Handlers">
 <property name="AddSources" value="18" type="JavaHandler"/>
 <property name="AutoConnectBoardComp" value="6" type="JavaHandler"/>
-<property name="AutoConnectPort" value="24" type="JavaHandler"/>
+<property name="AutoConnectPort" value="27" type="JavaHandler"/>
 <property name="AutoConnectTarget" value="3" type="JavaHandler"/>
+<property name="CoreView" value="7" type="JavaHandler"/>
 <property name="CreateTopHDL" value="1" type="JavaHandler"/>
-<property name="CustomizeRSBBlock" value="29" type="JavaHandler"/>
+<property name="CustomizeCore" value="3" type="JavaHandler"/>
+<property name="CustomizeRSBBlock" value="82" type="JavaHandler"/>
 <property name="DebugWizardCmdHandler" value="2" type="JavaHandler"/>
-<property name="EditDelete" value="29" type="JavaHandler"/>
+<property name="DisconnectRSBPin" value="5" type="JavaHandler"/>
+<property name="EditDelete" value="57" type="JavaHandler"/>
 <property name="EditInIPPackagerHandler" value="1" type="JavaHandler"/>
 <property name="EditProperties" value="2" type="JavaHandler"/>
-<property name="EditUndo" value="18" type="JavaHandler"/>
-<property name="ElfFileAssociation" value="5" type="JavaHandler"/>
+<property name="EditRedo" value="30" type="JavaHandler"/>
+<property name="EditUndo" value="67" type="JavaHandler"/>
+<property name="ElfFileAssociation" value="11" type="JavaHandler"/>
+<property name="ExcludeFromAddrSpace" value="17" type="JavaHandler"/>
+<property name="FlipToViewTaskImplementation" value="6" type="JavaHandler"/>
 <property name="GenerateOutputForBDFile" value="3" type="JavaHandler"/>
+<property name="IPPackagerWizardHandler" value="1" type="JavaHandler"/>
 <property name="LaunchProgramFpga" value="3" type="JavaHandler"/>
-<property name="MakeRSBConnection" value="1" type="JavaHandler"/>
-<property name="ManageCompositeTargets" value="8" type="JavaHandler"/>
+<property name="MakeRSBConnection" value="2" type="JavaHandler"/>
+<property name="ManageCompositeTargets" value="11" type="JavaHandler"/>
 <property name="MoveSources" value="1" type="JavaHandler"/>
 <property name="NewExportHardware" value="8" type="JavaHandler"/>
-<property name="NewLaunchHardware" value="13" type="JavaHandler"/>
-<property name="OpenBlockDesign" value="16" type="JavaHandler"/>
+<property name="NewLaunchHardware" value="15" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenBlockDesign" value="29" type="JavaHandler"/>
 <property name="OpenHardwareManager" value="6" type="JavaHandler"/>
-<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="2" type="JavaHandler"/>
 <property name="OpenSrc" value="1" type="JavaHandler"/>
 <property name="ProgramDevice" value="1" type="JavaHandler"/>
-<property name="ProjectSettingsCmdHandler" value="10" type="JavaHandler"/>
-<property name="RecustomizeCore" value="2" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="15" type="JavaHandler"/>
+<property name="RecustomizeCore" value="3" type="JavaHandler"/>
 <property name="RegenerateRSBLayout" value="1" type="JavaHandler"/>
-<property name="ReportIPStatus" value="14" type="JavaHandler"/>
-<property name="ReportTimingSummary" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="10" type="JavaHandler"/>
-<property name="RunImplementation" value="6" type="JavaHandler"/>
-<property name="RunSynthesis" value="6" type="JavaHandler"/>
+<property name="ReportIPStatus" value="16" type="JavaHandler"/>
+<property name="ReportTimingSummary" value="3" type="JavaHandler"/>
+<property name="RunBitgen" value="19" type="JavaHandler"/>
+<property name="RunImplementation" value="12" type="JavaHandler"/>
+<property name="RunSynthesis" value="7" type="JavaHandler"/>
 <property name="RunTriggerImmediate" value="11" type="JavaHandler"/>
 <property name="SaveDesign" value="1" type="JavaHandler"/>
 <property name="SaveProjectAs" value="1" type="JavaHandler"/>
-<property name="SaveRSBDesign" value="10" type="JavaHandler"/>
+<property name="SaveRSBDesign" value="20" type="JavaHandler"/>
 <property name="SetSourceEnabled" value="1" type="JavaHandler"/>
 <property name="ShowSource" value="1" type="JavaHandler"/>
-<property name="ShowView" value="9" type="JavaHandler"/>
+<property name="ShowView" value="18" type="JavaHandler"/>
 <property name="SimulationRestart" value="1" type="JavaHandler"/>
 <property name="SimulationRun" value="11" type="JavaHandler"/>
 <property name="SimulationRunAll" value="2" type="JavaHandler"/>
 <property name="StopTrigger" value="3" type="JavaHandler"/>
 <property name="ToggleViewNavigator" value="1" type="JavaHandler"/>
-<property name="UpgradeIP" value="10" type="JavaHandler"/>
-<property name="ValidateRSBDesign" value="25" type="JavaHandler"/>
+<property name="UnmapAddressSegment" value="6" type="JavaHandler"/>
+<property name="UpgradeIP" value="12" type="JavaHandler"/>
+<property name="ValidateRSBDesign" value="41" type="JavaHandler"/>
+<property name="ViewLayoutCmd" value="2" type="JavaHandler"/>
+<property name="ViewTaskIPIntegrator" value="6" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="4" type="JavaHandler"/>
 <property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
-<property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
-</item>
-<item name="Gui Resources Info">
-<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="2" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, Launch SDK" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, img_proc_full.xdc], 26, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, img_proc_full.xdc], 26, false, false, false, false, false, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1], 24, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 23, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 23, true, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, IP Integrator, Open Block Design], 7, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, Upgrade Selected" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_EXPORT, Export" value="6" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="8" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="4" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, Generate" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SystemTab_REPORT_IP_STATUS, Report IP Status" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="2" type="GuiResourceData"/>
-<property name="RDIResource.ProgressDialog_BACKGROUND, Background" value="1" type="GuiResourceData"/>
-<property name="img_proc_full.xdc, 172, 485" value="1" type="GuiResourceData"/>
-<property name="img_proc_full.xdc, 175, 550" value="1" type="GuiResourceData"/>
-<property name="img_proc_full.xdc, 185, 484" value="1" type="GuiResourceData"/>
-<property name="img_proc_full.xdc, 185, 484, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="img_proc_full.xdc, 214, 554, true, false, false, false, false" value="1" type="GuiResourceData"/>
-<property name="img_proc_full.xdc, 270, 519" value="1" type="GuiResourceData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="3" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="0" type="TclMode"/>
+<property name="ViewTaskSynthesis" value="2" type="JavaHandler"/>
+<property name="ZoomFit" value="10" type="JavaHandler"/>
+<property name="ZoomOut" value="3" type="JavaHandler"/>
 </item>
 </section>
 </application>

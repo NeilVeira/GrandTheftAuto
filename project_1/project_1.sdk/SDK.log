@@ -103,3 +103,9 @@
 16:51:27 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
 16:51:29 INFO  : Processor reset is completed for microblaze_0
 16:52:16 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:10:13 INFO  : Launching XSDB server: xsdb.bat -interactive D:\ECE532\git\GrandTheftAuto\newestgit\GrandTheftAuto\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+16:10:14 INFO  : XSDB server has started successfully.
+16:10:14 INFO  : Processing command line option -hwspec D:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/project_1/project_1.sdk/design_1_wrapper.hdf.
+14:30:20 INFO  : Launching XSDB server: xsdb.bat -interactive E:\ECE532\git\GrandTheftAuto\newestgit\GrandTheftAuto\project_1\project_1.sdk\temp_xsdb_launch_script.tcl
+14:30:24 INFO  : XSDB server has started successfully.
+14:30:28 INFO  : Processing command line option -hwspec E:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/project_1/project_1.sdk/design_1_wrapper.hdf.

@@ -10,181 +10,219 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/yy/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path D:/yy/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir G:/yy/GrandTheftAuto/project_1/project_1.cache/wt [current_project]
+set_property parent.project_path G:/yy/GrandTheftAuto/project_1/project_1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 set_property ip_repo_paths {
   w:/img_proc_full
-  d:/yy/img_proc_full
-  d:/yy/vivado-library-master/if/pmod_v1_0
-  d:/yy/vivado-library-master/ip/Pmods/PmodWIFI_v1_0
-  d:/yy/vivado-library-master/ip/Pmods/Pmod_Bridge_v1_0
-  d:Downloads/vivado-library-master/if/pmod_v1_0
-  d:Downloads/vivado-library-master/ip/Pmods/Pmod_Bridge_v1_0
-  d:Downloads/vivado-library-master/ip/Pmods/PmodWIFI_v1_0
+  g:/yy/GrandTheftAuto/img_proc_full
+  g:/yy/GrandTheftAuto/vivado-library-master/if/pmod_v1_0
+  g:/yy/GrandTheftAuto/vivado-library-master/ip/Pmods/PmodWIFI_v1_0
+  g:/yy/GrandTheftAuto/vivado-library-master/ip/Pmods/Pmod_Bridge_v1_0
+  g:/Downloads/vivado-library-master/if/pmod_v1_0
+  g:/Downloads/vivado-library-master/ip/Pmods/Pmod_Bridge_v1_0
+  g:/Downloads/vivado-library-master/ip/Pmods/PmodWIFI_v1_0
+  g:/yy/GrandTheftAuto/remote_controller
+  g:/yy/GrandTheftAuto/vivado-library-master/ip/SWLED
+  g:/yy/GrandTheftAuto/ip_repo
 } [current_project]
-add_files -quiet d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0.dcp
-set_property used_in_implementation false [get_files d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0.dcp]
-read_mem D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.mif
-add_files D:/yy/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc_trace.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/design_1_PmodWIFI_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_4/design_1_auto_ds_4_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_4/design_1_auto_ds_4_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_5/design_1_auto_ds_5_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_5/design_1_auto_ds_5_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all D:/yy/project_1/project_1.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
-set_property is_locked true [get_files D:/yy/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+add_files -quiet g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0.dcp
+set_property used_in_implementation false [get_files g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0.dcp]
+read_mem G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.mif
+add_files G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_81M_0/design_1_rst_mig_7series_0_81M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0/jpeg.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_pmod_bridge_0_0/PmodWIFI_pmod_bridge_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/design_1_PmodWIFI_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_PmodWIFI_0_0/src/PmodWIFI_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0_2/design_1_microblaze_1_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0_2/design_1_microblaze_1_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_1_0_2/design_1_microblaze_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_2/design_1_dlmb_v10_2.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_2/design_1_dlmb_v10_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_2/design_1_ilmb_v10_2.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_2/design_1_ilmb_v10_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_2/design_1_dlmb_bram_if_cntlr_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_2/design_1_ilmb_bram_if_cntlr_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_2/design_1_lmb_bram_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_bram_ctrl_0_0/design_1_axi_bram_ctrl_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_0_1/design_1_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_0/design_1_auto_rs_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_w_0/design_1_auto_rs_w_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1_1/design_1_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_1/design_1_auto_rs_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_w_1/design_1_auto_rs_w_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_2/design_1_auto_rs_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2_1/design_1_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_3/design_1_auto_rs_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_w_2/design_1_auto_rs_w_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3_1/design_1_auto_pc_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_4/design_1_auto_rs_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_w_3/design_1_auto_rs_w_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4_1/design_1_auto_pc_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_5/design_1_auto_rs_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_w_4/design_1_auto_rs_w_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5_1/design_1_auto_pc_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2_1/design_1_auto_us_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2_1/design_1_auto_us_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_6/design_1_auto_rs_6_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_rs_w_5/design_1_auto_rs_w_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_s00_mmu_0/design_1_s00_mmu_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+set_property is_locked true [get_files G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
 
-read_ip -quiet D:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xci
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0_ooc.xdc]
-set_property is_locked true [get_files D:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xci]
+read_ip -quiet G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xci
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0_ooc.xdc]
+set_property is_locked true [get_files G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_timer_0_0/PmodWIFI_axi_timer_0_0.xci]
 
-read_ip -quiet D:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0.xci
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0.xdc]
-set_property is_locked true [get_files D:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0.xci]
+read_ip -quiet G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0.xci
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0.xdc]
+set_property is_locked true [get_files G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_1_0/PmodWIFI_axi_gpio_1_0.xci]
 
-read_ip -quiet D:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0.xci
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_clocks.xdc]
-set_property is_locked true [get_files D:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0.xci]
+read_ip -quiet G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0.xci
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0_clocks.xdc]
+set_property is_locked true [get_files G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_quad_spi_0_0/PmodWIFI_axi_quad_spi_0_0.xci]
 
-read_ip -quiet D:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0.xci
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0.xdc]
-set_property is_locked true [get_files D:/yy/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0.xci]
+read_ip -quiet G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0.xci
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all g:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0.xdc]
+set_property is_locked true [get_files G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/ip/PmodWIFI_axi_gpio_0_0/PmodWIFI_axi_gpio_0_0.xci]
 
-read_verilog -library xil_defaultlib D:/yy/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+read_verilog -library xil_defaultlib G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
 read_vhdl -library xil_defaultlib {
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/upsampling_buffer/jpeg_upsampling_buffer.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/qt_table/jpeg_qt_sr.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/idct/jpeg_idct_core_12.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/huffman_input_sr/jpeg_huffman_input_sr.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/ht_tables/jpeg_ht_tables.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/dequantize_multiplier/jpeg_dequant_multiplier.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_YCbCr2RGB.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_upsampling.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/input_fifo/jpeg_input_fifo.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_idct.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_huffman.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_header.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_dezigzag.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_dequantize.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_check_FF.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/check_FF_fifo/jpeg_checkff_fifo.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_input_fifo.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_checkff_fifo.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/vhdl/jpeg_qt_tables.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/idct/jpeg_idct_core_6.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/vhdl/fifo_sim32.vhd
-  D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/vga_memory/vga_memory.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/upsampling_buffer/jpeg_upsampling_buffer.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/qt_table/jpeg_qt_sr.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/idct/jpeg_idct_core_12.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/huffman_input_sr/jpeg_huffman_input_sr.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/ht_tables/jpeg_ht_tables.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/dequantize_multiplier/jpeg_dequant_multiplier.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_YCbCr2RGB.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_upsampling.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/input_fifo/jpeg_input_fifo.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_idct.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_huffman.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_header.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_dezigzag.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_dequantize.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_check_FF.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/check_FF_fifo/jpeg_checkff_fifo.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_input_fifo.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_checkff_fifo.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/vhdl/jpeg_qt_tables.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/idct/jpeg_idct_core_6.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/vhdl/fifo_sim32.vhd
+  G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/vga_memory/vga_memory.vhd
 }
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1.ngc
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/upsampling_buffer/jpeg_upsampling_buffer.ngc
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/qt_table/jpeg_qt_sr.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/idct/jpeg_idct_core_12.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/huffman_input_sr/jpeg_huffman_input_sr.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/ht_tables/jpeg_ht_tables.ngc
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/dequantize_multiplier/jpeg_dequant_multiplier.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/input_fifo/jpeg_input_fifo.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/src/jpeg_checkff_fifo.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/qt_table/jpeg_qt_sr_c_shift_ram_v8_0_xst_1.ngc
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1.ngc
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/idct/jpeg_idct_core_6.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/dequantize_multiplier/jpeg_dequant_multiplier_mult_gen_v8_0_xst_1.ngc
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/check_FF_fifo/jpeg_checkff_fifo.edn
-read_edif D:/yy/project_1/project_1.srcs/sources_1/imports/coregen/vga_memory/vga_memory.ngc
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1.ngc
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/upsampling_buffer/jpeg_upsampling_buffer.ngc
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/qt_table/jpeg_qt_sr.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/idct/jpeg_idct_core_12.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/huffman_input_sr/jpeg_huffman_input_sr.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/ht_tables/jpeg_ht_tables.ngc
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/dequantize_multiplier/jpeg_dequant_multiplier.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/input_fifo/jpeg_input_fifo.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/src/jpeg_checkff_fifo.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/qt_table/jpeg_qt_sr_c_shift_ram_v8_0_xst_1.ngc
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1.ngc
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/idct/jpeg_idct_core_6.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/dequantize_multiplier/jpeg_dequant_multiplier_mult_gen_v8_0_xst_1.ngc
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/check_FF_fifo/jpeg_checkff_fifo.edn
+read_edif G:/yy/GrandTheftAuto/project_1/project_1.srcs/sources_1/imports/coregen/vga_memory/vga_memory.ngc
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/yy/project_1/project_1.srcs/constrs_1/imports/const.xdc
-set_property used_in_implementation false [get_files D:/yy/project_1/project_1.srcs/constrs_1/imports/const.xdc]
+read_xdc G:/yy/GrandTheftAuto/project_1/project_1.srcs/constrs_1/imports/const.xdc
+set_property used_in_implementation false [get_files G:/yy/GrandTheftAuto/project_1/project_1.srcs/constrs_1/imports/const.xdc]
 
-read_xdc D:/yy/project_1/project_1.srcs/constrs_1/imports/img_proc_full.xdc
-set_property used_in_implementation false [get_files D:/yy/project_1/project_1.srcs/constrs_1/imports/img_proc_full.xdc]
+read_xdc G:/yy/GrandTheftAuto/project_1/project_1.srcs/constrs_1/imports/img_proc_full.xdc
+set_property used_in_implementation false [get_files G:/yy/GrandTheftAuto/project_1/project_1.srcs/constrs_1/imports/img_proc_full.xdc]
+
+read_xdc G:/yy/GrandTheftAuto/project_1/project_1.srcs/constrs_1/imports/constswld.xdc
+set_property used_in_implementation false [get_files G:/yy/GrandTheftAuto/project_1/project_1.srcs/constrs_1/imports/constswld.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 
-synth_design -top design_1_wrapper -part xc7a100tcsg324-1
+synth_design -top design_1_wrapper -part xc7a100tcsg324-1 -retiming
 
 
 write_checkpoint -force -noxdef design_1_wrapper.dcp

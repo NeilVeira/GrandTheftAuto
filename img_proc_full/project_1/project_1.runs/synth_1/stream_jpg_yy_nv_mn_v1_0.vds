@@ -1,0 +1,1995 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Mar 15 16:46:45 2017
+# Process ID: 5476
+# Current directory: C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1
+# Command line: vivado.exe -log stream_jpg_yy_nv_mn_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source stream_jpg_yy_nv_mn_v1_0.tcl
+# Log file: C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/stream_jpg_yy_nv_mn_v1_0.vds
+# Journal file: C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source stream_jpg_yy_nv_mn_v1_0.tcl -notrace
+Command: synth_design -top stream_jpg_yy_nv_mn_v1_0 -part xc7a100tcsg324-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3712 
+WARNING: [Synth 8-2507] parameter declaration becomes local in stream_jpg_yy_nv_mn_v1_0_S00_AXIS with formal parameter declaration list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/stream_jpg_yy_nv_mn_v1_0_S00_AXIS.v:53]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 370.816 ; gain = 161.441
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-2488] overwriting existing primary unit jpeg_input_fifo [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'stream_jpg_yy_nv_mn_v1_0' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/stream_jpg_yy_nv_mn_v1_0.v:4]
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'image_processor' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:25]
+INFO: [Synth 8-638] synthesizing module 'jpeg' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:55]
+INFO: [Synth 8-3491] module 'jpeg_input_fifo' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.vhd:43' bound to instance 'jpeg_input_fifo_p' of component 'jpeg_input_fifo' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:522]
+INFO: [Synth 8-638] synthesizing module 'jpeg_input_fifo' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_input_fifo' (1#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.vhd:58]
+INFO: [Synth 8-3491] module 'jpeg_check_FF' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_check_FF.vhd:11' bound to instance 'jpeg_check_FF_p' of component 'jpeg_check_FF' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:546]
+INFO: [Synth 8-638] synthesizing module 'jpeg_check_FF' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_check_FF.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_check_FF' (2#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_check_FF.vhd:41]
+INFO: [Synth 8-3491] module 'jpeg_checkff_fifo' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_checkff_fifo.vhd:43' bound to instance 'jpeg_checkff_fifo_p' of component 'jpeg_checkff_fifo' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:567]
+INFO: [Synth 8-638] synthesizing module 'jpeg_checkff_fifo' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_checkff_fifo.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_checkff_fifo' (3#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_checkff_fifo.vhd:59]
+INFO: [Synth 8-3491] module 'jpeg_huffman' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:14' bound to instance 'jpeg_huffman_p' of component 'jpeg_huffman' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:591]
+INFO: [Synth 8-638] synthesizing module 'jpeg_huffman' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:55]
+INFO: [Synth 8-3491] module 'jpeg_ht_nr_of_symbols' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_nr_of_symbols.vhd:43' bound to instance 'ht_nr_of_symbols' of component 'jpeg_ht_nr_of_symbols' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'jpeg_ht_nr_of_symbols' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_nr_of_symbols.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_ht_nr_of_symbols' (4#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_nr_of_symbols.vhd:54]
+INFO: [Synth 8-3491] module 'jpeg_ht_tables' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_tables.vhd:43' bound to instance 'ht_table' of component 'jpeg_ht_tables' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'jpeg_ht_tables' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_tables.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_ht_tables' (5#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_ht_tables.vhd:54]
+INFO: [Synth 8-3491] module 'jpeg_huffman_input_sr' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman_input_sr.vhd:43' bound to instance 'jpeg_huffman_input_sr_p' of component 'jpeg_huffman_input_sr' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'jpeg_huffman_input_sr' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman_input_sr.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_huffman_input_sr' (6#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman_input_sr.vhd:53]
+WARNING: [Synth 8-614] signal 'last_ready' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:327]
+WARNING: [Synth 8-614] signal 'ready' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:327]
+WARNING: [Synth 8-614] signal 'eob' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:653]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_huffman' (7#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:55]
+INFO: [Synth 8-3491] module 'jpeg_dequantize' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:7' bound to instance 'jpeg_dequantize_p' of component 'jpeg_dequantize' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:625]
+INFO: [Synth 8-638] synthesizing module 'jpeg_dequantize' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:45]
+WARNING: [Synth 8-614] signal 'comp1_qt_number_i' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:132]
+WARNING: [Synth 8-614] signal 'comp2_qt_number_i' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:132]
+WARNING: [Synth 8-614] signal 'comp3_qt_number_i' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:132]
+WARNING: [Synth 8-614] signal 'context' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:215]
+WARNING: [Synth 8-614] signal 'comp1_qt_number' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:215]
+WARNING: [Synth 8-614] signal 'comp2_qt_number' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:215]
+WARNING: [Synth 8-614] signal 'comp3_qt_number' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:215]
+INFO: [Synth 8-3491] module 'jpeg_dequant_multiplier' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequant_multiplier.vhd:43' bound to instance 'jpeg_dequant_multiplier_p' of component 'jpeg_dequant_multiplier' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:351]
+INFO: [Synth 8-638] synthesizing module 'jpeg_dequant_multiplier' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequant_multiplier.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_dequant_multiplier' (8#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequant_multiplier.vhd:50]
+INFO: [Synth 8-3491] module 'jpeg_qt_sr' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd:43' bound to instance 'jpeg_qt_sr_0_0_p' of component 'jpeg_qt_sr' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:362]
+INFO: [Synth 8-638] synthesizing module 'jpeg_qt_sr' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_qt_sr' (9#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd:51]
+INFO: [Synth 8-3491] module 'jpeg_qt_sr' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd:43' bound to instance 'jpeg_qt_sr_1_0_p' of component 'jpeg_qt_sr' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:370]
+INFO: [Synth 8-3491] module 'jpeg_qt_sr' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd:43' bound to instance 'jpeg_qt_sr_0_1_p' of component 'jpeg_qt_sr' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:378]
+INFO: [Synth 8-3491] module 'jpeg_qt_sr' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_qt_sr.vhd:43' bound to instance 'jpeg_qt_sr_1_1_p' of component 'jpeg_qt_sr' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:386]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_dequantize' (10#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:45]
+INFO: [Synth 8-3491] module 'jpeg_dezigzag' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd:14' bound to instance 'jpeg_dezigzag_p' of component 'jpeg_dezigzag' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:653]
+INFO: [Synth 8-638] synthesizing module 'jpeg_dezigzag' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd:36]
+WARNING: [Synth 8-614] signal 'stop_in' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd:186]
+WARNING: [Synth 8-614] signal 'stop_out' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd:396]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_dezigzag' (11#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dezigzag.vhd:36]
+INFO: [Synth 8-3491] module 'jpeg_idct' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd:7' bound to instance 'jpeg_idct_p' of component 'jpeg_idct' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:672]
+INFO: [Synth 8-638] synthesizing module 'jpeg_idct' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd:29]
+INFO: [Synth 8-3491] module 'jpeg_idct_core_12' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct_core_12.vhd:43' bound to instance 'jpeg_idct_core_12_p' of component 'jpeg_idct_core_12' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'jpeg_idct_core_12' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct_core_12.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_idct_core_12' (12#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct_core_12.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_idct' (13#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd:29]
+INFO: [Synth 8-3491] module 'jpeg_upsampling' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd:11' bound to instance 'jpeg_upsampling_p' of component 'jpeg_upsampling' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:691]
+INFO: [Synth 8-638] synthesizing module 'jpeg_upsampling' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd:30]
+INFO: [Synth 8-3491] module 'jpeg_upsampling_buffer' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling_buffer.vhd:43' bound to instance 'Y_buffer' of component 'jpeg_upsampling_buffer' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'jpeg_upsampling_buffer' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling_buffer.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_upsampling_buffer' (14#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling_buffer.vhd:54]
+INFO: [Synth 8-3491] module 'jpeg_upsampling_buffer' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling_buffer.vhd:43' bound to instance 'Cb_buffer' of component 'jpeg_upsampling_buffer' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd:91]
+INFO: [Synth 8-3491] module 'jpeg_upsampling_buffer' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling_buffer.vhd:43' bound to instance 'Cr_buffer' of component 'jpeg_upsampling_buffer' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd:101]
+WARNING: [Synth 8-614] signal 'counter_out_hold' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd:321]
+WARNING: [Synth 8-614] signal 'do_copy' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd:393]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_upsampling' (15#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd:30]
+INFO: [Synth 8-3491] module 'jpeg_YCbCr2RGB' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_YCbCr2RGB.vhd:13' bound to instance 'jpeg_YCbCr2RGB_p' of component 'jpeg_YCbCr2RGB' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:713]
+INFO: [Synth 8-638] synthesizing module 'jpeg_YCbCr2RGB' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_YCbCr2RGB.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_YCbCr2RGB' (16#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_YCbCr2RGB.vhd:38]
+INFO: [Synth 8-3491] module 'jpeg_header' declared at 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_header.vhd:7' bound to instance 'jpeg_header_p' of component 'jpeg_header' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:738]
+INFO: [Synth 8-638] synthesizing module 'jpeg_header' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_header.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_header' (17#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_header.vhd:52]
+WARNING: [Synth 8-614] signal 'ready' is read in the process but is not in the sensitivity list [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:825]
+INFO: [Synth 8-256] done synthesizing module 'jpeg' (18#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:55]
+WARNING: [Synth 8-350] instance 'jpeg_inst' of module 'jpeg' requires 16 connections, but only 15 given [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:50]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 24 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 24 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 20480 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 20480 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 15 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 24 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 24 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 20480 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 20480 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 15 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 10 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 8 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     21.608132 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_5' declared at 'c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195251' bound to instance 'U0' of component 'blk_mem_gen_v8_3_5' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:234]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (29#1) [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'edge_detector' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/edge_detector.v:23]
+	Parameter target_r bound to: 180 - type: integer 
+	Parameter target_g bound to: 45 - type: integer 
+	Parameter target_b bound to: 60 - type: integer 
+	Parameter error_threshold bound to: 5000 - type: integer 
+	Parameter K bound to: 4 - type: integer 
+	Parameter LOW bound to: 0.444000 - type: float 
+	Parameter HIGH bound to: 0.545000 - type: float 
+	Parameter sz bound to: 12 - type: integer 
+	Parameter min_sum bound to: 36 - type: integer 
+	Parameter max_sum bound to: 44 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_3/synth/blk_mem_gen_3.vhd:71]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_3.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 640 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 640 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 640 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 640 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     5.441374 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_5' declared at 'c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195251' bound to instance 'U0' of component 'blk_mem_gen_v8_3_5' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_3/synth/blk_mem_gen_3.vhd:234]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_3' (30#1) [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_3/synth/blk_mem_gen_3.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'edge_detector' (31#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/edge_detector.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:72]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_1.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 20 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 20 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 8192 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 8192 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 20 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 20 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 8192 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 8192 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 4 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     11.90635 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_5' declared at 'c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195251' bound to instance 'U0' of component 'blk_mem_gen_v8_3_5' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (32#1) [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_1/synth/blk_mem_gen_1.vhd:72]
+WARNING: [Synth 8-350] instance 'edge_buffer' of module 'blk_mem_gen_1' requires 8 connections, but only 7 given [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/synth/fifo_generator_0.vhd:71]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 12 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 12 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 30 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 29 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter C_RD_DEPTH bound to: 32 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 5 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter C_WR_DEPTH bound to: 32 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 5 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_1_3' declared at 'c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/hdl/fifo_generator_v13_1_vhsyn_rfs.vhd:38271' bound to instance 'U0' of component 'fifo_generator_v13_1_3' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/synth/fifo_generator_0.vhd:537]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_0' (48#1) [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/synth/fifo_generator_0.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/vga_controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:71]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_2.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 2 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 2 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 307200 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 307200 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 19 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 2 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 2 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 307200 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 307200 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 19 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 19 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     8.196787 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_5' declared at 'c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195251' bound to instance 'U0' of component 'blk_mem_gen_v8_3_5' [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:234]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (49#1) [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/blk_mem_gen_2/synth/blk_mem_gen_2.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'VGAdrive' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/vga_driver.vhd:27]
+INFO: [Synth 8-4471] merging register 'row_reg[9:0]' into 'vertical_reg[9:0]' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/vga_driver.vhd:85]
+INFO: [Synth 8-4471] merging register 'column_reg[9:0]' into 'horizontal_reg[9:0]' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/vga_driver.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'VGAdrive' (50#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/vga_driver.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller' (51#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/vga_controller.v:23]
+WARNING: [Synth 8-3848] Net edge_buffer_addrout in module/entity image_processor does not have driver. [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:198]
+INFO: [Synth 8-256] done synthesizing module 'image_processor' (52#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:25]
+WARNING: [Synth 8-689] width (32) of port connection 'datavalid_i' does not match port width (1) of module 'image_processor' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/stream_jpg_yy_nv_mn_v1_0.v:54]
+INFO: [Synth 8-256] done synthesizing module 'stream_jpg_yy_nv_mn_v1_0' (53#1) [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/stream_jpg_yy_nv_mn_v1_0.v:4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[63]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[62]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[61]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[60]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[59]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[58]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[57]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[56]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[55]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[54]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[53]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[52]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[51]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[50]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[49]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[48]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[47]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[46]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[45]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[44]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[43]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[42]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[41]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[40]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[39]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[38]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[37]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[36]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[35]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[34]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[33]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[32]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[31]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[30]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[29]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[28]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[27]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[26]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[25]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[24]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[23]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[22]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[21]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[20]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port SBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[63]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[62]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[61]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[60]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[59]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[58]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[57]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[56]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[55]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[54]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[53]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[52]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized4 has unconnected port DBITERRIN[51]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:05:28 ; elapsed = 00:05:40 . Memory (MB): peak = 644.402 ; gain = 435.027
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:enb to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[12] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[11] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[10] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[9] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[8] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[7] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[6] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[5] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[4] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[3] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[2] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[1] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[0] to constant 0 [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:233]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:05:29 ; elapsed = 00:05:42 . Memory (MB): peak = 644.402 ; gain = 435.027
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg_checkff_fifo' instantiated as 'im_proc/jpeg_inst/jpeg_checkff_fifo_p' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:567]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg_dequant_multiplier' instantiated as 'im_proc/jpeg_inst/jpeg_dequantize_p/jpeg_dequant_multiplier_p' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:351]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg_ht_nr_of_symbols' instantiated as 'im_proc/jpeg_inst/jpeg_huffman_p/ht_nr_of_symbols' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:175]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg_ht_tables' instantiated as 'im_proc/jpeg_inst/jpeg_huffman_p/ht_table' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:185]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg_huffman_input_sr' instantiated as 'im_proc/jpeg_inst/jpeg_huffman_p/jpeg_huffman_input_sr_p' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:196]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg_idct_core_12' instantiated as 'im_proc/jpeg_inst/jpeg_idct_p/jpeg_idct_core_12_p' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_idct.vhd:202]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg_input_fifo' instantiated as 'im_proc/jpeg_inst/jpeg_input_fifo_p' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg.vhd:522]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'jpeg_qt_sr' instantiated as 'im_proc/jpeg_inst/jpeg_dequantize_p/jpeg_qt_sr_0_0_p'. 4 instances of this cell are unresolved black boxes. [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:362]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'jpeg_upsampling_buffer' instantiated as 'im_proc/jpeg_inst/jpeg_upsampling_p/Y_buffer'. 3 instances of this cell are unresolved black boxes. [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_upsampling.vhd:81]
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc] for cell 'im_proc/edge_fifo/U0'
+Finished Parsing XDC File [c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0.xdc] for cell 'im_proc/edge_fifo/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'clk_wiz_0'. The XDC file c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'clk_wiz_0'. The XDC file c:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc will not be read for any cell of this module.
+Parsing XDC File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/dont_touch.xdc]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0}'. [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/dont_touch.xdc:20]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==blk_mem_gen_4 || ORIG_REF_NAME==blk_mem_gen_4}'. [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/dont_touch.xdc:23]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0}'. [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/dont_touch.xdc:37]
+WARNING: [Vivado 12-180] No cells matched '/inst'. [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/dont_touch.xdc:37]
+Finished Parsing XDC File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/dont_touch.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/dont_touch.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/stream_jpg_yy_nv_mn_v1_0_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/stream_jpg_yy_nv_mn_v1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/stream_jpg_yy_nv_mn_v1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 780.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:05:47 ; elapsed = 00:06:10 . Memory (MB): peak = 780.953 ; gain = 571.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:47 ; elapsed = 00:06:10 . Memory (MB): peak = 780.953 ; gain = 571.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for im_proc/edge_fifo/U0. (constraint file  C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/dont_touch.xdc, line 26).
+Applied set_property DONT_TOUCH = true for im_proc/edge_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for im_proc/edge_detector_inst/row_sums. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for im_proc/edge_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for im_proc/jpeg_buffer. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for im_proc/vga_controller_inst/video_mem. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:47 ; elapsed = 00:06:10 . Memory (MB): peak = 780.953 ; gain = 571.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_huffman.vhd:292]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jpeg_huffman'
+INFO: [Synth 8-5544] ROM "last_dc_select_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "last_dc_select_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "last_dc_select_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_D" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_D" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_D" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_D" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_D" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "select_qt_D" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jpeg_header'
+INFO: [Synth 8-5546] ROM "sampling_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_nr_of_ht0_codes_ac" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht0_codes_dc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht1_codes_ac" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht1_codes_dc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht2_codes_ac" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht2_codes_dc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht3_codes_ac" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_nr_of_ht3_codes_dc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_ht_symbols_wea" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_qt_wea" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "next_state" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st_start1 |                             0000 |                             0000
+               st_start2 |                             0001 |                             0001
+               st_start3 |                             0010 |                             0010
+             st_get_code |                             0011 |                             0011
+          st_check_code1 |                             0100 |                             0100
+          st_check_code2 |                             0101 |                             0101
+      st_write_zeros_eob |                             0110 |                             0111
+      st_write_zeros_zrl |                             0111 |                             0110
+          st_write_zeros |                             1000 |                             1000
+           st_get_value1 |                             1001 |                             1001
+           st_get_value2 |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'jpeg_huffman'
+WARNING: [Synth 8-327] inferring latch for variable 'qt_out_reg' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/pcores/myipif/hdl/vhdl/jpeg_dequantize.vhd:336]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st_start |                           000000 |                           000000
+            st_search_ff |                           000001 |                           000001
+               st_get_id |                           000010 |                           000010
+          st_sos_length1 |                           000011 |                           000011
+          st_sos_length2 |                           000100 |                           000100
+       st_sos_components |                           000101 |                           000101
+               st_sos_id |                           000110 |                           000110
+       st_sos_comp1_huff |                           000111 |                           000111
+       st_sos_comp2_huff |                           001000 |                           001000
+       st_sos_comp3_huff |                           001001 |                           001001
+            st_sos_wait1 |                           001010 |                           001010
+            st_sos_wait2 |                           001011 |                           001011
+            st_sos_wait3 |                           001100 |                           001100
+          st_dqt_length1 |                           001101 |                           101111
+          st_dqt_length2 |                           001110 |                           110000
+             st_dqt_info |                           001111 |                           110001
+              st_dqt_qt0 |                           010000 |                           110010
+              st_dqt_qt1 |                           010001 |                           110011
+              st_dqt_qt2 |                           010010 |                           110100
+              st_dqt_qt3 |                           010011 |                           110101
+          st_dht_length1 |                           010100 |                           011100
+          st_dht_length2 |                           010101 |                           011101
+             st_dht_info |                           010110 |                           011110
+   st_dht_ht0_dc_symbols |                           010111 |                           100000
+     st_dht_ht0_dc_table |                           011000 |                           011111
+   st_dht_ht1_dc_symbols |                           011001 |                           100010
+     st_dht_ht1_dc_table |                           011010 |                           100001
+   st_dht_ht2_dc_symbols |                           011011 |                           100100
+     st_dht_ht2_dc_table |                           011100 |                           100011
+   st_dht_ht3_dc_symbols |                           011101 |                           100110
+     st_dht_ht3_dc_table |                           011110 |                           100101
+   st_dht_ht0_ac_symbols |                           011111 |                           101000
+     st_dht_ht0_ac_table |                           100000 |                           100111
+   st_dht_ht1_ac_symbols |                           100001 |                           101010
+     st_dht_ht1_ac_table |                           100010 |                           101001
+   st_dht_ht2_ac_symbols |                           100011 |                           101100
+     st_dht_ht2_ac_table |                           100100 |                           101011
+   st_dht_ht3_ac_symbols |                           100101 |                           101110
+     st_dht_ht3_ac_table |                           100110 |                           101101
+          st_sof_length1 |                           100111 |                           001101
+          st_sof_length2 |                           101000 |                           001110
+        st_sof_precision |                           101001 |                           001111
+          st_sof_height1 |                           101010 |                           010000
+          st_sof_height2 |                           101011 |                           010001
+           st_sof_width1 |                           101100 |                           010010
+           st_sof_width2 |                           101101 |                           010011
+       st_sof_components |                           101110 |                           010100
+               st_sof_id |                           101111 |                           010101
+st_sof_comp1_sampl_factor |                           110000 |                           010110
+  st_sof_comp1_qt_number |                           110001 |                           010111
+st_sof_comp2_sampl_factor |                           110010 |                           011000
+  st_sof_comp2_qt_number |                           110011 |                           011001
+st_sof_comp3_sampl_factor |                           110100 |                           011010
+  st_sof_comp3_qt_number |                           110101 |                           011011
+                 st_idle |                           110110 |                           111001
+        st_other_length1 |                           110111 |                           110110
+        st_other_length2 |                           111000 |                           110111
+           st_skipfield1 |                           111001 |                           111000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'jpeg_header'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:56 ; elapsed = 00:06:19 . Memory (MB): peak = 780.953 ; gain = 571.578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 7     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 15    
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 24    
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   9 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	               32 Bit    Registers := 3     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 132   
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 24    
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 21    
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 66    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 10    
+	  10 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	  58 Input     16 Bit        Muxes := 9     
+	   2 Input     12 Bit        Muxes := 63    
+	   2 Input     10 Bit        Muxes := 11    
+	   4 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 11    
+	  10 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	  58 Input      8 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	 129 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 9     
+	   9 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 14    
+	   4 Input      2 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 147   
+	   4 Input      1 Bit        Muxes := 10    
+	  10 Input      1 Bit        Muxes := 14    
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 10    
+	  58 Input      1 Bit        Muxes := 28    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module jpeg_check_FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module jpeg_huffman 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 6     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 8     
+	  10 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	   4 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 14    
+Module jpeg_dequantize 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 1     
+Module jpeg_dezigzag 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 128   
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 62    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module jpeg_idct 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module jpeg_upsampling 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   4 Input      9 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module jpeg_YCbCr2RGB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     31 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+Module jpeg_header 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 16    
++---Registers : 
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 15    
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  58 Input     16 Bit        Muxes := 9     
+	  58 Input      8 Bit        Muxes := 8     
+	 129 Input      6 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	  58 Input      1 Bit        Muxes := 28    
+Module jpeg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module edge_detector 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 4     
+	   9 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module bindec__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module bindec__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module blk_mem_gen_mux__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+Module blk_mem_gen_mux__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module rd_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+Module compare 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
+Module rd_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module wr_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+Module wr_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module bindec__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module bindec__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module blk_mem_gen_mux__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module VGAdrive 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 5     
+Module vga_controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module image_processor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 9     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 8     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP tmp_R_reg, operation Mode is: (C+(A:0x59c)*B)'.
+DSP Report: register tmp_R_reg is absorbed into DSP tmp_R_reg.
+DSP Report: operator tmp_R_D0 is absorbed into DSP tmp_R_reg.
+DSP Report: operator tmp_R_D1 is absorbed into DSP tmp_R_reg.
+DSP Report: Generating DSP tmp_G_D2, operation Mode is: (A:0x160)*B.
+DSP Report: operator tmp_G_D2 is absorbed into DSP tmp_G_D2.
+DSP Report: Generating DSP tmp_G_D1, operation Mode is: (A:0x2db)*B.
+DSP Report: operator tmp_G_D1 is absorbed into DSP tmp_G_D1.
+DSP Report: Generating DSP tmp_B_reg, operation Mode is: (C+(A:0x717)*B)'.
+DSP Report: register tmp_B_reg is absorbed into DSP tmp_B_reg.
+DSP Report: operator tmp_B_D0 is absorbed into DSP tmp_B_reg.
+DSP Report: operator tmp_B_D1 is absorbed into DSP tmp_B_reg.
+INFO: [Synth 8-5546] ROM "sampling_o" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP error0, operation Mode is: A*B.
+DSP Report: operator error0 is absorbed into DSP error0.
+DSP Report: Generating DSP error, operation Mode is: C+A*B.
+DSP Report: operator error is absorbed into DSP error.
+DSP Report: operator error1 is absorbed into DSP error.
+DSP Report: Generating DSP error, operation Mode is: PCIN+A*B.
+DSP Report: operator error is absorbed into DSP error.
+DSP Report: operator error1 is absorbed into DSP error.
+DSP Report: Generating DSP mem_addra, operation Mode is: C+A*B.
+DSP Report: operator mem_addra is absorbed into DSP mem_addra.
+DSP Report: operator mem_addra0 is absorbed into DSP mem_addra.
+DSP Report: Generating DSP mem_addrb0, operation Mode is: C+A*B.
+DSP Report: operator mem_addrb0 is absorbed into DSP mem_addrb0.
+DSP Report: operator mem_addrb1 is absorbed into DSP mem_addrb0.
+INFO: [Synth 8-4471] merging register 'ed_y_reg[9:0]' into 'ed_y_reg[9:0]' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:116]
+INFO: [Synth 8-4471] merging register 'x_reg[9:0]' into 'x_reg[9:0]' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:99]
+INFO: [Synth 8-4471] merging register 'ed_x_reg[9:0]' into 'ed_x_reg[9:0]' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:116]
+INFO: [Synth 8-4471] merging register 'y_reg[9:0]' into 'y_reg[9:0]' [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/image_processor.v:100]
+DSP Report: Generating DSP bram_addrin, operation Mode is: C'+A*B2.
+DSP Report: register y_reg is absorbed into DSP bram_addrin.
+DSP Report: register x_reg is absorbed into DSP bram_addrin.
+DSP Report: operator bram_addrin is absorbed into DSP bram_addrin.
+DSP Report: operator bram_addrin0 is absorbed into DSP bram_addrin.
+DSP Report: Generating DSP bram_addrout, operation Mode is: C'+A*B2.
+DSP Report: register ed_y_reg is absorbed into DSP bram_addrout.
+DSP Report: register ed_x_reg is absorbed into DSP bram_addrout.
+DSP Report: operator bram_addrout is absorbed into DSP bram_addrout.
+DSP Report: operator bram_addrout0 is absorbed into DSP bram_addrout.
+WARNING: [Synth 8-3332] Sequential element (context_in_reg[3]) is unused and will be removed from module jpeg_upsampling.
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[21]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[22]'
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[22]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[23]'
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[23]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[24]'
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[24]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[25]'
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[25]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[26]'
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[26]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[27]'
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[27]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[28]'
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[28]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[29]'
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[29]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[30]'
+INFO: [Synth 8-3886] merging instance 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[30]' (FDE) to 'im_proc/jpeg_inst/jpeg_YCbCr2RGB_p/tmp_G_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (im_proc/jpeg_inst/jpeg_huffman_p/\ht_select_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (im_proc/jpeg_inst/jpeg_check_FF_p/\context_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (im_proc/y_base_reg_inferred/\y_base_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (im_proc/y_base_reg_inferred/\y_base_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (im_proc/y_base_reg_inferred/\y_base_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (im_proc/y_base_reg_inferred/\y_base_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_check_FF.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (header_valid_out_reg) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (ht_select_reg[1]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (data_reg[14]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (data_reg[13]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (data_reg[12]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (data_reg[11]) is unused and will be removed from module jpeg_huffman.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[7]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[6]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[5]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[4]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[3]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[2]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[1]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (qt_out_reg[0]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_reg[3]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[3]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[2]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[0]) is unused and will be removed from module jpeg_dequantize.
+WARNING: [Synth 8-3332] Sequential element (context_D_reg[3]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (context_D_reg[2]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (context_D_reg[0]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (stop_eoi_out_reg) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (eoi_hold_reg) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (eoi_reg) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (context_reg[3]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_dezigzag.
+WARNING: [Synth 8-3332] Sequential element (eoi_out_reg) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (eoi_reg[3]) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (eoi_reg[2]) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (eoi_reg[1]) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (eoi_reg[0]) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (context_reg[3]) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_idct.
+WARNING: [Synth 8-3332] Sequential element (context_in_reg[2]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_in_reg[0]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (stop_eoi_out_reg) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (eoi_hold_reg) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (eoi_reg) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_out_reg[3]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_out_reg[2]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_out_reg[0]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[3]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[2]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[0]) is unused and will be removed from module jpeg_upsampling.
+WARNING: [Synth 8-3332] Sequential element (context_reg[3]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (context_reg[2]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (context_reg[0]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[3]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[2]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (context_o_reg[0]) is unused and will be removed from module jpeg_YCbCr2RGB.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_dc_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_dc_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_dc_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_dc_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_dc_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_dc_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_dc_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_dc_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_dc_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_dc_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_dc_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_dc_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_ac_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_ac_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_ac_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_huff_ac_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_ac_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_ac_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_ac_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_huff_ac_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_ac_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_ac_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_ac_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_huff_ac_reg[0]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[7]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[6]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[5]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[4]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp1_qt_number_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[7]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[6]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[5]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[4]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[3]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[2]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp2_qt_number_reg[1]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[7]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[6]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[5]) is unused and will be removed from module jpeg_header.
+WARNING: [Synth 8-3332] Sequential element (comp3_qt_number_reg[4]) is unused and will be removed from module jpeg_header.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:17 ; elapsed = 00:06:42 . Memory (MB): peak = 780.953 ; gain = 571.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|jpeg_YCbCr2RGB  | (C+(A:0x59c)*B)' | 9      | 12     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|jpeg_YCbCr2RGB  | (A:0x160)*B      | 9      | 10     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|jpeg_YCbCr2RGB  | (A:0x2db)*B      | 9      | 11     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|jpeg_YCbCr2RGB  | (C+(A:0x717)*B)' | 9      | 12     | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|edge_detector   | A*B              | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|edge_detector   | C+A*B            | 17     | 17     | 17     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|edge_detector   | PCIN+A*B         | 17     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|vga_controller  | C+A*B            | 16     | 10     | 10     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|vga_controller  | C+A*B            | 16     | 10     | 10     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|image_processor | C'+A*B2          | 15     | 5      | 10     | -      | 15     | 0    | 1    | 1    | -    | -     | 0    | 0    | 
+|image_processor | C'+A*B2          | 15     | 5      | 10     | -      | 15     | 0    | 1    | 1    | -    | -     | 0    | 0    | 
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:38 ; elapsed = 00:07:02 . Memory (MB): peak = 810.238 ; gain = 600.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:39 ; elapsed = 00:07:04 . Memory (MB): peak = 814.148 ; gain = 604.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:42 ; elapsed = 00:07:08 . Memory (MB): peak = 837.645 ; gain = 628.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:enb to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin edge_buffer:addrb[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:44 ; elapsed = 00:07:09 . Memory (MB): peak = 837.645 ; gain = 628.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:44 ; elapsed = 00:07:09 . Memory (MB): peak = 837.645 ; gain = 628.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:44 ; elapsed = 00:07:10 . Memory (MB): peak = 837.645 ; gain = 628.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------+----------+
+|      |BlackBox name           |Instances |
++------+------------------------+----------+
+|1     |jpeg_input_fifo         |         1|
+|2     |jpeg_checkff_fifo       |         1|
+|3     |jpeg_ht_nr_of_symbols   |         1|
+|4     |jpeg_ht_tables          |         1|
+|5     |jpeg_huffman_input_sr   |         1|
+|6     |jpeg_dequant_multiplier |         1|
+|7     |jpeg_qt_sr              |         4|
+|8     |jpeg_idct_core_12       |         1|
+|9     |jpeg_upsampling_buffer  |         3|
++------+------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |jpeg_checkff_fifo         |     1|
+|2     |jpeg_dequant_multiplier   |     1|
+|3     |jpeg_ht_nr_of_symbols     |     1|
+|4     |jpeg_ht_tables            |     1|
+|5     |jpeg_huffman_input_sr     |     1|
+|6     |jpeg_idct_core_12         |     1|
+|7     |jpeg_input_fifo           |     1|
+|8     |jpeg_qt_sr                |     1|
+|9     |jpeg_qt_sr__1             |     1|
+|10    |jpeg_qt_sr__2             |     1|
+|11    |jpeg_qt_sr__3             |     1|
+|12    |jpeg_upsampling_buffer    |     1|
+|13    |jpeg_upsampling_buffer__1 |     1|
+|14    |jpeg_upsampling_buffer__2 |     1|
+|15    |BUFG                      |     2|
+|16    |CARRY4                    |   156|
+|17    |DSP48E1                   |     2|
+|18    |DSP48E1_1                 |     4|
+|19    |DSP48E1_2                 |     3|
+|20    |DSP48E1_3                 |     2|
+|21    |LUT1                      |   221|
+|22    |LUT2                      |   393|
+|23    |LUT3                      |  1089|
+|24    |LUT4                      |   381|
+|25    |LUT5                      |   229|
+|26    |LUT6                      |   572|
+|27    |MUXF7                     |    23|
+|28    |RAMB18E1                  |     6|
+|29    |RAMB18E1_1                |     2|
+|30    |RAMB18E1_2                |     1|
+|31    |RAMB18E1_3                |     1|
+|32    |RAMB36E1                  |    14|
+|33    |RAMB36E1_1                |     1|
+|34    |RAMB36E1_2                |     8|
+|35    |RAMB36E1_3                |     8|
+|36    |RAMB36E1_4                |     2|
+|37    |RAMB36E1_5                |     1|
+|38    |FDCE                      |    12|
+|39    |FDRE                      |  2294|
+|40    |FDSE                      |    11|
+|41    |IBUF                      |    35|
+|42    |OBUF                      |    15|
++------+--------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------------------------+------------------------------------------+------+
+|      |Instance                                                   |Module                                    |Cells |
++------+-----------------------------------------------------------+------------------------------------------+------+
+|1     |top                                                        |                                          |  5632|
+|2     |  im_proc                                                  |image_processor                           |  5580|
+|3     |    jpeg_inst                                              |jpeg                                      |  4652|
+|4     |      jpeg_check_FF_p                                      |jpeg_check_FF                             |    33|
+|5     |      jpeg_huffman_p                                       |jpeg_huffman                              |   548|
+|6     |      jpeg_dequantize_p                                    |jpeg_dequantize                           |   150|
+|7     |      jpeg_dezigzag_p                                      |jpeg_dezigzag                             |  2323|
+|8     |      jpeg_idct_p                                          |jpeg_idct                                 |    62|
+|9     |      jpeg_upsampling_p                                    |jpeg_upsampling                           |   164|
+|10    |      jpeg_YCbCr2RGB_p                                     |jpeg_YCbCr2RGB                            |   386|
+|11    |      jpeg_header_p                                        |jpeg_header                               |   844|
+|12    |    jpeg_buffer                                            |blk_mem_gen_0                             |   100|
+|13    |      U0                                                   |blk_mem_gen_v8_3_5                        |   100|
+|14    |        inst_blk_mem_gen                                   |blk_mem_gen_v8_3_5_synth                  |   100|
+|15    |          \gnbram.gnativebmg.native_blk_mem_gen            |blk_mem_gen_top                           |   100|
+|16    |            \valid.cstr                                    |blk_mem_gen_generic_cstr                  |   100|
+|17    |              \bindec_a.bindec_inst_a                      |bindec__1                                 |     6|
+|18    |              \bindec_b.bindec_inst_b                      |bindec                                    |     6|
+|19    |              \ramloop[0].ram.r                            |blk_mem_gen_prim_width                    |     1|
+|20    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper                  |     1|
+|21    |              \ramloop[1].ram.r                            |blk_mem_gen_prim_width__parameterized0    |     1|
+|22    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized0  |     1|
+|23    |              \ramloop[2].ram.r                            |blk_mem_gen_prim_width__parameterized1    |     1|
+|24    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized1  |     1|
+|25    |              \ramloop[3].ram.r                            |blk_mem_gen_prim_width__parameterized2    |     1|
+|26    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized2  |     1|
+|27    |              \ramloop[4].ram.r                            |blk_mem_gen_prim_width__parameterized3    |     1|
+|28    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized3  |     1|
+|29    |              \ramloop[5].ram.r                            |blk_mem_gen_prim_width__parameterized4    |     1|
+|30    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized4  |     1|
+|31    |              \ramloop[6].ram.r                            |blk_mem_gen_prim_width__parameterized5    |     1|
+|32    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized5  |     1|
+|33    |              \ramloop[7].ram.r                            |blk_mem_gen_prim_width__parameterized6    |     1|
+|34    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized6  |     1|
+|35    |              \ramloop[8].ram.r                            |blk_mem_gen_prim_width__parameterized7    |     1|
+|36    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized7  |     1|
+|37    |              \ramloop[9].ram.r                            |blk_mem_gen_prim_width__parameterized8    |     1|
+|38    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized8  |     1|
+|39    |              \ramloop[10].ram.r                           |blk_mem_gen_prim_width__parameterized9    |     1|
+|40    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized9  |     1|
+|41    |              \ramloop[11].ram.r                           |blk_mem_gen_prim_width__parameterized10   |     1|
+|42    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized10 |     1|
+|43    |              \ramloop[12].ram.r                           |blk_mem_gen_prim_width__parameterized11   |     1|
+|44    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized11 |     1|
+|45    |              \ramloop[13].ram.r                           |blk_mem_gen_prim_width__parameterized12   |     1|
+|46    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized12 |     1|
+|47    |              \ramloop[14].ram.r                           |blk_mem_gen_prim_width__parameterized13   |     1|
+|48    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized13 |     1|
+|49    |              \ramloop[15].ram.r                           |blk_mem_gen_prim_width__parameterized14   |     1|
+|50    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized14 |     1|
+|51    |              \ramloop[16].ram.r                           |blk_mem_gen_prim_width__parameterized15   |     1|
+|52    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized15 |     1|
+|53    |              \ramloop[17].ram.r                           |blk_mem_gen_prim_width__parameterized16   |     1|
+|54    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized16 |     1|
+|55    |              \has_mux_b.B                                 |blk_mem_gen_mux__parameterized0           |    66|
+|56    |    edge_detector_inst                                     |edge_detector                             |   192|
+|57    |      row_sums                                             |blk_mem_gen_3                             |     1|
+|58    |        U0                                                 |blk_mem_gen_v8_3_5__parameterized1        |     1|
+|59    |          inst_blk_mem_gen                                 |blk_mem_gen_v8_3_5_synth__parameterized0  |     1|
+|60    |            \gnbram.gnativebmg.native_blk_mem_gen          |blk_mem_gen_top__parameterized0           |     1|
+|61    |              \valid.cstr                                  |blk_mem_gen_generic_cstr__parameterized0  |     1|
+|62    |                \ramloop[0].ram.r                          |blk_mem_gen_prim_width__parameterized17   |     1|
+|63    |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized17 |     1|
+|64    |    edge_buffer                                            |blk_mem_gen_1                             |    31|
+|65    |      U0                                                   |blk_mem_gen_v8_3_5__parameterized3        |    31|
+|66    |        inst_blk_mem_gen                                   |blk_mem_gen_v8_3_5_synth__parameterized1  |    31|
+|67    |          \gnbram.gnativebmg.native_blk_mem_gen            |blk_mem_gen_top__parameterized1           |    31|
+|68    |            \valid.cstr                                    |blk_mem_gen_generic_cstr__parameterized1  |    31|
+|69    |              \bindec_a.bindec_inst_a                      |bindec__parameterized0                    |     2|
+|70    |              \bindec_b.bindec_inst_b                      |bindec__parameterized1                    |     2|
+|71    |              \ramloop[0].ram.r                            |blk_mem_gen_prim_width__parameterized18   |     1|
+|72    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized18 |     1|
+|73    |              \ramloop[1].ram.r                            |blk_mem_gen_prim_width__parameterized19   |     1|
+|74    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized19 |     1|
+|75    |              \ramloop[2].ram.r                            |blk_mem_gen_prim_width__parameterized20   |     1|
+|76    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized20 |     1|
+|77    |              \ramloop[3].ram.r                            |blk_mem_gen_prim_width__parameterized21   |     1|
+|78    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized21 |     1|
+|79    |              \ramloop[4].ram.r                            |blk_mem_gen_prim_width__parameterized22   |     1|
+|80    |                \prim_noinit.ram                           |blk_mem_gen_prim_wrapper__parameterized22 |     1|
+|81    |              \has_mux_b.B                                 |blk_mem_gen_mux__parameterized2           |    20|
+|82    |    edge_fifo                                              |fifo_generator_0                          |    50|
+|83    |      U0                                                   |fifo_generator_v13_1_3                    |    50|
+|84    |        inst_fifo_gen                                      |fifo_generator_v13_1_3_synth              |    50|
+|85    |          \gconvfifo.rf                                    |fifo_generator_top                        |    50|
+|86    |            \grf.rf                                        |fifo_generator_ramfifo                    |    50|
+|87    |              \gntv_or_sync_fifo.mem                       |memory                                    |     2|
+|88    |                \gbm.gbmg.gbmga.ngecc.bmg                  |blk_mem_gen_v8_3_5__parameterized5        |     1|
+|89    |                  inst_blk_mem_gen                         |blk_mem_gen_v8_3_5_synth__parameterized2  |     1|
+|90    |                    \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized2           |     1|
+|91    |                      \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized2  |     1|
+|92    |                        \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized23   |     1|
+|93    |                          \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized23 |     1|
+|94    |              \gntv_or_sync_fifo.gl0.rd                    |rd_logic                                  |    23|
+|95    |                rpntr                                      |rd_bin_cntr                               |    15|
+|96    |                \grss.rsts                                 |rd_status_flags_ss                        |     7|
+|97    |                  c1                                       |compare__1                                |     2|
+|98    |                  c2                                       |compare__2                                |     2|
+|99    |              \gntv_or_sync_fifo.gl0.wr                    |wr_logic                                  |    25|
+|100   |                wpntr                                      |wr_bin_cntr                               |    15|
+|101   |                \gwss.wsts                                 |wr_status_flags_ss                        |     9|
+|102   |                  c0                                       |compare__3                                |     2|
+|103   |                  c1                                       |compare                                   |     2|
+|104   |    vga_controller_inst                                    |vga_controller                            |   211|
+|105   |      video_mem                                            |blk_mem_gen_2                             |    83|
+|106   |        U0                                                 |blk_mem_gen_v8_3_5__parameterized7        |    83|
+|107   |          inst_blk_mem_gen                                 |blk_mem_gen_v8_3_5_synth__parameterized3  |    83|
+|108   |            \gnbram.gnativebmg.native_blk_mem_gen          |blk_mem_gen_top__parameterized3           |    83|
+|109   |              \valid.cstr                                  |blk_mem_gen_generic_cstr__parameterized3  |    83|
+|110   |                \bindec_a.bindec_inst_a                    |bindec__parameterized2                    |    19|
+|111   |                \bindec_b.bindec_inst_b                    |bindec__parameterized3                    |    19|
+|112   |                \ramloop[0].ram.r                          |blk_mem_gen_prim_width__parameterized24   |     2|
+|113   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized24 |     2|
+|114   |                \ramloop[1].ram.r                          |blk_mem_gen_prim_width__parameterized25   |     2|
+|115   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized25 |     2|
+|116   |                \ramloop[2].ram.r                          |blk_mem_gen_prim_width__parameterized26   |     2|
+|117   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized26 |     2|
+|118   |                \ramloop[3].ram.r                          |blk_mem_gen_prim_width__parameterized27   |     2|
+|119   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized27 |     2|
+|120   |                \ramloop[4].ram.r                          |blk_mem_gen_prim_width__parameterized28   |     1|
+|121   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized28 |     1|
+|122   |                \ramloop[5].ram.r                          |blk_mem_gen_prim_width__parameterized29   |     1|
+|123   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized29 |     1|
+|124   |                \ramloop[6].ram.r                          |blk_mem_gen_prim_width__parameterized30   |     2|
+|125   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized30 |     2|
+|126   |                \ramloop[7].ram.r                          |blk_mem_gen_prim_width__parameterized31   |     2|
+|127   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized31 |     2|
+|128   |                \ramloop[8].ram.r                          |blk_mem_gen_prim_width__parameterized32   |     2|
+|129   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized32 |     2|
+|130   |                \ramloop[9].ram.r                          |blk_mem_gen_prim_width__parameterized33   |     2|
+|131   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized33 |     2|
+|132   |                \ramloop[10].ram.r                         |blk_mem_gen_prim_width__parameterized34   |     1|
+|133   |                  \prim_noinit.ram                         |blk_mem_gen_prim_wrapper__parameterized34 |     1|
+|134   |                \has_mux_b.B                               |blk_mem_gen_mux__parameterized4           |    16|
+|135   |      vgadriver_inst                                       |VGAdrive                                  |    70|
++------+-----------------------------------------------------------+------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:44 ; elapsed = 00:07:10 . Memory (MB): peak = 837.645 ; gain = 628.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3452 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:06:32 . Memory (MB): peak = 837.645 ; gain = 418.332
+Synthesis Optimization Complete : Time (s): cpu = 00:06:45 ; elapsed = 00:07:10 . Memory (MB): peak = 837.645 ; gain = 628.270
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.edn]
+Finished Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo.edn]
+Release 14.7 - ngc2edif P_INT.20161201 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design jpeg_input_fifo_fifo_generator_v2_3_xst_1.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   jpeg_input_fifo_fifo_generator_v2_3_xst_1.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file jpeg_input_fifo_fifo_generator_v2_3_xst_1.edif ...
+ngc2edif: Total memory usage is 76300 kilobytes
+
+Reading core file 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1.ngc' for (cell view 'jpeg_input_fifo_fifo_generator_v2_3_xst_1', library 'jpeg_input_fifo_fifo_generator_v2_3_xst_1_lib', file 'jpeg_input_fifo.edn')
+Parsing EDIF File [./.ngc2edfcache/jpeg_input_fifo_fifo_generator_v2_3_xst_1_ngc_55f6636f.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/jpeg_input_fifo_fifo_generator_v2_3_xst_1_ngc_55f6636f.edif]
+Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn]
+Finished Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/input_fifo/jpeg_input_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn]
+Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo.edn]
+Finished Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo.edn]
+Release 14.7 - ngc2edif P_INT.20161201 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design jpeg_checkff_fifo_fifo_generator_v2_3_xst_1.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   jpeg_checkff_fifo_fifo_generator_v2_3_xst_1.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file jpeg_checkff_fifo_fifo_generator_v2_3_xst_1.edif ...
+ngc2edif: Total memory usage is 76300 kilobytes
+
+Reading core file 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1.ngc' for (cell view 'jpeg_checkff_fifo_fifo_generator_v2_3_xst_1', library 'jpeg_checkff_fifo_fifo_generator_v2_3_xst_1_lib', file 'jpeg_checkff_fifo.edn')
+Parsing EDIF File [./.ngc2edfcache/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1_ngc_854492e6.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1_ngc_854492e6.edif]
+Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn]
+Finished Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/check_FF_fifo/jpeg_checkff_fifo_fifo_generator_v2_3_xst_1_blkmemdp_v6_2_xst.edn]
+Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.edn]
+Finished Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/ht_nr_of_symbols/jpeg_ht_nr_of_symbols.edn]
+Release 14.7 - ngc2edif P_INT.20161201 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design jpeg_ht_tables.ngc ...
+WARNING:NetListWriters:298 - No output is written to jpeg_ht_tables.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file jpeg_ht_tables.edif ...
+ngc2edif: Total memory usage is 75276 kilobytes
+
+Reading core file 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/ht_tables/jpeg_ht_tables.ngc' for (cell view 'jpeg_ht_tables', library 'work')
+Parsing EDIF File [./.ngc2edfcache/jpeg_ht_tables_ngc_41f8c83a.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/jpeg_ht_tables_ngc_41f8c83a.edif]
+Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/huffman_input_sr/jpeg_huffman_input_sr.edn]
+Finished Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/huffman_input_sr/jpeg_huffman_input_sr.edn]
+Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier.edn]
+Finished Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier.edn]
+Release 14.7 - ngc2edif P_INT.20161201 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design jpeg_dequant_multiplier_mult_gen_v8_0_xst_1.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   jpeg_dequant_multiplier_mult_gen_v8_0_xst_1.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file jpeg_dequant_multiplier_mult_gen_v8_0_xst_1.edif ...
+ngc2edif: Total memory usage is 74892 kilobytes
+
+Reading core file 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/dequantize_multiplier/jpeg_dequant_multiplier_mult_gen_v8_0_xst_1.ngc' for (cell view 'jpeg_dequant_multiplier_mult_gen_v8_0_xst_1', library 'jpeg_dequant_multiplier_mult_gen_v8_0_xst_1_lib', file 'jpeg_dequant_multiplier.edn')
+Parsing EDIF File [./.ngc2edfcache/jpeg_dequant_multiplier_mult_gen_v8_0_xst_1_ngc_43489b80.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/jpeg_dequant_multiplier_mult_gen_v8_0_xst_1_ngc_43489b80.edif]
+Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/qt_table/jpeg_qt_sr.edn]
+Finished Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/qt_table/jpeg_qt_sr.edn]
+Release 14.7 - ngc2edif P_INT.20161201 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design jpeg_qt_sr_c_shift_ram_v8_0_xst_1.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   jpeg_qt_sr_c_shift_ram_v8_0_xst_1.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file jpeg_qt_sr_c_shift_ram_v8_0_xst_1.edif ...
+ngc2edif: Total memory usage is 76300 kilobytes
+
+Reading core file 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/qt_table/jpeg_qt_sr_c_shift_ram_v8_0_xst_1.ngc' for (cell view 'jpeg_qt_sr_c_shift_ram_v8_0_xst_1', library 'jpeg_qt_sr_c_shift_ram_v8_0_xst_1_lib', file 'jpeg_qt_sr.edn')
+Parsing EDIF File [./.ngc2edfcache/jpeg_qt_sr_c_shift_ram_v8_0_xst_1_ngc_bfd9f350.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/jpeg_qt_sr_c_shift_ram_v8_0_xst_1_ngc_bfd9f350.edif]
+Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/idct/jpeg_idct_core_12.edn]
+Finished Parsing EDIF File [C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/idct/jpeg_idct_core_12.edn]
+Release 14.7 - ngc2edif P_INT.20161201 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design jpeg_upsampling_buffer.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   jpeg_upsampling_buffer.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file jpeg_upsampling_buffer.edif ...
+ngc2edif: Total memory usage is 75276 kilobytes
+
+Reading core file 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.srcs/sources_1/imports/mjpeg/coregen/upsampling_buffer/jpeg_upsampling_buffer.ngc' for (cell view 'jpeg_upsampling_buffer', library 'work')
+Parsing EDIF File [./.ngc2edfcache/jpeg_upsampling_buffer_ngc_52fee13f.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/jpeg_upsampling_buffer_ngc_52fee13f.edif]
+INFO: [Netlist 29-17] Analyzing 4617 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20161201
+INFO: [Project 1-570] Preparing netlist for logic optimization
+CRITICAL WARNING: [Shape Builder 18-146] Failed to build an RLOC shape for set im_proc/jpeg_inst/jpeg_huffman_p/ht_nr_of_symbols. No placement was found that satisfies the grid spacing requirements for all instances in the set. This may be due to an invalid RLOC constraint causing incorrect column spacing. The macro reference instance is im_proc/jpeg_inst/jpeg_huffman_p/ht_nr_of_symbols/BU15 and the macro is 16 columns by 29 rows.
+CRITICAL WARNING: [Shape Builder 18-146] Failed to build an RLOC shape for set im_proc/jpeg_inst/jpeg_huffman_p/jpeg_huffman_input_sr_p. No placement was found that satisfies the grid spacing requirements for all instances in the set. This may be due to an invalid RLOC constraint causing incorrect column spacing. The macro reference instance is im_proc/jpeg_inst/jpeg_huffman_p/jpeg_huffman_input_sr_p/BU10 and the macro is 1 columns by 6 rows.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2480 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 336 instances
+  BUF => LUT1: 29 instances
+  FDC => FDCE: 166 instances
+  FDE => FDRE: 1537 instances
+  FDP => FDPE: 10 instances
+  INV => LUT1: 16 instances
+  LUT2_L => LUT2: 2 instances
+  LUT4_D => LUT4: 3 instances
+  LUT4_L => LUT4: 2 instances
+  MULT18X18 => DSP48E1: 1 instances
+  MULT_AND => LUT2: 320 instances
+  MUXF5 => LUT3: 17 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+  RAMB16_S18_S18 => RAMB18E1: 1 instances
+  RAMB16_S4_S4 => RAMB18E1: 3 instances
+  RAMB16_S9_S36 => RAMB36E1: 1 instances
+  RAMB16_S9_S9 => RAMB18E1: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+228 Infos, 272 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:44 ; elapsed = 00:07:15 . Memory (MB): peak = 840.574 ; gain = 565.730
+INFO: [Common 17-1381] The checkpoint 'C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.runs/synth_1/stream_jpg_yy_nv_mn_v1_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 840.574 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 15 16:54:18 2017...

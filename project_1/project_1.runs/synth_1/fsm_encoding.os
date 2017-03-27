@@ -1,5 +1,35 @@
 
  add_fsm_encoding \
+       {axi_lite.lite_sm_cs} \
+       { }  \
+       {{000 000001} {001 000100} {010 000010} {011 001000} {100 010000} {101 100000} }
+
+ add_fsm_encoding \
+       {axi_data_fifo_v2_1_8_axic_reg_srl_fifo.state} \
+       { }  \
+       {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
+       {axi_data_fifo_v2_1_8_axic_reg_srl_fifo__parameterized0.state} \
+       { }  \
+       {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
+       {axi_data_fifo_v2_1_8_axic_reg_srl_fifo__parameterized1.state} \
+       { }  \
+       {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
+       {axi_data_fifo_v2_1_8_axic_reg_srl_fifo__parameterized2.state} \
+       { }  \
+       {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
+       {axi_data_fifo_v2_1_8_axic_reg_srl_fifo__parameterized3.state} \
+       { }  \
+       {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
        {mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.fine_adj_state_r} \
        { }  \
        {{0000 0000} {0001 0011} {0010 0100} {0011 0001} {0100 0101} {0101 0110} {0110 0111} {0111 1000} {1000 1001} {1001 1010} {1010 1111} {1011 1011} {1100 1100} {1101 1101} {1110 1110} {1111 0010} }

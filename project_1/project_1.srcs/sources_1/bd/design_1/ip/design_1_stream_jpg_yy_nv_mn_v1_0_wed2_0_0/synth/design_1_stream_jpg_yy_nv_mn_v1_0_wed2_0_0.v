@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0
-// IP Revision: 23
+// IP Revision: 24
 
 (* X_CORE_INFO = "stream_jpg_yy_nv_mn_v1_0,Vivado 2016.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_stream_jpg_yy_nv_mn_v1_0_wed2_0_0,stream_jpg_yy_nv_mn_v1_0,{}" *)

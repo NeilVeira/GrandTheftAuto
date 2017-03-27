@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1490213590">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1490555569">
   <File Type="ROUTE-STATUS-PB" Name="design_1_wrapper_route_status.pb"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="OPT-DCP" Name="design_1_wrapper_opt.dcp"/>
@@ -484,6 +484,12 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="W:/img_proc_full.xdc"/>
         <Attr Name="ImportTime" Val="1489774052"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/constswld.xdc">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

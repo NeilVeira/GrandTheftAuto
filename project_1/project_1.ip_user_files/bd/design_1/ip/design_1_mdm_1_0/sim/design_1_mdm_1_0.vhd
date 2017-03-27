@@ -66,7 +66,15 @@ ENTITY design_1_mdm_1_0 IS
     Dbg_Capture_0 : OUT STD_LOGIC;
     Dbg_Shift_0 : OUT STD_LOGIC;
     Dbg_Update_0 : OUT STD_LOGIC;
-    Dbg_Rst_0 : OUT STD_LOGIC
+    Dbg_Rst_0 : OUT STD_LOGIC;
+    Dbg_Clk_1 : OUT STD_LOGIC;
+    Dbg_TDI_1 : OUT STD_LOGIC;
+    Dbg_TDO_1 : IN STD_LOGIC;
+    Dbg_Reg_En_1 : OUT STD_LOGIC_VECTOR(0 TO 7);
+    Dbg_Capture_1 : OUT STD_LOGIC;
+    Dbg_Shift_1 : OUT STD_LOGIC;
+    Dbg_Update_1 : OUT STD_LOGIC;
+    Dbg_Rst_1 : OUT STD_LOGIC
   );
 END design_1_mdm_1_0;
 
@@ -1083,6 +1091,14 @@ ARCHITECTURE design_1_mdm_1_0_arch OF design_1_mdm_1_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF Dbg_Shift_0: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_0 SHIFT";
   ATTRIBUTE X_INTERFACE_INFO OF Dbg_Update_0: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_0 UPDATE";
   ATTRIBUTE X_INTERFACE_INFO OF Dbg_Rst_0: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_0 RST";
+  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Clk_1: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_1 CLK";
+  ATTRIBUTE X_INTERFACE_INFO OF Dbg_TDI_1: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_1 TDI";
+  ATTRIBUTE X_INTERFACE_INFO OF Dbg_TDO_1: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_1 TDO";
+  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Reg_En_1: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_1 REG_EN";
+  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Capture_1: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_1 CAPTURE";
+  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Shift_1: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_1 SHIFT";
+  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Update_1: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_1 UPDATE";
+  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Rst_1: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 MBDEBUG_1 RST";
 BEGIN
   U0 : MDM
     GENERIC MAP (
@@ -1091,7 +1107,7 @@ BEGIN
       C_USE_BSCAN => 0,
       C_USE_CONFIG_RESET => 0,
       C_INTERCONNECT => 2,
-      C_MB_DBG_PORTS => 1,
+      C_MB_DBG_PORTS => 2,
       C_USE_UART => 0,
       C_DBG_REG_ACCESS => 0,
       C_DBG_MEM_ACCESS => 0,
@@ -1323,7 +1339,14 @@ BEGIN
       Dbg_Trig_Ack_Out_0 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 8)),
       Dbg_TrData_0 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 36)),
       Dbg_TrValid_0 => '0',
-      Dbg_TDO_1 => '0',
+      Dbg_Clk_1 => Dbg_Clk_1,
+      Dbg_TDI_1 => Dbg_TDI_1,
+      Dbg_TDO_1 => Dbg_TDO_1,
+      Dbg_Reg_En_1 => Dbg_Reg_En_1,
+      Dbg_Capture_1 => Dbg_Capture_1,
+      Dbg_Shift_1 => Dbg_Shift_1,
+      Dbg_Update_1 => Dbg_Update_1,
+      Dbg_Rst_1 => Dbg_Rst_1,
       Dbg_Trig_In_1 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 8)),
       Dbg_Trig_Ack_Out_1 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 8)),
       Dbg_TrData_1 => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 36)),

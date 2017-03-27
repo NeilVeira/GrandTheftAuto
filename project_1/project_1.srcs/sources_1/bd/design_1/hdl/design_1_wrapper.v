@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-//Date        : Wed Mar 22 16:45:59 2017
-//Host        : SFB520WS05 running 64-bit Service Pack 1  (build 7601)
+//Date        : Sun Mar 26 15:08:24 2017
+//Host        : TP-MILWIDG7 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -27,10 +27,12 @@ module design_1_wrapper
     DDR2_we_n,
     G,
     H,
+    LED,
     R,
     V,
     calibrate,
     error_o,
+    pins,
     pmod_out_pin10_io,
     pmod_out_pin1_io,
     pmod_out_pin2_io,
@@ -41,6 +43,7 @@ module design_1_wrapper
     pmod_out_pin9_io,
     reset,
     reset_yy,
+    switches,
     sys_clock,
     usb_uart_rxd,
     usb_uart_txd);
@@ -61,10 +64,12 @@ module design_1_wrapper
   output DDR2_we_n;
   output [3:0]G;
   output H;
+  output [0:12]LED;
   output [3:0]R;
   output V;
   input calibrate;
   output error_o;
+  output [0:3]pins;
   inout pmod_out_pin10_io;
   inout pmod_out_pin1_io;
   inout pmod_out_pin2_io;
@@ -75,6 +80,7 @@ module design_1_wrapper
   inout pmod_out_pin9_io;
   input reset;
   input reset_yy;
+  input [0:4]switches;
   input sys_clock;
   input usb_uart_rxd;
   output usb_uart_txd;
@@ -96,10 +102,12 @@ module design_1_wrapper
   wire DDR2_we_n;
   wire [3:0]G;
   wire H;
+  wire [0:12]LED;
   wire [3:0]R;
   wire V;
   wire calibrate;
   wire error_o;
+  wire [0:3]pins;
   wire pmod_out_pin10_i;
   wire pmod_out_pin10_io;
   wire pmod_out_pin10_o;
@@ -134,6 +142,7 @@ module design_1_wrapper
   wire pmod_out_pin9_t;
   wire reset;
   wire reset_yy;
+  wire [0:4]switches;
   wire sys_clock;
   wire usb_uart_rxd;
   wire usb_uart_txd;
@@ -156,6 +165,7 @@ module design_1_wrapper
         .DDR2_we_n(DDR2_we_n),
         .G(G),
         .H(H),
+        .LED(LED),
         .Pmod_out_pin10_i(pmod_out_pin10_i),
         .Pmod_out_pin10_o(pmod_out_pin10_o),
         .Pmod_out_pin10_t(pmod_out_pin10_t),
@@ -184,8 +194,10 @@ module design_1_wrapper
         .V(V),
         .calibrate(calibrate),
         .error_o(error_o),
+        .pins(pins),
         .reset(reset),
         .reset_yy(reset_yy),
+        .switches(switches),
         .sys_clock(sys_clock),
         .usb_uart_rxd(usb_uart_rxd),
         .usb_uart_txd(usb_uart_txd));

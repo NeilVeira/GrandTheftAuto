@@ -17,7 +17,7 @@ src/main.o src/main.o: ../src/main.cc \
  ../../test_bsp/microblaze_0/include/xparameters.h \
  ../../test_bsp/microblaze_0/include/xil_cache.h \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h \
- c:\users\ibm_admin\desktop\yy\project_1\project_1.sdk\test_bsp\microblaze_0\include\mrf24g\utility\wf_customize.h \
+ ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_endian.h \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../shared/wf_stubs.h \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../shared/wf_events.h \
@@ -30,7 +30,7 @@ src/main.o src/main.o: ../src/main.cc \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../shared/wf_events.h \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../shared/wf_connection_event_codes.h \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../shared/wf_stubs.h \
- c:\users\ibm_admin\desktop\yy\project_1\project_1.sdk\test_bsp\microblaze_0\include\mrf24g\utility\wf_customize.h \
+ ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../shared/../../wf_customize.h \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_event_queue.h \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_connection_profile.h \
  ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_raw.h \
@@ -95,7 +95,7 @@ src/main.o src/main.o: ../src/main.cc \
 
 ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_global_includes.h:
 
-c:\users\ibm_admin\desktop\yy\project_1\project_1.sdk\test_bsp\microblaze_0\include\mrf24g\utility\wf_customize.h:
+../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../../wf_customize.h:
 
 ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_endian.h:
 
@@ -121,7 +121,7 @@ c:\users\ibm_admin\desktop\yy\project_1\project_1.sdk\test_bsp\microblaze_0\incl
 
 ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../shared/wf_stubs.h:
 
-c:\users\ibm_admin\desktop\yy\project_1\project_1.sdk\test_bsp\microblaze_0\include\mrf24g\utility\wf_customize.h:
+../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/../shared/../../wf_customize.h:
 
 ../../test_bsp/microblaze_0/include/DEIPcK/utility/fpga/../../../MRF24G/utility/ud_inc/internal/wf_event_queue.h:
 

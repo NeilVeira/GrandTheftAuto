@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Mar 22 18:11:23 2017
+# Process ID: 7080
+# Current directory: E:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/img_proc_full
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7808 E:\ECE532\git\GrandTheftAuto\newestgit\GrandTheftAuto\img_proc_full\jpeg.xpr
+# Log file: E:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/img_proc_full/vivado.log
+# Journal file: E:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/img_proc_full\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/img_proc_full/jpeg.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/yy/Desktop/ece532_debug/img_proc_full' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/ECE532/users/yy/desktop/ece532_debug/img_proc_full/component.xml', nor could it be found using path 'C:/users/yy/desktop/ece532_debug/img_proc_full/component.xml'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'E:/ECE532/users/yy/desktop/ece532_debug/img_proc_full', nor could it be found using path 'C:/users/yy/desktop/ece532_debug/img_proc_full'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DSANumComputeUnits
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimRadix
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimTimeUnit
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimArrayDisplayLimit
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimTraceLimit
+WARNING: [Project 1-231] Project 'jpeg.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/ECE532/users/yy/desktop/ece532_debug/img_proc_full'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_3' is locked:
+* Project containing IP 'blk_mem_gen_3' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_2' is locked:
+* Project containing IP 'blk_mem_gen_2' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'fifo_generator_0' is locked:
+* Project containing IP 'fifo_generator_0' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* Project containing IP 'blk_mem_gen_1' is read-only.
+* IP definition 'Block Memory Generator (8.3)' for IP 'blk_mem_gen_1' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* Project containing IP 'blk_mem_gen_0' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Project containing IP 'clk_wiz_0' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_4' is locked:
+* Project containing IP 'blk_mem_gen_4' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 796.383 ; gain = 184.070
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 22 18:13:19 2017...

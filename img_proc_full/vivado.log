@@ -1,25 +1,61 @@
 #-----------------------------------------------------------
-# Vivado v2016.4 (64-bit)
-# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
-# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Thu Mar 16 09:15:40 2017
-# Process ID: 5200
-# Current directory: C:/Users/yy/Desktop/ece532_debug/img_proc_full
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6488 C:\Users\yy\Desktop\ece532_debug\img_proc_full\jpeg.xpr
-# Log file: C:/Users/yy/Desktop/ece532_debug/img_proc_full/vivado.log
-# Journal file: C:/Users/yy/Desktop/ece532_debug/img_proc_full\vivado.jou
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Mar 22 18:29:32 2017
+# Process ID: 2124
+# Current directory: D:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/img_proc_full
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3228 D:\ECE532\git\GrandTheftAuto\newestgit\GrandTheftAuto\img_proc_full\jpeg.xpr
+# Log file: D:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/img_proc_full/vivado.log
+# Journal file: D:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/img_proc_full\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/yy/Desktop/ece532_debug/img_proc_full/jpeg.xpr
+open_project D:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/img_proc_full/jpeg.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/yy/Desktop/ece532_debug/img_proc_full' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/ECE532/users/yy/desktop/ece532_debug/img_proc_full/component.xml', nor could it be found using path 'C:/users/yy/desktop/ece532_debug/img_proc_full/component.xml'.
 Scanning sources...
 Finished scanning sources
-CRITICAL WARNING: [Project 1-564] A project save was requested while parsing the project. To prevent a partially loaded project from being committed to disk, this save will not occur.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'D:/ECE532/users/yy/desktop/ece532_debug/img_proc_full', nor could it be found using path 'C:/users/yy/desktop/ece532_debug/img_proc_full'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DSANumComputeUnits
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimRadix
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimTimeUnit
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimArrayDisplayLimit
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimTraceLimit
+WARNING: [Project 1-231] Project 'jpeg.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/yy/desktop/ece532_debug/img_proc_full'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
-WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
-* This IP has board specific outputs. Current project board 'unset' and the board 'digilentinc.com:nexys4_ddr:part0:1.1' used to customize the IP 'clk_wiz_0' do not match.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/ECE532/users/yy/desktop/ece532_debug/img_proc_full'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_3' is locked:
+* Project containing IP 'blk_mem_gen_3' is read-only.
 Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
-open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 791.160 ; gain = 128.309
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_2' is locked:
+* Project containing IP 'blk_mem_gen_2' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'fifo_generator_0' is locked:
+* Project containing IP 'fifo_generator_0' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* Project containing IP 'blk_mem_gen_1' is read-only.
+* IP definition 'Block Memory Generator (8.3)' for IP 'blk_mem_gen_1' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* Project containing IP 'blk_mem_gen_0' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Project containing IP 'clk_wiz_0' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_4' is locked:
+* Project containing IP 'blk_mem_gen_4' is read-only.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+save_project_as project_1 D:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/img_proc_full/project_1 -force
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'blk_mem_gen_1' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+CRITICAL WARNING: [IP_Flow 19-4309] IP 'blk_mem_gen_4' is locked, parameter 'Coe_File' was not changed from '../../coe_files/640x480.coe' to '../../../../../jpeg.srcs/sources_1/coe_files/640x480.coe'. Please ensure the IP is unlocked and retry the SaveAs/Import operation.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'blk_mem_gen_1' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+save_project_as: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 847.098 ; gain = 8.199
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 16 10:13:36 2017...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 22 18:31:11 2017...

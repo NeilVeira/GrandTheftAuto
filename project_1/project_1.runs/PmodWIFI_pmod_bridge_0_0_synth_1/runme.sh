@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/IBM_ADMIN/Desktop/yy/project_1/project_1.runs/PmodWIFI_pmod_bridge_0_0_synth_1'
+HD_PWD='E:/ECE532/git/GrandTheftAuto/newestgit/GrandTheftAuto/project_1/project_1.runs/PmodWIFI_pmod_bridge_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

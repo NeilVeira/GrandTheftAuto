@@ -74,7 +74,7 @@
         .rd_en(rd_en),              // input wire rd_en
         .dout(dout),                // output wire [31 : 0] dout
         .full(full),                // output wire full
-        .almost_full(almost_full),  // output wire almost_full
+        .prog_full(almost_full),  // output wire almost_full
         .empty(empty)              // output wire empty
     );
     

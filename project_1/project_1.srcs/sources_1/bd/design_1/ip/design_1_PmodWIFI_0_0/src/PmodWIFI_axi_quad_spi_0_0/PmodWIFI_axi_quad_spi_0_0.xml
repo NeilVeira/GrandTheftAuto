@@ -2354,7 +2354,7 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 20:10:41 UTC 2017</spirit:value>
+            <spirit:value>Fri Mar 24 17:08:12 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -2366,7 +2366,7 @@ This bit has no significance in dual or quad mode.
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>36cd9d50</spirit:value>
+            <spirit:value>8716d6c5</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2385,7 +2385,7 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 20:10:41 UTC 2017</spirit:value>
+            <spirit:value>Fri Mar 24 17:08:12 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -2397,7 +2397,7 @@ This bit has no significance in dual or quad mode.
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>36cd9d50</spirit:value>
+            <spirit:value>8716d6c5</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2439,7 +2439,7 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 20:10:41 UTC 2017</spirit:value>
+            <spirit:value>Fri Mar 24 17:08:12 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -2451,7 +2451,7 @@ This bit has no significance in dual or quad mode.
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>c14b4213</spirit:value>
+            <spirit:value>ed7e1326</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2470,7 +2470,7 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 20:10:41 UTC 2017</spirit:value>
+            <spirit:value>Fri Mar 24 17:08:12 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -2482,7 +2482,7 @@ This bit has no significance in dual or quad mode.
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>c14b4213</spirit:value>
+            <spirit:value>ed7e1326</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -2500,7 +2500,7 @@ This bit has no significance in dual or quad mode.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Mar 22 20:10:42 UTC 2017</spirit:value>
+            <spirit:value>Fri Mar 24 17:08:12 UTC 2017</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -2512,7 +2512,7 @@ This bit has no significance in dual or quad mode.
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>36cd9d50</spirit:value>
+            <spirit:value>8716d6c5</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -4730,10 +4730,8 @@ This bit has no significance in dual or quad mode.
       <spirit:enumeration>1</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_97fa2e54</spirit:name>
+      <spirit:name>choice_list_ac75ef1e</spirit:name>
       <spirit:enumeration>Custom</spirit:enumeration>
-      <spirit:enumeration>acl_spi</spirit:enumeration>
-      <spirit:enumeration>qspi_flash</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_d1a56f17</spirit:name>
@@ -4769,12 +4767,12 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_dist_mem_gen_8_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd</spirit:name>
+        <spirit:name>dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>dist_mem_gen_v8_0_10</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd</spirit:name>
+        <spirit:name>dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>dist_mem_gen_v8_0_10</spirit:logicalName>
       </spirit:file>
@@ -4789,27 +4787,27 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_axi_lite_ipif_3_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/ipif_pkg.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/ipif_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/pselect_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/address_decoder.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/address_decoder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/slave_attachment.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/slave_attachment.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/axi_lite_ipif.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/axi_lite_ipif.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
@@ -4824,7 +4822,7 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_lib_pkg_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_pkg_v1_0/hdl/src/vhdl/lib_pkg.vhd</spirit:name>
+        <spirit:name>lib_pkg_v1_0_2/hdl/src/vhdl/lib_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>lib_pkg_v1_0_2</spirit:logicalName>
       </spirit:file>
@@ -4839,7 +4837,7 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_lib_cdc_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd</spirit:name>
+        <spirit:name>lib_cdc_v1_0_2/hdl/src/vhdl/cdc_sync.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>lib_cdc_v1_0_2</spirit:logicalName>
       </spirit:file>
@@ -4854,12 +4852,12 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_blk_mem_gen_8_3__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd</spirit:name>
+        <spirit:name>blk_mem_gen_v8_3_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>blk_mem_gen_v8_3_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/blk_mem_gen_v8_3/hdl/blk_mem_gen_v8_3.vhd</spirit:name>
+        <spirit:name>blk_mem_gen_v8_3_3/hdl/blk_mem_gen_v8_3.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>blk_mem_gen_v8_3_3</spirit:logicalName>
       </spirit:file>
@@ -4874,12 +4872,12 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_fifo_generator_13_1__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/fifo_generator_v13_1/hdl/fifo_generator_v13_1_vhsyn_rfs.vhd</spirit:name>
+        <spirit:name>fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_vhsyn_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>fifo_generator_v13_1_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/fifo_generator_v13_1/hdl/fifo_generator_v13_1.vhd</spirit:name>
+        <spirit:name>fifo_generator_v13_1_1/hdl/fifo_generator_v13_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>fifo_generator_v13_1_1</spirit:logicalName>
       </spirit:file>
@@ -4894,12 +4892,12 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_lib_fifo_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/async_fifo_fg.vhd</spirit:name>
+        <spirit:name>lib_fifo_v1_0_5/hdl/src/vhdl/async_fifo_fg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>lib_fifo_v1_0_5</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/sync_fifo_fg.vhd</spirit:name>
+        <spirit:name>lib_fifo_v1_0_5/hdl/src/vhdl/sync_fifo_fg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>lib_fifo_v1_0_5</spirit:logicalName>
       </spirit:file>
@@ -4914,22 +4912,22 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_lib_srl_fifo_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd</spirit:name>
+        <spirit:name>lib_srl_fifo_v1_0_2/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>lib_srl_fifo_v1_0_2</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/dynshreg_f.vhd</spirit:name>
+        <spirit:name>lib_srl_fifo_v1_0_2/hdl/src/vhdl/dynshreg_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>lib_srl_fifo_v1_0_2</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_rbu_f.vhd</spirit:name>
+        <spirit:name>lib_srl_fifo_v1_0_2/hdl/src/vhdl/srl_fifo_rbu_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>lib_srl_fifo_v1_0_2</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_f.vhd</spirit:name>
+        <spirit:name>lib_srl_fifo_v1_0_2/hdl/src/vhdl/srl_fifo_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>lib_srl_fifo_v1_0_2</spirit:logicalName>
       </spirit:file>
@@ -4944,7 +4942,7 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_interrupt_control_3_1__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/interrupt_control_v3_1/hdl/src/vhdl/interrupt_control.vhd</spirit:name>
+        <spirit:name>interrupt_control_v3_1_4/hdl/src/vhdl/interrupt_control.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>interrupt_control_v3_1_4</spirit:logicalName>
       </spirit:file>
@@ -4963,42 +4961,42 @@ This bit has no significance in dual or quad mode.
         <spirit:userFileType>xdc</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_1_memory_0_mixed.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_1_memory_0_mixed.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_1_memory_1_wb.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_1_memory_1_wb.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_1_memory_2_nm.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_1_memory_2_nm.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_2_memory_0_mixed.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_2_memory_0_mixed.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_2_memory_1_wb.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_2_memory_1_wb.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_2_memory_2_nm.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_2_memory_2_nm.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_2_memory_3_sp.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_2_memory_3_sp.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_1_memory_3_sp.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_1_memory_3_sp.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
@@ -5058,122 +5056,122 @@ This bit has no significance in dual or quad mode.
         </spirit:define>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/comp_defs.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/comp_defs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/pselect_f.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/pselect_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/counter_f.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/counter_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/soft_reset.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/soft_reset.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/xip_cross_clk_sync.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/xip_cross_clk_sync.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/reset_sync_module.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/reset_sync_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_status_slave_sel_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_status_slave_sel_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_startup_block.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_startup_block.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_receive_transmit_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_receive_transmit_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_occupancy_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_occupancy_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_mode_control_logic.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_mode_control_logic.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_mode_0_module.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_mode_0_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_look_up_logic.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_look_up_logic.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_fifo_ifmodule.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_fifo_ifmodule.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_cntrl_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_cntrl_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_address_decoder.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_address_decoder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/cross_clk_sync_fifo_1.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/cross_clk_sync_fifo_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/cross_clk_sync_fifo_0.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/cross_clk_sync_fifo_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/xip_status_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/xip_status_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/xip_cntrl_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/xip_cntrl_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_core_interface.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_core_interface.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/axi_qspi_xip_if.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/axi_qspi_xip_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/axi_qspi_enhanced_mode.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/axi_qspi_enhanced_mode.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/axi_quad_spi.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/axi_quad_spi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
@@ -5189,7 +5187,7 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_dist_mem_gen_8_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v</spirit:name>
+        <spirit:name>dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>dist_mem_gen_v8_0_10</spirit:logicalName>
@@ -5206,7 +5204,7 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_lib_pkg_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_pkg_v1_0/hdl/src/vhdl/lib_pkg.vhd</spirit:name>
+        <spirit:name>lib_pkg_v1_0_2/hdl/src/vhdl/lib_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>lib_pkg_v1_0_2</spirit:logicalName>
@@ -5222,7 +5220,7 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_lib_cdc_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd</spirit:name>
+        <spirit:name>lib_cdc_v1_0_2/hdl/src/vhdl/cdc_sync.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>lib_cdc_v1_0_2</spirit:logicalName>
@@ -5238,25 +5236,25 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_lib_srl_fifo_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd</spirit:name>
+        <spirit:name>lib_srl_fifo_v1_0_2/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>lib_srl_fifo_v1_0_2</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/dynshreg_f.vhd</spirit:name>
+        <spirit:name>lib_srl_fifo_v1_0_2/hdl/src/vhdl/dynshreg_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>lib_srl_fifo_v1_0_2</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_rbu_f.vhd</spirit:name>
+        <spirit:name>lib_srl_fifo_v1_0_2/hdl/src/vhdl/srl_fifo_rbu_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>lib_srl_fifo_v1_0_2</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_srl_fifo_v1_0/hdl/src/vhdl/srl_fifo_f.vhd</spirit:name>
+        <spirit:name>lib_srl_fifo_v1_0_2/hdl/src/vhdl/srl_fifo_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>lib_srl_fifo_v1_0_2</spirit:logicalName>
@@ -5272,20 +5270,20 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_fifo_generator_13_1__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/fifo_generator_v13_1/simulation/fifo_generator_vlog_beh.v</spirit:name>
+        <spirit:name>fifo_generator_v13_1_1/simulation/fifo_generator_vlog_beh.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>fifo_generator_v13_1_1</spirit:logicalName>
         <spirit:exportedName>fifo_generator_vlog_beh</spirit:exportedName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/fifo_generator_v13_1/hdl/fifo_generator_v13_1_rfs.vhd</spirit:name>
+        <spirit:name>fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>fifo_generator_v13_1_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/fifo_generator_v13_1/hdl/fifo_generator_v13_1_rfs.v</spirit:name>
+        <spirit:name>fifo_generator_v13_1_1/hdl/fifo_generator_v13_1_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>fifo_generator_v13_1_1</spirit:logicalName>
@@ -5301,13 +5299,13 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_lib_fifo_1_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/async_fifo_fg.vhd</spirit:name>
+        <spirit:name>lib_fifo_v1_0_5/hdl/src/vhdl/async_fifo_fg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>lib_fifo_v1_0_5</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/lib_fifo_v1_0/hdl/src/vhdl/sync_fifo_fg.vhd</spirit:name>
+        <spirit:name>lib_fifo_v1_0_5/hdl/src/vhdl/sync_fifo_fg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>lib_fifo_v1_0_5</spirit:logicalName>
@@ -5323,31 +5321,31 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_axi_lite_ipif_3_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/ipif_pkg.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/ipif_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/pselect_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/address_decoder.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/address_decoder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/slave_attachment.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/slave_attachment.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_lite_ipif_v3_0/hdl/src/vhdl/axi_lite_ipif.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/axi_lite_ipif.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
@@ -5363,7 +5361,7 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_interrupt_control_3_1__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/interrupt_control_v3_1/hdl/src/vhdl/interrupt_control.vhd</spirit:name>
+        <spirit:name>interrupt_control_v3_1_4/hdl/src/vhdl/interrupt_control.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>interrupt_control_v3_1_4</spirit:logicalName>
@@ -5379,42 +5377,42 @@ This bit has no significance in dual or quad mode.
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_1_memory_0_mixed.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_1_memory_0_mixed.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_1_memory_1_wb.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_1_memory_1_wb.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_1_memory_2_nm.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_1_memory_2_nm.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_2_memory_0_mixed.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_2_memory_0_mixed.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_2_memory_1_wb.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_2_memory_1_wb.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_2_memory_2_nm.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_2_memory_2_nm.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_2_memory_3_sp.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_2_memory_3_sp.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/netlist/mode_1_memory_3_sp.mif</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/netlist/mode_1_memory_3_sp.mif</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
@@ -5459,145 +5457,145 @@ This bit has no significance in dual or quad mode.
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/comp_defs.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/comp_defs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/pselect_f.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/pselect_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/counter_f.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/counter_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/soft_reset.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/soft_reset.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/xip_cross_clk_sync.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/xip_cross_clk_sync.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/reset_sync_module.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/reset_sync_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_status_slave_sel_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_status_slave_sel_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_startup_block.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_startup_block.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_receive_transmit_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_receive_transmit_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_occupancy_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_occupancy_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_mode_control_logic.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_mode_control_logic.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_mode_0_module.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_mode_0_module.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_look_up_logic.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_look_up_logic.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_fifo_ifmodule.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_fifo_ifmodule.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_cntrl_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_cntrl_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_address_decoder.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_address_decoder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/cross_clk_sync_fifo_1.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/cross_clk_sync_fifo_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/cross_clk_sync_fifo_0.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/cross_clk_sync_fifo_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/xip_status_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/xip_status_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/xip_cntrl_reg.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/xip_cntrl_reg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/qspi_core_interface.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/qspi_core_interface.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/axi_qspi_xip_if.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/axi_qspi_xip_if.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/axi_qspi_enhanced_mode.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/axi_qspi_enhanced_mode.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/xilinx.com/axi_quad_spi_v3_2/hdl/src/vhdl/axi_quad_spi.vhd</spirit:name>
+        <spirit:name>axi_quad_spi_v3_2_8/hdl/src/vhdl/axi_quad_spi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>axi_quad_spi_v3_2_8</spirit:logicalName>
@@ -5940,7 +5938,7 @@ This bit has no significance in dual or quad mode.
     <spirit:parameter>
       <spirit:name>QSPI_BOARD_INTERFACE</spirit:name>
       <spirit:displayName>QSPI Board Interface</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.QSPI_BOARD_INTERFACE" spirit:choiceRef="choice_list_97fa2e54" spirit:order="39">Custom</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.QSPI_BOARD_INTERFACE" spirit:choiceRef="choice_list_ac75ef1e" spirit:order="39">Custom</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>

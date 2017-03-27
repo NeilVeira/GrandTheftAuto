@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user:user:stream_jpg_yy_nv_mn_v1_0_wed2:1.0
-// IP Revision: 23
+// IP Revision: 24
 
 `timescale 1ns/1ps
 

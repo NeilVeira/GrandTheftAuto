@@ -1,4 +1,4 @@
-16:52:11 **** Auto Build of configuration Debug for project test2 ****
+16:10:35 **** Auto Build of configuration Debug for project test2 ****
 make all 
 'Building file: ../src/main.cc'
 'Invoking: MicroBlaze g++ compiler'
@@ -17,5 +17,5 @@ mb-size test2.elf  |tee "test2.elf.size"
 'Finished building: test2.elf.size'
 ' '
 
-16:52:11 Build Finished (took 765ms)
+16:10:37 Build Finished (took 1s.690ms)
 

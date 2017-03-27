@@ -63,14 +63,6 @@ ENTITY design_1_microblaze_0_0 IS
     Interrupt : IN STD_LOGIC;
     Interrupt_Address : IN STD_LOGIC_VECTOR(0 TO 31);
     Interrupt_Ack : OUT STD_LOGIC_VECTOR(0 TO 1);
-    Instr_Addr : OUT STD_LOGIC_VECTOR(0 TO 31);
-    Instr : IN STD_LOGIC_VECTOR(0 TO 31);
-    IFetch : OUT STD_LOGIC;
-    I_AS : OUT STD_LOGIC;
-    IReady : IN STD_LOGIC;
-    IWAIT : IN STD_LOGIC;
-    ICE : IN STD_LOGIC;
-    IUE : IN STD_LOGIC;
     M_AXI_IP_AWADDR : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     M_AXI_IP_AWPROT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     M_AXI_IP_AWVALID : OUT STD_LOGIC;
@@ -90,17 +82,6 @@ ENTITY design_1_microblaze_0_0 IS
     M_AXI_IP_RRESP : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
     M_AXI_IP_RVALID : IN STD_LOGIC;
     M_AXI_IP_RREADY : OUT STD_LOGIC;
-    Data_Addr : OUT STD_LOGIC_VECTOR(0 TO 31);
-    Data_Read : IN STD_LOGIC_VECTOR(0 TO 31);
-    Data_Write : OUT STD_LOGIC_VECTOR(0 TO 31);
-    D_AS : OUT STD_LOGIC;
-    Read_Strobe : OUT STD_LOGIC;
-    Write_Strobe : OUT STD_LOGIC;
-    DReady : IN STD_LOGIC;
-    DWait : IN STD_LOGIC;
-    DCE : IN STD_LOGIC;
-    DUE : IN STD_LOGIC;
-    Byte_Enable : OUT STD_LOGIC_VECTOR(0 TO 3);
     M_AXI_DP_AWADDR : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     M_AXI_DP_AWPROT : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     M_AXI_DP_AWVALID : OUT STD_LOGIC;
@@ -120,14 +101,6 @@ ENTITY design_1_microblaze_0_0 IS
     M_AXI_DP_RRESP : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
     M_AXI_DP_RVALID : IN STD_LOGIC;
     M_AXI_DP_RREADY : OUT STD_LOGIC;
-    Dbg_Clk : IN STD_LOGIC;
-    Dbg_TDI : IN STD_LOGIC;
-    Dbg_TDO : OUT STD_LOGIC;
-    Dbg_Reg_En : IN STD_LOGIC_VECTOR(0 TO 7);
-    Dbg_Shift : IN STD_LOGIC;
-    Dbg_Capture : IN STD_LOGIC;
-    Dbg_Update : IN STD_LOGIC;
-    Debug_Rst : IN STD_LOGIC;
     M0_AXIS_TLAST : OUT STD_LOGIC;
     M0_AXIS_TDATA : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     M0_AXIS_TVALID : OUT STD_LOGIC;
@@ -733,14 +706,6 @@ ARCHITECTURE design_1_microblaze_0_0_arch OF design_1_microblaze_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF Interrupt: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 INTERRUPT INTERRUPT";
   ATTRIBUTE X_INTERFACE_INFO OF Interrupt_Address: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 INTERRUPT ADDRESS";
   ATTRIBUTE X_INTERFACE_INFO OF Interrupt_Ack: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 INTERRUPT ACK";
-  ATTRIBUTE X_INTERFACE_INFO OF Instr_Addr: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB ABUS";
-  ATTRIBUTE X_INTERFACE_INFO OF Instr: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB READDBUS";
-  ATTRIBUTE X_INTERFACE_INFO OF IFetch: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB READSTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF I_AS: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB ADDRSTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF IReady: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB READY";
-  ATTRIBUTE X_INTERFACE_INFO OF IWAIT: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB WAIT";
-  ATTRIBUTE X_INTERFACE_INFO OF ICE: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB CE";
-  ATTRIBUTE X_INTERFACE_INFO OF IUE: SIGNAL IS "xilinx.com:interface:lmb:1.0 ILMB UE";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_IP_AWADDR: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_IP AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_IP_AWPROT: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_IP AWPROT";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_IP_AWVALID: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_IP AWVALID";
@@ -760,17 +725,6 @@ ARCHITECTURE design_1_microblaze_0_0_arch OF design_1_microblaze_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_IP_RRESP: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_IP RRESP";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_IP_RVALID: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_IP RVALID";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_IP_RREADY: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_IP RREADY";
-  ATTRIBUTE X_INTERFACE_INFO OF Data_Addr: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB ABUS";
-  ATTRIBUTE X_INTERFACE_INFO OF Data_Read: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB READDBUS";
-  ATTRIBUTE X_INTERFACE_INFO OF Data_Write: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB WRITEDBUS";
-  ATTRIBUTE X_INTERFACE_INFO OF D_AS: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB ADDRSTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF Read_Strobe: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB READSTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF Write_Strobe: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB WRITESTROBE";
-  ATTRIBUTE X_INTERFACE_INFO OF DReady: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB READY";
-  ATTRIBUTE X_INTERFACE_INFO OF DWait: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB WAIT";
-  ATTRIBUTE X_INTERFACE_INFO OF DCE: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB CE";
-  ATTRIBUTE X_INTERFACE_INFO OF DUE: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB UE";
-  ATTRIBUTE X_INTERFACE_INFO OF Byte_Enable: SIGNAL IS "xilinx.com:interface:lmb:1.0 DLMB BE";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_DP_AWADDR: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_DP AWADDR";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_DP_AWPROT: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_DP AWPROT";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_DP_AWVALID: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_DP AWVALID";
@@ -790,14 +744,6 @@ ARCHITECTURE design_1_microblaze_0_0_arch OF design_1_microblaze_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_DP_RRESP: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_DP RRESP";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_DP_RVALID: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_DP RVALID";
   ATTRIBUTE X_INTERFACE_INFO OF M_AXI_DP_RREADY: SIGNAL IS "xilinx.com:interface:aximm:1.0 M_AXI_DP RREADY";
-  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Clk: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 DEBUG CLK";
-  ATTRIBUTE X_INTERFACE_INFO OF Dbg_TDI: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 DEBUG TDI";
-  ATTRIBUTE X_INTERFACE_INFO OF Dbg_TDO: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 DEBUG TDO";
-  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Reg_En: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 DEBUG REG_EN";
-  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Shift: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 DEBUG SHIFT";
-  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Capture: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 DEBUG CAPTURE";
-  ATTRIBUTE X_INTERFACE_INFO OF Dbg_Update: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 DEBUG UPDATE";
-  ATTRIBUTE X_INTERFACE_INFO OF Debug_Rst: SIGNAL IS "xilinx.com:interface:mbdebug:3.0 DEBUG RST";
   ATTRIBUTE X_INTERFACE_INFO OF M0_AXIS_TLAST: SIGNAL IS "xilinx.com:interface:axis:1.0 M0_AXIS TLAST";
   ATTRIBUTE X_INTERFACE_INFO OF M0_AXIS_TDATA: SIGNAL IS "xilinx.com:interface:axis:1.0 M0_AXIS TDATA";
   ATTRIBUTE X_INTERFACE_INFO OF M0_AXIS_TVALID: SIGNAL IS "xilinx.com:interface:axis:1.0 M0_AXIS TVALID";
@@ -840,9 +786,9 @@ BEGIN
       C_M_AXI_IP_DATA_WIDTH => 32,
       C_M_AXI_IP_ADDR_WIDTH => 32,
       C_M_AXI_I_BUS_EXCEPTION => 0,
-      C_D_LMB => 1,
+      C_D_LMB => 0,
       C_D_AXI => 1,
-      C_I_LMB => 1,
+      C_I_LMB => 0,
       C_I_AXI => 1,
       C_USE_MSR_INSTR => 0,
       C_USE_PCMP_INSTR => 0,
@@ -879,7 +825,7 @@ BEGIN
       C_DYNAMIC_BUS_SIZING => 0,
       C_RESET_MSR => X"00000000",
       C_OPCODE_0x0_ILLEGAL => 0,
-      C_DEBUG_ENABLED => 1,
+      C_DEBUG_ENABLED => 0,
       C_NUMBER_OF_PC_BRK => 1,
       C_NUMBER_OF_RD_ADDR_BRK => 0,
       C_NUMBER_OF_WR_ADDR_BRK => 0,
@@ -988,14 +934,11 @@ BEGIN
       Pause => '0',
       Non_Secure => X"0",
       LOCKSTEP_Slave_In => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 4096)),
-      Instr_Addr => Instr_Addr,
-      Instr => Instr,
-      IFetch => IFetch,
-      I_AS => I_AS,
-      IReady => IReady,
-      IWAIT => IWAIT,
-      ICE => ICE,
-      IUE => IUE,
+      Instr => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      IReady => '0',
+      IWAIT => '0',
+      ICE => '0',
+      IUE => '0',
       M_AXI_IP_AWADDR => M_AXI_IP_AWADDR,
       M_AXI_IP_AWPROT => M_AXI_IP_AWPROT,
       M_AXI_IP_AWVALID => M_AXI_IP_AWVALID,
@@ -1018,17 +961,11 @@ BEGIN
       M_AXI_IP_RLAST => '0',
       M_AXI_IP_RVALID => M_AXI_IP_RVALID,
       M_AXI_IP_RREADY => M_AXI_IP_RREADY,
-      Data_Addr => Data_Addr,
-      Data_Read => Data_Read,
-      Data_Write => Data_Write,
-      D_AS => D_AS,
-      Read_Strobe => Read_Strobe,
-      Write_Strobe => Write_Strobe,
-      DReady => DReady,
-      DWait => DWait,
-      DCE => DCE,
-      DUE => DUE,
-      Byte_Enable => Byte_Enable,
+      Data_Read => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      DReady => '0',
+      DWait => '0',
+      DCE => '0',
+      DUE => '0',
       M_AXI_DP_AWADDR => M_AXI_DP_AWADDR,
       M_AXI_DP_AWPROT => M_AXI_DP_AWPROT,
       M_AXI_DP_AWVALID => M_AXI_DP_AWVALID,
@@ -1051,18 +988,17 @@ BEGIN
       M_AXI_DP_RLAST => '0',
       M_AXI_DP_RVALID => M_AXI_DP_RVALID,
       M_AXI_DP_RREADY => M_AXI_DP_RREADY,
-      Dbg_Clk => Dbg_Clk,
-      Dbg_TDI => Dbg_TDI,
-      Dbg_TDO => Dbg_TDO,
-      Dbg_Reg_En => Dbg_Reg_En,
-      Dbg_Shift => Dbg_Shift,
-      Dbg_Capture => Dbg_Capture,
-      Dbg_Update => Dbg_Update,
+      Dbg_Clk => '0',
+      Dbg_TDI => '0',
+      Dbg_Reg_En => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 8)),
+      Dbg_Shift => '0',
+      Dbg_Capture => '0',
+      Dbg_Update => '0',
       Dbg_Trig_Ack_In => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 8)),
       Dbg_Trig_Out => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 8)),
       Dbg_Trace_Clk => '0',
       Dbg_Trace_Ready => '0',
-      Debug_Rst => Debug_Rst,
+      Debug_Rst => '0',
       M0_AXIS_TLAST => M0_AXIS_TLAST,
       M0_AXIS_TDATA => M0_AXIS_TDATA,
       M0_AXIS_TVALID => M0_AXIS_TVALID,
