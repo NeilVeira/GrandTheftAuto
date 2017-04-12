@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="jpeg_testbench_func_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="jpeg_testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="156048399209fs"></ZoomStartTime>
+      <ZoomEndTime time="156319950934fs"></ZoomEndTime>
+      <Cursor1Time time="156194709000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="41" />
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_ready" type="logic">
+      <obj_property name="ElementShortName">jpeg_ready</obj_property>
+      <obj_property name="ObjectShortName">jpeg_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/data_i" type="array">
+      <obj_property name="ElementShortName">data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/datavalid_i" type="logic">
+      <obj_property name="ElementShortName">datavalid_i</obj_property>
+      <obj_property name="ObjectShortName">datavalid_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/datavalid_o" type="logic">
+      <obj_property name="ElementShortName">datavalid_o</obj_property>
+      <obj_property name="ObjectShortName">datavalid_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/ready_i" type="logic">
+      <obj_property name="ElementShortName">ready_i</obj_property>
+      <obj_property name="ObjectShortName">ready_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/ready_o" type="logic">
+      <obj_property name="ElementShortName">ready_o</obj_property>
+      <obj_property name="ObjectShortName">ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/red_o" type="array">
+      <obj_property name="ElementShortName">red_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">red_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/green_o" type="array">
+      <obj_property name="ElementShortName">green_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">green_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/blue_o" type="array">
+      <obj_property name="ElementShortName">blue_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">blue_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/width_o" type="array">
+      <obj_property name="ElementShortName">width_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">width_o[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/height_o" type="array">
+      <obj_property name="ElementShortName">height_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">height_o[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/x_o" type="array">
+      <obj_property name="ElementShortName">x_o[9:0]</obj_property>
+      <obj_property name="ObjectShortName">x_o[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/y_o" type="array">
+      <obj_property name="ElementShortName">y_o[9:0]</obj_property>
+      <obj_property name="ObjectShortName">y_o[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/new_image" type="logic">
+      <obj_property name="ElementShortName">new_image</obj_property>
+      <obj_property name="ObjectShortName">new_image</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider52">
+      <obj_property name="label">JPEG</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/datavalid_o_OBUF" type="logic">
+      <obj_property name="ElementShortName">datavalid_o_OBUF</obj_property>
+      <obj_property name="ObjectShortName">datavalid_o_OBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_ready_hack" type="logic">
+      <obj_property name="ElementShortName">jpeg_ready_hack</obj_property>
+      <obj_property name="ObjectShortName">jpeg_ready_hack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_ready_o" type="logic">
+      <obj_property name="ElementShortName">jpeg_ready_o</obj_property>
+      <obj_property name="ObjectShortName">jpeg_ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/image_state" type="array">
+      <obj_property name="ElementShortName">image_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">image_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/error_o_OBUF" type="logic">
+      <obj_property name="ElementShortName">error_o_OBUF</obj_property>
+      <obj_property name="ObjectShortName">error_o_OBUF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_datavalid_i" type="logic">
+      <obj_property name="ElementShortName">jpeg_datavalid_i</obj_property>
+      <obj_property name="ObjectShortName">jpeg_datavalid_i</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider47">
+      <obj_property name="label">FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/data_in_buffer/din" type="array">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/data_in_buffer/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/data_in_buffer/dout" type="array">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/data_in_buffer/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/data_in_buffer/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/data_in_buffer/empty" type="logic">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/data_in_buffer/prog_full" type="logic">
+      <obj_property name="ElementShortName">prog_full</obj_property>
+      <obj_property name="ObjectShortName">prog_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/fifo_state" type="array">
+      <obj_property name="ElementShortName">fifo_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider34">
+      <obj_property name="label">input fifo</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/jpeg_input_fifo_p/din" type="array">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/jpeg_input_fifo_p/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/jpeg_input_fifo_p/dout" type="array">
+      <obj_property name="ElementShortName">dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/jpeg_input_fifo_p/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/jpeg_input_fifo_p/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/jpeg_input_fifo_p/empty" type="logic">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/jpeg_input_fifo_p/almost_full" type="logic">
+      <obj_property name="ElementShortName">almost_full</obj_property>
+      <obj_property name="ObjectShortName">almost_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/jpeg_testbench/jpeg_decoder_inst/jpeg_inst/jpeg_input_fifo_p/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+</wave_config>
